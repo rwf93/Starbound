@@ -21,7 +21,7 @@ if exist %QT_PREFIX_PATH% (
 
 %CMAKE_EXE_PATH%\cmake.exe ^
   ..\source ^
-  -G"Visual Studio 17 2022" ^
+  -G "Visual Studio 17 2022" ^
   -DSTAR_USE_JEMALLOC=ON ^
   -DCMAKE_PREFIX_PATH=%QT_PREFIX_PATH% ^
   -DSTAR_BUILD_QT_TOOLS=ON ^

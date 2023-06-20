@@ -1,0 +1,32 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-race/hylotl",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "//description" : "Someone's scrawled 'Meta Sux' on the side of this console...",
+      "//name" : "testconsole2",
+      "//shortdescription" : "Blue Test Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "testconsole2",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/testconsole2.png"
+    }
+  },
+  "tilewidth" : 8
+}

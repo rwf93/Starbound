@@ -1,0 +1,16 @@
+{
+  "itemName" : "cordialbottle",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "drink",
+  "inventoryIcon" : "cordialbottle.png",
+  "description" : "A bottle of smooth avesmingo cordial.",
+  "shortdescription" : "Avesmingo Cordial Bottle",
+  "handPosition" : [0, -4],
+  "effects" : [ [
+    "wellfed"
+  ] ],
+  "emote" : "",
+  "emitters" : [ "drinking" ]
+}

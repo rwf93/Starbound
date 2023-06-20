@@ -1,0 +1,165 @@
+{
+  "type" : "smallshroom",
+
+  "categories" : [ "smallshroom" ],
+  "parts" : [ "arms", "chest", "tail", "head" ],
+  "partParameters" : "smallshroom.partparams",
+
+  "animation" : "smallshroom.animation",
+  "reversed" : true,
+
+  "dropPools" : [
+    {
+      "default" : "basicMonsterTreasure",
+      "bow" : "hunting",
+      "brain" : "brain"
+    }
+  ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/capturepod.lua",
+      "/monsters/generated/ground/groundMonster.lua",
+      "/scripts/pathing.lua",
+      "/scripts/stateMachine.lua",
+      "/scripts/util.lua",
+      "/scripts/vec2.lua",
+
+      "/monsters/generated/ground/aggroHopState.lua",
+      "/monsters/generated/ground/approachState.lua",
+      "/monsters/generated/ground/fleeState.lua",
+      "/monsters/generated/ground/stunState.lua",
+      "/monsters/generated/ground/captiveState.lua",
+      "/monsters/generated/ground/socializeState.lua",
+      "/monsters/generated/ground/wanderState.lua",
+
+      "/monsters/generated/ground/skills/createGroundRangedAttack.lua"
+    ],
+
+    "territoryDistance" : 40.0,
+    "territorialTargetRadius" : 20.0,
+    "minimalTargetRadius" : 6.0,
+    "targetSearchTime" : 0.5,
+    "targetHoldTime" : 5.0,
+
+    "closeDistance" : 1.5,
+
+    "wanderTime" : [4.0, 6.0],
+    "wanderMovementTime" : [2.0, 3.0],
+    "wanderJumpProbability" : 0.1,
+
+    "jumpTargetDistance" : 4,
+    "jumpTime" : [0.8, 1.4],
+
+    "pathing" : {
+      "canOpenDoors" : false
+    },
+
+    "knockoutTime" : 0.5,
+    "knockoutEffect" : "blink",
+    "knockoutAnimationStates" : {
+      "movement" : "knockout",
+      "attack" : "idle"
+    },
+    "deathParticles" : "deathPoof",
+    "captureParticles" : "captureParticles",
+    "levelUpParticles" : "levelUp",
+
+    "exhaustionTimer" : 3.0,
+    "exhaustionTimeout" : 3.0,
+    "exhaustionDistanceLimit" : 1.0,
+
+    "captureHealthFraction" : 0.5,
+    "killsPerLevel" : 20
+  },
+
+  "familyParameters" : [
+    [
+      {
+        "baseSkills" : [ ],
+        "specialSkills" : [ "chargeAttack" ]
+      },
+      {
+        "baseSkills" : [ ],
+        "specialSkills" : [ "pounceAttack" ]
+      }
+    ]
+  ],
+
+  "variantParameters" : [
+    [
+      [1.0, {
+          "scale" : 1.0,
+
+          "movementSettings" : {
+            "collisionPoly" : [ [-1, -2.6], [1, -2.6], [1, 0], [-1, 0] ],
+            "mass" : 0.6,
+            "walkSpeed" : 5,
+            "runSpeed" : 6,
+
+            "airJumpProfile" : {
+              "jumpSpeed" : 40.0             
+            }
+          },
+
+          "metaBoundBox" : [-2.5, -2.5, 2.5, 2.5],
+
+          "blockedSensors" : [ [1.5, -1.5], [1.5, -1.0], [1.5, -0.2], [1.5, 0.6] ],
+          "fallSensors" : [ [0.5, -2.5], [0.5, -3.5], [0.5, -4.5], [2.0, -2.5], [2.0, -3.5], [2.0, -4.5] ],
+
+          "touchDamage" : {
+            "poly" : [ [-1, -2.6], [1, -2.6], [1, 0], [-1, 0] ],
+            "damage" : 12,
+
+            "teamType" : "enemy",
+            "damageSourceKind" : "default",
+            "statusEffects" : [ ]
+          },
+
+          "statusSettings" : {
+            "statusProperties" : {
+              "targetMaterialKind" : "organic"
+            },
+
+            "appliesEnvironmentStatusEffects" : false,
+            "minimumLiquidStatusEffectPercentage" : 0.1,
+
+            "primaryScriptSources" : [
+              "/stats/monster_primary.lua"
+            ],
+            "primaryScriptDelta" : 5,
+
+            "stats" : {
+              "knockbackStunTime" : {
+                "baseValue" : 0.25
+              },
+              "maxHealth" : {
+                "baseValue" : 48
+              },
+              "protection" : {
+                "baseValue" : 0.0
+              },
+              "healthRegen" : {
+                "baseValue" : 0.0
+              }
+            },
+
+            "resources" : {
+              "stunned" : {
+                "deltaValue" : -1.0,
+                "initialValue" : 0.0
+              },
+              "health" : {
+                "maxStat" : "maxHealth",
+                "deltaStat" : "healthRegen",
+                "defaultPercentage" : 100
+              }
+            }
+          },
+
+          "mouthOffset" : [0, 0],
+          "feetOffset" : [0, -21]
+        } ]
+    ]
+  ]
+}

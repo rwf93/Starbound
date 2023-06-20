@@ -1,0 +1,9 @@
+{
+  "name" : "roboticdischead",
+  "category" : "biped_robotic",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "dischead.frames"
+  }
+}

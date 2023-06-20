@@ -1,0 +1,3425 @@
+{
+  "backgroundcolor" : "#000000",
+  "height" : 100,
+  "layers" : [ {
+          "compression" : "zlib",
+          "data" : "eJzt3ctu6yAUheE8djrNqI9dVVXUFrExV+/bP/ikNDo6wsAyGOP44/F4fAAAAAAAAAATnsXnZ/EdkJWUBfIB/CizQDZwh88/tMvSwviBE67Ou97z8SnQLi/sK+fttXm8hz5VXo///Uw+sCLK+CEhH1gRPR8ReLyOirLGfjIfr8p32c/j0ngm1YfHPtbqU1fHb6FPvPutNG+XjmekXl5C21qri7vN9A1v+WiV30M+vtXO7VfteVUH5bV+T/1YO97TMuWj5/xoNR+9fWZ2/JC+Jx858iGV2VM+Rttzpk6szK+s5GOUx+vcZ4V2mU5ZyUetXjyfK9DnVdAuz0mj1x+1a30L86sIvPS3TPnYjXzERz7mkQ9ARj6AXz3reeQFmZENoI1sAG0ns1HbzxL5vhRiOpWNWibIBzw6MaciH4BMum9PRgB+nwGQSGNF9HxIx7Tre8R3Zz7uXjfzlg/mvbmxrjxWT7Dj9D5S1s3G6wl23JGP1vyBPTb/66qnXrTLmcmdzyH0PDeZvU9c/b5lprqwgHzYQj5s0X6OjXywdgUZ+QBQPnuuPW4DlmTOh7f7tRZF7zPkg3ys9J3a50gy5wMAAACx1N4lyr0moP3+HQDX76IGMut5/w6QFb8BZ8fo9V/v/rNM98NOtofF+VWW56tnjo18IHImyuNk/PBjpO5P1n+GseN9nK2/V9tI+/iisZKP0T7j1Uw+oMdLPiLt18syVkZgJR+t+5dWyghcOXkel86p5ANenJzjSP93pnxEmkfO6t0ryJ6QH5nykV1PFsp/x95CZNK7F4rxA5FJY37vGjjjR14ZrkPIh2+91zrR+/Ed9fv+rnY9Ls2trO8pjK4nH2RjvX61y4G19mOt7Gz9apcDa+1HPs7Wr3Y5sNZ+5ONs/WqXA7LRvYJcb+xDPmwb3WtONvYiH/ax11wP+djj1LPpPKukq7yHpDk+t/Z3ebK7zIwfesr7SDvyMbOWEuX3E72WG3Un1gFn1xq9//5u673f2mXbeWy1v6OynA9vbRE1H9LY7qVdrMmaj1YdaJdnFfkYt/MdW9KeSM9toL3esdNoPnj/GnpE6B+9+7mho2ePUaS5DDCCfAAy8uELbaJf3+TDLtoEkJGP81gfXKO5/4B8XLdNra20y5WF9l4Q8tFum0j3wT1q5YO+q4986JOeR7krH8yP220jtZV22TJi/Fize6306rcWcZ50TiIf41r5GB0jI+4zRG478wFEw71oQEY+/HkJtMsVEfkAAAAAgHt9AemzHWg=",
+          "encoding" : "base64",
+          "height" : 100,
+          "name" : "back",
+          "opacity" : 0.5,
+          "type" : "tilelayer",
+          "visible" : true,
+          "width" : 200,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "compression" : "zlib",
+          "data" : "eJzt3M2O1TgQhuGM1KvZscylsjl3xf2N0BARjJPYTv3ab0mfhJqGxHY9cZI+8H3btu+EkMv8IKQjP3vmH8N49Sg+yEg8fVjuF/ggI/H2oVn4IG+DD5It1vcd+CCZot2z+CCZY+3Dsspj7435dHzvEXzMmaNvVvDRWp+b39sbj4WPOXLsH1pG8NG2BlEi0U+Zz//Kh5YRfLStQYSS8uFV2j40jOAjdk+dCx/PPqSN1PrmHK3nnjc2W3zc7e348CkrH5JGyr7R9GDpoyx8+I/F0oeUEXy0rUEZj9J6Ps90/j0+JIxk9HFX7B9xx+Lh460RfMTuqXPhY8xHj5Gn51Z8xOqpc+Fj3MfoPvL0/mpviJSPj2Lw4T8Wbx8jRiLtH/i4L08fd+9EWiuCj14jkXxo540PTbsjxt/0U+9xt0DnL+Gjx4i2j7v7Mo35ap1TfOQ8fykfrUai7B/RfRD5fVxqLa1Me/qwXBeNdbK87mWP5Pyv5MPaIj7yO7G+ruIDHxmdzLhm+PizPyzjbSKjE3zMO9eZEmF9IqxZ2bN7Yz4d33sEH/kSYZ0i+Wj9c5+b39sbj+U97/jI52RlH6s8A5R17K0Zxu3tZHUflhXNR1l3PxN4M+bz/Gdzgg+7WtlHuQ5ZnMzko7av4+Pv8vSRzUkWH3dh/8jnI4sTfNgVPvI5sX6PgQ/7HB7KlOXpI7oTj+DD1odHjfaqthOPfaG2R+Djd+EjjhOvtSj78mnslp/jr/l4uueQLIs1+ap8LbMPLSf4YP+YyYe0kyw+rO7zovjYnTIy1jfP5UdJ+5By4hmtOZGYT28fnmvSs/dund/fsofjZH4fb953ZvKhcY+LE3zclbcPr3iss7eBVh+e69Ly/GF9LY2wJiskspOyL6OcBz7WS0QnmXysFO9exUkuH2S9nK8XUfoyynms7IP96u/52J2SxcdKPWO9Dhl8ROnLKOdR87FKz6w01ojzgY/YPbPSWCPORwQfd/cz+FhnrBHnI4KPp/PAxxpjjTgf+IjdM6NjPar2uZqoY22dD8/gI1bPjIx1O/16Nh9RMpuPo09m97FdjPtcUcfaOh/sHzF9eKxF7eutNmb1UTvvvWMtpfry7jN7377G0vtvD658tPaMtA/ra0TLMcvCBz56x7aCj9oY8YEPfPxf+MAHPvCBj/V87Fv9s6L4wMfqPmprez5my5xJBR9z+PDomZZ3shI28IGPrD60942aD+t4G5jBh9U17MqHR89I+nhaz+h9ig/f3PmItjbSNvDRtwbbrzltKXzE9nFlI9t9TrQ18Ng/JK6VUk5H5lHDqva+wf7R76P33r3n+8/PzrP50DgXCxv4wMdKPnpt4KN/XXvuW8u0vnvFh7yPERtPPjSf96JH4vlj9GcTZS/sTpnFx6iNFh9a16PoieRDcg16xhPZh2XwgY8IPmoVuXfwgQ9LH7X3FpF7Bx/4wAc+rsb+9rNLUp97svJRlqaP4x3ACj7O42l9HxI9K/q4ezbFh4yPmfYPz3j4uFsvfLT1yEo+NPuydZ7wEbd3Vt8/8IGP0R65unfGBz6sfHjd8+IDH1l8SPZnb++u7mM/5c27rN61Kfuy/Hv+/Xqfkfdooz5qz7D4mMOHxDV6dR8z7x+S10h84AMf+MAHPq6y3wQf+JD2UXu2sfQh0R93x4gafOj6aL3mW/YnPvrWVfL/IlzZR+89yNO54MM/kX1YBR/4yODDMxI+pM8FH/7R8PHmWumdUR/a53TVa2+vUfjAxww+PO41tY4fbX6lfGje10RJxPPCRx4f3udrMR+EkOv8B7F/foE=",
+          "encoding" : "base64",
+          "height" : 100,
+          "name" : "front",
+          "opacity" : 1,
+          "type" : "tilelayer",
+          "visible" : true,
+          "width" : 200,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test1",
+          "objects" : [ {
+                  "height" : 8,
+                  "id" : 1,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 104,
+                  "y" : 160
+              }, {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 25,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 264,
+                  "y" : 168
+              }, {
+                  "gid" : 380,
+                  "height" : 40,
+                  "id" : 42,
+                  "name" : "go ape",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 32,
+                  "x" : 288,
+                  "y" : 144
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 45,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 104,
+                  "y" : 168
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 56,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 216,
+                  "y" : 104
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "observatory",
+          "objects" : [ {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 7,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 328,
+                  "y" : 208
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 8,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 280,
+                  "y" : 208
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 28,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 304,
+                  "y" : 208
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 33,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 272,
+                  "y" : 312
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 34,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 296,
+                  "y" : 312
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 35,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 320,
+                  "y" : 312
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 67,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 424,
+                  "y" : 312
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 68,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 448,
+                  "y" : 312
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 69,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 472,
+                  "y" : 312
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 71,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 352,
+                  "y" : 208
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 85,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 376,
+                  "y" : 208
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 94,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 400,
+                  "y" : 208
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 188,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 272,
+                  "y" : 368
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 197,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 424,
+                  "y" : 208
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 206,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 448,
+                  "y" : 208
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 207,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 296,
+                  "y" : 368
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 215,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 472,
+                  "y" : 208
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 217,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 320,
+                  "y" : 368
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 224,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 496,
+                  "y" : 208
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 225,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 344,
+                  "y" : 368
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 234,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 280,
+                  "y" : 240
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 235,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1072,
+                  "y" : 376
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 238,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1072,
+                  "y" : 328
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 292,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1096,
+                  "y" : 328
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 293,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1096,
+                  "y" : 376
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 294,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 304,
+                  "y" : 240
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 319,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1120,
+                  "y" : 328
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 320,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1120,
+                  "y" : 376
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 321,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 328,
+                  "y" : 240
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 334,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1144,
+                  "y" : 328
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 335,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1144,
+                  "y" : 376
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 336,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 352,
+                  "y" : 240
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 349,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1168,
+                  "y" : 328
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 350,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1168,
+                  "y" : 376
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 351,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 376,
+                  "y" : 240
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 360,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1192,
+                  "y" : 328
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 361,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1192,
+                  "y" : 376
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 362,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 400,
+                  "y" : 240
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 375,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1216,
+                  "y" : 328
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 376,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1216,
+                  "y" : 376
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 377,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 424,
+                  "y" : 240
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 389,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1240,
+                  "y" : 328
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 390,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1240,
+                  "y" : 376
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 391,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 448,
+                  "y" : 240
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 400,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1264,
+                  "y" : 328
+              }, {
+                  "gid" : 647,
+                  "height" : 16,
+                  "id" : 401,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1264,
+                  "y" : 376
+              }, {
+                  "gid" : 361,
+                  "height" : 16,
+                  "id" : 402,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 472,
+                  "y" : 240
+              }, {
+                  "gid" : 625,
+                  "height" : 32,
+                  "id" : 414,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 32,
+                  "x" : 360,
+                  "y" : 336
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test2",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 26,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 680,
+                  "y" : 168
+              }, {
+                  "height" : 8,
+                  "id" : 44,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 512,
+                  "y" : 160
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 46,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 512,
+                  "y" : 168
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 57,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 624,
+                  "y" : 104
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test3",
+          "objects" : [ {
+                  "height" : 8,
+                  "id" : 11,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 520,
+                  "y" : 336
+              }, {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 27,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 688,
+                  "y" : 344
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 50,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 520,
+                  "y" : 344
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 58,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 640,
+                  "y" : 272
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test4",
+          "objects" : [ {
+                  "height" : 8,
+                  "id" : 62,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 48,
+                  "y" : 360
+              }, {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 63,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 208,
+                  "y" : 368
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 64,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 48,
+                  "y" : 368
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 65,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 152,
+                  "y" : 272
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test5",
+          "objects" : [ {
+                  "height" : 8,
+                  "id" : 77,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 48,
+                  "y" : 520
+              }, {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 78,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 208,
+                  "y" : 528
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 79,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 48,
+                  "y" : 528
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 80,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 152,
+                  "y" : 432
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test6",
+          "objects" : [ {
+                  "height" : 8,
+                  "id" : 90,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 520,
+                  "y" : 512
+              }, {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 91,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 680,
+                  "y" : 520
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 92,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 520,
+                  "y" : 520
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 93,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 624,
+                  "y" : 424
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test7",
+          "objects" : [ {
+                  "height" : 8,
+                  "id" : 193,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 120,
+                  "y" : 736
+              }, {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 194,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 200,
+                  "y" : 624
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 195,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 120,
+                  "y" : 744
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 196,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 160,
+                  "y" : 592
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test8",
+          "objects" : [ {
+                  "height" : 8,
+                  "id" : 202,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 472,
+                  "y" : 600
+              }, {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 203,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 296,
+                  "y" : 528
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 204,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 440,
+                  "y" : 608
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 205,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 368,
+                  "y" : 496
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test9",
+          "objects" : [ {
+                  "height" : 8,
+                  "id" : 211,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 304,
+                  "y" : 768
+              }, {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 212,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 432,
+                  "y" : 776
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 213,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 304,
+                  "y" : 776
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 214,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 408,
+                  "y" : 704
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test10",
+          "objects" : [ {
+                  "height" : 8,
+                  "id" : 220,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 560,
+                  "y" : 696
+              }, {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 221,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 584,
+                  "y" : 776
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 222,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 560,
+                  "y" : 704
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 223,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 664,
+                  "y" : 616
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test11",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 230,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 952,
+                  "y" : 184
+              }, {
+                  "height" : 8,
+                  "id" : 231,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1088,
+                  "y" : 176
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 232,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1056,
+                  "y" : 184
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 233,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1000,
+                  "y" : 64
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test12",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 243,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1320,
+                  "y" : 168
+              }, {
+                  "height" : 8,
+                  "id" : 244,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1144,
+                  "y" : 136
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 245,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1144,
+                  "y" : 144
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 246,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1232,
+                  "y" : 24
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 261,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1136,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 263,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1152,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 266,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1168,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 268,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1184,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 270,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1200,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 275,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1216,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 277,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1232,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 279,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1248,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 281,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1264,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 284,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1280,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 285,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1296,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 288,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1312,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 289,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1328,
+                  "y" : 288
+              }, {
+                  "gid" : 884,
+                  "height" : 16,
+                  "id" : 291,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1344,
+                  "y" : 288
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test13",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 300,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1384,
+                  "y" : 144
+              }, {
+                  "height" : 8,
+                  "id" : 301,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1552,
+                  "y" : 136
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 302,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1520,
+                  "y" : 144
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 303,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1472,
+                  "y" : 40
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test14",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 326,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1384,
+                  "y" : 312
+              }, {
+                  "height" : 8,
+                  "id" : 327,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1552,
+                  "y" : 304
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 328,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1520,
+                  "y" : 312
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 329,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1472,
+                  "y" : 208
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 332,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1448,
+                  "y" : 312
+              }, {
+                  "gid" : 614,
+                  "height" : 16,
+                  "id" : 333,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 16,
+                  "x" : 1408,
+                  "y" : 216
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test15",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 343,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1336,
+                  "y" : 472
+              }, {
+                  "height" : 8,
+                  "id" : 344,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1552,
+                  "y" : 464
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 345,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1520,
+                  "y" : 472
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 346,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1440,
+                  "y" : 384
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test16",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 356,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1336,
+                  "y" : 688
+              }, {
+                  "height" : 8,
+                  "id" : 357,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1552,
+                  "y" : 680
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 358,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1520,
+                  "y" : 688
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 359,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1440,
+                  "y" : 576
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test17",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 367,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1144,
+                  "y" : 568
+              }, {
+                  "height" : 8,
+                  "id" : 368,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1160,
+                  "y" : 624
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 369,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1128,
+                  "y" : 632
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 370,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1064,
+                  "y" : 488
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test18",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 384,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1192,
+                  "y" : 568
+              }, {
+                  "height" : 8,
+                  "id" : 385,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1192,
+                  "y" : 624
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 386,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1192,
+                  "y" : 632
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 387,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1248,
+                  "y" : 488
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "test19",
+          "objects" : [ {
+                  "gid" : 654,
+                  "height" : 48,
+                  "id" : 396,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1264,
+                  "y" : 760
+              }, {
+                  "height" : 8,
+                  "id" : 397,
+                  "name" : "subject",
+                  "properties" : {
+                      "npc" : "apex",
+                      "typeName" : "pathdebug"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 8,
+                  "x" : 1184,
+                  "y" : 728
+              }, {
+                  "gid" : 754,
+                  "height" : 40,
+                  "id" : 398,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 40,
+                  "x" : 1152,
+                  "y" : 736
+              }, {
+                  "gid" : 443,
+                  "height" : 16,
+                  "id" : 399,
+                  "name" : "",
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 24,
+                  "x" : 1224,
+                  "y" : 688
+              } ],
+          "opacity" : 0.97,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "color" : "#ff0000",
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "goal wiring",
+          "objects" : [ {
+                  "height" : 0,
+                  "id" : 31,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -384,
+                          "y" : 32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 688,
+                  "y" : 160
+              }, {
+                  "height" : 0,
+                  "id" : 32,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -368,
+                          "y" : -144
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 696,
+                  "y" : 336
+              }, {
+                  "height" : 0,
+                  "id" : 39,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -8,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 280,
+                  "y" : 192
+              }, {
+                  "height" : 0,
+                  "id" : 73,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 136,
+                          "y" : -168
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 216,
+                  "y" : 360
+              }, {
+                  "height" : 0,
+                  "id" : 87,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : -72,
+                          "y" : 0
+                      }, {
+                          "x" : -232,
+                          "y" : 328
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 448,
+                  "y" : 192
+              }, {
+                  "height" : 0,
+                  "id" : 95,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -288,
+                          "y" : -320
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 688,
+                  "y" : 512
+              }, {
+                  "height" : 0,
+                  "id" : 199,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -216,
+                          "y" : 424
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 424,
+                  "y" : 192
+              }, {
+                  "height" : 0,
+                  "id" : 208,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 144,
+                          "y" : -328
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 304,
+                  "y" : 520
+              }, {
+                  "height" : 0,
+                  "id" : 216,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -32,
+                          "y" : 576
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 472,
+                  "y" : 192
+              }, {
+                  "height" : 0,
+                  "id" : 227,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -96,
+                          "y" : -576
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 592,
+                  "y" : 768
+              }, {
+                  "height" : 0,
+                  "id" : 236,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 680,
+                          "y" : -48
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 280,
+                  "y" : 224
+              }, {
+                  "height" : 0,
+                  "id" : 239,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 112,
+                          "y" : 136
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 960,
+                  "y" : 176
+              }, {
+                  "height" : 0,
+                  "id" : 296,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 80
+                      }, {
+                          "x" : -232,
+                          "y" : 232
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1328,
+                  "y" : 80
+              }, {
+                  "height" : 0,
+                  "id" : 297,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 80
+                      }, {
+                          "x" : -1024,
+                          "y" : 144
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1328,
+                  "y" : 80
+              }, {
+                  "height" : 0,
+                  "id" : 322,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -272,
+                          "y" : 176
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1392,
+                  "y" : 136
+              }, {
+                  "height" : 0,
+                  "id" : 323,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -1064,
+                          "y" : 88
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1392,
+                  "y" : 136
+              }, {
+                  "height" : 0,
+                  "id" : 337,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -248,
+                          "y" : 8
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1392,
+                  "y" : 304
+              }, {
+                  "height" : 0,
+                  "id" : 338,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -1040,
+                          "y" : -80
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1392,
+                  "y" : 304
+              }, {
+                  "height" : 0,
+                  "id" : 352,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -176,
+                          "y" : -152
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1344,
+                  "y" : 464
+              }, {
+                  "height" : 0,
+                  "id" : 353,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -968,
+                          "y" : -240
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1344,
+                  "y" : 464
+              }, {
+                  "height" : 0,
+                  "id" : 363,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 8
+                      }, {
+                          "x" : -152,
+                          "y" : -360
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1344,
+                  "y" : 672
+              }, {
+                  "height" : 0,
+                  "id" : 364,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 8
+                      }, {
+                          "x" : -944,
+                          "y" : -448
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1344,
+                  "y" : 672
+              }, {
+                  "height" : 0,
+                  "id" : 378,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 16
+                      }, {
+                          "x" : -728,
+                          "y" : -320
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1152,
+                  "y" : 544
+              }, {
+                  "height" : 0,
+                  "id" : 379,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 16
+                      }, {
+                          "x" : 64,
+                          "y" : -232
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1152,
+                  "y" : 544
+              }, {
+                  "height" : 0,
+                  "id" : 392,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -40,
+                          "y" : 248
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1240,
+                  "y" : 312
+              }, {
+                  "height" : 0,
+                  "id" : 393,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 8
+                      }, {
+                          "x" : -752,
+                          "y" : -328
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1200,
+                  "y" : 552
+              }, {
+                  "height" : 0,
+                  "id" : 403,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 8,
+                          "y" : 440
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1264,
+                  "y" : 312
+              }, {
+                  "height" : 0,
+                  "id" : 405,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 800,
+                          "y" : 528
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 472,
+                  "y" : 224
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : false,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "color" : "#0000ff",
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "door wiring",
+          "objects" : [ {
+                  "height" : 0,
+                  "id" : 38,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 8,
+                          "y" : -8
+                      }, {
+                          "x" : -152,
+                          "y" : -184
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 272,
+                  "y" : 312
+              }, {
+                  "height" : 0,
+                  "id" : 47,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 8,
+                          "y" : -8
+                      }, {
+                          "x" : 232,
+                          "y" : -184
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 296,
+                  "y" : 312
+              }, {
+                  "height" : 0,
+                  "id" : 52,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 8,
+                          "y" : -8
+                      }, {
+                          "x" : 216,
+                          "y" : -8
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 320,
+                  "y" : 312
+              }, {
+                  "height" : 0,
+                  "id" : 60,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 80,
+                          "y" : 0
+                      }, {
+                          "x" : -24,
+                          "y" : -32
+                      }, {
+                          "x" : 80,
+                          "y" : 0
+                      }, {
+                          "x" : 0,
+                          "y" : -32
+                      }, {
+                          "x" : 80,
+                          "y" : 0
+                      }, {
+                          "x" : 24,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 296,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 75,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -368,
+                          "y" : 24
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 432,
+                  "y" : 304
+              }, {
+                  "height" : 0,
+                  "id" : 76,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 48,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 88,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 72,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 89,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -392,
+                          "y" : 184
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 456,
+                  "y" : 304
+              }, {
+                  "height" : 0,
+                  "id" : 96,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 96,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 98,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 56,
+                          "y" : 176
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 480,
+                  "y" : 304
+              }, {
+                  "height" : 0,
+                  "id" : 200,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -104,
+                          "y" : 24
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 201,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -144,
+                          "y" : 344
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 280,
+                  "y" : 360
+              }, {
+                  "height" : 0,
+                  "id" : 209,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -80,
+                          "y" : 24
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 210,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 152,
+                          "y" : 208
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 304,
+                  "y" : 360
+              }, {
+                  "height" : 0,
+                  "id" : 218,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -56,
+                          "y" : 24
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 219,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -8,
+                          "y" : 376
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 328,
+                  "y" : 360
+              }, {
+                  "height" : 0,
+                  "id" : 228,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -32,
+                          "y" : 24
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 229,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 224,
+                          "y" : 304
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 352,
+                  "y" : 360
+              }, {
+                  "height" : 0,
+                  "id" : 240,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 696,
+                          "y" : 32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 241,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -8,
+                          "y" : -224
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1080,
+                  "y" : 368
+              }, {
+                  "height" : 0,
+                  "id" : 298,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 720,
+                          "y" : 32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 299,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 56,
+                          "y" : -264
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1104,
+                  "y" : 368
+              }, {
+                  "height" : 0,
+                  "id" : 324,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 744,
+                          "y" : 32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 325,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 408,
+                          "y" : -264
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1128,
+                  "y" : 368
+              }, {
+                  "height" : 0,
+                  "id" : 339,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -768,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1144,
+                  "y" : 360
+              }, {
+                  "height" : 0,
+                  "id" : 340,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 256,
+                          "y" : -168
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1152,
+                  "y" : 368
+              }, {
+                  "height" : 0,
+                  "id" : 341,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 48,
+                          "y" : 64
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1416,
+                  "y" : 208
+              }, {
+                  "height" : 0,
+                  "id" : 342,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 384,
+                          "y" : -96
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1152,
+                  "y" : 368
+              }, {
+                  "height" : 0,
+                  "id" : 354,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 792,
+                          "y" : 32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 376,
+                  "y" : 328
+              }, {
+                  "height" : 0,
+                  "id" : 355,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 360,
+                          "y" : 64
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1176,
+                  "y" : 368
+              }, {
+                  "height" : 0,
+                  "id" : 365,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 336,
+                          "y" : 280
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1200,
+                  "y" : 368
+              }, {
+                  "height" : 0,
+                  "id" : 366,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -816,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1192,
+                  "y" : 360
+              }, {
+                  "height" : 0,
+                  "id" : 380,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -80,
+                          "y" : 224
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1224,
+                  "y" : 368
+              }, {
+                  "height" : 0,
+                  "id" : 381,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -840,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1216,
+                  "y" : 360
+              }, {
+                  "height" : 0,
+                  "id" : 394,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : 40,
+                          "y" : -224
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1208,
+                  "y" : 592
+              }, {
+                  "height" : 0,
+                  "id" : 395,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -864,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1240,
+                  "y" : 360
+              }, {
+                  "height" : 0,
+                  "id" : 406,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -104,
+                          "y" : 328
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1272,
+                  "y" : 368
+              }, {
+                  "height" : 0,
+                  "id" : 407,
+                  "name" : "",
+                  "polyline" : [ {
+                          "x" : 0,
+                          "y" : 0
+                      }, {
+                          "x" : -888,
+                          "y" : -32
+                      } ],
+                  "properties" : {
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 0,
+                  "x" : 1264,
+                  "y" : 360
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : false,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      } ],
+  "nextobjectid" : 415,
+  "orientation" : "orthogonal",
+  "properties" : {
+  },
+  "renderorder" : "right-down",
+  "tileheight" : 8,
+  "tilesets" : [ {
+          "firstgid" : 1,
+          "source" : "../../../../packed/tilesets/packed/miscellaneous.json"
+      }, {
+          "firstgid" : 17,
+          "source" : "../../../../packed/tilesets/packed/supports.json"
+      }, {
+          "firstgid" : 51,
+          "source" : "../../../../packed/tilesets/packed/materials.json"
+      }, {
+          "firstgid" : 229,
+          "source" : "../../../../packed/tilesets/packed/objects-by-category/light.json"
+      }, {
+          "firstgid" : 600,
+          "source" : "../../../../packed/tilesets/packed/objects-by-category/wire.json"
+      }, {
+          "firstgid" : 746,
+          "source" : "../../../../packed/tilesets/packed/objects-by-category/door.json"
+      }, {
+          "firstgid" : 839,
+          "source" : "../../../../packed/tilesets/packed/objects-by-category/other.json"
+      }, {
+          "firstgid" : 1033,
+          "source" : "../../../../packed/tilesets/packed/liquids.json"
+      } ],
+  "tilewidth" : 8,
+  "version" : 1,
+  "width" : 200
+}

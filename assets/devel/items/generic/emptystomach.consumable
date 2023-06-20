@@ -1,0 +1,24 @@
+{
+  "itemName" : "emptystomach",
+  "rarity" : "Common",
+  "price" : 20,
+  "category" : "food",
+  "eventCategory" : "cookingIngredient",
+  "inventoryIcon" : "emptystomach.png",
+  "description" : "A raw tentacle. This will empty your stomach.",
+  "shortdescription" : "Empty Tentacle",
+  "foodValue" : -100,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "effects" : [ [
+      {
+        "effect" : "foodpoison"
+      }
+    ] ],
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 0.5,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

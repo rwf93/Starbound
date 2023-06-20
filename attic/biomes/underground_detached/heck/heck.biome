@@ -1,0 +1,60 @@
+{
+  "name" : "heck",
+  "friendlyName" : "Heck",
+  
+  "mainBlock" : "hellstone",
+  "subBlocks" : [ "brains", "rock04" ],
+  "ores" : "depth2",
+
+  "hueShiftOptions" : [0],
+  "parallax" : "/parallax/underground/dirtunderground.parallax",
+
+  "sky" : {
+    "topColor" : [182, 204, 255],
+    "bottomColor" : [224, 239, 255],
+    "nightTopColor" : [0, 0, 30],
+    "nightBottomColor" : [0, 0, 0]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "heckgrass" ],
+    "grassModDensity" : 0.1,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 4.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseLarge",
+
+        "type" : "grass",
+        "grasses" : [ "heckflower" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.1,
+        "variants" : 11,
+        "distribution" : "/biomes/distributions.config:denseSmall",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "heckbush1" ], [0.35, "heckbush2" ], [0.35, "heckbush3" ], [0.35, "heckbush4" ], [0.35, "heckbush5" ], [0.35, "heckbush6" ], [0.35, "heckbush7" ], [0.35, "heckbush8" ], [0.35, "heckbush9" ], [0.35, "heckbush10" ], [0.35, "hecklight1" ], [0.35, "hecklight2" ], [0.35, "heckaltar" ], [0.35, "woodentalllantern" ], [0.1, "huntingpike1" ], [0.1, "huntingpike2" ], [0.1, "huntingpike3" ], [0.35, "heckpillar1" ], [0.35, "heckpillar2" ], [0.05, "hecksign" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 180,
+        "treeStemList" : [ "podvine" ]
+      }
+    ]
+  }
+}

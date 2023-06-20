@@ -1,0 +1,9 @@
+{
+  "name" : "organicspartanhead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "spartanhead.frames"
+  }
+}

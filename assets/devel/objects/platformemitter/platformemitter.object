@@ -1,0 +1,164 @@
+{
+  "objectName" : "platformemitter",
+  "colonyTags" : [ ],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A test object that emits platform projectiles.",
+  "shortdescription" : "Rail Platform Emitter",
+  "race" : "avian",
+
+  "category" : "trap",
+  "price" : 200,
+
+  "inventoryIcon" : "platformemittericon.png",
+  "orientations" : [
+    {
+      "image" : "platformemitter.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "animationPosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "platformemitter.png",
+        "fg" : "platformemitter.png"
+      },
+
+      "projectileDirection" : [0, 1],
+      "projectilePosition" : [0, 1.0],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "n"
+        }
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "platformemitter.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "platformemitter.png",
+        "fg" : "platformemitter.png"
+      },
+
+      "projectileDirection" : [0, 1],
+      "projectilePosition" : [1, 1.0],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "n"
+        }
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "platformemitterleft.png:<color>.<frame>",
+      "imagePosition" : [0, -8],
+      "direction" : "right",
+      
+      "animationPosition" : [0, -8],
+      "animationParts" : {
+        "bg" : "platformemitterleft.png",
+        "fg" : "platformemitterleft.png"
+      },
+
+      "projectileDirection" : [1, 0],
+      "projectilePosition" : [1, 0.5],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "e"
+        }
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left" ]
+    },
+    {
+      "image" : "platformemitterright.png:<color>.<frame>",
+      "imagePosition" : [0, -8],
+      "direction" : "right",
+      
+      "animationPosition" : [0, -8],
+      "animationParts" : {
+        "bg" : "platformemitterright.png",
+        "fg" : "platformemitterright.png"
+      },
+
+      "projectileDirection" : [-1, 0],
+      "projectilePosition" : [0, 0.5],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "w"
+        }
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "right" ]
+    },
+    {
+      "image" : "platformemitterceiling.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "animationPosition" : [-8, 0],
+      "animationParts" : {
+        "bg" : "platformemitterceiling.png",
+        "fg" : "platformemitterceiling.png"
+      },
+
+      "projectileDirection" : [0, -1],
+      "projectilePosition" : [0, 0.0],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "s"
+        }
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "platformemitterceiling.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "platformemitterceiling.png",
+        "fg" : "platformemitterceiling.png"
+      },
+
+      "projectileDirection" : [0, -1],
+      "projectilePosition" : [1, 0.0],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "s"
+        }
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/projectiletrap/projectiletrap.lua" ],
+  "scriptDelta" : 2,
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+
+  "inputNodes" : [ [0, 0] ],
+
+  "inactiveLightColor" : [0, 0, 0],
+  "activeLightColor" : [0, 0, 0],
+
+  "fireTime" : 5,
+  "fireTimeVariance" : 0.0,
+  "projectile" : "railplatform"
+}

@@ -1,0 +1,31 @@
+{
+  "objectName" : "testconsole2",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 400,
+  "lightColor" : [150, 215, 235],
+
+  "description" : "Someone's scrawled 'Meta Sux' on the side of this console...",
+  "shortdescription" : "Blue Test Console",
+  "race" : "hylotl",
+
+  "inventoryIcon" : "testconsoleobjecticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "testconsoleobject.png:<color>.<frame>",
+      "imagePosition" : [-12, 0],
+      "frames" : 2,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/scripts/vec2.lua", "testconsoleobject.lua" ],
+  "scriptDelta" : 5,
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/testconsole2/testconsolegui.config"
+}

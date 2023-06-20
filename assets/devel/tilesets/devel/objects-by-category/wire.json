@@ -1,0 +1,122 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/wire",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 11,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "invalid" : "true"
+    },
+    "10" : {
+      "//description" : "-todo-",
+      "//name" : "referencegenerator",
+      "//shortdescription" : "Reference Generator",
+      "imagePositionX" : "-80",
+      "imagePositionY" : "0",
+      "object" : "referencegenerator",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "invalid" : "true"
+    },
+    "3" : {
+      "invalid" : "true"
+    },
+    "4" : {
+      "//description" : "A moving platform.",
+      "//name" : "tallverticalmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tallverticalmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A moving platform.",
+      "//name" : "shorthorizontalrightmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "shorthorizontalrightmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A moving platform.",
+      "//name" : "longhorizontalrightmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "longhorizontalrightmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A moving platform.",
+      "//name" : "shortverticalmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shortverticalmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "Object for testing a scripted pane.",
+      "//name" : "scriptpaneconsole",
+      "//shortdescription" : "Script Pane Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "scriptpaneconsole",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "Moves liquids from one side to the other.",
+      "//name" : "pump",
+      "//shortdescription" : "Pump",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "pump",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/devel/objects/referencegenerator.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/devel/objects/tallverticalmovingplatform.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/devel/objects/shorthorizontalrightmovingplatform.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/devel/objects/longhorizontalrightmovingplatform.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/devel/objects/shortverticalmovingplatform.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/devel/objects/scriptpaneconsole.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/devel/objects/pump.png"
+    }
+  },
+  "tilewidth" : 8
+}

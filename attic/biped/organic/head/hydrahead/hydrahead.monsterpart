@@ -1,0 +1,9 @@
+{
+  "name" : "organichydrahead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "hydrahead.frames"
+  }
+}

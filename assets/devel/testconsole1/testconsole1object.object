@@ -1,0 +1,35 @@
+{
+  "objectName" : "testconsole1",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 400,
+  "lightColor" : [150, 215, 235],
+
+  "description" : "This machine runs a game called 'Lights Off!'.",
+  "shortdescription" : "Arcade Game",
+  "race" : "generic",
+
+  "inventoryIcon" : "testconsole1objecticon.png",
+  "orientations" : [
+    {
+      "leftImage" : "testconsole1objectleft.png:<color>.<frame>",
+      "rightImage" : "testconsole1objectright.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "frames" : 2,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "scripts" : [ "/scripts/vec2.lua", "testconsole1object.lua" ],
+  "scriptDelta" : 5,
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/testconsole1/testconsole1gui.config",
+
+  "winningItem" : ["money", 100]
+}

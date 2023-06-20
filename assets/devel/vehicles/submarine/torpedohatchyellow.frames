@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [16, 15],
+    "dimensions" : [4, 1],
+
+    "names" : [
+      [ "hatch.undamaged", "hatch.scratched", "hatch.dented", "hatch.wrecked" ]
+    ]
+  }
+}

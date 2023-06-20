@@ -1,0 +1,10 @@
+{
+  "name" : "roboticdiverarm",
+  "category" : "biped_robotic",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "diverfarm.frames",
+    "backArm" : "diverbarm.frames"
+  }
+}

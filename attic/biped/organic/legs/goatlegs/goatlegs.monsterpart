@@ -1,0 +1,9 @@
+{
+  "name" : "organicgoatlegs",
+  "category" : "biped",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "goatlegs.frames"
+  }
+}

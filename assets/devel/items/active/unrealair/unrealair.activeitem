@@ -1,0 +1,17 @@
+{
+  "itemName" : "unrealair",
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "Made from a skateboard and a Hella Jeff drawing.",
+  "shortdescription" : "Unreal Air",
+  "tooltipKind" : "base",
+  "twoHanded" : false,
+
+  "inventoryIcon" : "unrealairicon.png",
+  "animation" : "unrealair.animation",
+  "scripts" : ["unrealair.lua"],
+
+  "floatSpeed" : 8,
+  "floatForce" : 70
+}

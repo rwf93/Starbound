@@ -1,0 +1,18 @@
+{
+  "animatedParts" : {
+    "parts" : {
+      "gnaremoob" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "gnaremoob.png",
+          "offset" : [0.5, 1.0],
+          "rotationGroup" : "gnaremoob"
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "gnaremoob" : {}
+  }
+}

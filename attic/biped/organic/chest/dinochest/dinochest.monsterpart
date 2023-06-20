@@ -1,0 +1,9 @@
+{
+  "name" : "organicdinochest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "dinochest.frames"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "npcId" : 12,
+  "npcName" : "sackcrab",
+
+  "aiFunctions" : { "0" : "defaultWander",
+    "1" : "defaultFollow",
+    "4" : "defaultSuicide",
+    "8" : "defaultJump",
+    "9" : "defaultJump",
+    "16" : "defaultFly",
+    "17" : "defaultFlyFollow",
+    "24" : "defaultLandWander",
+    "25" : "defaultLandFollow",
+    "40" : "defaultSpinup",
+    "41" : "defaultSpindown"
+  },
+  "aiStateFunc" : "sackcrab",
+
+  "hVelocity" : { "0" : 4.0,
+    "1" : 6.0,
+    "8" : 4.0,
+    "9" : 6.0,
+    "16" : 4.0,
+    "17" : 6.0
+  },
+  "hAccel" : { "0" : 30.0,
+    "1" : 30.0,
+    "8" : 30.0,
+    "9" : 30.0,
+    "16" : 3.0,
+    "17" : 6.0
+  },
+
+  "vVelocity" : { "16" : 1.0,
+    "17" : 1.5
+  },
+
+  "vAccel" : { "16" : 3.0,
+    "17" : 6.0
+  },
+
+  "frames" : "body/1.frames",
+  "frameInfo" : { "idle" : [ "idle", 1, 1.0, 1, 0, 0],
+    "walk" : [ "walk", 5, 1.0, 1, 0, 0],
+    "attack" : [ "attack", 12, 0.5, 0, 0, 0],
+    "jump" : [ "jump", 6, 0.5, 0, 3, 0],
+    "fall" : [ "fall", 1, 1.0, 0, 0, 0],
+    "spinup" : [ "spinup", 12, 1.0, 0, 10, 0],
+    "spindown" : [ "spindown", 12, 1.0, 0, 0, 0],
+    "fly" : [ "fly", 4, 0.7, 1, 0, 0]
+  },
+
+  "attentionSpan" : 8,
+  "soundSensitivity" : 2,
+
+  "defaultHitbox" : [ "Rect", [-13, 0, 9, -28] ],
+
+  "attackBox" : {
+    "attack.0.5" : [ "Default" ],
+    "attack.0.6" : [ "Default" ],
+    "attack.0.7" : [ "Default" ],
+    "attack.0.8" : [ "Default" ],
+    "attack.0.9" : [ "Default" ],
+    "attack.0.10" : [ "Default" ],
+    "attack.0.11" : [ "Default" ]
+  },
+  "defenseBox" : {
+
+  },
+  "immuneBox" : {
+
+  },
+  "weakpointBox" : {
+
+  },
+  "collisionBox" : {
+    "idle.0.0" : [ "Default" ],
+
+    "walk.0.0" : [ "Default" ],
+    "walk.0.1" : [ "Default" ],
+    "walk.0.2" : [ "Default" ],
+    "walk.0.3" : [ "Default" ],
+    "walk.0.4" : [ "Default" ],
+
+    "jump.0.0" : [ "Default" ],
+    "jump.0.1" : [ "Default" ],
+    "jump.0.2" : [ "Default" ],
+    "jump.0.3" : [ "Default" ],
+    "jump.0.4" : [ "Default" ],
+    "jump.0.5" : [ "Default" ],
+
+    "fall.0.0" : [ "Default" ],
+
+    "spinup.0.0" : [ "Default" ],
+    "spinup.0.1" : [ "Default" ],
+    "spinup.0.2" : [ "Default" ],
+    "spinup.0.3" : [ "Default" ],
+    "spinup.0.4" : [ "Default" ],
+    "spinup.0.5" : [ "Default" ],
+    "spinup.0.6" : [ "Default" ],
+    "spinup.0.7" : [ "Default" ],
+    "spinup.0.8" : [ "Default" ],
+    "spinup.0.9" : [ "Default" ],
+    "spinup.0.10" : [ "Default" ],
+    "spinup.0.11" : [ "Default" ],
+
+    "fly.0.0" : [ "Default" ],
+    "fly.0.1" : [ "Default" ],
+    "fly.0.2" : [ "Default" ],
+    "fly.0.3" : [ "Default" ],
+
+    "spindown.0.0" : [ "Default" ],
+    "spindown.0.1" : [ "Default" ],
+    "spindown.0.2" : [ "Default" ],
+    "spindown.0.3" : [ "Default" ],
+    "spindown.0.4" : [ "Default" ],
+    "spindown.0.5" : [ "Default" ],
+    "spindown.0.6" : [ "Default" ],
+    "spindown.0.7" : [ "Default" ],
+    "spindown.0.8" : [ "Default" ],
+    "spindown.0.9" : [ "Default" ],
+    "spindown.0.10" : [ "Default" ],
+    "spindown.0.11" : [ "Default" ],
+
+    "attack.0.0" : [ "Default" ],
+    "attack.0.1" : [ "Default" ],
+    "attack.0.2" : [ "Default" ],
+    "attack.0.3" : [ "Default" ],
+    "attack.0.4" : [ "Default" ]
+  },
+  "damageBox" : {
+    "idle.0.0" : [ "Default" ],
+
+    "walk.0.0" : [ "Default" ],
+    "walk.0.1" : [ "Default" ],
+    "walk.0.2" : [ "Default" ],
+    "walk.0.3" : [ "Default" ],
+    "walk.0.4" : [ "Default" ],
+
+    "jump.0.0" : [ "Default" ],
+    "jump.0.1" : [ "Default" ],
+    "jump.0.2" : [ "Default" ],
+    "jump.0.3" : [ "Default" ],
+    "jump.0.4" : [ "Default" ],
+    "jump.0.5" : [ "Default" ],
+
+    "fall.0.0" : [ "Default" ],
+
+    "spinup.0.0" : [ "Default" ],
+    "spinup.0.1" : [ "Default" ],
+    "spinup.0.2" : [ "Default" ],
+    "spinup.0.3" : [ "Default" ],
+    "spinup.0.4" : [ "Default" ],
+    "spinup.0.5" : [ "Default" ],
+    "spinup.0.6" : [ "Default" ],
+    "spinup.0.7" : [ "Default" ],
+    "spinup.0.8" : [ "Default" ],
+    "spinup.0.9" : [ "Default" ],
+    "spinup.0.10" : [ "Default" ],
+    "spinup.0.11" : [ "Default" ],
+
+    "fly.0.0" : [ "Default" ],
+    "fly.0.1" : [ "Default" ],
+    "fly.0.2" : [ "Default" ],
+    "fly.0.3" : [ "Default" ],
+
+    "spindown.0.0" : [ "Default" ],
+    "spindown.0.1" : [ "Default" ],
+    "spindown.0.2" : [ "Default" ],
+    "spindown.0.3" : [ "Default" ],
+    "spindown.0.4" : [ "Default" ],
+    "spindown.0.5" : [ "Default" ],
+    "spindown.0.6" : [ "Default" ],
+    "spindown.0.7" : [ "Default" ],
+    "spindown.0.8" : [ "Default" ],
+    "spindown.0.9" : [ "Default" ],
+    "spindown.0.10" : [ "Default" ],
+    "spindown.0.11" : [ "Default" ],
+
+    "attack.0.0" : [ "Default" ],
+    "attack.0.1" : [ "Default" ],
+    "attack.0.2" : [ "Default" ],
+    "attack.0.3" : [ "Default" ],
+    "attack.0.4" : [ "Default" ]
+  },
+  "animationOffset" : {
+    "attack.0.5" : [0, -6],
+    "attack.0.6" : [0, -6],
+    "attack.0.7" : [0, -6],
+    "attack.0.8" : [0, -6],
+    "attack.0.9" : [0, -6],
+    "attack.0.10" : [0, -6],
+    "attack.0.11" : [0, -6]
+  },
+  "projectilePoint" : {
+
+  }
+}

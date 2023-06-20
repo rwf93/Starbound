@@ -1,0 +1,159 @@
+{
+  "name": "runarounder",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/math.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/behavior.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "repeater",
+        "type": "decorator",
+        "name": "repeater",
+        "parameters": {
+          "maxLoops": {"value": -1},
+          "untilSuccess": {"value": true}
+        },
+        "child": {
+          "title": "sequence",
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": "random",
+              "type": "action",
+              "name": "random",
+              "parameters": {
+                "max": {"value": 100},
+                "min": {"value": -100}
+              },
+              "output": {
+                "number": "xPos"
+              }
+            },
+            {
+              "title": "random",
+              "type": "action",
+              "name": "random",
+              "parameters": {
+                "max": {"value": 100},
+                "min": {"value": -100}
+              },
+              "output": {
+                "number": "yPos"
+              }
+            },
+            {
+              "title": "offsetPosition",
+              "type": "action",
+              "name": "offsetPosition",
+              "parameters": {
+                "offset": {"value": ["xPos", "yPos"]},
+                "position": {"key": "spawn"}
+              },
+              "output": {
+                "position": "move"
+              }
+            },
+            {
+              "title": "parallel",
+              "type": "composite",
+              "name": "parallel",
+              "parameters": {
+                "fail": {"value": 1},
+                "success": {"value": -1}
+              },
+              "children": [
+                {
+                  "title": "moveToPosition",
+                  "type": "action",
+                  "name": "moveToPosition",
+                  "parameters": {
+                    "avoidLiquid": {"value": true},
+                    "groundPosition": {"value": true},
+                    "maxGround": {"value": 5},
+                    "minGround": {"value": -5},
+                    "position": {"key": "move"},
+                    "run": {"value": true}
+                  },
+                  "output": {
+                    "pathfinding": "pathfinding"
+                  }
+                },
+                {
+                  "title": "dynamic",
+                  "type": "composite",
+                  "name": "dynamic",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "inverter",
+                      "type": "decorator",
+                      "name": "inverter",
+                      "parameters": {},
+                      "child": {
+                        "title": "hasFlag",
+                        "type": "action",
+                        "name": "hasFlag",
+                        "parameters": {
+                          "name": {"key": "pathfinding"}
+                        }
+                      }
+                    },
+                    {
+                      "title": "inverter",
+                      "type": "decorator",
+                      "name": "inverter",
+                      "parameters": {},
+                      "child": {
+                        "title": "timer",
+                        "type": "action",
+                        "name": "timer",
+                        "parameters": {
+                          "time": {"value": 3}
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "timer",
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": [2, 10]}
+        }
+      },
+      {
+        "title": "moveToPosition",
+        "type": "action",
+        "name": "moveToPosition",
+        "parameters": {
+          "avoidLiquid": {"value": true},
+          "groundPosition": {"value": true},
+          "maxGround": {"value": 5},
+          "minGround": {"value": -5},
+          "position": {"key": "spawn"}
+        },
+        "output": {
+          "pathfinding": "isPathfinding"
+        }
+      }
+    ]
+  }
+}

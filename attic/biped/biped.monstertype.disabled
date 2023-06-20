@@ -1,0 +1,38 @@
+{
+  "type" : "bipedal",
+
+  "animation" : "animation.config",
+  "colors" : "colors.config",
+  "categories" : [ "biped_organic", "biped_robotic" ],
+  "parts" : [ "arms", "legs", "chest", "head" ],
+
+  "reversed" : false,
+
+  "maxHealth" : 50.0,
+  "maxEnergy" : 100.0,
+  "meleeDamage" : 50,
+
+  "maxPlayerRadius" : 40.0,
+
+  "metaBoundBox" : [-1.0, -2.5, 1.0, 1.75],
+  "hitbox" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+
+  "movementControllerSettings" : {
+    "collisionPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+    "walkSpeed" : 7.0,
+    "runSpeed" : 11.0
+  },
+
+  "blockSensorPositions" : [ [1.0, -2.0], [2.0, -2.0] ],
+
+  "minimumAttackDistance" : 4.0,
+  "playerQueryTime" : 5.0,
+
+  "knockbackTime" : 0.1,
+  "jumpTime" : 2.0,
+  "jumpTimeVariance" : 2.0,
+
+  "exhaustedTime" : 6.0,
+  "exhaustedMinDistance" : 5.0,
+  "exhaustedWanderTime" : 6.0
+}

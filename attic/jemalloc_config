@@ -1,0 +1,1 @@
+./configure --enable-munmap --disable-stats --with-jemalloc-prefix=je_ --disable-fill

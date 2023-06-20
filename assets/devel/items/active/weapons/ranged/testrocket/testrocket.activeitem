@@ -1,0 +1,26 @@
+{
+  "itemName" : "testrocket",
+  
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "Fwoosh... pchoom!",
+  "shortdescription" : "Rocket Lawnchair",
+  "tooltipKind" : "gun",
+  "weaponType" : "Gun",
+  "twoHanded" : true,
+  "itemTags" : ["weapon"],
+
+  "inventoryIcon" : "testrocket.png",
+  "animation" : "testrocket.animation",
+  "animationCustom" : {},
+  "scripts" : ["testrocket.lua"],
+  "fireOffset" : [2.0, 1.0],
+  
+  "level" : 6,
+  "fireTime" : 2.0,
+  "inaccuracy" : 0.02,
+  "projectileType" : "rocketshell",
+  "projectileParameters" : {
+    "power" : 12
+  }
+}

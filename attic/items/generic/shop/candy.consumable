@@ -1,0 +1,10 @@
+{
+  "itemName" : "candy",
+  "rarity" : "Common",
+  "price" : 5,
+  "category" : "food",
+  "inventoryIcon" : "candy.png",
+  "description" : "Hard candy. It probably won't do much for me if I'm starving, but it sure is tasty.",
+  "shortdescription" : "Candy",
+  "maxStack" : 1
+}

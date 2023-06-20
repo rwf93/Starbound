@@ -1,0 +1,44 @@
+{ "height":25,
+ "layers":[
+        {
+         "compression":"zlib",
+         "data":"eJytlusOxSAIg729\/zMv+2FimrYwHAnZkQkf1aPZaq2toveEs7kzGKM7QwZ7jzbMHMauMDCGDPx9MuYF4\/WRYGTWRXGZ7Z7Vnp99Rfsd\/Rf+2A9lFUYXMaY1y2D5iqv637lOh8p15++LDpUb2YTnIAzV45862LqzcRS7YeD5ceciw8A6qndmFR2Yq8Y7lmXcesSo2HmHRgy1p6gPTd09Toero+79zFqhXqfH6Thj0feFqvNlfpXhDGvcfjspx1oPwpUCUg==",
+         "encoding":"base64",
+         "height":25,
+         "name":"Tile Layer 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":25,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "renderorder":"right-down",
+ "tileheight":64,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "image":"tileset.png",
+         "imageheight":64,
+         "imagewidth":256,
+         "margin":0,
+         "name":"maze",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tilecount":4,
+         "tileheight":64,
+         "tilewidth":64
+        }],
+ "tilewidth":64,
+ "version":1,
+ "width":25
+}

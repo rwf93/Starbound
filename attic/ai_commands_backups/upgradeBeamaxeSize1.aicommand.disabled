@@ -1,0 +1,196 @@
+{
+  "commandName" : "upgradeBeamaxeSize1",
+  "onlyOnce" : true,
+  "icon" : "beamaxe.png",
+  "actions" : [
+     { 
+      "action" : "UpdatePlayerEssentialItem",
+      "itemsRequired" : [ ["copperbar", 8] ],
+      "parameters" : {
+        "blockRadius" : 2,
+        "minBeamWidth" : 3,
+        "maxBeamWidth" : 5
+      },
+      "essentialItem" : "beamaxe"
+    },
+    {
+      "action" : "DisableCommand",
+      "command" : "upgradeBeamaxeSize1"
+    },
+    {
+      "action" : "EnableCommand",
+      "command" : "upgradeBeamaxePower1"
+    }
+  ],
+
+  "speciesText" : {
+    "apex" : {
+      "buttonText" : "Upgrade M. M. - Size I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined copper, I can upgrade your matter manipulator to mine in a larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 copper bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "avian" : {
+      "buttonText" : "Upgrade M. M. - Size I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined copper, I can upgrade your matter manipulator to mine in a larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 copper bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "floran" : {
+      "buttonText" : "Upgrade M. M. - Size I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined copper, I can upgrade your matter manipulator to mine in a larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 copper bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "glitch" : {
+      "buttonText" : "Upgrade M. M. - Size I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined copper, I can upgrade your matter manipulator to mine in a larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 copper bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "human" : {
+      "buttonText" : "Upgrade M. M. - Size I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined copper, I can upgrade your matter manipulator to mine in a larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 copper bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "novakid" : {
+      "buttonText" : "Upgrade M. M. - Size I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined copper, I can upgrade your matter manipulator to mine in a larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 copper bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "hylotl" : {
+      "buttonText" : "Upgrade M. M. - Size I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined copper, I can upgrade your matter manipulator to mine in a larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 copper bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    }
+  }
+}

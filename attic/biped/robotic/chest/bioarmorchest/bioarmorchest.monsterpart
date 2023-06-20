@@ -1,0 +1,9 @@
+{
+  "name" : "roboticbioarmorchest",
+  "category" : "biped_robotic",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "bioarmorchest.frames"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "projectileName" : "tardrop",
+  "image" : "tardrop.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 5.0,
+  "frameNumber" : 1,
+  "damageKindImage" : "/interface/statuses/tar.png",
+  "physics" : "highgravgrenade",
+  "speed" : 10,
+  "piercing" : true,
+  "lightColor" : [0, 5, 10],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/tarexplosion/tarexplosion.config"
+    }
+  ],
+  "power" : 0,
+  "damageKind" : "tarball",
+  "statusEffects" : [
+    "tarslow"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "alienburger",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "alienburger.png",
+  "description" : "A burger made of green alien meat. Mmm!",
+  "shortdescription" : "Alien Burger",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

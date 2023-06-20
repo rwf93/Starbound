@@ -1,0 +1,137 @@
+{
+  "application" : {
+    "id" : 467102538278109224,
+    "manifests" : [
+      {
+        "label" : "starbound/data",
+        "platforms" : ["win32", "win64", "macos", "linux"],
+        "locales" : [],
+        "local_root" : "./data",
+        "file_rules" : {
+          "mappings" : [
+            {
+              "local_path" : ".",
+              "install_path" : "."
+            }
+          ],
+          "properties" : [
+            {
+              "install_path" : "storage/*",
+              "attributes" : ["user_data"]
+            },
+            {
+              "install_path" : "mods/*",
+              "attributes" : ["user_data"]
+            },
+            {
+              "install_path" : "assets/user/*",
+              "attributes" : ["user_data"]
+            }
+          ],
+          "exclusions" : [
+          ]
+        }
+      },
+      {
+        "label" : "starbound/windows",
+        "platforms" : ["win32", "win64"],
+        "locales" : [],
+        "local_root" : "./windows",
+        "redistributables" : [
+          "vcredist_2015_x86",
+          "vcredist_2015_x64"
+        ],
+        "file_rules" : {
+          "mappings" : [
+            {
+              "local_path" : ".",
+              "install_path" : "."
+            }
+          ],
+          "properties" : [
+            {
+              "install_path" : "storage/*",
+              "attributes" : ["user_data"]
+            }
+          ],
+          "exclusions" : [
+          ]
+        },
+        "launch_options" : [
+          {
+			"name" : "Starbound",
+            "executable" : "win32/starbound.exe",
+            "arguments" : [],
+            "platforms" : ["win32"]
+          },
+          {
+			"name" : "Starbound",
+            "executable" : "win64/starbound.exe",
+            "arguments" : [],
+            "platforms" : ["win64"]
+          }
+        ]
+      },
+      {
+        "label" : "starbound/macos",
+        "platforms" : ["macos"],
+        "locales" : [],
+        "local_root" : "./osx",
+        "file_rules" : {
+          "mappings" : [
+            {
+              "local_path" : ".",
+              "install_path" : "."
+            }
+          ],
+          "properties" : [
+            {
+              "install_path" : "storage/*",
+              "attributes" : ["user_data"]
+            }
+          ],
+          "exclusions" : [
+          ]
+        },
+        "launch_options" : [
+          {
+			"name" : "Starbound",
+            "executable" : "osx/Starbound.app/Contents/MacOS/starbound",
+            "arguments" : [],
+            "platforms" : ["macos"]
+          }
+        ]
+      },
+      {
+        "label" : "starbound/linux",
+        "platforms" : ["linux"],
+        "locales" : [],
+        "local_root" : "./linux",
+        "file_rules" : {
+          "mappings" : [
+            {
+              "local_path" : ".",
+              "install_path" : "."
+            }
+          ],
+          "properties" : [
+            {
+              "install_path" : "storage/*",
+              "attributes" : ["user_data"]
+            }
+          ],
+          "exclusions" : [
+          ]
+        },
+        "launch_options" : [
+          {
+			"name" : "Starbound",
+            "executable" : "linux/run-client.sh",
+            "arguments" : [],
+            "platforms" : ["linux"]
+          }
+        ]
+      }
+    ]
+  }
+}

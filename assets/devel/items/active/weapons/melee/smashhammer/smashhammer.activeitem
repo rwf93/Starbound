@@ -1,0 +1,16 @@
+{
+  "itemName" : "smashhammer",
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "For developer use only",
+  "shortdescription" : "Smash Hammer",
+  "tooltipKind" : "sword",
+  "weaponType" : "Hammer",
+  "twoHanded" : true,
+  "itemTags" : ["weapon"],
+
+  "inventoryIcon" : "smashhammericon.png",
+  "animation" : "smashhammer.animation",
+  "scripts" : ["smashhammer.lua"]
+}

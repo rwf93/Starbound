@@ -1,0 +1,48 @@
+{
+  "itemName" : "mysterycollar",
+  "price" : 5000,
+  "rarity" : "Uncommon",
+  "inventoryIcon" : "mysterycollar.png",
+  "description" : "A collar for your pet with a mysterious random effect.",
+  "shortdescription" : "Mystery Collar",
+
+  "randomCollars" : [
+    {
+      "displayName" : "Mystery",
+      "displayIcon" : "/items/augments/pet/mysterycollar.png",
+      "effects" : [ "messy" ]
+    },
+    {
+      "displayName" : "Mystery",
+      "displayIcon" : "/items/augments/pet/mysterycollar.png",
+      "effects" : [ "salary" ]
+    },
+    {
+      "displayName" : "Mystery",
+      "displayIcon" : "/items/augments/pet/mysterycollar.png",
+      "damageTeam" : {
+        "type" : "enemy",
+        "team" : 0
+      }
+    },
+    {
+      "displayName" : "Mystery",
+      "displayIcon" : "/items/augments/pet/mysterycollar.png",
+      "effects" : [ "burning" ]
+    },
+    {
+      "displayName" : "Mystery",
+      "displayIcon" : "/items/augments/pet/mysterycollar.png",
+      "effects" : [ "deathbombfire" ]
+    },
+    {
+      "displayName" : "Mystery",
+      "displayIcon" : "/items/augments/pet/mysterycollar.png",
+      "effects" : [ "regenerationcollar3" ]
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupcollar" ],
+
+  "scripts" : [ "/scripts/augments/collar.lua" ]
+}

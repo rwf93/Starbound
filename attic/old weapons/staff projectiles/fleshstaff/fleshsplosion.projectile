@@ -1,0 +1,16 @@
+{
+  "projectileName" : "fleshsplosion",
+  "timeToLive" : 1,
+  "image" : "fleshsplosion.png",
+  "damageKindImage" : "icon.png",
+  "onlyHitTerrain" : false,
+  "damagePoly" : [ [-24, 0], [-16, -16], [0, -24], [16, -16], [24, 0], [16, 16], [0, 24], [-16, 16] ],
+  "animationLoops" : false,
+  "animationCycle" : 1,
+  "frameNumber" : 19,
+  "speed" : 0,
+  "power" : 40,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "default"
+}

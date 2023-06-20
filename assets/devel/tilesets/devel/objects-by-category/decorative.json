@@ -1,0 +1,110 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/decorative",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 10,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "invalid" : "true"
+    },
+    "2" : {
+      "invalid" : "true"
+    },
+    "3" : {
+      "invalid" : "true"
+    },
+    "4" : {
+      "//description" : "This book is full of quests...",
+      "//name" : "questgentest",
+      "//shortdescription" : "Quest Book",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "questgentest",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A cuddly penguin plushy. Awwwww.",
+      "//name" : "penguinplush",
+      "//shortdescription" : "Penguin Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "penguinplush",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Someone's scrawled 'Meta Sux' on the side of this console...",
+      "//name" : "testconsole2",
+      "//shortdescription" : "Blue Test Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "testconsole2",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "This machine runs a game called 'Lights Off!'.",
+      "//name" : "testconsole1",
+      "//shortdescription" : "Arcade Game",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "testconsole1",
+      "tilesetDirection" : "left"
+    },
+    "8" : {
+      "//description" : "This straw dummy is filled with advanced sensors to measure incoming damage.",
+      "//name" : "dpstestdummy",
+      "//shortdescription" : "DPS Test Dummy",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "dpstestdummy",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "An arcade machine with an interactive narrative game.",
+      "//name" : "sbvntestconsole",
+      "//shortdescription" : "SBVN Test Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "sbvntestconsole",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/devel/objects/questgentest.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/devel/objects/penguinplush.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/devel/objects/testconsole2.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/devel/objects/testconsole1.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/devel/objects/dpstestdummy.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/devel/objects/sbvntestconsole.png"
+    }
+  },
+  "tilewidth" : 8
+}

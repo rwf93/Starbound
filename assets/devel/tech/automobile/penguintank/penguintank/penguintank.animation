@@ -1,0 +1,128 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "movement" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : { },
+
+          "jump" : {
+            "frames" : 2,
+            "cycle" : 0.5,
+            "mode" : "end",
+            "properties" : {
+              "immediateSound" : "/sfx/tech/tech_doublejump.ogg"
+            }
+          },
+
+          "fall" : {
+            "frames" : 2,
+            "cycle" : 0.5,
+            "mode" : "end"
+          },
+
+          "driveForward" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          },
+
+          "driveReverse" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "penguintankbackground.png:idle.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "penguintankbackground.png:jump.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "penguintankbackground.png:fall.<frame>"
+              }
+            },
+            "driveForward" : {
+              "properties" : {
+                "image" : "penguintankbackground.png:move.<frame>"
+              }
+            },
+            "driveReverse" : {
+              "properties" : {
+                "image" : "penguintankbackground.png:bmove.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "penguintankforeground.png:idle.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "penguintankforeground.png:jump.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "penguintankforeground.png:fall.<frame>"
+              }
+            },
+            "driveForward" : {
+              "properties" : {
+                "image" : "penguintankforeground.png:move.<frame>"
+              }
+            },
+            "driveReverse" : {
+              "properties" : {
+                "image" : "penguintankforeground.png:bmove.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "carHorn" : ["/sfx/tech/honk.ogg"]
+  },
+
+  "particleEmitters" : {
+    "carActivateParticles" : {
+      "particles" : [ ]
+    },
+    "carDeactivateParticles" : {
+      "particles" : [ ]
+    }
+  }
+}

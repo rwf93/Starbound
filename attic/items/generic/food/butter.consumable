@@ -1,0 +1,14 @@
+{
+  "itemName" : "butter",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "butter.png",
+  "description" : "For making everything less healthy and more awesome.",
+  "shortdescription" : "Butter",
+  "handPosition" : [0, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

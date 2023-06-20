@@ -1,0 +1,9 @@
+{
+  "name" : "organicroundchest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "roundchest.frames"
+  }
+}

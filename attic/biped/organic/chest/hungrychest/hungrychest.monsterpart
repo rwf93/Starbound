@@ -1,0 +1,9 @@
+{
+  "name" : "organichungrychest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "hungrychest.frames"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/breakable",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 1,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "You are responsible for unleashing this horror.",
+      "//name" : "greycapsule",
+      "//shortdescription" : "Grey Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greycapsule"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/objects/greycapsule.png"
+    }
+  },
+  "tilewidth" : 8
+}

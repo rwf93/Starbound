@@ -1,0 +1,49 @@
+{
+  "objectName" : "scriptpaneconsole",
+  "rarity" : "Common",
+  "description" : "Object for testing a scripted pane.",
+  "shortdescription" : "Script Pane Console",
+  "race" : "generic",
+  "category" : "wire",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "scriptpaneconsole.png:<color>.<frame>",
+      "flipImages" : true,
+      "direction" : "left",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 3,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "scriptpaneconsole.png:<color>.<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 3,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : ["scriptpaneconsole.lua"],
+  "scriptDelta" : 5,
+
+  "animation" : "scriptpaneconsole.animation",
+  "animationCustom" : {},
+  "animationParts" : {
+    "bg" : "scriptpaneconsole.png",
+    "fg" : "scriptpaneconsolelit.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/objects/scriptpaneconsole/scriptpaneconsolegui.config"
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "organicpterohead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "pterohead.frames"
+  }
+}

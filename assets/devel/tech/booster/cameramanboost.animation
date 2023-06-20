@@ -1,0 +1,23 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "boosting" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+          },
+          "on" : {
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "boostParticles" : {
+      "emissionRate" : 0.0,
+      "particles" : [
+      ]
+    }
+  }
+}

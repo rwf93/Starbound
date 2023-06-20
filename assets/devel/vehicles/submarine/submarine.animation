@@ -1,0 +1,497 @@
+{
+  "globalTagDefaults" : {
+    "colour" : "yellow"
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+
+      "base" : {
+        "default" : "idle",
+        "states" : {
+
+          "warpInPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpInPart2"
+            },
+
+          "warpInPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "idle"
+            },
+
+          "idle" : {},
+
+          "warpOutPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpOutPart2"
+            },
+
+          "warpOutPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpedOut"
+            },
+
+          "warpedOut" : {},
+
+          "sinking" : {},
+
+          "sunk" : {}
+
+
+        }
+      },
+
+      "headlights" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+
+          "on" : {}
+        }
+      },
+
+      "propeller" : {
+        "priority" : 0,
+        "default" : "still",
+        "states" : {
+          "still" : {
+            "frames" : 1
+          },
+          "turning" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "loop"
+          }
+        }
+      },
+
+
+      "torpedo" : {
+        "priority" : 0,
+        "default" : "hidden",
+        "states" : {
+          "hidden" : {
+            "frames" : 1
+          },
+          "loading" : {
+            "frames" : 4,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "waiting"
+          },
+          "waiting" : {
+            "frames" : 1
+          },
+          "launch" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "fireone"
+          },
+          "fireone" : {
+            "frames" : 1,
+            "cycle" : 0.2
+          },
+          "unload" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "hidden"
+          }
+        }
+      }
+
+    },
+
+    "parts" : {
+
+
+
+      "torp" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "transformationGroups" : ["flip", "rotation"],
+          "offset" : [4.0, -3.375]
+        },
+        "partStates" : {
+
+          "torpedo" : {
+
+            "hidden" : {},
+
+            "loading" : {
+              "properties" : {
+                "image" : "/projectiles/torpedo/torpedo.png:0"
+              },
+
+              "frameProperties" : {
+               "immediateSound" : [ "", "", "", "/sfx/objects/bardoor2_close.ogg"],
+               "offset" : [ [3, -3.375], [3.25, -3.375], [3.5, -3.375], [3.75, -3.375] ]
+              }
+            },
+
+
+            "waiting" : {
+              "properties" : {
+                "offset" : [4.0, -3.375],
+                "image" : "/projectiles/torpedo/torpedo.png:0"
+              }
+            },
+
+            "launch" : {
+              "properties" : {
+                "image" : "/projectiles/torpedo/torpedo.png:0"
+              },
+
+              "frameProperties" : {
+               "immediateSound" : [ "", "", "", ""],
+               "offset" : [ [5.0, -3.375], [6.0, -3.375], [7.0, -3.375], [8.0, -3.375] ]
+              }
+            },
+
+            "fireone" : {
+              "properties" : {}
+            },
+
+            "unload" : {
+              "properties" : {
+                "image" : "/projectiles/torpedo/torpedo.png:0"
+              },
+
+              "frameProperties" : {
+               "immediateSound" : [ "/sfx/objects/airlock_heavy_close.ogg", ""],
+               "offset" : [ [3.5, -3.375], [1, -3.375]]
+              }
+            }
+
+          }
+        }
+      },
+
+
+
+
+
+      "seat" : {
+        "properties" : {
+          "zLevel" : -1,
+          "transformationGroups" : ["flip", "rotation"],
+          "drivingSeatPosition" : [4, -0.5]
+        }
+      },
+
+
+      "submarinehull" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+          "base" : {
+
+            "warpInPart1" : {
+              "properties" : {}
+            },
+
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/submarine<colour>.png:hull.<damageState>"
+              }
+            },
+
+            "idle" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/submarine<colour>.png:hull.<damageState>"
+              }
+            },
+
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/submarine<colour>.png:hull.<damageState>"
+              }
+            },
+
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+
+            "invisible" : {
+              "properties" : {}
+
+            },
+
+            "sinking" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/submarine<colour>.png:hull.<damageState>"
+              }
+            },
+
+            "sunk" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/submarine<colour>.png:hull.<damageState>"
+              }
+            }
+
+          }
+        }
+      },
+
+
+      "torpedohatch" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 0,
+          "offset" : [6.125, -3.375],
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+          "base" : {
+
+            "warpInPart1" : {
+              "properties" : {}
+            },
+
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/torpedohatch<colour>.png:hatch.<damageState>"
+              }
+            },
+
+            "idle" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/torpedohatch<colour>.png:hatch.<damageState>"
+              }
+            },
+
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/torpedohatch<colour>.png:hatch.<damageState>"
+              }
+            },
+
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+
+            "invisible" : {
+              "properties" : {}
+
+            },
+
+            "sinking" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/torpedohatch<colour>.png:hatch.<damageState>"
+              }
+            },
+
+            "sunk" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/torpedohatch<colour>.png:hatch.<damageState>"
+              }
+            }
+
+          }
+        }
+      },
+
+      "warp" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 4,
+          "fullbright" : true,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+
+          "base" : {
+
+            "warpInPart1" : {
+              "properties" : {
+                "image" : "submarinewarp.png:warpInPart1.<frame>"
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "submarinewarp.png:warpInPart2.<frame>"
+              }
+            },
+
+
+            "idle" : {
+              "properties" : {}
+            },
+
+
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "submarinewarp.png:warpOutPart1.<frame>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {
+                "image" : "submarinewarp.png:warpOutPart2.<frame>"
+              }
+            },
+
+
+            "invisible" : {
+              "properties" : {}
+            }
+
+          }
+        }
+      },
+
+
+       "lights" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3,
+          "fullbright" : true,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+
+          "headlights" : {
+
+            "off" : {
+              "properties" : {
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/headlight.png",
+                "offset" : [7.25, -1.5]
+              }
+            }
+          }
+        }
+      },
+
+      "prop" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "transformationGroups" : ["flip", "rotation"],
+          "offset" : [-6.0, -3.0]
+        },
+        "partStates" : {
+          "propeller" : {
+            "still" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/submarineprop.png:prop.1"
+              }
+            },
+            "turning" : {
+              "properties" : {
+                "image" : "/vehicles/submarine/submarineprop.png:prop.<frame>"
+              }
+            }
+          }
+        }
+      }
+
+    }
+  },
+
+  "transformationGroups" : {
+    "rotation" : {
+      "interpolated" : true
+    },
+    "flip" : {}
+  },
+
+  "particleEmitters" : {
+    "bowWaveWater" : {
+       "emissionRate" : 25.0,
+       "active" : false,
+       "offsetRegion" : [ 5, -1.5, 5.1, 1.5],
+       "particles" : [{ "particle" : "splashwater"}]
+    },
+    "bowWaveLava" : {
+       "emissionRate" : 25.0,
+       "active" : false,
+       "offsetRegion" : [ 5, -1.5, 5.1, 1.5],
+       "particles" : [{ "particle" : "fireshard"}]
+    },
+    "bowWavePoison" : {
+       "emissionRate" : 25.0,
+       "active" : false,
+       "offsetRegion" : [ 5, -1.5, 5.1, 1.5],
+       "particles" : [{ "particle" : "splashpoison"}]
+    },
+
+    "splashWater" : {
+       "emissionRate" : 0,
+       "active" : false,
+       "burstCount" : 30,
+       "offsetRegion" : [ -5, -1.5, 5.0, -1.2],
+       "particles" : [{ "particle" : "splashwater"}]
+    },
+    "splashLava" : {
+       "emissionRate" : 0,
+       "active" : false,
+       "burstCount" : 30,
+       "offsetRegion" : [ -5, -1.5, 5.1, -1.2],
+       "particles" : [{ "particle" : "fireshard"}]
+    },
+    "splashPoison" : {
+       "emissionRate" : 0,
+       "active" : false,
+       "burstCount" : 30,
+       "offsetRegion" : [ -5, -1.5, 5.1, -1.2],
+       "particles" : [{ "particle" : "splashpoison"}]
+    },
+
+    "bubbles" : {
+       "enabled" : false,
+       "transformationGroups" : ["flip", "rotation"],
+       "emissionRate" : 25.0,
+       "offsetRegion" : [ 3, -1, 6, -0.75],
+       "particles" : [{ "particle" : "bubbles"}]
+    }
+  },
+
+
+ "lights" : {
+      "headlightBeam" : {
+      "active" : false,
+      "transformationGroups" : ["flip", "rotation"],
+      "position" : [7.0, -1.5],
+      "color" : [250, 250, 200],
+      "pointLight" : true,
+      "pointAngle" : 0,
+      "pointBeam" : 5
+    }
+  },
+
+  "sounds" : {
+    "collisionNotification" : [ "/sfx/tech/hoverbike_bump1.ogg",
+                                "/sfx/tech/hoverbike_bump2.ogg",
+                                "/sfx/tech/hoverbike_bump3.ogg"  ],
+
+    "collisionDamage" : ["/sfx/melee/bite_robotic1.ogg"],
+
+    "changeDamageState" : [  "/sfx/gun/grenadeblast_small_fire1.ogg",
+                            "/sfx/gun/grenadeblast_small_fire2.ogg",
+                            "/sfx/gun/grenadeblast_small_fire3.ogg" ],
+
+    "hornLoop" : ["/sfx/tech/honk.ogg"]
+  }
+}

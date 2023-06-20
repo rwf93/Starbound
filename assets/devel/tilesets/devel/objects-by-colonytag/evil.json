@@ -1,0 +1,74 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/evil",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 5,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap_orientation2",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap_orientation3",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap_orientation4",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap_orientation5",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap_orientation2.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap_orientation3.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap_orientation4.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap_orientation5.png"
+    }
+  },
+  "tilewidth" : 8
+}

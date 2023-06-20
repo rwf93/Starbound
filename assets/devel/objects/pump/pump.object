@@ -1,0 +1,45 @@
+{
+  "objectName" : "pump",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "Moves liquids from one side to the other.",
+  "shortdescription" : "Pump",
+  "race" : "generic",
+
+  "category" : "wire",
+  "price" : 20,
+
+  "inventoryIcon" : "pump.png:idle",
+  "orientations" : [
+    {
+      "dualImage" : "pump.png:idle",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+
+      "collision" : "solid"
+    }
+  ],
+
+  "scripts" : [
+    "pump.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "pump.animation",
+  "animationCustom" : { },
+
+  "animationParts" : {
+    "pump" : "pump.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "inputNodes" : [ [-1, 0] ],
+
+  "inputPosition" : [-2, -1],
+  "outputPosition" : [1, -1],
+
+  "pumpFrequency" : 0.25
+}

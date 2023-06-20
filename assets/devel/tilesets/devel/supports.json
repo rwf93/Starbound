@@ -1,0 +1,32 @@
+{
+  "margin" : 0,
+  "name" : "supports",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+      "0" : {
+          "//description" : "Staying on the rails, you're a sane train.",
+          "//name" : "titaniumrail",
+          "//shortdescription" : "Titanium Rail",
+          "material" : "titaniumrail"
+      },
+      "1" : {
+          "//description" : "Staying on the rails, you're a sane train.",
+          "//name" : "copperrail",
+          "//shortdescription" : "Copper Rail",
+          "material" : "copperrail"
+      }
+  },
+  "tiles" : {
+      "0" : {
+          "image" : "./../../../../tiled/devel/materials/titaniumrail.png"
+      },
+      "1" : {
+          "image" : "./../../../../tiled/devel/materials/copperrail.png"
+      }
+  },
+  "tilewidth" : 8
+}

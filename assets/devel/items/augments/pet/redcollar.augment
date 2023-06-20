@@ -1,0 +1,19 @@
+{
+  "itemName" : "redcollar",
+  "price" : 5000,
+  "rarity" : "Uncommon",
+  "inventoryIcon" : "redcollar.png",
+  "description" : "A collar that makes your pet red.",
+  "shortdescription" : "Red Collar",
+
+  "collar" : {
+    "name" : "red",
+    "displayName" : "Red",
+    "displayIcon" : "/items/augments/pet/redcollar.png",
+    "effects" : [ "colorred" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupcollar" ],
+
+  "scripts" : [ "/scripts/augments/collar.lua" ]
+}

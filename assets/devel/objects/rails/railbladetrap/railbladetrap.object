@@ -1,0 +1,131 @@
+{
+  "objectName" : "railbladetrap",
+  "colonyTags" : ["evil"],
+  "rarity" : "Common",
+  "description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+  "shortdescription" : "Railblade Trap",
+  "race" : "generic",
+  "category" : "rail",
+  "price" : 200,
+
+  "inventoryIcon" : "railbladetrapicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "railbladetrapground.png",
+
+      "imagePosition" : [-12, 0],
+
+      "animationPosition" : [-12, 0],
+      "animationParts" : {
+        "bg" : "railbladetrapground.png",
+        "fg" : "railbladetrapground.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+
+      "projectileDirection" : [0, 1],
+      "projectilePosition" : [0, 0.5],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "n"
+        }
+      }
+    },
+
+    {
+      "dualImage" : "railbladetrapceiling.png",
+
+      "imagePosition" : [-12, 0],
+
+      "animationPosition" : [-12, 0],
+      "animationParts" : {
+        "bg" : "railbladetrapceiling.png",
+        "fg" : "railbladetrapceiling.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "direction" : "right",
+
+      "projectileDirection" : [0, -1],
+      "projectilePosition" : [0, 0.5],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "s"
+        }
+      }
+    },
+
+    {
+      "image" : "railbladetrapleft.png",
+
+      "imagePosition" : [0, -12],
+
+      "animationPosition" : [0, -12],
+      "animationParts" : {
+        "bg" : "railbladetrapleft.png",
+        "fg" : "railbladetrapleft.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left" ],
+      "direction" : "right",
+
+      "projectileDirection" : [1, 0],
+      "projectilePosition" : [0.5, 0],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "e"
+        }
+      }
+    },
+
+    {
+      "image" : "railbladetrapright.png",
+
+      "imagePosition" : [0, -12],
+
+      "animationPosition" : [0, -12],
+      "animationParts" : {
+        "bg" : "railbladetrapright.png",
+        "fg" : "railbladetrapright.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "right" ],
+      "direction" : "right",
+
+      "projectileDirection" : [-1, 0],
+      "projectilePosition" : [0.5, 0],
+      "projectileConfig" : {
+        "railConfig" : {
+          "direction" : "w"
+        }
+      }
+    }
+  ],
+
+  "animationParts" : {
+    "bg" : "railbladetrapground.png",
+    "fg" : "railbladetrapground.png"
+  },
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+
+  "inputNodes" : [ [0, 0] ],
+
+  "smashOnBreak" : true,
+  "smashParticles" : [ { "count" : 5, "particle" : "woodshard" } ],
+
+  "scripts" : [ "/objects/wired/projectiletrap/projectiletrap.lua" ],
+  "scriptDelta" : 5,
+  
+  "inactiveLightColor" : [0, 0, 0],
+  "activeLightColor" : [0, 0, 0],
+
+  "fireTime" : 5.0,
+  "fireTimeVariance" : 0.0,
+  "projectile" : "railblade"
+}

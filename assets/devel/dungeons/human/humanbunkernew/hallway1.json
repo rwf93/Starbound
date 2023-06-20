@@ -1,0 +1,259 @@
+{
+  "backgroundcolor" : "#000000",
+  "height" : 31,
+  "layers" : [ {
+          "compression" : "zlib",
+          "data" : "eJzt1LENADAIA0FvyixsxIhUaTKAQ8QXV7/cuCQVAAD4Uhjd7TR1c2DbZdpu2nvaju7x+kexTwPzHETT",
+          "encoding" : "base64",
+          "height" : 31,
+          "name" : "back",
+          "opacity" : 0.5,
+          "type" : "tilelayer",
+          "visible" : true,
+          "width" : 31,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "compression" : "zlib",
+          "data" : "eJzt1LENACAMA8FsyogMkOXo05MIcSe5/s4RAMCrVuOq3Tht7d/a2dzO0p/8FrjtAHD2qSk=",
+          "encoding" : "base64",
+          "height" : 31,
+          "name" : "front",
+          "opacity" : 1,
+          "type" : "tilelayer",
+          "visible" : true,
+          "width" : 31,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "color" : "#5555ff",
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "mods",
+          "objects" : [ {
+                  "height" : 24,
+                  "id" : 790,
+                  "name" : "",
+                  "properties" : {
+                      "allowOverdrawing" : "true",
+                      "material" : "concrete"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 216,
+                  "x" : 16,
+                  "y" : 104
+              }, {
+                  "height" : 24,
+                  "id" : 791,
+                  "name" : "",
+                  "properties" : {
+                      "allowOverdrawing" : "true",
+                      "material" : "concrete"
+                  },
+                  "rotation" : 0,
+                  "type" : "",
+                  "visible" : true,
+                  "width" : 216,
+                  "x" : 16,
+                  "y" : 208
+              } ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "color" : "#ff0000",
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "objects",
+          "objects" : [  ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "color" : "#ffff00",
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "wiring - lights & guns",
+          "objects" : [  ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "color" : "#ff0000",
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "monsters & npcs",
+          "objects" : [  ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "color" : "#00ffff",
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "wiring - locked door",
+          "objects" : [  ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "outside the map",
+          "objects" : [  ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "anchors etc",
+          "objects" : [  ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      }, {
+          "draworder" : "topdown",
+          "height" : 0,
+          "name" : "items",
+          "objects" : [  ],
+          "opacity" : 1,
+          "type" : "objectgroup",
+          "visible" : true,
+          "width" : 0,
+          "x" : 0,
+          "y" : 0
+      } ],
+  "nextobjectid" : 851,
+  "orientation" : "orthogonal",
+  "properties" : {
+  },
+  "renderorder" : "right-down",
+  "tileheight" : 8,
+  "tilesets" : [ {
+          "firstgid" : 1,
+          "source" : "../../../tilesets/packed/materials.json"
+      }, {
+          "firstgid" : 175,
+          "source" : "../../../tilesets/packed/miscellaneous.json"
+      }, {
+          "firstgid" : 193,
+          "source" : "../../../tilesets/packed/liquids.json"
+      }, {
+          "firstgid" : 219,
+          "source" : "../../../tilesets/packed/supports.json"
+      }, {
+          "firstgid" : 252,
+          "source" : "../../../tilesets/packed/objects-by-race/generic.json"
+      }, {
+          "firstgid" : 1462,
+          "source" : "../../../tilesets/packed/objects-by-race/ancient.json"
+      }, {
+          "firstgid" : 1565,
+          "source" : "../../../tilesets/packed/objects-by-race/apex.json"
+      }, {
+          "firstgid" : 1894,
+          "source" : "../../../tilesets/packed/objects-by-race/avian.json"
+      }, {
+          "firstgid" : 2117,
+          "source" : "../../../tilesets/packed/objects-by-race/floran.json"
+      }, {
+          "firstgid" : 2288,
+          "source" : "../../../tilesets/packed/objects-by-race/glitch.json"
+      }, {
+          "firstgid" : 2479,
+          "source" : "../../../tilesets/packed/objects-by-race/human.json"
+      }, {
+          "firstgid" : 2738,
+          "source" : "../../../tilesets/packed/objects-by-race/hylotl.json"
+      }, {
+          "firstgid" : 2930,
+          "source" : "../../../tilesets/packed/objects-by-race/novakid.json"
+      }, {
+          "firstgid" : 2955,
+          "source" : "../../../tilesets/packed/objects-by-category/crafting.json"
+      }, {
+          "firstgid" : 3015,
+          "source" : "../../../tilesets/packed/objects-by-category/decorative.json"
+      }, {
+          "firstgid" : 3927,
+          "source" : "../../../tilesets/packed/objects-by-category/door.json"
+      }, {
+          "firstgid" : 4015,
+          "source" : "../../../tilesets/packed/objects-by-category/farmable.json"
+      }, {
+          "firstgid" : 4087,
+          "source" : "../../../tilesets/packed/objects-by-category/furniture.json"
+      }, {
+          "firstgid" : 4356,
+          "source" : "../../../tilesets/packed/objects-by-category/light.json"
+      }, {
+          "firstgid" : 4717,
+          "source" : "../../../tilesets/packed/objects-by-category/other.json"
+      }, {
+          "firstgid" : 4911,
+          "source" : "../../../tilesets/packed/objects-by-category/pot.json"
+      }, {
+          "firstgid" : 5149,
+          "source" : "../../../tilesets/packed/objects-by-category/sapling.json"
+      }, {
+          "firstgid" : 5150,
+          "source" : "../../../tilesets/packed/objects-by-category/spawner.json"
+      }, {
+          "firstgid" : 5165,
+          "source" : "../../../tilesets/packed/objects-by-category/storage.json"
+      }, {
+          "firstgid" : 5358,
+          "source" : "../../../tilesets/packed/objects-by-category/teleporter.json"
+      }, {
+          "firstgid" : 5368,
+          "source" : "../../../tilesets/packed/objects-by-category/tools.json"
+      }, {
+          "firstgid" : 5373,
+          "source" : "../../../tilesets/packed/objects-by-category/wire.json"
+      }, {
+          "firstgid" : 5512,
+          "source" : "../../../tilesets/packed/objects-by-type/container.json"
+      }, {
+          "firstgid" : 5748,
+          "source" : "../../../tilesets/packed/objects-by-type/farmable.json"
+      }, {
+          "firstgid" : 5821,
+          "source" : "../../../tilesets/packed/objects-by-type/loungeable.json"
+      }, {
+          "firstgid" : 6025,
+          "source" : "../../../tilesets/packed/objects-by-type/noisy.json"
+      }, {
+          "firstgid" : 6066,
+          "source" : "../../../tilesets/packed/objects-by-type/teleporter.json"
+      }, {
+          "firstgid" : 6089,
+          "source" : "../../../tilesets/packed/huge-objects.json"
+      } ],
+  "tilewidth" : 8,
+  "version" : 1,
+  "width" : 31
+}

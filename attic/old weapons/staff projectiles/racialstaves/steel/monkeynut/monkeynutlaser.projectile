@@ -1,0 +1,21 @@
+{
+  "projectileName" : "monkeynutlaser",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "monkeynutlaser.png",
+  "animationCycle" : 0.2,
+  "timeToLive" : 3.0,
+  "animationLoops" : false,
+  "frameNumber" : 4,
+  "power" : 50,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "lightColor" : [255, 110, 20],
+  "damageKind" : "plasma"
+}

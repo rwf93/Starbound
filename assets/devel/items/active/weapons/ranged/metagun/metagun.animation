@@ -1,0 +1,66 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "cooldown",
+            "properties" : {
+              "immediateSound" : "/sfx/gun/ar1.ogg"
+            },
+            "frameProperties" : {
+              "stateNudge" : [ [-0.125, 0], [0, 0] ]
+            }
+          },
+          "cooldown" : {
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "fire"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "metagun.png",
+          "offset" : [1.8, 0.5]
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [5.0, 0.625]
+        },
+
+        "partStates" : {
+          "firing" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "muzzleflash.png:<variant>.<frame>"
+              }
+            },
+            "cooldown" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

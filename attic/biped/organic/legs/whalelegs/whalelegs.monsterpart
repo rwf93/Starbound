@@ -1,0 +1,9 @@
+{
+  "name" : "organicwhalelegs",
+  "category" : "biped",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "whalelegs.frames"
+  }
+}

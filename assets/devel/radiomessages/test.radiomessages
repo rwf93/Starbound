@@ -1,0 +1,30 @@
+{
+  "test" : {
+    "unique" : false,
+    "text" : "Testing, testing... one, two, three."
+  },
+
+  "testemote" : {
+    "unique" : false,
+    "text" : "Are you angry, brother?",
+    "portraitImage" : "yell.<frame>",
+    "portraitFrames" : 2
+  },
+
+  "testimage" : {
+    "unique" : false,
+    "text" : "Now this is a story all about how my life got flip turned upside-down and I'd like to take a minute so just sit right there and I'll tell you how I became the prince of a town called Bel Aire",
+    "portraitImage" : "/ai/portraits/horseboobsportrait.png:talk.<frame>",
+    "portraitFrames" : 2
+  },
+
+  "testbow1" : {
+    "unique" : false,
+    "text" : "You've just picked up a bow!"
+  },
+
+  "testbow2" : {
+    "unique" : false,
+    "text" : "10 seconds ago, you picked up a bow!"
+  }
+}

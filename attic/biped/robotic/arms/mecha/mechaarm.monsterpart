@@ -1,0 +1,10 @@
+{
+  "name" : "mechaarm",
+  "category" : "biped_robotic",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "mechafarm.frames",
+    "backArm" : "mechabarm.frames"
+  }
+}

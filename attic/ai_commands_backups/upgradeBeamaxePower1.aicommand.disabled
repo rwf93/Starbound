@@ -1,0 +1,196 @@
+{
+  "commandName" : "upgradeBeamaxePower1",
+  "onlyOnce" : true,
+  "icon" : "beamaxe.png",
+  "actions" : [
+     { 
+      "action" : "UpdatePlayerEssentialItem",
+      "itemsRequired" : [ ["silverbar", 8] ],
+      "parameters" : {
+        "tileDamage" : 1.5,
+        "minBeamJitter" : 0.1,
+        "maxBeamJitter" : 0.2
+      },
+      "essentialItem" : "beamaxe"
+    },
+    {
+      "action" : "DisableCommand",
+      "command" : "upgradeBeamaxePower1"
+    },
+    {
+      "action" : "EnableCommand",
+      "command" : "upgradeBeamaxeLiquid1"
+    }
+  ],
+
+  "speciesText" : {
+    "apex" : {
+      "buttonText" : "Upgrade M. M. - Power I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined silver, I can increase your matter manipulator's power.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 silver bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "avian" : {
+      "buttonText" : "Upgrade M. M. - Power I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined silver, I can increase your matter manipulator's power.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 silver bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "floran" : {
+      "buttonText" : "Upgrade M. M. - Power I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined silver, I can increase your matter manipulator's power.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 silver bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "glitch" : {
+      "buttonText" : "Upgrade M. M. - Power I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined silver, I can increase your matter manipulator's power.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 silver bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "human" : {
+      "buttonText" : "Upgrade M. M. - Power I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined silver, I can increase your matter manipulator's power.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 silver bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "novakid" : {
+      "buttonText" : "Upgrade M. M. - Power I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined silver, I can increase your matter manipulator's power.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 silver bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "hylotl" : {
+      "buttonText" : "Upgrade M. M. - Power I",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined silver, I can increase your matter manipulator's power.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 silver bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    }
+  }
+}

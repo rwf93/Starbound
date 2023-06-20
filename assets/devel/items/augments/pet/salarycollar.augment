@@ -1,0 +1,19 @@
+{
+  "itemName" : "salarycollar",
+  "price" : 5000,
+  "rarity" : "Uncommon",
+  "inventoryIcon" : "salarycollar.png",
+  "description" : "A collar that makes your pet poop pixels.",
+  "shortdescription" : "Salary Collar",
+
+  "collar" : {
+    "name" : "salary",
+    "displayName" : "Salary",
+    "displayIcon" : "/items/augments/pet/salarycollar.png",
+    "effects" : [ "salary" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupcollar" ],
+
+  "scripts" : [ "/scripts/augments/collar.lua" ]
+}

@@ -1,0 +1,56 @@
+{
+  "itemName" : "testshield",
+  "price" : 100,
+  "maxStack" : 1,
+  "rarity" : "common",
+  "description" : "There's something special between us.",
+  "shortdescription" : "Test Shield",
+  "tooltipKind" : "shield",
+  "twoHanded" : false,
+  "itemTags" : ["shield"],
+
+  "inventoryIcon" : "images/largemetal/1.png:nearidle",
+
+  "animation" : "shield.animation",
+  "animationParts" : {
+    "shield" : "images/largemetal/1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "raiseShield" : [ "/sfx/melee/swing_dagger.ogg" ],
+      "perfectBlock" : [ "/sfx/melee/shield_block_wood_perfect.ogg" ],
+      "block" : [ "/sfx/melee/shield_block_wood.ogg" ],
+      "break" : [ "/sfx/melee/shield_break_wood.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/shields/shield.lua"],
+
+  "minActiveTime" : 0.2,
+
+  "forceWalk" : true,
+  "baseShieldHealth" : 100,
+  "cooldownTime" : 0.5,
+
+  "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
+  "perfectBlockTime" : 0.2,
+
+  "knockback" : 10,
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "raised" : {
+      "armRotation" : 0,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandshield.lua"
+}

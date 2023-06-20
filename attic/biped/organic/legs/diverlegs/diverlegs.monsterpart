@@ -1,0 +1,9 @@
+{
+  "name" : "organicdiverlegs",
+  "category" : "biped",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "diverlegs.frames"
+  }
+}

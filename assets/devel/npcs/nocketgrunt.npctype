@@ -1,0 +1,42 @@
+{
+  "type" : "nocketgrunt",
+  "baseType" : "bandit",
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Prepare for trouble!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "bandithat1" }, { "name" : "bandithat2" } ],
+            "chest" : [ { "name" : "protectoratechest", "parameters" : { "colorIndex" : 1 } } ],
+            "legs" : [ { "name" : "explorerlegs" } ],
+            "primary" : [ "npcpetcapturepod" ],
+            "sheathedprimary" : [
+              "npcdagger",
+              "npcaxe",
+              "npcshortsword",
+              "npcbroadsword",
+              "npchammer",
+              "npcspear",
+              "npcassaultrifle",
+              "npcpistol",
+              "npcmachinepistol",
+              "npcshotgun",
+              "npcsniperrifle"
+            ]
+          }
+      ]]
+    ]
+  }
+}

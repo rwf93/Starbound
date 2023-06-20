@@ -1,0 +1,10 @@
+{
+  "name" : "jellybossarms",
+  "category" : "jellyboss",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "jellybossfarm.png",
+    "backArm" : "jellybossbarm.png"
+  }
+}

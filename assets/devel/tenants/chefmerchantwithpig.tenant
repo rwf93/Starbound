@@ -1,0 +1,32 @@
+{
+  "name": "chefmerchantwithpig",
+  "priority": 2,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "human": 5, 
+    "cooking": 2,
+    "storage": 5
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "human",
+      "type": "chefmerchant"
+    },
+    {
+      "spawn": "monster",
+      "type": "piglett",
+      "overrides": {
+        "anchorName": "colonydeed"
+      }
+    }
+  ],
+
+  "rent": {
+    "periodRange": [10.0, 10.0],
+    "pool": "food"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name" : "debug",
+  "type" : "head",
+
+  "scripts" : ["debug.lua"],
+
+  "description" : "Debug info! Use F/G/H to cycle mode/size/shape",
+  "shortDescription" : "Debug Inspector",
+  "rarity" : "Legendary",
+  "icon" : "/tech/booster.png",
+
+  "chipCost" : 8
+}

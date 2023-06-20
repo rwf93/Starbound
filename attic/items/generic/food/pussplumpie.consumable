@@ -1,0 +1,13 @@
+{
+  "itemName" : "pussplumpie",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "pussplumpie.png",
+  "description" : "A slice of pussplum pie. The smell is a little off-putting.",
+  "shortdescription" : "Pussplum Pie",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

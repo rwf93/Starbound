@@ -1,0 +1,12 @@
+{
+  "name" : "devshooter",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "devshooter.lua"
+  ],
+
+  "label" : "HACKS",
+  "icon" : "/interface/statuses/crash.png"
+}

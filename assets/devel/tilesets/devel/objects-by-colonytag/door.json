@@ -1,0 +1,26 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/door",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 1,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "This door includes rails to allow riders through when open.",
+      "//name" : "raildoor",
+      "//shortdescription" : "Rail Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "raildoor",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/objects/raildoor.png"
+    }
+  },
+  "tilewidth" : 8
+}

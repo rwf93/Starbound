@@ -1,0 +1,33 @@
+{
+  "objectName" : "sbvntestconsole",
+  "colonyTags" : [],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "price" : 0,
+
+  "description" : "An arcade machine with an interactive narrative game.",
+  "shortdescription" : "SBVN Test Console",
+  "race" : "generic",
+
+  "inventoryIcon" : "sbvntestconsoleicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "sbvntestconsole.png:<color>.<frame>",
+      "imagePosition" : [-12, 0],
+      "frames" : 2,
+      "animationCycle" : 0.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : ["/interface/scripted/sbvn/sbvnobject.lua"],
+  "scriptDelta" : 0,
+
+  "interactAction" : "ScriptPane",
+  "interactData" : {
+    "baseConfig" : "/interface/scripted/sbvn/sbvngui.config",
+    "gameFile" : "/interface/scripted/sbvn/games/testgame/testgame.sbvn"
+  }
+}

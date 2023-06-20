@@ -1,0 +1,15 @@
+{
+  "itemName" : "mecharmplayerlauncher",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mecharm",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mecharmplayerlauncher.png",
+  "description" : "A handy ejection seat. Why didn't they put one of these in the cockpit?",
+  "shortdescription" : "Player Launcher Mech Arm",
+  "itemTags" : [ ],
+
+  "mechPart" : ["arm", "playerlauncher"]
+}

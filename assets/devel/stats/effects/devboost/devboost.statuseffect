@@ -1,0 +1,14 @@
+{
+  "name" : "devboost",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "devboost.lua"
+  ],
+
+  "animationConfig" : "devboost.animation",
+
+  "label" : "Jump Boost",
+  "icon" : "/animations/cat/cat.png?scalenearest=0.0625"
+}

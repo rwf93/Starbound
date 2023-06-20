@@ -1,0 +1,18 @@
+{
+  "projectileName" : "coralshardX",
+  "physics" : "grenade",
+  "bounces" : 2,
+  "timeToLive" : 1.5,
+  "image" : "coralshardX.png",
+  "animationLoops" : false,
+  "animationCycle" : 0.8,
+  "frameNumber" : 5,
+  "lightColor" : [255, 145, 28],
+  "speed" : 60,
+  "power" : 500,
+  "statusEffects" : [
+    "burning"
+    ],
+  "damageKind" : "default",
+  "damageKindImage" : "/interface/statuses/fire.png"
+}

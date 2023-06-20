@@ -1,0 +1,41 @@
+{
+  "objectName" : "decoyprincess",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "description" : "A decoy princess. The perfect bait.",
+  "shortdescription" : "Decoy Princess",
+  "race" : "generic",
+  "category" : "Tool",
+  "printable" : false,
+  "apexDescription" : "This fake princess will serve as bait.",
+  "avianDescription" : "A cunning bait and switch.",
+  "floranDescription" : "Floran ssstab any beast that take princess!",
+  "glitchDescription" : "Proud. A cunning plan, this decoy.",
+  "humanDescription" : "This decoy will help me lure out a terrifying beast.",
+  "hylotlDescription" : "Perhaps luring a creature to me is ill-advised, but here goes.",
+
+  "inventoryIcon" : "decoyprincessicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "decoyprincess.png:<color>.<frame>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "animation" : "/objects/boss/decoyprincess.animation",
+  "animationParts" : {
+    "beacon" : "decoyprincess.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "scripts" : [ "/objects/wired/ironbeacon/decoyprincess.lua" ],
+  "scriptDelta" : 5
+
+}

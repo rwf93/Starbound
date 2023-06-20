@@ -1,0 +1,10 @@
+{
+  "name" : "dragonbosswings",
+  "category" : "dragonboss",
+  "type" : "wings",
+
+  "frames" : {
+    "backWings" : "dragonbossbwing.png",
+    "frontWings" : "dragonbossfwing.png"
+  }
+}

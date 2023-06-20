@@ -1,0 +1,18 @@
+{
+  "projectileName" : "leaforb",
+  "image" : "leaforb.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 4,
+  "power" : 50,
+  "physics" : "gas",
+  "piercing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/leafexplosion/leafexplosion.config"
+    }
+  ],
+
+  "lightColor" : [50, 100, 30],
+  "damageKind" : "electric"
+}

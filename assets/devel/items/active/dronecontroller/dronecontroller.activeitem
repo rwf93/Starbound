@@ -1,0 +1,12 @@
+{
+  "itemName" : "dronecontroller",
+  "level" : 1,
+  "rarity" : "rare",
+  "description" : "Some kinda weird and janky thing.",
+  "shortdescription" : "Drone Controller",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "dronecontroller.png",
+  "animation" : "dronecontroller.animation",
+  "scripts" : ["dronecontroller.lua"]
+}

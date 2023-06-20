@@ -1,0 +1,21 @@
+{
+  "projectileName" : "biolightball",
+  "image" : "biolightball.png",
+  "physics" : "laser",
+  "animationCycle" : 0.3,
+  "frameNumber" : 6,
+  "power" : 50,
+  "speed" : 0,
+  "timeToLive" : 3.3,
+  "pointLight" : true,
+  "bounces" : 2,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "piercing" : true,
+  "damageKind" : "default",
+  "damageKindImage" : "/interface/statuses/glow.png",
+
+  "lightColor" : [230, 213, 187],
+  "statusEffects" : [
+    "glow"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "projectileName" : "groundfireburst",
+  "image" : "groundfireburst.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 8,
+  "speed" : 0,
+  "damagePoly" : [ [-4, 0], [4, 0], [0, 40] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageKind" : "default",
+  "lightColor" : [255, 220, 50]
+}

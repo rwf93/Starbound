@@ -1,0 +1,45 @@
+{
+  "objectName" : "mmupgradeconsole",
+  "rarity" : "Common",
+  "description" : "Upgrade your Matter Manipulator!",
+  "shortdescription" : "M.M. Upgrade Console",
+  "race" : "generic",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "mmupgradeconsole.png:<color>.<frame>",
+      "flipImages" : true,
+      "direction" : "left",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 3,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "mmupgradeconsole.png:<color>.<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 3,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "mmupgradeconsole.animation",
+  "animationCustom" : {},
+  "animationParts" : {
+    "bg" : "mmupgradeconsole.png",
+    "fg" : "mmupgradeconsolelit.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/mmupgrade/mmupgradegui.config"
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "toffee",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "toffee.png",
+  "description" : "Toffee! A common ingredient in sweets.",
+  "shortdescription" : "Toffee",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

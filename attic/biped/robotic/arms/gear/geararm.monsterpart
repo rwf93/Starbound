@@ -1,0 +1,10 @@
+{
+  "name" : "geararm",
+  "category" : "biped_robotic",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "gearfarm.frames",
+    "backArm" : "gearbarm.frames"
+  }
+}

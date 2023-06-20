@@ -1,0 +1,26 @@
+{
+  "margin" : 0,
+  "name" : "huge-objects",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 1,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "What a mess.",
+      "//name" : "giantbackgroundobject",
+      "//shortdescription" : "Giant Background Object",
+      "imagePositionX" : "-1024",
+      "imagePositionY" : "-1024",
+      "object" : "giantbackgroundobject",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "./../../../../tiled/devel/objects/giantbackgroundobject.png"
+    }
+  },
+  "tilewidth" : 8
+}

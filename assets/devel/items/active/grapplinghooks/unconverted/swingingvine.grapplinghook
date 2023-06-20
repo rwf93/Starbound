@@ -1,0 +1,31 @@
+{
+  "itemName" : "swingingvine",
+  "price" : 5,
+  "inventoryIcon" : "swingingvineicon.png",
+  "rarity" : "Rare",
+  "maxStack" : 1,
+  "description" : "Swing around as much as you like!",
+  "shortdescription" : "Swinging Vine",
+  "category" : "Tool",
+  "fireTime" : 0.0,
+  "twoHanded" : false,
+  "handPosition" : [-2.5, -2.0],
+
+  "minLength" : 0.25,
+  "maxLength" : 30,
+  "hardMaxLength" : 33,
+  "baseLineSegLength" : 4,
+  "launchSpeed" : 1.5,
+  "windRate" : 0.05,
+  "energyConsumeRateAnchored" : 0.8,
+  "energyConsumeRateWinding" : 0.0,
+  "hookImage" : "/items/tools/vinehook.png",
+  "handleImage" : "/items/tools/vinehandle.png",
+  "hookOffset" : [-0.5, -1],
+  "primaryLineColors" : [ [72, 130, 47, 255],
+    [72, 130, 47, 255] ],
+  "altLineColors" : [ [72, 130, 47, 255],
+    [72, 130, 47, 255] ],
+
+  "stretchable" : false
+}

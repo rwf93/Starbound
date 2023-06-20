@@ -1,0 +1,14 @@
+{
+  "projectileName" : "coralshard",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "timeToLive" : 0.8,
+  "image" : "coralshard.png",
+  "animationLoops" : false,
+  "animationCycle" : 0.8,
+  "frameNumber" : 5,
+  "lightColor" : [240, 120, 0],
+  "speed" : 40,
+  "power" : 53,
+  "damageKind" : "default"
+}

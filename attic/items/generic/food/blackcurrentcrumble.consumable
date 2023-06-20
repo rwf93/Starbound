@@ -1,0 +1,14 @@
+{
+  "itemName" : "blackcurrentcrumble",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "blackcurrentcrumble.png",
+  "description" : "A crumble that holds a charge.",
+  "shortdescription" : "Black Current Crumble",
+  "handPosition" : [0, 12],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

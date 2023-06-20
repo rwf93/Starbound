@@ -1,0 +1,27 @@
+{
+  "projectileName" : "redgiant",
+  "physics" : "hover",
+  "bounces" : -1,
+  "speed" : 25,
+  "timeToLive" : 8,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [255, 85, 10],
+  "pointLight" : true,
+  "piercing" : true,
+  "image" : "redgiant.png",
+  "animationCycle" : 0.6,
+  "frameNumber" : 6,
+  "power" : 50,
+  "damagePoly" : [ [-15, 0], [-10, -10], [0, -15], [10, -10], [15, 0], [10, 10], [0, 15], [-10, 10] ],
+  "supportsProcessing" : true,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/globeexplosions/orangeglobeexplosion/orangeglobeexplosion.config"
+    }
+  ],
+  "damageKind" : "plasma",
+  "emitters" : [ "defaultorange" ]
+}

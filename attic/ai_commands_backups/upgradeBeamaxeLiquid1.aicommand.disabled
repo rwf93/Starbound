@@ -1,0 +1,194 @@
+{
+  "commandName" : "upgradeBeamaxeLiquid1",
+  "onlyOnce" : true,
+  "icon" : "beamaxe.png",
+  "actions" : [
+     { 
+      "action" : "UpdatePlayerEssentialItem",
+      "itemsRequired" : [ ["goldbar", 12] ],
+      "parameters" : {
+        "canCollectLiquid" : true
+      },
+      "essentialItem" : "beamaxe"
+    },
+    {
+      "action" : "DisableCommand",
+      "command" : "upgradeBeamaxeLiquid1"
+    },
+    {
+      "action" : "EnableCommand",
+      "command" : "upgradeBeamaxeSize2"
+    }
+  ],
+
+  "speciesText" : {
+    "apex" : {
+      "buttonText" : "Enable M. M. Liquid Collection",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 12 bars of refined gold, I can upgrade your matter manipulator to allow the collection of liquids.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 12 gold bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "avian" : {
+      "buttonText" : "Enable M. M. Liquid Collection",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 12 bars of refined gold, I can upgrade your matter manipulator to allow the collection of liquids.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 12 gold bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "floran" : {
+      "buttonText" : "Enable M. M. Liquid Collection",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 12 bars of refined gold, I can upgrade your matter manipulator to allow the collection of liquids.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 12 gold bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "glitch" : {
+      "buttonText" : "Enable M. M. Liquid Collection",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 12 bars of refined gold, I can upgrade your matter manipulator to allow the collection of liquids.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 12 gold bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "human" : {
+      "buttonText" : "Enable M. M. Liquid Collection",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 12 bars of refined gold, I can upgrade your matter manipulator to allow the collection of liquids.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 12 gold bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "novakid" : {
+      "buttonText" : "Enable M. M. Liquid Collection",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 12 bars of refined gold, I can upgrade your matter manipulator to allow the collection of liquids.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 12 gold bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "hylotl" : {
+      "buttonText" : "Enable M. M. Liquid Collection",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 12 bars of refined gold, I can upgrade your matter manipulator to allow the collection of liquids.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 12 gold bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "sweetcorn",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "sweetcorn.png",
+  "description" : "Sweet corn! I could eat it raw, but it's probably even better if I cook it.",
+  "shortdescription" : "Sweet Corn",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

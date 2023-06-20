@@ -1,0 +1,152 @@
+{
+  "type" : "jellyboss",
+
+  "categories" : [ "jellyboss" ],
+  "parts" : [ "arms", "chest", "tail", "head" ],
+
+  "animation" : "jellyboss.animation",
+  "reversed" : true,
+  "dropPools" : [
+    {
+      "default" : "boss4Treasure"
+    }
+  ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/generated/ground/groundMonster.lua",
+      "/scripts/pathing.lua",
+      "/scripts/stateMachine.lua",
+      "/scripts/util.lua",
+      "/scripts/vec2.lua",
+
+      "/monsters/generated/ground/aggressState.lua",
+      "/monsters/generated/ground/wanderState.lua",
+
+      "/monsters/generated/ground/skills/createGroundRangedAttack.lua"
+    ],
+
+    "territoryDistance" : 40.0,
+    "territorialTargetRadius" : 20.0,
+    "minimalTargetRadius" : 6.0,
+    "targetSearchTime" : 40.5,
+    "targetHoldTime" : 40.0,
+
+    "closeDistance" : 1.5,
+
+    "wanderTime" : [4.0, 6.0],
+    "wanderMovementTime" : [2.0, 3.0],
+
+    "jumpTargetDistance" : 4,
+    "jumpTime" : [0.8, 1.4],
+
+    "pathing" : {
+      "canOpenDoors" : false
+    },
+
+    "knockoutTime" : 0.5,
+    "knockoutEffect" : "blink",
+    "deathParticles" : "deathPoof",
+
+    "exhaustionTimer" : 3.0,
+    "exhaustionTimeout" : 3.0,
+    "exhaustionDistanceLimit" : 1.0,
+
+    "wanderJumpProbability" : 0.1,
+
+    "alwaysAggressive" : true
+  },
+
+  "familyParameters" : [
+    [
+      {
+        "skillCount" : 2,
+        "baseSkills" : [ ],
+        "specialSkills" : [ "jellyBossExplodeAttack" ]
+      }
+    ]
+  ],
+
+  "variantParameters" : [
+    [
+      [1.0, {
+          "scale" : 1.0,
+
+          "movementSettings" : {
+            "collisionPoly" : [ [-1, -7.6], [1, -7.6], [10, 0.5], [-10, 0.5] ],
+            "mass" : 0.6,
+            "walkSpeed" : 5,
+            "runSpeed" : 13,
+            "jumpSpeed" : 20
+          },
+
+          "metaBoundBox" : [-8, -5.6, 8, 8.5],
+
+          "blockedSensors" : [ [10, -7.6], [10, -6.7], [10, -5.6] ],
+          "fallSensors" : [ [12, -14.5], [12, -13.4], [12, -12.3], [14, -14.5], [14, -13.4], [14, -12.3] ],
+
+          "touchDamage" : {
+            "poly" : [ [-8, -5.6], [8, -5.6], [6, 8.5], [-6, 8.5] ],
+            "damage" : 15,
+
+            "teamType" : "enemy",
+            "damageSourceKind" : "default",
+            "statusEffects" : [ ]
+          },
+
+          "statusSettings" : {
+            "statusProperties" : {
+              "targetMaterialKind" : "organic"
+            },
+
+            "appliesEnvironmentStatusEffects" : false,
+            "minimumLiquidStatusEffectPercentage" : 0.1,
+
+            "primaryScriptSources" : [
+              "/stats/monster_primary.lua"
+            ],
+            "primaryScriptDelta" : 5,
+
+            "stats" : {
+              "knockbackStunTime" : {
+                "baseValue" : 0.25
+              },
+              "maxHealth" : {
+                "baseValue" : 400
+              },
+              "protection" : {
+                "baseValue" : 0.0
+              },
+              "healthRegen" : {
+                "baseValue" : 0.0
+              }
+            },
+
+            "resources" : {
+              "stunned" : {
+                "deltaValue" : -1.0,
+                "initialValue" : 0.0
+              },
+              "health" : {
+                "maxStat" : "maxHealth",
+                "deltaStat" : "healthRegen",
+                "defaultPercentage" : 100
+              }
+            }
+          },
+
+          "mouthOffset" : [0, 0],
+          "feetOffset" : [0, -21]
+        } ]
+    ]
+  ],
+
+  "partParameterDescription" : {
+    "weightMultiplier" : [ "multiply", 1.0],
+    "walkMultiplier" : [ "multiply", 0.3],
+    "runMultiplier" : [ "multiply", 0.3],
+    "jumpMultiplier" : [ "multiply", 2.5],
+
+    "projectileSourcePosition" : [ "override", [0.0, 0.0] ]
+  }
+}

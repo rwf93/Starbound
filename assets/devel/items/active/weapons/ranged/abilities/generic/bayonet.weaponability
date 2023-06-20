@@ -1,0 +1,22 @@
+{
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "bayonet" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [2.75, -0.25],
+          "image" : "/items/active/weapons/ranged/abilities/generic/bayonet.png"
+        }
+      }
+    }},
+    "sounds" : {
+      "stab" : [ "/sfx/melee/swing_dagger.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "type" : "bayonet",
+    "scripts" : []
+  }
+}

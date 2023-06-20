@@ -1,0 +1,19 @@
+{
+  "itemName" : "messycollar",
+  "price" : 5000,
+  "rarity" : "Uncommon",
+  "inventoryIcon" : "messycollar.png",
+  "description" : "A collar that makes your pet messier.",
+  "shortdescription" : "Messy Collar",
+
+  "collar" : {
+    "name" : "messy",
+    "displayName" : "Messy",
+    "displayIcon" : "/items/augments/pet/messycollar.png",
+    "effects" : [ "messy" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupcollar" ],
+
+  "scripts" : [ "/scripts/augments/collar.lua" ]
+}

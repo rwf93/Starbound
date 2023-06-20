@@ -1,0 +1,77 @@
+{
+  "animationCustom" : {
+    "sounds" : {
+      "knockback" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ]
+    },
+    "particleEmitters" : {
+      "knockback" : {
+        "emissionRate" : 10.0,
+        "particles" : [
+          {
+            "particle" : {
+              "type" : "animated",
+              "animation" : "/animations/smoke/smoke.animation",
+              "timeToLive" : 0.8,
+              "initialVelocity" : [10.0, 0.0],
+              "finalVelocity" : [1.0, 2.0],
+              "approach" : [15, 10],
+              "variance" : {
+                "position" : [0, 0.5],
+                "initialVelocity" : [5.0, 3.0],
+                "timeToLive" : 0.2
+              }
+            },
+            "offset" : [2.75, 0.125],
+            "count" : 2
+          },
+          {
+            "particle" : {
+              "type" : "animated",
+              "animation" : "/animations/mediumflame/mediumflame.animation",
+              "timeToLive" : 0.6,
+              "initialVelocity" : [10.0, 0.0],
+              "finalVelocity" : [1.0, 2.0],
+              "approach" : [15, 7],
+              "variance" : {
+                "position" : [0, 0.5],
+                "initialVelocity" : [5.0, 3.0],
+                "timeToLive" : 0.2
+              }
+            },
+            "offset" : [2.75, 0.125],
+            "count" : 4
+          },
+          {
+            "particle" : {
+              "type" : "ember",
+              "color" : [240, 230, 70, 255],
+              "light" : [160, 120, 70],
+              "fade" : 0.9,
+              "initialVelocity" : [20, 0.0],
+              "finalVelocity" : [0, -10.0],
+              "approach" : [10, 20],
+              "timeToLive" : 0.6,
+              "layer" : "middle",
+              "variance" : {
+                "position" : [0, 0.5],
+                "size" : 0.5,
+                "initialVelocity" : [10.0, 4.0],
+                "timeToLive" : 0.2
+              }
+            },
+            "offset" : [2.75, 0.125],
+            "count" : 10
+          }
+        ]
+      }
+    }
+  },
+
+  "ability" : {
+    "type" : "knockback",
+    "scripts" : ["/items/active/weapons/ranged/abilities/shotgun/knockbackattack.lua"],
+    "cooldown" : 2.0,
+    "energyCost" : 30,
+    "momentum" : 20
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "organiccloakarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "cloakfarm.frames",
+    "backArm" : "cloakbarm.frames"
+  }
+}

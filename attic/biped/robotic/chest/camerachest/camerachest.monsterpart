@@ -1,0 +1,9 @@
+{
+  "name" : "roboticcamerachest",
+  "category" : "biped_robotic",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "camerachest.frames"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name" : "targetblink",
+  "type" : "head",
+
+  "scripts" : ["blink.lua"],
+  "animator" : "blink.animation",
+
+  "description" : "Teleport to your mouse cursor.",
+  "shortDescription" : "Targeted Blink",
+  "rarity" : "Legendary",
+  "icon" : "/tech/blink.png",
+
+  "chipCost" : 8,
+
+  "energyUsage" : 110,
+
+  "blinkCollisionCheckDiameter" : 2,
+  "blinkVerticalGroundCheck" : 10,
+
+  // Specific to humanoid
+  "blinkFootOffset" : -2.5,
+  "blinkHeadOffset" : 1,
+
+  "blinkOutTime" : 0.15,
+  "blinkInTime" : 0.15,
+
+  "blinkMode" : "cursor"
+}

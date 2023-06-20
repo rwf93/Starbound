@@ -1,0 +1,196 @@
+{
+  "commandName" : "upgradeBeamaxeSize3",
+  "onlyOnce" : true,
+  "icon" : "beamaxe.png",
+  "actions" : [
+     { 
+      "action" : "UpdatePlayerEssentialItem",
+      "itemsRequired" : [ ["refinedrubium", 8] ],
+      "parameters" : {
+        "blockRadius" : 4,
+        "minBeamWidth" : 7,
+        "maxBeamWidth" : 9
+      },
+      "essentialItem" : "beamaxe"
+    },
+    {
+      "action" : "DisableCommand",
+      "command" : "upgradeBeamaxeSize3"
+    },
+    {
+      "action" : "EnableCommand",
+      "command" : "upgradeBeamaxeSize4"
+    }
+  ],
+
+  "speciesText" : {
+    "apex" : {
+      "buttonText" : "Upgrade M. M. - Size III",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined rubium, I can upgrade your matter manipulator to mine in an even larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 rubium bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "avian" : {
+      "buttonText" : "Upgrade M. M. - Size III",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined rubium, I can upgrade your matter manipulator to mine in an even larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 rubium bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "floran" : {
+      "buttonText" : "Upgrade M. M. - Size III",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined rubium, I can upgrade your matter manipulator to mine in an even larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 rubium bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "glitch" : {
+      "buttonText" : "Upgrade M. M. - Size III",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined rubium, I can upgrade your matter manipulator to mine in an even larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 rubium bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "human" : {
+      "buttonText" : "Upgrade M. M. - Size III",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined rubium, I can upgrade your matter manipulator to mine in an even larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 rubium bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "novakid" : {
+      "buttonText" : "Upgrade M. M. - Size III",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined rubium, I can upgrade your matter manipulator to mine in an even larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 rubium bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "hylotl" : {
+      "buttonText" : "Upgrade M. M. - Size III",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "With 8 bars of refined rubium, I can upgrade your matter manipulator to mine in an even larger area.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Success! Your Matter Manipulator has been upgraded.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure. We'll need 8 rubium bars to complete this upgrade.",
+          "speedModifier" : 1.0
+        }
+      ]
+    }
+  }
+}

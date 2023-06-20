@@ -1,0 +1,38 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "heldItem" : {
+        "default" : "drone",
+        "states" : {
+          "drone" : { },
+          "controller" : { }
+        }
+      }
+    },
+
+    "parts" : {
+      "heldItem" : {
+        "properties" : {
+          "centered" : true
+        },
+
+        "partStates" : {
+          "heldItem" : {
+            "drone" : {
+              "properties" : {
+                "image" : "/projectiles/activeitems/drone/drone.png:0",
+                "offset" : [0.0, 0.0]
+              }
+            },
+            "controller" : {
+              "properties" : {
+                "image" : "dronecontroller.png",
+                "offset" : [0.5, 0.5]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

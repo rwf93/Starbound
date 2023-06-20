@@ -1,0 +1,26 @@
+{
+  "itemName" : "guidedrocketlauncher",
+  
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "It's time to rock some wicked trick shots.",
+  "shortdescription" : "Guided Rocket Launcher",
+  "tooltipKind" : "gun",
+  "weaponType" : "Gun",
+  "twoHanded" : true,
+  "itemTags" : ["weapon"],
+
+  "inventoryIcon" : "guidedrocketlauncher.png",
+  "animation" : "guidedrocketlauncher.animation",
+  "animationCustom" : { },
+  "scripts" : ["guidedrocketlauncher.lua"],
+  "fireOffset" : [2.0, 1.0],
+  
+  "level" : 6,
+  "fireTime" : 2.0,
+  "inaccuracy" : 0.02,
+  "projectileType" : "guidedrocket",
+  "projectileParameters" : {
+    "power" : 12
+  }
+}

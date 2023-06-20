@@ -1,0 +1,9 @@
+{
+  "name" : "organicblobhead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "blobhead.frames"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "itemName" : "partypopper",
+  "level" : 1,
+  "rarity" : "Legendary",
+  "category" : "toy",
+  "description" : "It's party time!",
+  "shortdescription" : "Party Popper",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "partypoppericon.png",
+  "animation" : "partypopper.animation",
+  "animationCustom" : {},
+  "scripts" : ["partypopper.lua"],
+
+  "fireTime" : 2.0,
+  "fireOffset" : [1.0, 0.0]
+}

@@ -1,0 +1,16 @@
+{
+  "itemName" : "rootpopbottle",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "drink",
+  "inventoryIcon" : "rootpopbottle.png",
+  "description" : "A bottle of dandelion root pop.",
+  "shortdescription" : "Root Pop Bottle",
+  "handPosition" : [0, -2],
+  "effects" : [ [
+    "wellfed"
+  ] ],
+  "emote" : "",
+  "emitters" : [ "drinking" ]
+}

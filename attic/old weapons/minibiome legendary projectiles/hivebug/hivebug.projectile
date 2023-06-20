@@ -1,0 +1,75 @@
+{
+  "projectileName" : "hivebug",
+  "physics" : "flybug",
+  "speed" : 30,
+  "bounces" : 0,
+  "timeToLive" : 1.5,
+  "image" : "hivebug.png",
+  "animationCycle" : 1.5,
+  "animationLoops" : false,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "lightColor" : [0, 35, 10],
+  "frameNumber" : 24,
+  "damageKind" : "default",
+  "damagePoly" : [ [-7, -1], [-4.6, -5.6], [0, -8], [4.6, -5.6], [7, -1], [4.6, 3.6], [0, 6], [-4.6, 3.6] ],
+
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionnosound.config"
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/npc/smallbiped/bulbouseyehead_small_idle1.ogg", "/sfx/npc/smallbiped/bulbouseyehead_small_idle2.ogg", "/sfx/npc/smallbiped/bulbouseyehead_small_attack1.ogg", "/sfx/npc/smallbiped/bulbouseyehead_small_attack2.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "hivebuggib",
+      "power" : 0,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "hivebuggib",
+      "power" : 0,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "hivecluster",
+      "power" : 6.25,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0
+    },
+        {
+      "action" : "projectile",
+      "type" : "hivecluster",
+      "power" : 6.25,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0
+    },
+        {
+      "action" : "projectile",
+      "type" : "hivecluster",
+      "power" : 6.25,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0
+    },
+        {
+      "action" : "projectile",
+      "type" : "hivecluster",
+      "power" : 6.25,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0
+    }
+  ]
+}

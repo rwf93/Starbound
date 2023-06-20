@@ -1,0 +1,91 @@
+{
+  "projectileName" : "chalcedonyspawner",
+  "image" : "chalcedonyspawner.png",
+  "physics" : "gas",
+  "animationCycle" : 0.1,
+  "frameNumber" : 8,
+  "speed" : 1,
+  "power" : 0,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "onlyHitTerrain" : true,
+  "timeToLive" : 0.1,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "cardinalschalcedony",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 0,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/charge_full_hold1.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "regularexplosion",
+      "fuzzAngle" : 180,
+      "inheritSpeedFactor" : 0.1,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "regularexplosion",
+      "fuzzAngle" : 180,
+      "inheritSpeedFactor" : 0.1,
+      "inheritDamageFactor" : 0.25,
+      "delaySteps" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "regularexplosion",
+      "fuzzAngle" : 180,
+      "inheritSpeedFactor" : 0.1,
+      "inheritDamageFactor" : 0.25,
+      "delaySteps" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "regularexplosion",
+      "fuzzAngle" : 180,
+      "inheritSpeedFactor" : 0.1,
+      "inheritDamageFactor" : 0.25,
+      "delaySteps" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "regularexplosion",
+      "fuzzAngle" : 180,
+      "inheritSpeedFactor" : 0.1,
+      "inheritDamageFactor" : 0.25,
+      "delaySteps" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "regularexplosion",
+      "fuzzAngle" : 180,
+      "inheritSpeedFactor" : 0.1,
+      "inheritDamageFactor" : 0.25,
+      "delaySteps" : 150
+    },
+    {
+      "action" : "projectile",
+      "type" : "regularexplosion",
+      "fuzzAngle" : 180,
+      "inheritSpeedFactor" : 0.1,
+      "inheritDamageFactor" : 0.25,
+      "delaySteps" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "regularexplosion",
+      "fuzzAngle" : 180,
+      "inheritSpeedFactor" : 0.1,
+      "inheritDamageFactor" : 0.25,
+      "delaySteps" : 210
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,89 @@
+{
+  "itemName" : "arcsword",
+  "price" : 1200,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A ridiculous sword that won't likely make it into the game.",
+  "shortdescription" : "Arcsword",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "arcsword.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "arcsword.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "blade" : { "properties" : {
+      "arc1start" : [-0.0625, -0.75],
+      "arc1end" : [-0.0625, 2.75],
+      "arc2start" : [-1.0, -1.25],
+      "arc2end" : [-0.5, 2.75],
+      "arc3start" : [0.875, -1.25],
+      "arc3end" : [0.5, 2.75]
+    }}}},
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword_electric1.ogg", "/sfx/melee/swing_broadsword_electric2.ogg", "/sfx/melee/swing_broadsword_electric3.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword_electric1.ogg", "/sfx/melee/swing_shortsword_electric2.ogg", "/sfx/melee/swing_shortsword_electric3.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ]
+    }
+  },
+  "animationScripts" : ["/items/active/effects/lightning.lua"],
+  "scriptedAnimationParameters" : {
+    "lightning" : [
+      // {
+      //   "partStartPosition" : ["blade", "arc1start"],
+      //   "partEndPosition" : ["blade", "arc1end"],
+      //   "color" : [230, 220, 255, 230],
+      //   "displacement" : 0.25,
+      //   "minDisplacement" : 0.0625,
+      //   "forks" : 0,
+      //   // "forkAngleRange" : 0.45,
+      //   "width" : 1
+      // },
+      {
+        "partStartPosition" : ["blade", "arc2start"],
+        "partEndPosition" : ["blade", "arc2end"],
+        "color" : [230, 220, 255, 230],
+        "displacement" : 0.25,
+        "minDisplacement" : 0.0625,
+        "forks" : 0,
+        // "forkAngleRange" : 0.45,
+        "width" : 1
+      },
+      {
+        "partStartPosition" : ["blade", "arc3start"],
+        "partEndPosition" : ["blade", "arc3end"],
+        "color" : [230, 220, 255, 230],
+        "displacement" : 0.25,
+        "minDisplacement" : 0.0625,
+        "forks" : 0,
+        // "forkAngleRange" : 0.45,
+        "width" : 1
+      }
+    ]
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "damageConfig" : {
+      "damageSourceKind" : "electricbroadsword",
+      "statusEffects" : ["electrified"]
+    },
+    "fireTime" : 1.0,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "travelingslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

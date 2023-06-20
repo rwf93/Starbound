@@ -1,0 +1,9 @@
+{
+  "name" : "roboticspartanhead",
+  "category" : "biped_robotic",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "spartanhead.frames"
+  }
+}

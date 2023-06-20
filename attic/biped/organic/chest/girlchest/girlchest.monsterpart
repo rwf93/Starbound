@@ -1,0 +1,9 @@
+{
+  "name" : "organicgirlchest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "girlchest.frames"
+  }
+}

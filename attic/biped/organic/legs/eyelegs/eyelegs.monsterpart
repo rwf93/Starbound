@@ -1,0 +1,9 @@
+{
+  "name" : "organiceyelegs",
+  "category" : "biped",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "eyelegs.frames"
+  }
+}

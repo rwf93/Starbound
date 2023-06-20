@@ -1,0 +1,9 @@
+{
+  "name" : "organicocto2head",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "octo2head.frames"
+  }
+}

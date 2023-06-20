@@ -1,0 +1,77 @@
+{
+  "objectName" : "manipulatortable",
+  "colonyTags" : ["crafting","electronic"],
+  "rarity" : "Legendary",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/crafting.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "  MANIPULATOR'S TABLE",
+        "subtitle" : "  Raw power at your fingertips!",
+        "icon" : {
+          "file" : "/interface/crafting/manipulatortable.png"
+        }
+      }
+    },
+    "filter" : [ "manipulatortable" ]
+  },
+  "printable" : false,
+  "description" : "Craft ranged weapons of immense power and armor with deep energy reserves.",
+  "shortdescription" : "^orange;Manipulator's Table^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 600,
+  
+  "lightColor" : [107, 131, 179],
+
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0,
+  "flickerIntensityVariance" : 0.025,
+
+  "apexDescription" : "The equipment I can make here would provide a lot of destructive power at the cost of my defence.",
+  "avianDescription" : "A manipulator's crafting table. They are masters of pure destructive power, but tend to be frail themselves.",
+  "floranDescription" : "Ssstaff weapon very powerful, but Floran need lotsss of energy for it.",
+  "glitchDescription" : "Observant. The armours I can make here won't be very strong, but they make up for it with massive energy reserves.",
+  "humanDescription" : "If having deep energy reserves is my highest priority, the gear I can craft on this table would be best.",
+  "hylotlDescription" : "With the equipment I can craft on this table, I could unleash terrible destructive power.",
+  "novakidDescription" : "I can make myself some terrifyingly powerful equipment from this here station.",
+
+
+  "inventoryIcon" : "manipulatortableicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "manipulatortable.png:<color>.<frame>", "fullbright" : true }, { "image" : "manipulatortablelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 3,
+      "animationCycle" : 0.3,
+      
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "lightPosition" : [ -1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+      "imageLayers" : [ { "image" : "manipulatortable.png:<color>.<frame>", "fullbright" : true }, { "image" : "manipulatortablelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 3,
+      "animationCycle" : 0.3,
+      
+      "direction" : "right",
+      
+      "lightPosition" : [ 0, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

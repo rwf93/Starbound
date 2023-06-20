@@ -1,0 +1,11 @@
+{
+  "frameGrid" : {
+    "size" : [18, 18],
+    "dimensions" : [8, 2],
+
+    "names" : [
+      [ "aggro.1", "aggro.2", "aggro.3", null, null, null, null, null ],
+      [ "spin.1", "spin.2", "spin.3", "spin.4", "spin.5", "spin.6", "spin.7", "spin.8" ]
+    ]
+  }
+}

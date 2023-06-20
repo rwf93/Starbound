@@ -1,0 +1,122 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/trap",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 12,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "invalid" : "true"
+    },
+    "10" : {
+      "//description" : "A test object that emits platform projectiles.",
+      "//name" : "platformemitter_orientation4",
+      "//shortdescription" : "Rail Platform Emitter",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "platformemitter",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A test object that emits platform projectiles.",
+      "//name" : "platformemitter_orientation5",
+      "//shortdescription" : "Rail Platform Emitter",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "platformemitter",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "invalid" : "true"
+    },
+    "3" : {
+      "invalid" : "true"
+    },
+    "4" : {
+      "invalid" : "true"
+    },
+    "5" : {
+      "invalid" : "true"
+    },
+    "6" : {
+      "//description" : "A test object that emits platform projectiles.",
+      "//name" : "platformemitter",
+      "//shortdescription" : "Rail Platform Emitter",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "platformemitter",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A test object that emits platform projectiles.",
+      "//name" : "platformemitter_orientation1",
+      "//shortdescription" : "Rail Platform Emitter",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "platformemitter",
+      "tilesetDirection" : "right"
+    },
+    "8" : {
+      "//description" : "A test object that emits platform projectiles.",
+      "//name" : "platformemitter_orientation2",
+      "//shortdescription" : "Rail Platform Emitter",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "platformemitter",
+      "tilesetDirection" : "right"
+    },
+    "9" : {
+      "//description" : "A test object that emits platform projectiles.",
+      "//name" : "platformemitter_orientation3",
+      "//shortdescription" : "Rail Platform Emitter",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "platformemitter",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/devel/objects/platformemitter_orientation4.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/devel/objects/platformemitter_orientation5.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/devel/objects/platformemitter.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/devel/objects/platformemitter_orientation1.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/devel/objects/platformemitter_orientation2.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/devel/objects/platformemitter_orientation3.png"
+    }
+  },
+  "tilewidth" : 8
+}

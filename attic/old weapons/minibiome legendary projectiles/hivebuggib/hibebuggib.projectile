@@ -1,0 +1,13 @@
+{
+  "projectileName" : "hivebuggib",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "timeToLive" : 0.4,
+  "image" : "hivebuggib.png",
+  "animationLoops" : false,
+  "animationCycle" : 0.4,
+  "frameNumber" : 5,
+  "lightColor" : [0, 0, 0],
+  "speed" : 5,
+  "damageKind" : "default"
+}

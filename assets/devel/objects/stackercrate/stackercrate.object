@@ -1,0 +1,54 @@
+{
+  "objectName" : "stackercrate",
+  "colonyTags" : [],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "category" : "storage",
+  "price" : 15,
+  "description" : "The ultimate in auto-stacking technology.",
+  "shortdescription" : "Stacker Crate",
+  "race" : "generic",
+  "health" : 1.5,
+
+  "inventoryIcon" : "stackercrateicon.png",
+  "orientations" : [
+    {
+      "image" : "stackercrate.png:default",
+      "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    },
+    {
+      "image" : "stackercrate.png:default",
+      "direction" : "right",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/woodenbox_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/woodenbox_close.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : ["stackercrate.lua"],
+  "scriptDelta" : 5
+}

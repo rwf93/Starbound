@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "aviansentry",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "aviansentry.png"
+  }
+}

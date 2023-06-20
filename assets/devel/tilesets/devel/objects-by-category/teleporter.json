@@ -1,0 +1,31 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/teleporter",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "//description" : "Teleports to a variety of missions for easy testing.",
+      "//name" : "missionteleporter",
+      "//shortdescription" : "Mission Teleporter",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "missionteleporter"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/missionteleporter.png"
+    }
+  },
+  "tilewidth" : 8
+}

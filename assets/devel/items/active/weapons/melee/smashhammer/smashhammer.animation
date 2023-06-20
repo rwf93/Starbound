@@ -1,0 +1,26 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "hammer" : {
+        "default" : "smashing",
+        "states" : {
+          "smashing" : {
+            "properties" : {
+              "persistentSound" : "hammertune.ogg"
+            }
+          }
+        }
+      }
+    },
+    "parts" : {
+      "hammer" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "smashhammer.png",
+          "offset" : [2, 0],
+          "damageArea" : [[0.25, -1.0], [1.625, -1.0], [1.625, 1.0], [0.25, 1.0]]
+        }
+      }
+    }
+  }
+}

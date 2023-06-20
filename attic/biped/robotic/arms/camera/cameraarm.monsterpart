@@ -1,0 +1,10 @@
+{
+  "name" : "roboticcameraarm",
+  "category" : "biped_robotic",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "camerafarm.frames",
+    "backArm" : "camerabarm.frames"
+  }
+}

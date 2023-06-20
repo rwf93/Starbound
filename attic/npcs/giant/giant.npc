@@ -1,0 +1,62 @@
+{
+  "npcId" : 300,
+  "npcName" : "giant",
+
+  "aiFunctions" : { "0" : "defaultWander" },
+  "aiStateFunc" : "passiveCritter",
+
+  "hVelocity" : { "0" : 18 },
+
+  "trackDist" : 10.0,
+  "aggroDist" : 2.0,
+
+  "frames" : "body/1.png",
+  "frameInfo" : { "walk" : [ "walk", 11, 2.0, 1, 0, 0],
+    "idle" : [ "idle", 1, 0.5, 0, 0, 0]
+  },
+
+  "attentionSpan" : 8,
+  "soundSensitivity" : 2,
+
+  "defaultHitbox" : [ "Rect", [-100, 281, 140, -150] ],
+
+  "attackBox" : {
+    "attack.0.4" : [ "Default" ],
+    "attack.0.5" : [ "Default" ]
+  },
+  "defenseBox" : {
+
+  },
+  "immuneBox" : {
+
+  },
+  "weakpointBox" : {
+
+  },
+  "collisionBox" : {
+
+    "idle.0.0" : [ "Default" ],
+
+    "walk.0.0" : [ "Default" ],
+    "walk.0.1" : [ "Default" ],
+    "walk.0.2" : [ "Default" ],
+    "walk.0.3" : [ "Default" ],
+    "walk.0.4" : [ "Default" ],
+    "walk.0.5" : [ "Default" ],
+    "walk.0.6" : [ "Default" ],
+    "walk.0.7" : [ "Default" ],
+    "walk.0.8" : [ "Default" ],
+    "walk.0.9" : [ "Default" ],
+    "walk.0.10" : [ "Default" ]
+
+  },
+  "damageBox" : {
+
+  },
+  "animationOffset" : {
+
+  },
+  "projectilePoint" : {
+
+  }
+}

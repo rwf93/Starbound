@@ -1,0 +1,9 @@
+{
+  "name" : "organiccamerachest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "camerachest.frames"
+  }
+}

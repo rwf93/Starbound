@@ -1,0 +1,32 @@
+{
+  "objectName" : "penguinplush",
+  "colonyTags" : ["penguin","pretty"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 50,
+
+  "description" : "A cuddly penguin plushy. Awwwww.",
+  "shortdescription" : "Penguin Plushie",
+  "race" : "generic",
+
+  "apexDescription" : "An adorable cuddly penguin.",
+  "avianDescription" : "How cute, a cuddly toy penguin.",
+  "floranDescription" : "Floran not even want ssstab cuddly penguin.",
+  "glitchDescription" : "Melting. This delightful penguin is almost too much!",
+  "humanDescription" : "I just wanna cuddle this penguin forever.",
+  "hylotlDescription" : "Shriek! A wonderful penguin plushie. I need this one!",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "penguinplush.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

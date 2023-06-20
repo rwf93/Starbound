@@ -1,0 +1,13 @@
+{
+  "itemName" : "bananabread",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "bananabread.png",
+  "description" : "Moist, delicious banana bread.",
+  "shortdescription" : "Banana Bread",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

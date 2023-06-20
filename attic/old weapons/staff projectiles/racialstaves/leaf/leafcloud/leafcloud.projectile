@@ -1,0 +1,18 @@
+{
+  "projectileName" : "leafcloud",
+  "image" : "leafcloud.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 4,
+  "power" : 50,
+  "physics" : "gas",
+  "piercing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/leafexplosion/leafexplosion.config"
+    }
+  ],
+
+  "lightColor" : [10, 50, 15],
+  "damageKind" : "electric"
+}

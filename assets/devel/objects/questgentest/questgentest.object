@@ -1,0 +1,30 @@
+{
+  "objectName" : "questgentest",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "description" : "This book is full of quests...",
+  "shortdescription" : "Quest Book",
+  "race" : "glitch",
+  "category" : "decorative",
+  "price" : 55,
+
+  "inventoryIcon" : "questgentesticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "questgentest.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/questgentest/questgentest.lua"
+  ],
+  "scriptDelta" : 10
+}

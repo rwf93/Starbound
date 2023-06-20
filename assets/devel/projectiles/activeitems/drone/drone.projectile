@@ -1,0 +1,25 @@
+{
+  "projectileName" : "drone",
+  "clientEntityMode" : "ClientPresenceMaster",
+  "physics" : "hover",
+  "image" : "drone.png",
+  "animationCycle" : 0.04,
+  "pointLight" : true,
+  "lightColor" : [170, 210, 255],
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "timeToLive" : 60,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosion2.config"
+    }
+  ],
+  "speed" : 10,
+  "power" : 0,
+  "onlyHitTerrain" : true,
+  "damageKind" : "default",
+  "scripts" : [ "drone.lua" ],
+  "controlForce" : 20,
+  "maxSpeed" : 20
+}

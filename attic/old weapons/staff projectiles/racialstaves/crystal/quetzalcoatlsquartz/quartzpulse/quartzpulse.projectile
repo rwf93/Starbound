@@ -1,0 +1,13 @@
+{
+  "projectileName" : "quartzpulse",
+  "image" : "quartzpulse.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "damagePoly" : [ [-72, 0], [-48, -48], [0, -72], [48, -48], [72, 0], [48, 48], [0, 72], [-48, 48] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  //"damageTeam" : { "type" : "indiscriminate" },
+  "damageKind" : "default"
+}

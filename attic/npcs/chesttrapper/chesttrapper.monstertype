@@ -1,0 +1,112 @@
+{
+  "type" : "chesttrapper",
+
+  "categories" : [ "chesttrapper" ],
+  "parts" : [ "chest" ],
+
+  "animation" : "chesttrapper.animation",
+
+  "dropPools" : [ "noMeatMonsterTreasure" ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/dungeon/chesttrapper/behavior.lua",
+      "/scripts/stateMachine.lua",
+      "/scripts/util.lua",
+      "/scripts/vec2.lua"
+    ],
+
+    "metaBoundBox" : [-1.0, -1.125, 1.0, 1.0],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-1.0, -1.125], [1.0, -1.125], [1.0, 1.0], [-1.0, 1.0] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 3,
+      "runSpeed" : 6,
+      "jumpSpeed" : 5,
+      "flySpeed" : 25,
+      "airFriction" : 0.1,
+      "airForce" : 100.0
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.1,
+    "knockoutEffect" : "blink",
+    "deathParticles" : "deathPoof",
+
+    "touchDamage" : {
+      "poly" : [ [-1.0, -1.125], [1.0, -1.125], [1.0, 1.0], [-1.0, 1.0] ],
+      "damage" : 20,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "bite",
+      "statusEffects" : [ ]
+    },
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 10
+        },
+        "maxHealth" : {
+          "baseValue" : 12
+        },
+        "protection" : {
+          "baseValue" : 1.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "poisonImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+
+    "noticeDistance" : 5,
+
+    "aggroTime" : 0.5,
+    "aggroMoveSpeed" : 7.5,
+
+    "bombAttackTimeRange" : [0.25, 0.5],
+
+    "explodeTime" : 0.5,
+
+    "spawnAttackWaitTime" : 0.4,
+    "spawnAttackOffsets" : [ [-1, 1], [0, 1], [1, 1] ],
+    "spawnAttackInitialSpeed" : 16
+  }
+}

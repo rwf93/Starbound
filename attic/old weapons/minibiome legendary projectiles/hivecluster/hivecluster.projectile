@@ -1,0 +1,27 @@
+{
+  "projectileName" : "hivecluster",
+  "image" : "hivecluster.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "physics" : "stickybomb",
+  "pointLight" : true,
+  "lightColor" : [10, 40, 0],
+  "timeToLive" : 4,
+  "bounces" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "smallregularexplosion",
+      "inheritDamageFactor" : 1.0,
+      "angle" : 5
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/goocluster_pop.ogg" ]
+    }
+  ],
+  "speed" : 15,
+  "damageType" : "NoDamage",
+  "damageKind" : "acid"
+}

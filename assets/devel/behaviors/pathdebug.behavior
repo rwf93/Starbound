@@ -1,0 +1,80 @@
+{
+  "name": "pathdebug",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/query.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/movement.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "cooldown",
+    "type": "decorator",
+    "name": "cooldown",
+    "parameters": {
+      "cooldown": {"value": 1},
+      "onFail": {"value": true},
+      "onSuccess": {"value": true}
+    },
+    "child": {
+      "title": "sequence",
+      "type": "composite",
+      "name": "sequence",
+      "parameters": {},
+      "children": [
+        {
+          "title": "findObject",
+          "type": "action",
+          "name": "findObject",
+          "parameters": {
+            "name": {"value": "apexstatue3"},
+            "orderBy": {"value": "nearest"},
+            "position": {"key": "self"},
+            "range": {"value": 50}
+          },
+          "output": {
+            "entity": "banana"
+          }
+        },
+        {
+          "title": "entityPosition",
+          "type": "action",
+          "name": "entityPosition",
+          "parameters": {
+            "entity": {"key": "banana"}
+          },
+          "output": {
+            "position": "bananaPos"
+          }
+        },
+        {
+          "title": "moveToPosition",
+          "type": "action",
+          "name": "moveToPosition",
+          "parameters": {
+            "avoidLiquid": {"value": true},
+            "groundPosition": {"value": true},
+            "maxGround": {"value": 5},
+            "minGround": {"value": -5},
+            "position": {"key": "bananaPos"}
+          },
+          "output": {}
+        },
+        {
+          "title": "interactObject",
+          "type": "action",
+          "name": "interactObject",
+          "parameters": {
+            "entity": {"key": "banana"}
+          }
+        },
+        {
+          "title": "runner",
+          "type": "action",
+          "name": "runner",
+          "parameters": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "roboticspiderlegs",
+  "category" : "biped_robotic",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "spiderlegs.frames"
+  }
+}

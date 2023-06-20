@@ -1,0 +1,56 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-type/container",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 4,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "//description" : "There was a label on here once, but it burnt off.'",
+      "//name" : "incinerator",
+      "//shortdescription" : "Incinerator",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "incinerator",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "Use this chest to test generation of treasure pools.",
+      "//name" : "treasuretestchest",
+      "//shortdescription" : "Treasure Test Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "treasuretestchest",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "The ultimate in auto-stacking technology.",
+      "//name" : "stackercrate",
+      "//shortdescription" : "Stacker Crate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "stackercrate",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/incinerator.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/objects/treasuretestchest.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/objects/stackercrate.png"
+    }
+  },
+  "tilewidth" : 8
+}

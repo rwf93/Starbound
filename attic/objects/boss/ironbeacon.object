@@ -1,0 +1,43 @@
+{
+  "objectName" : "ironbeacon",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "description" : "A distress beacon. Who knows who might hear it?",
+  "shortdescription" : "Distress Beacon",
+  "race" : "generic",
+  "category" : "Tool",
+  "printable" : false,
+
+  "apexDescription" : "A distress beacon. I hope the person who left it is okay.",
+  "avianDescription" : "A distress beacon. Someone must be in trouble.",
+  "floranDescription" : "Floran help as well as hunt. Sssometimes.",
+  "glitchDescription" : "Observant. This distress beacon is transmitting at a number of frequencies.",
+  "humanDescription" : "This beacon's sending out a distress call.",
+  "hylotlDescription" : "Someone needs help. Protecting the weak is a worthwhile pursuit.",
+  "novakidDescription" : "It appears to be a distress beacon. I wonder who activated it.",
+
+  "inventoryIcon" : "ironbeaconicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "ironbeacon.png:<color>.<frame>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 12,
+      "animationCycle" : 2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "animation" : "/objects/wired/ironbeacon/ironbeacon.animation",
+  "animationParts" : {
+    "beacon" : "ironbeacon.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "scripts" : [ "/objects/wired/ironbeacon/ironbeacon.lua" ],
+  "scriptDelta" : 5
+
+}

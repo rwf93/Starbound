@@ -1,0 +1,9 @@
+{
+  "name" : "roboticbugchest",
+  "category" : "biped_robotic",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "bugchest.frames"
+  }
+}

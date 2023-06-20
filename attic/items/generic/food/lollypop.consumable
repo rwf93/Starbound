@@ -1,0 +1,13 @@
+{
+  "itemName" : "lollypop",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "lollypop.png",
+  "description" : "It's a lollypop! Or, for the uninitiated, a hunk of sugar on a stick.",
+  "shortdescription" : "Lollypop",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

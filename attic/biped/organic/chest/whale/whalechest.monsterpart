@@ -1,0 +1,9 @@
+{
+  "name" : "organicwhalechest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "whalechest.frames"
+  }
+}

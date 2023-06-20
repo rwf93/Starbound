@@ -1,0 +1,37 @@
+{
+  "itemName" : "george2chest",
+  "price" : 0,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "An accurate muscle suit based on George's muscles.",
+  "shortdescription" : "George's Accurate Muscles",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "colorOptions" : [
+    // RED
+    { "ffca8a" : "f4988c", "e0975c" : "d93a3a", "a85636" : "932625", "6f2919" : "601119" },
+    { "ffca8a" : "727272", "e0975c" : "414141", "a85636" : "1c1c1c", "6f2919" : "0b0b0b" },
+    { "ffca8a" : "e9e9e9", "e0975c" : "727272", "a85636" : "333333", "6f2919" : "161616" },
+    { "ffca8a" : "ba3f36", "e0975c" : "7a2622", "a85636" : "411114", "6f2919" : "25090c" },
+    { "ffca8a" : "d77b24", "e0975c" : "794317", "a85636" : "3a1f0f", "6f2919" : "1d1009" },
+    { "ffca8a" : "eedb53", "e0975c" : "928132", "a85636" : "42381a", "6f2919" : "262010" },
+    { "ffca8a" : "6c9e4a", "e0975c" : "395b2b", "a85636" : "1b2e16", "6f2919" : "0b140a" },
+    { "ffca8a" : "4681c0", "e0975c" : "284672", "a85636" : "161b3b", "6f2919" : "0c0e22" },
+    { "ffca8a" : "7d4794", "e0975c" : "4d245d", "a85636" : "221328", "6f2919" : "0f0912" },
+    { "ffca8a" : "d46bd7", "e0975c" : "7c377b", "a85636" : "30172e", "6f2919" : "170b16" },
+    { "ffca8a" : "a36948", "e0975c" : "683a23", "a85636" : "2d1a12", "6f2919" : "170d09" }
+  ]
+}

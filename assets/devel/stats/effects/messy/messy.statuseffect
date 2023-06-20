@@ -1,0 +1,13 @@
+{
+  "name" : "messy",
+  "effectConfig" : {
+    "object" : "poop",
+    "offset" : [0, 0]
+  },
+  "defaultDuration" : 30,
+
+  "scripts" : [
+    "messy.lua"
+  ]
+
+}

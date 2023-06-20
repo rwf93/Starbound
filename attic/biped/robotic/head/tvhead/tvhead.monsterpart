@@ -1,0 +1,9 @@
+{
+  "name" : "robotictvhead",
+  "category" : "biped_robotic",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "tvhead.frames"
+  }
+}

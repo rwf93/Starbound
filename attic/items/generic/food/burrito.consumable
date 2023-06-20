@@ -1,0 +1,13 @@
+{
+  "itemName" : "burrito",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "burrito.png",
+  "description" : "A bean and cheese burrito. Deliciously unhealthy!",
+  "shortdescription" : "Burrito",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

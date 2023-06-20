@@ -1,0 +1,97 @@
+[
+  {
+    "op": "add",
+    "path": "/pathdungeon",
+    "value": {
+      "type" : "FloatingDungeon",
+      "dungeonWorld" : "pathdungeon",
+      "seed" : 1234,
+
+      "skyParameters" : {
+        "spaceLevel" : 3000,
+        "ambientLightLevel" : [ 24, 28, 24 ],
+        "satellites" : [ {
+          "pos" : [ 0.310561, 0.21497 ],
+          "drawables" : [ {
+            "scale" : [ 0.055, 0.055 ],
+            "mirrored" : false,
+            "rotation" : 0,
+            "flipHorizontal" : false,
+            "centered" : true,
+            "image" : "/celestial/system/terrestrial/biomes/desert/maskie3.png?hueshift=-45"
+          }, {
+            "scale" : [ 0.055, 0.055 ],
+            "mirrored" : false,
+            "rotation" : 0,
+            "flipHorizontal" : false,
+            "centered" : true,
+            "image" : "/celestial/system/terrestrial/biomes/desert/maskie3.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/2.png"
+          }, {
+            "scale" : [ 0.055, 0.055 ],
+            "mirrored" : false,
+            "rotation" : 0,
+            "flipHorizontal" : false,
+            "centered" : true,
+            "image" : "/celestial/system/terrestrial/biomes/desert/maskie2.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/20.png"
+          }, {
+            "scale" : [ 0.055, 0.055 ],
+              "mirrored" : false,
+              "rotation" : 0,
+              "flipHorizontal" : false,
+              "centered" : true,
+              "image" : "/celestial/system/terrestrial/biomes/desert/maskie1.png?hueshift=-45?addmask=/celestial/system/terrestrial/dynamics/5.png"
+          }, {
+            "scale" : [ 0.055, 0.055 ],
+              "mirrored" : false,
+              "rotation" : 0,
+              "flipHorizontal" : false,
+              "centered" : true,
+              "image" : "/celestial/system/terrestrial/shadows/9.png"
+          } ]
+        } ],
+        "planet" : {
+          "pos" : [ 0.00538729, 0.46961 ],
+          "drawables" : [ {
+            "scale" : [ 0.15, 0.15 ],
+            "mirrored" : false,
+            "rotation" : 0,
+            "flipHorizontal" : false,
+            "centered" : true,
+            "image" : "/celestial/system/gas_giant/gas_giant_base.png"
+          }, {
+            "scale" : [ 0.15, 0.15 ],
+            "mirrored" : false,
+            "rotation" : 0,
+            "flipHorizontal" : false,
+            "centered" : true,
+            "image" : "/celestial/system/gas_giant/gas_giant_clouds.png?addmask=/celestial/system/gas_giant/gas_giant_dynamics/17.png+/celestial/system/gas_giant/gas_giant_dynamics/29.png"
+          }, {
+            "scale" : [ 0.15, 0.15 ],
+            "mirrored" : false,
+            "rotation" : 0,
+            "flipHorizontal" : false,
+            "centered" : true,
+            "image" : "/celestial/system/gas_giant/shadows/9.png"
+          } ]
+        },
+        "skyType" : "barren",
+        "horizonImages" : [ {
+          "right" : "/celestial/system/terrestrial/horizon/liquids/water_r.png",
+          "left" : "/celestial/system/terrestrial/horizon/liquids/water_l.png"
+        }, {
+          "right" : "/celestial/system/terrestrial/horizon/textures/forest_r.png?hueshift=-30?addmask=/celestial/system/terrestrial/horizon/masks/32_r.png;0;0",
+          "left" : "/celestial/system/terrestrial/horizon/textures/forest_l.png?hueshift=-30?addmask=/celestial/system/terrestrial/horizon/masks/32_l.png;0;0"
+        }, {
+          "right" : "/celestial/system/terrestrial/horizon/atmosphere/atmosphere_r.png",
+          "left" : "/celestial/system/terrestrial/horizon/atmosphere/atmosphere_l.png"
+        }, {
+          "right" : "/celestial/system/terrestrial/horizon/shadow/shadow_r.png",
+          "left" : "/celestial/system/terrestrial/horizon/shadow/shadow_l.png"
+        } ],
+        "dayLength" : 1153.36,
+        "surfaceLevel" : 1200,
+        "seed" : -5288806180628666923
+      }
+    }
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "animatedParts" : {
+    "parts" : {
+      "board" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "unrealair.png",
+          "offset" : [-2.0, -0.125],
+          "rotationGroup" : "board"
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "board" : {}
+  }
+}

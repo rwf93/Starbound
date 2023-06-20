@@ -1,0 +1,13 @@
+{
+  "type" : "stealquestgiver",
+  "baseType" : "villager",
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "develQuests" : true,
+      "steal" : true
+    }
+  }
+}

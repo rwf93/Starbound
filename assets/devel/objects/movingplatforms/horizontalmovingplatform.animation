@@ -1,0 +1,48 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "moving" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {
+            "properties" : {
+              "persistentSound" : "/sfx/tech/forcefield_loop.ogg"
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "base" : {
+        "properties" : {
+          "offset" : [0, -1],
+          "centered" : false,
+          "image" : "<partImage>"
+        }
+      },
+
+      "platform" : {
+        "properties" : {
+          "centered" : true,
+          "transformationGroups" : ["platform"],
+          "image" : "<partImage>",
+          "zLevel" : 1
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "platform" : {
+      "interpolated" : true
+    }
+  },
+
+  "sounds" : {
+    "changeDir" : {
+      "pool" : [ "/sfx/blocks/footstep_lightmetal.ogg" ]
+    }
+  }
+}

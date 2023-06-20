@@ -1,0 +1,73 @@
+{
+  "objectName" : "scifianvil",
+  "colonyTags" : ["crafting","electronic"],
+  "rarity" : "Legendary",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/crafting.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Replicator",
+        "subtitle" : " Turn strong ores and alloys into high quality equipment",
+        "icon" : {
+          "file" : "/interface/crafting/craftinganvil3.png"
+        }
+      }
+    },
+    "filter" : [ "scifianvil" ]
+  },
+  "printable" : false,
+  "description" : "This module can turn strong ores and alloys into high quality equipment.",
+  "shortdescription" : "^orange;Replicator^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 200,
+  
+  "lightColor" : [89, 119, 179],
+
+  "flickerPeriod" : 0.9,
+  "flickerMinIntensity" : 0.75,
+  "flickerMaxIntensity" : 0.8,
+  "flickerPeriodVariance" : 0,
+  "flickerIntensityVariance" : 0,
+
+  "apexDescription" : "A replicator. I can create high quality equipment with this.",
+  "avianDescription" : "I can turn ores and alloys into good quality equipment from here.",
+  "floranDescription" : "Floran make ssstrong weapon here.",
+  "glitchDescription" : "Neutral. I can make durasteel equipment and more with this.",
+  "humanDescription" : "I can create super strong equipment from this replicator.",
+  "hylotlDescription" : "This replicator enables me to create high quality equipment from good quality materials.",
+  "novakidDescription" : "I can make myself some great equipment using this replicator.",
+
+  "inventoryIcon" : "scifianvilicon.png",
+  "orientations" : [
+    
+    {
+      "imageLayers" : [ { "image" : "scifianvil.png:<color>.<frame>", "fullbright" : true }, { "image" : "scifianvillit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.9,
+      
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "scifianvil.png:<color>.<frame>", "fullbright" : true }, { "image" : "scifianvillit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.9,
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "npcToy" : {}
+}

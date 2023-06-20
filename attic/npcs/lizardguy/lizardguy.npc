@@ -1,0 +1,64 @@
+{
+  "npcId" : 9,
+  "npcName" : "lizardguy",
+
+  "aiFunctions" : { "0" : "defaultWander" },
+  "aiStateFunc" : "passiveCritter",
+
+  "hVelocity" : { "0" : 4.5 },
+
+  "trackDist" : 10.0,
+  "aggroDist" : 2.0,
+
+  "frames" : "body/1.frames",
+  "frameInfo" : { "walk" : [ "walk", 8, 0.7, 1, 0, 0],
+    "idle" : [ "idle", 5, 1.0, 1, 0, 0]
+  },
+
+  "jumpStrength" : 0.25,
+
+  "attentionSpan" : 8,
+  "soundSensitivity" : 2,
+
+  "defaultHitbox" : [ "Rect", [-5, 10, 3, -9] ],
+
+  "attackBox" : {
+
+  },
+  "defenseBox" : {
+
+  },
+  "immuneBox" : {
+
+  },
+  "weakpointBox" : {
+
+  },
+  "collisionBox" : {
+
+    "idle.0.0" : [ "Default" ],
+    "idle.0.1" : [ "Default" ],
+    "idle.0.2" : [ "Default" ],
+    "idle.0.3" : [ "Default" ],
+    "idle.0.4" : [ "Default" ],
+
+    "walk.0.0" : [ "Default" ],
+    "walk.0.1" : [ "Default" ],
+    "walk.0.2" : [ "Default" ],
+    "walk.0.3" : [ "Default" ],
+    "walk.0.4" : [ "Default" ],
+    "walk.0.5" : [ "Default" ],
+    "walk.0.6" : [ "Default" ],
+    "walk.0.7" : [ "Default" ]
+
+  },
+  "damageBox" : {
+
+  },
+  "animationOffset" : {
+
+  },
+  "projectilePoint" : {
+
+  }
+}

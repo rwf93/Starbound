@@ -1,0 +1,15 @@
+{
+  "name" : "tinyhypnohead",
+  "category" : "smallquadruped",
+  "type" : "head",
+
+
+  "frames" : {
+    "head" : "tinyhypnohead.png"
+  },
+
+  "parameters" :
+  {
+    "projectileSourcePosition" : [1, -1.25]
+  }
+}

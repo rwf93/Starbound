@@ -1,0 +1,43 @@
+[
+  {
+    "op" : "add",
+    "path" : "/playerlauncher",
+    "value" : {
+      "stats" : {
+        "power" : 3,
+        "energy" : 0
+      },
+      "partParameters" : {
+        "script" : "/vehicles/modularmech/armscripts/playerlauncher.lua",
+        "armClass" : "PlayerLauncher",
+
+        "rotationLimits" : [-0.5, 1.0],
+
+        "reloadTime" : 0.3
+      },
+      "loungePositions" : {
+        "z<armName>Seat" : { // name needs a 'z' to sort after the main seat
+          "part" : "<armName>",
+          "partAnchor" : "sitPosition",
+          "orientation" : "sit",
+          "cameraFocus" : true,
+          "enabled" : false
+        }
+      },
+      "partImages" : {
+        "<armName>" : "arm/playerlauncher.png",
+        "<armName>Fullbright" : ""
+      },
+      "defaultPrimaryColors" : ["f4988c", "d93a3a", "932625", "601119"],
+      "defaultSecondaryColors" : ["838383", "555555", "383838", "151515"],
+      "animationCustom" : {
+        "animatedParts" : { "parts" : { "<armName>" : { "properties" : {
+          "sitPosition" : [4.5, 4.5]
+        }}}},
+        "sounds" : {
+          "<armName>Fire" : [ "/sfx/gun/crossbow1.ogg" ]
+        }
+      }
+    }
+  }
+]

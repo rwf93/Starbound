@@ -1,0 +1,9 @@
+{
+  "name" : "organicext3chest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "ext3chest.frames"
+  }
+}

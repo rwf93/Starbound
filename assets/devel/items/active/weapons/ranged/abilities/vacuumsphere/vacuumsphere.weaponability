@@ -1,0 +1,57 @@
+{
+  "animationCustom" : {
+    "sounds" : {
+      "altFire" : [ "/sfx/gun/blowgun1.ogg", "/sfx/gun/blowgun2.ogg", "/sfx/gun/blowgun3.ogg" ]
+    },
+    "particleEmitters" : {
+      "altMuzzleFlash" : {
+        "active" : false,
+        "emissionRate" : 8,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0, 0, 0, 0],
+        "particles" : [ ]
+      }
+    }
+  },
+
+  "ability" : {
+    "type" : "vacuumsphere",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+
+    "elementalProjectiles" : {
+      "physical" : "vacuumsphereprimer",
+      "fire" : "vacuumsphereprimer",
+      "electric" : "vacuumsphereprimer",
+      "ice" : "vacuumsphereprimer",
+      "poison" : "vacuumsphereprimer"
+    },
+    "projectileParameters" : {},
+    "projectileCount" : 1,
+    "inaccuracy" : 0,
+    "baseDps" : 0,
+    "energyUsageMultiplier" : 0.5,
+    "fireTime" : 2.0,
+    "fireType" : "auto",
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0.15,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "projectileName" : "boomblastspawner",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "boomblast.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 0.001,
+  "frameNumber" : 4,
+  "power" : 0,
+  "speed" : 75,
+  "supportsProcessing" : true,
+  "onlyHitTerrain" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "boomblast",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.666,
+      "inheritSpeedFactor" : 1.0
+    }
+  ],
+  "lightColor" : [255, 50, 150],
+  "damagePoly" : [ [-0.1, 0.1], [0.1, 0.1], [0.1, -0.1], [-0.1, -0.1] ],
+  "damageKind" : "plasma"
+}

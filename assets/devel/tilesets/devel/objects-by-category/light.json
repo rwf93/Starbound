@@ -1,0 +1,60 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/light",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 6,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "//description" : "There was a label on here once, but it burnt off.'",
+      "//name" : "incinerator",
+      "//shortdescription" : "Incinerator",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "incinerator",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//name" : "organictorch",
+      "invalid" : "true"
+    },
+    "3" : {
+      "//name" : "organictorch_orientation1",
+      "invalid" : "true"
+    },
+    "4" : {
+      "//name" : "organictorch_orientation2",
+      "invalid" : "true"
+    },
+    "5" : {
+      "//name" : "organictorch_orientation3",
+      "invalid" : "true"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/incinerator.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    }
+  },
+  "tilewidth" : 8
+}

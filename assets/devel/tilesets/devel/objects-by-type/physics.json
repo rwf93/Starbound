@@ -1,0 +1,86 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-type/physics",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 8,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "invalid" : "true"
+    },
+    "2" : {
+      "invalid" : "true"
+    },
+    "3" : {
+      "invalid" : "true"
+    },
+    "4" : {
+      "//description" : "A moving platform.",
+      "//name" : "tallverticalmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tallverticalmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A moving platform.",
+      "//name" : "shorthorizontalrightmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "shorthorizontalrightmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "A moving platform.",
+      "//name" : "longhorizontalrightmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "longhorizontalrightmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "7" : {
+      "//description" : "A moving platform.",
+      "//name" : "shortverticalmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shortverticalmovingplatform",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/devel/objects/tallverticalmovingplatform.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/devel/objects/shorthorizontalrightmovingplatform.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/devel/objects/longhorizontalrightmovingplatform.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/devel/objects/shortverticalmovingplatform.png"
+    }
+  },
+  "tilewidth" : 8
+}

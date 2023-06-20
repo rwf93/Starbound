@@ -1,0 +1,13 @@
+{
+  "name" : "jellybosshead",
+  "category" : "jellyboss",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "jellybosshead.png"
+  },
+
+  "parameters" :
+  {
+  }
+}

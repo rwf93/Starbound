@@ -1,0 +1,14 @@
+{
+  "itemName" : "meatandmarrow",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "meatandmarrow.png",
+  "description" : "It's exactly what it says on the tin, if only it had come in a tin.",
+  "shortdescription" : "Meat n' Marrow",
+  "handPosition" : [0, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

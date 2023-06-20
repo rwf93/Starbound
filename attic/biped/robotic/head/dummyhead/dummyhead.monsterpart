@@ -1,0 +1,9 @@
+{
+  "name" : "roboticdummyhead",
+  "category" : "biped_robotic",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "dummyhead.frames"
+  }
+}

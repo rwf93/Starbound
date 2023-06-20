@@ -1,0 +1,9 @@
+{
+  "name" : "organiccthulhuhead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "cthulhuhead.frames"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "itemName" : "iceaxe",
+  "price" : 250,
+  "inventoryIcon" : "iceaxebig.png",
+  "rarity" : "Rare",
+  "maxStack" : 1,
+  "description" : "An Ice Axe used for climbing.",
+  "shortdescription" : "Ice Axe",
+  "category" : "Tool",
+  "fireTime" : 0.0,
+  "twoHanded" : false,
+  "handPosition" : [-2.5, -2.0],
+
+  "minLength" : 2.0,
+  "maxLength" : 2.0,
+  "hardMaxLength" : 10.0,
+  "baseLineSegLength" : 10.0,
+  "launchSpeed" : 0.2,
+  "windRate" : 0.2,
+  "energyConsumeRateAnchored" : 0.0,
+  "energyConsumeRateWinding" : 0.0,
+  "hookImage" : "/items/tools/iceaxehook.png",
+  "handleImage" : "/items/tools/iceaxe.png",
+  "hookOffset" : [-0.5, -1],
+  "primaryLineColors" : [ [181, 181, 181, 0],
+    [181, 181, 181, 0] ],
+  "altLineColors" : [ [181, 181, 181, 0],
+    [181, 181, 181, 0] ],
+
+  "stretchable" : false
+}

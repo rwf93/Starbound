@@ -1,0 +1,39 @@
+{
+  "objectName" : "incinerator",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "description" : "There was a label on here once, but it burnt off.'",
+  "shortdescription" : "Incinerator",
+  "race" : "human",
+
+  "statusEffects" : [ ],
+
+  "category" : "light",
+  "price" : 50,
+  "printable" : false,
+  "lightColor" : [204, 189, 173],
+
+  "inventoryIcon" : "incineratoricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "incinerator.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "frames" : 4,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/incinerator/incinerator.lua" ],
+  "scriptDelta" : 10,
+
+  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
+  "slotCount" : 9,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "organicfloatingarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "floatingfarm.frames",
+    "backArm" : "floatingbarm.frames"
+  }
+}

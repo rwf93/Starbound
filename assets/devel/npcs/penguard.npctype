@@ -1,0 +1,86 @@
+{
+  "type" : "penguard",
+  "baseType" : "guard",
+
+  "scriptConfig" : {
+    "converse" : {
+      "waitTime" : 0.5,
+      "dialog" : {
+        "default" : [
+          "Dangerous things sometimes come in small packages..."
+        ]
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "primary" : [ "npcdagger" ],
+            "sheathedprimary" : [ "npcpistol" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "targetMaterialKind" : "organic"
+    },
+
+    "appliesEnvironmentStatusEffects" : false,
+    "appliesWeatherStatusEffects" : true,
+    "minimumLiquidStatusEffectPercentage" : 0.1,
+
+    "primaryScriptSources" : [
+      "/stats/npc_primary.lua",
+      "/scripts/vec2.lua"
+    ],
+    "primaryScriptDelta" : 5,
+
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 80.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      },
+      "energyRegenPercentageRate" : {
+        "baseValue" : 0.585
+      },
+      "energyRegenBlockDischarge" : {
+        "baseValue" : -1.0
+      },
+      "invulnerable" : {
+        "baseValue" : 0.0
+      }
+    },
+
+    "resources" : {
+      "health" : {
+        "maxStat" : "maxHealth",
+        "deltaStat" : "healthRegen",
+        "defaultPercentage" : 1.0
+      },
+      "energy" : {
+        "maxStat" : "maxEnergy",
+        "defaultPercentage" : 1.0
+      },
+      "energyRegenBlock" : {
+        "maxValue" : 1.0,
+        "deltaStat" : "energyRegenBlockDischarge",
+        "initialPercentage" : 0.0
+      }
+    }
+  }
+}

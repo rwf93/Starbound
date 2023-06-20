@@ -1,0 +1,49 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "weapon" : {
+        "default" : "full",
+        "states" : {
+          "full" : {},
+          "empty" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "grapple" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.625, 0.625],
+          "rotationGroups" : [ "weapon" ],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "weapon" : {
+            "full" : {
+              "properties" : {
+                "image" : "<partImage>:full"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:empty"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "projectileName" : "cardinalschalcedony",
+  "physics" : "hover",
+  "bounces" : -1,
+  "speed" : 25,
+  "timeToLive" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [120, 0, 40],
+  "pointLight" : true,
+  "piercing" : true,
+  "image" : "cardinalschalcedony.png",
+  "animationCycle" : 0.6,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "frameNumber" : 12,
+  "power" : 50,
+  "damagePoly" : [ [-5, 5], [-5, -5], [5, -5], [5, 5] ],
+  "supportsProcessing" : true,
+  "onlyHitTerrain" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/globeexplosions/redglobeexplosion/redglobeexplosion.config"
+    }
+  ],
+  "damageKind" : "plasma"
+}

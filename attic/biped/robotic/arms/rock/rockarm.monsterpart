@@ -1,0 +1,10 @@
+{
+  "name" : "roboticrockarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "rockfarm.frames",
+    "backArm" : "rockbarm.frames"
+  }
+}

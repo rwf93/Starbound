@@ -1,0 +1,111 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/other",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 12,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "//description" : "A steaming cup of Earl Grey.",
+      "//name" : "chattestbug",
+      "//shortdescription" : "Chat Test Bug",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chattestbug",
+      "tilesetDirection" : "right"
+    },
+    "10" : {
+      "//description" : "Upgrade your Matter Manipulator!",
+      "//name" : "mmupgradeconsole",
+      "//shortdescription" : "M.M. Upgrade Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "mmupgradeconsole",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "Clobbers nearby collision spaces to get rid of junk collisions.",
+      "//name" : "collisionripper",
+      "//shortdescription" : "Collision Ripper",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "collisionripper"
+    },
+    "2" : {
+      "//name" : "geodecsharp",
+      "invalid" : "true"
+    },
+    "3" : {
+      "//name" : "geodea",
+      "invalid" : "true"
+    },
+    "4" : {
+      "//name" : "geodeb",
+      "invalid" : "true"
+    },
+    "5" : {
+      "//name" : "geoded",
+      "invalid" : "true"
+    },
+    "6" : {
+      "//name" : "geodegsharp",
+      "invalid" : "true"
+    },
+    "7" : {
+      "//name" : "geodeelow",
+      "invalid" : "true"
+    },
+    "8" : {
+      "//name" : "geodefsharp",
+      "invalid" : "true"
+    },
+    "9" : {
+      "//name" : "geodeehigh",
+      "invalid" : "true"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/chattestbug.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/devel/objects/mmupgradeconsole.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/devel/objects/collisionripper.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    }
+  },
+  "tilewidth" : 8
+}

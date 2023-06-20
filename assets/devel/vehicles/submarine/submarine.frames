@@ -1,0 +1,11 @@
+{
+  "frameGrid" : {
+    "size" : [200, 114],
+    "dimensions" : [2, 2],
+
+    "names" : [
+      [ "hull.undamaged", "hull.scratched"],
+      [ "hull.dented", "hull.wrecked" ]
+    ]
+  }
+}

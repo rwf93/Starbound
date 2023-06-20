@@ -1,0 +1,14 @@
+{
+  "itemName" : "sweettime",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "sweettime.png",
+  "description" : "A sweet oculemon tart topped with diodia shavings. It's...unconventional.",
+  "shortdescription" : "Sweet Time",
+  "handPosition" : [0, -8],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

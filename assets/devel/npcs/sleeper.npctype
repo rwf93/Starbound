@@ -1,0 +1,21 @@
+{
+  "type" : "sleeper",
+  "baseType" : "villager",
+
+  "scriptConfig" : {
+    "personalities" : [
+      [1.0, {
+        "personality" : "sleeper",
+        "behaviorConfig" : {
+          "sleepUntil" : [0.9, 1.0]
+        },
+        "reactions" : {
+          "spontaneous" : [
+            [5.0, "sleep", { "timeRange" : [0.0, 0.9] }],
+            [1.0, "wander"]
+          ]
+        }
+      }]
+    ]
+  }
+}

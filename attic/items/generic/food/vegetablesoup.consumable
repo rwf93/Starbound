@@ -1,0 +1,13 @@
+{
+  "itemName" : "vegetablesoup",
+  "rarity" : "Common",
+  "price" : 0,
+  "category" : "preparedFood",
+  "inventoryIcon" : "vegetablesoup.png",
+  "description" : "A hearty, healthy veggie soup.",
+  "shortdescription" : "Veggie Soup",
+  "handPosition" : [0, 8],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

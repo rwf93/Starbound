@@ -1,0 +1,22 @@
+{
+  "itemName" : "devbomb",
+  "price" : 50,
+  "rarity" : "Common",
+  "category" : "throwableItem",
+  "inventoryIcon" : "bomb.png",
+  "image" : "bomb.png",
+  "shortdescription" : "Bomb",
+  "description" : "A great way to blow stuff up. Be careful where you throw them!",
+
+  "ammoUsage" : 0,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.0,
+
+  "projectileType" : "zbomb",
+  "projectileConfig" : {
+    "speed" : 205,
+    "power" : 40000000
+  }
+}

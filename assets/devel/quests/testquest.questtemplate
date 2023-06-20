@@ -1,0 +1,18 @@
+{
+  "id" : "testquest",
+  "title" : "^#9be3d6;Test Quest",
+  "text" : "Discover the secrets of whether the quest tracker works or not.",
+  "completionText" : "Nice.",
+  "moneyRange" : [0, 0],
+  "ephemeral" : true,
+
+  "updateDelta" : 10,
+  "script" : "/quests/testquest.lua",
+  "scriptConfig" : {
+
+    "portraits":{
+      "default" : "player"
+    }
+
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "projectileName" : "plasmacrystal",
+  "physics" : "stickygrenade",
+  "bounces" : -1,
+  "speed" : 60,
+  "timeToLive" : 0.2,
+  "lightColor" : [105, 0, 90],
+  "image" : "plasmacrystal.png",
+  "animationCycle" : 0.5,
+  "piercing" : true,
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/tools/pickaxe_precious.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshard",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshard",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : -120
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshard",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 1
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshard",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : -55
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshard",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 55
+    }
+
+  ],
+  "power" : 50,
+  "damageKind" : "default"
+}

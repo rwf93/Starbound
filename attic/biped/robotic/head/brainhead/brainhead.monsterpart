@@ -1,0 +1,9 @@
+{
+  "name" : "roboticbrainhead",
+  "category" : "biped_robotic",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "brainhead.frames"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "curriedbeakseed",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "curriedbeakseed.png",
+  "description" : "Curried, crunchy beakseeds with hot chilli peppers. Mmm.",
+  "shortdescription" : "Curried Beakseed",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

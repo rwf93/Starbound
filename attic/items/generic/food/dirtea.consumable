@@ -1,0 +1,16 @@
+{
+  "itemName" : "dirtea",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "dirtea.png",
+  "description" : "Tea made by steeping dried dirturchin leaves in boiling water. A traditional drink.",
+  "shortdescription" : "Dirtea",
+  "handPosition" : [0, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ],
+  "emote" : "",
+  "emitters" : [ "drinking" ]
+}

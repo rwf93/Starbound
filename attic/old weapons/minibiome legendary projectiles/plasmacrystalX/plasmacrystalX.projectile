@@ -1,0 +1,60 @@
+{
+  "projectileName" : "plasmacrystalX",
+  "physics" : "stickygrenade",
+  "bounces" : -1,
+  "speed" : 60,
+  "timeToLive" : 0.2,
+  "lightColor" : [85, 230, 45],
+  "image" : "plasmacrystalX.png",
+  "animationCycle" : 0.5,
+  "piercing" : true,
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/tools/pickaxe_precious.ogg" ]
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vlightblockexplosion/vlightblockexplosion.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshardX",
+      "fuzzAngle" : 45,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshardX",
+      "fuzzAngle" : 45,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshardX",
+      "fuzzAngle" : 45,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshardX",
+      "fuzzAngle" : 45,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "crystalshardX",
+      "fuzzAngle" : 45,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 0
+    }
+
+  ],
+  "power" : 100,
+  "damageKind" : "default"
+}

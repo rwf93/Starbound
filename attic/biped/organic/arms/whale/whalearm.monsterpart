@@ -1,0 +1,10 @@
+{
+  "name" : "organicwhalearm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "whalefarm.frames",
+    "backArm" : "whalebarm.frames"
+  }
+}

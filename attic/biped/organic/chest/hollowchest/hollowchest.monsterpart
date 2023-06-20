@@ -1,0 +1,9 @@
+{
+  "name" : "organichollowchest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "hollowchest.frames"
+  }
+}

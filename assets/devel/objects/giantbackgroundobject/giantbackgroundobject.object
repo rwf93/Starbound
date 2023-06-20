@@ -1,0 +1,23 @@
+{
+  "objectName" : "giantbackgroundobject",
+  "category" : "other",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "description" : "What a mess.",
+  "shortdescription" : "Giant Background Object",
+  "scannable" : false,
+  "printable" : false,
+  "race" : "human",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "giantbackgroundobject.png",
+      "imagePosition" : [-1024, -1024],
+      "renderLayer" : "BackgroundOverlay",
+      "metaBoundBox" : [-128, -128, 128, 128],
+
+      "anchors" : [ ]
+    }
+  ]
+}

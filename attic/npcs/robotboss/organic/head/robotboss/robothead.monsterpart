@@ -1,0 +1,13 @@
+{
+  "name" : "robothead",
+  "category" : "robotboss_robotic",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "robothead.png"
+  },
+
+  "parameters" :
+  {
+  }
+}

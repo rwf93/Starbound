@@ -1,0 +1,45 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "boosting" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+          },
+          "on" : {
+            "properties" : {
+              "persistentSound" : "/sfx/tech/tech_bubbleboost.ogg"
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "bubble" : {
+        "partStates" : {
+          "boosting" : {
+            "on" : {
+              "properties" : {
+                "centered" : true,
+                "image" : "bubble.png"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "boostParticles" : {
+      "emissionRate" : 20.0,
+      "particles" : [
+        {
+          "particle" : "bubbleboost",
+          "offsetRegion" : [-1, -1.5, 1, 1.5]
+        }
+      ]
+    }
+  }
+}

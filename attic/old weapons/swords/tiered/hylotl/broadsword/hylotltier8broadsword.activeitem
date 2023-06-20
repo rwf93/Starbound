@@ -1,0 +1,86 @@
+{
+  "itemName" : "hylotltier8broadsword",
+  "price" : 170,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A swashbuckling cutlass.",
+  "shortdescription" : "Cutlass",
+  "tooltipKind" : "sword",
+  "weaponType" : "Broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "hylotltier8broadsword.png",
+
+  "animation" : "/items/active/weapons/tiered/broadsword/tieredbroadsword.animation",
+  "animationParts" : {
+    "sword" : "/items/active/weapons/tiered/broadsword/hylotl/hylotltier8broadsword.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
+    "class" : "MeleeSlash",
+
+    "fireTime" : 0.83,
+    "baseDps" : 11.5,
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : [ ],
+      "knockback" : 20,
+      "knockbackMode" : "facing",
+      "timeoutGroup" : "primary"
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+  
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "preslash" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+  
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+  
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "baseWeaponRotation" : 10,
+  "palette" : "/items/active/weapons/colors/tier8melee.weaponcolors",
+
+  "altAbilitySource" : "/items/active/weapons/melee/altabilities/broadsword/spinslash/spinslash.altability",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

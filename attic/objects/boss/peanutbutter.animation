@@ -1,0 +1,44 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "beaconState" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1,
+            "cycle" : 0.15
+          },
+          "active" : {
+            "frames" : 1,
+            "cycle" : 0.7,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "beacon" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "beaconState" : {
+            "idle" : {
+              "properties" : {
+                "image" : "peanutbutter.png"
+              }
+            },
+
+            "active" : {
+              "properties" : {
+                "image" : "peanutbutter.png"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

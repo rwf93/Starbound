@@ -1,0 +1,14 @@
+{
+  "frameGrid" : {
+    "size" : [10, 3],
+    "dimensions" : [1, 5],
+
+    "names" : [
+      [ "reload.1" ],
+      [ "reload.2" ],
+      [ "reload.3" ],
+      [ "reload.4" ],
+      [ "ready" ]
+    ]
+  }
+}

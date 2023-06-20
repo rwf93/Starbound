@@ -1,0 +1,10 @@
+{
+  "name" : "organicskullarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "skullfarm.frames",
+    "backArm" : "skullbarm.frames"
+  }
+}

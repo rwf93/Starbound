@@ -1,0 +1,14 @@
+{
+  "itemName" : "boneboomarrow",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "boneboomarrow.png",
+  "description" : "The creamy, spongey innards of the boneboo fruit.",
+  "shortdescription" : "Boneboo Marrow",
+  "handPosition" : [0, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

@@ -1,0 +1,42 @@
+{
+  "projectileName" : "slimeblob",
+  "image" : "slimeblob.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 5.0,
+  "frameNumber" : 2,
+  "damageKindImage" : "icon.png",
+  "physics" : "grenadezbomb",
+  "speed" : 20,
+  "pointLight" : true,
+  "lightColor" : [0, 50, 40],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "slimecluster",
+      "fuzzAngle" : 45,
+      "angleAdjust" : 45,
+      "inheritDamageFactor" : 0.333
+    },
+    {
+      "action" : "projectile",
+      "type" : "slimecluster",
+      "fuzzAngle" : 45,
+      "angleAdjust" : -45,
+      "inheritDamageFactor" : 0.333
+    },
+	{
+      "action" : "projectile",
+      "type" : "slimecluster",
+      "fuzzAngle" : 45,
+      "angleAdjust" : -45,
+      "inheritDamageFactor" : 0.333
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/goocluster_pop.ogg" ]
+    }
+  ],
+  "power" : 120,
+  "damageType" : "NoDamage",
+  "damageKind" : "acid"
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "name" : "testcrustoise",
+
+    "spawnParameters" : {
+      "area" : "ceiling",
+      "region" : "enclosed",
+      "time" : "all"
+    },
+
+    "groupSize" : [2, 4],
+
+    "spawnChance" : 0.2,
+    "monsterType" : "crustoise",
+    "monsterParameters" : {
+      "aggressive" : false
+    }
+  }
+]

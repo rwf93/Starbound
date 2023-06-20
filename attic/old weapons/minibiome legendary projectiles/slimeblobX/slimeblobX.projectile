@@ -1,0 +1,66 @@
+{
+  "projectileName" : "slimeblobX",
+  "image" : "slimeblobX.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 0.8,
+  "frameNumber" : 2,
+  "damageKindImage" : "/interface/statuses/poison.png",
+  "physics" : "grenadezbomb",
+  "speed" : 25,
+  "pointLight" : true,
+  "lightColor" : [0, 50, 40],
+  "statusEffects" : [
+    "weakpoison"
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "slimeclusterX",
+      "fuzzAngle" : 45,
+      "angleAdjust" : 45,
+      "inheritDamageFactor" : 0.166
+    },
+    {
+      "action" : "projectile",
+      "type" : "slimeclusterX",
+      "fuzzAngle" : 45,
+      "angleAdjust" : -45,
+      "inheritDamageFactor" : 0.166
+    },
+    {
+      "action" : "projectile",
+      "type" : "slimeclusterX",
+      "fuzzAngle" : 180,
+      "angleAdjust" : 180,
+      "inheritDamageFactor" : 0.166
+    },
+    {
+      "action" : "projectile",
+      "type" : "slimeclusterX",
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.166
+    },
+    {
+      "action" : "projectile",
+      "type" : "slimeclusterX",
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 0.166
+    },
+    {
+      "action" : "projectile",
+      "type" : "slimeclusterX",
+      "fuzzAngle" : 180,
+      "angleAdjust" : -75,
+      "inheritDamageFactor" : 0.166
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/goocluster_pop.ogg" ]
+    }
+  ],
+  "power" : 1500,
+  "damageType" : "NoDamage",
+  "damageKind" : "acid"
+}

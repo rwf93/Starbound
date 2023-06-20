@@ -1,0 +1,126 @@
+{
+  "type" : "pathdebug",
+  "baseType" : "base",
+
+  "damageTeam" : 1,
+
+  "disableWornArmor" : true,
+
+  "scriptConfig" : {
+    "behavior" : "pathdebug",
+    "pathing": {
+      "desiredDistance": 2
+    },
+    "doorHitPoly" : [ [2, -1], [2, 1], [0, 1], [0, -1] ],
+    "idleTimeRange" : [10000.0, 10000.0],
+    "gapSensor" : [ [2.0, -4.5] ],
+    "gapFarSideSensors" : [ [3.0, -4.5], [4.0, -4.5], [5.0, -4.5], [6.0, -4.5], [7.0, -4.5], [8.0, -4.5] ],
+    "gapJumpHoldTime" : 0.4,
+
+    "wander" : {
+      "timeRange" : [2.0, 10.0],
+      "chatDistance" : 4,
+      "indoorTimeOfDayRanges" : [ [0.0, 0.2], [0.5, 1.0] ],
+      "indoorSearchRadius" : 60,
+      "indoorLookaheadDistance" : 4,
+      "moveToTargetTime" : 10.0,
+      "changeDirectionCooldown" : 2,
+      "dropDownChance" : 5,
+      "cooldown" : 10
+    }
+  },
+
+  "items" : {},
+
+  "dropPools" : [ "villagertreasure" ],
+
+  "statusControllerSettings" : {
+    "statusProperties" : {
+      "targetMaterialKind" : "organic"
+    },
+
+    "persistentEffectCategories" : [
+      "innate",
+      "armor",
+      "tools",
+      "lounging"
+    ],
+
+    "appliesEnvironmentStatusEffects" : false,
+    "appliesWeatherStatusEffects" : true,
+    "minimumLiquidStatusEffectPercentage" : 0.1,
+
+    "primaryScriptSources" : [
+      "/stats/npc_primary.lua",
+      "/scripts/vec2.lua"
+    ],
+    "primaryScriptDelta" : 5,
+
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 40.0
+      },
+      "maxEnergy" : {
+        "baseValue" : 80.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 10.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      },
+      "energyRegenPercentageRate" : {
+        "baseValue" : 0.585
+      },
+      "energyRegenBlockDischarge" : {
+        "baseValue" : -1.0
+      },
+      "invulnerable" : {
+        "baseValue" : 0.0
+      }
+    },
+
+    "resources" : {
+      "health" : {
+        "maxStat" : "maxHealth",
+        "deltaStat" : "healthRegen",
+        "defaultPercentage" : 1.0
+      },
+      "energy" : {
+        "maxStat" : "maxEnergy",
+        "deltaStat" : "energyRegen",
+        "defaultPercentage" : 1.0
+      }
+    }
+  },
+
+  "persistent" : true,
+
+  "splashConfig" : {
+    "splashSpeedMin" : 10.0,
+    "splashMinWaterLevel" : 0.4,
+    "splashBottomSensor" : [0, -2.0],
+    "splashTopSensor" : [0, 2.0],
+    "numSplashParticles" : 8,
+    "splashYVelocityFactor" : 0.2,
+
+    "splashParticle" : {
+      "type" : "ember",
+      "position" : [0, -1],
+      "finalVelocity" : [0, -20],
+      "approach" : [0, 50],
+      "color" : [60, 150, 224, 100],
+      "size" : 4.0,
+      "timeToLive" : 0.5,
+      "destructionAction" : "shrink",
+      "destructionTime" : 0.2
+    },
+
+    "splashParticleVariance" : {
+      "velocity" : [10, 0]
+    }
+  }
+}

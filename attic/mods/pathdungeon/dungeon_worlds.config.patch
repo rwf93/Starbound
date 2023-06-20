@@ -1,0 +1,14 @@
+[
+  {
+    "op" : "add",
+    "path" : "/pathdungeon",
+    "value" : {
+      "primaryDungeon" : "pathdungeon",
+      "threatLevel" : 1,
+      "gravity" : 40,
+      "worldSize" : [1000,1000],
+      "dungeonBaseHeight" : 500,
+      "ambientLightLevel" : [128,128,128]
+    }
+  }
+]

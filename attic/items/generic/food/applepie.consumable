@@ -1,0 +1,13 @@
+{
+  "itemName" : "applepie",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "applepie.png",
+  "description" : "Apple pie! A classic human food.",
+  "shortdescription" : "Apple Pie",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

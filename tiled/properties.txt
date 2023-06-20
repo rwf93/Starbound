@@ -1,0 +1,266 @@
+Properties can be used on layers, tilesets, tiles and objects. They can be used
+like brushes to control what gets generated in dungeons if the tilesets don't
+contain what you want.
+
+For layers:
+  In the layers view, select the appropriate layer.
+  Right click the layer, select Layer Properties.
+  Properties view > Custom Properties > Add Property, etc.
+  These properties affect every tile or object in that layer.
+
+For tilesets:
+  In the tilesets view, select the appropriate tileset.
+  Click the gear icon ("Tileset Properties").
+  Properties view > Custom Properties > Add Property, etc.
+  These properties affect every tile in the map that came from this tileset,
+  and every tile object (object with an image) from that tileset.
+
+For tiles:
+  In the tilesets view, select the appropriate tileset.
+  In the tileset, select the appropriate tile.
+  Right click, select Tile Properties.
+  Properties view > Custom Properties > Add Property, etc.
+  These properties affect every instance of this tile in the map and every
+  object displaying that tile.
+
+For objects:
+  Make sure an object layer is selected.
+  Choose the 'Select Objects (S)' tool.
+  Right click an object in the map.
+  Click properties.
+  Properties > Custom Properties > Add Property, etc.
+  These properties affect only that one individual object.
+
+Precedence order:
+  Object Properties >
+  Tile Properties >
+  Tileset Properties >
+  Layer Properties
+
+So if you put clear=true in Object Properties and clear=false in Layer
+Properties, the overall effect is clear=true.
+
+Supported properties:
+---------------------
+
+clear: true|false       -- Fill with air or other tiles.
+                        -- If true: enables objects to cover this location and
+                        -- erases any tiles that were put there before the
+                        -- dungeon generator ran.
+
+playerstart             -- For missions, indicate that this is where the player
+                        -- should start.
+
+front: String           -- Place a tile in the foreground.
+  hueshift: float
+  mod: String
+  modhueshift: float
+  allowOverdrawing      -- Optional. If specified allows other dungeon parts to
+                        -- overwrite this tile with other tiles.
+                        -- (You may need to add new tiles to the tileset or
+                        -- use the Tile Object tool to get this property onto
+                        -- a tile in the editor.)
+
+back: String            -- Place a tile in the background.
+  hueshift: float
+  allowOverdrawing      -- Optional. If specified allows other dungeon parts to
+                        -- overwrite this tile with other tiles.
+
+material: String        -- Use the same as 'front' or 'back'. Synonym for
+                        -- 'front' by default. Changes to 'back' if on a tile
+                        -- layer named 'back'.
+  hueshift: float
+  mod: String
+  modhueshift: float
+  layer: String         -- If set to 'back', treated as if in the background
+                        -- layer (useful for Tiled-objects which can't go in
+                        -- the 'back' TileLayer).
+  allowOverdrawing      -- Optional. If specified allows other dungeon parts to
+                        -- overwrite this tile with other tiles.
+
+object: String          -- Place an object
+  parameters: JSON      -- Object-specific parameters, e.g. loot
+  imagePositionX: float -- The imagePosition (origin) of the frame, including
+  imagePositionY: float -- any padding added by the exporter.
+  allowOverdrawing      -- Optional. If specified allows other dungeon parts to
+                        -- overwrite this tile with other tiles.
+
+  
+
+  -- To change the direction the object is facing, use Object Properties >
+  -- Flipping > Horizontal in the editor.
+
+  -- You probably don't want to use this:
+  tilesetDirection: left|right -- The direction faced by the images in the
+                               -- spritesheet, before flipping. Use this if, for
+                               -- some reason, the spritesheet contains sprites
+                               -- that face left instead of right.
+
+wire: String            -- Group name for the wire. Grouped wires are connected.
+  local: true|false     -- Whether this wire is local to the current part
+                        -- (defaults to true).
+  -- If you use the Polyline Object tool in Tiled, you don't need to use these
+  -- properties. Just click a node, then click another node to connect it, and
+  -- then right-click to complete the wire.
+
+npc: String             -- Spawn an NPC here. Value is the species name.
+  typeName: String      -- Optional. Defaults to "default". Example: miner.
+  seed: "stable"|Integer -- Optional. Random seed value.
+  parameters: JSON      -- Optional. NPC-specific parameters.
+
+monster: String         -- The typename of the monster, e.g. "moontant", "crystalboss"
+  seed: "stable"|Integer -- Optional. Random seed value.
+  parameters: JSON      -- Optional spawning parameters:
+    { "dropPools" : [ { "default" : "commonTreasure" } ] } -- Set monster loot drop pool
+    { "aggressive" : true } -- guaranteed to be aggressive on sight.
+    { "level" : Integer } -- CURRENTLY DOESN'T SEEM TO WORK.
+    { "damageTeamType" : "friendly" } -- Can be "friendly", "passive", "ghostly" or "enemy"
+    {"statusSettings":{"stats":{"maxHealth":{"baseValue" : 125 }}}} -- Lets you take control of a monster's base health
+    {"statusSettings":{"stats":{"poisonImmunity":{"baseValue":1.0}}}} -- Ensures a monster is immune to poison status effects. poisonImmunity can be replaced with any status effect you want the monster to have.
+    { "behaviorConfig" : { "keepTargetInRange" : 200, "targetQueryRange" : 70 } } -- Attack range
+
+biomeitems              -- Has a chance of spawning biome-specific flora here.
+
+biometree               -- Spawns a biome-specific tree here (if space).
+
+item: String            -- Spawn an item drop here. String is the item name
+  count: Integer        -- Optional. Number of items to include in the drop.
+  parameters: JSON      -- Item-specific parameters (e.g. for genericsword).
+
+surface: ""|Integer     -- Fill with a biome-specific dirt/rock tile. If given,
+                        -- the integer specifies the variant.
+  layer: "front"|"back" -- Paint on the foreground or background layers (if not
+                        -- in a tile layer.
+  mod: String
+  allowOverdrawing      -- Optional. If specified allows other dungeon parts to
+                        -- overwrite this tile with other tiles.
+
+worldGenMustContainAir  -- Anchor that requires air where it is placed.
+  layer: "front"|"back" -- Required if not in a foreground/background tile layer.
+
+worldGenMustContainSolid -- Anchor that requires solid where it is placed.
+  layer: "front"|"back" -- Required if not in a foreground/background tile layer.
+
+connector: String       -- Marker for connecting other dungeon parts. Will be
+                        -- paired with connectors in other parts that have the
+                        -- same string.
+
+liquid: String          -- Name of liquid to place on this tile.
+  quantity: Float       -- (Optional) Amount of liquid to place.
+  pressure: Float       -- (Optional) Pressure of liquid to place.
+  source: true|false    -- (Optional) Whether to make this liquid endless.
+
+stagehand: radiomessage    -- use this to make a scripted AI chatter moment. ie. observations about the environment, hints, etc.
+  radiomessage: messagename -- which radio message from *.radiomessages to read. ie. floranmission101
+
+dungeonid: "none"|Integer -- Set a specific dungeonId at tiles covered bythis
+                        -- rectangle object. "none" is shorthand for 65535
+                        -- (i.e. NoDungeonId).
+
+vehicle: String         -- Name of vehicle to spawn
+  parameters: JSON      -- Parameters for the vehicle
+
+Object-specific parameters:
+---------------------------
+GENERAL
+{ "interactive" : false }
+- Stops players from interacting with an object that they would otherwise be able to interact with (ie. a lantern that the player can turn on or off, stopping the player from turning it off if you don't want them to).
+
+LIGHTS
+{ "defaultLightState" : false }
+- Makes an unwired light start in the off state. Useful for light sources that the player can directly interact with; like torches, lanterns, etc.
+
+STORAGE
+{ "treasurePools" : [ "basicChestTreasure" ] }
+- Dictates what loot pool the storage container uses. basicChestTreasure can be replaced with whichever pool you want.
+
+examples:
+{ "treasurePools" : [ "challengeChestTreasure" ] } -- is the loot pool you would use on the chests at the end of a challenge room.
+{ "treasurePools" : [ "challengeSmallChestTreasure" ] } -- is for the bonus challenge room chests placed in side passages and secret areas.
+
+SWITCH
+{ "defaultSwitchState" : true }
+- Makes a switch start off in the on state.
+
+PROXIMITY SENSORS
+{ "detectArea" : [ [-2, 0], [2, 4] ] }
+- Allows you to overwrite the precise area a proximity sensor scans for presence. Useful for making a single sensor cover a larger area for doors, traps, etc. The first of the pair of coordinates should ALWAYS be the lower numerical values, as the sensor draws a rectangle starting from the lower left corner to the top right.
+
+{ "detectDuration" : 3.5 }
+- Allows you to set how long a proximity sensor stays active upon detecting something. For example, you could use this to set how long a pressure plate stays pressed before resetting.
+
+{ "detectDamageTeam" : { "type" : "enemy" } }
+{ "detectDamageTeam" : { "type" : "enemy", "team" : 0 } }
+
+{ "detectEntityTypes" : [ "player" ] }
+- This determines what a proximity sensor reacts to. The entity types are as follows:
+1. creature - all living things, players, npcs, monsters.
+2. player - players only.
+3. npc - humanoid npcs only.
+4. monster - monsters, quadrupeds, fliers and the like.
+5. projectile - bullets, sword swooshes and so on.
+6. itemdrop - items like money, weapons, etc..
+7. vehicle - rail platforms, hoverbikes, mechs, etc.
+
+You can use multiple of these entity types if you have specific combinations that exclude others. For instance:
+
+{ "detectEntityTypes" : [ "npc", "monster" ] }
+
+This would make the sensor react to all living things EXCEPT the player. This includes pets.
+
+MOMENTARY BUTTON
+{ "interval" : 15 }
+The length of time the button stays pressed. About 33 is half a second.
+
+TIMER
+{ "interval" : 33 }
+The rate of alternation on the timer. While not absolutely precise, about 33 is a half second.
+
+COUNTDOWN TIMERS
+{ "duration" : 3 }
+- The duration the countdown timer lasts in seconds. Only accepts whole numbers 1,2,3,4 and 5, but this lets you overwrite the standard countdown duration of 5.
+
+DELAY
+{ "delay" : 1 }
+- Lets you configure the length of the delay before the logic gate continues the wire signal along to the next source. This can be incredibly useful for setting up traps and challenges.
+
+INVISIBLE SOUND SOURCE (DOES NOT WORK AS INTENDED YET)
+{ "soundEffect" : "/sfx/objects/shipengine.ogg", "soundEffectRangeMultiplier" : 1.0 }
+
+MONSTER SPAWNER
+{ "spawner" : { "monsterTypes" : ["smallquadruped", "largequadruped"], "monsterLevel" : [2, 4], "monsterParams" : { "aggressive" : true }, "position" : [0, 1], "positionVariance" : [10, 0], "frequency" : [2.5, 5], "stock" : 5, "trigger" : "wire", "outOfSight" : false } }
+
+- With monster spawners you unfortunately need to overwrite the entire section, so you'll need to set the values for all of these elements. Here's what the individual elements are for:
+
+  "monsterTypes" - type of monster to spawn (random from list)
+  "monsterLevel" - level of monster to spawn (random within range)
+  "monsterParams" - additional parameters of spawned monster
+  "position" - relative position to spawn at
+  "positionVariance" - [x,y] size of randomized spawn area, centered on position
+  "frequency - cooldown time between spawns (random within range)
+  "stock" - total number of spawns, -1 for infinite
+  "trigger" - options include "wire", "interact", null (periodic)
+  "outOfSight" - only spawn where the player can't see
+
+
+PROJECTILE TRAP
+{ "fireTime" : 0.115, "fireTimeVariance" : 0.015, "projectile" : "trapflame", "projectileConfig" : { "damageTeam" : { "type" : "environment" }, "power" : 20, "speed" : 7 }  }
+
+- You can reconfigure various aspects of a projectile trap. See the breakdown below.
+
+  "fireTime" - the rate of fire (eg. 0.5 = 2 shots per second)
+  "fireTimeVariance" - fluctuation in the fireTime (eg. fireTimeVariance set to 0.25 on a fireTime of 0.5 means your rate of fire can fluctuate between 0.25 and 0.75)
+  "projectile" - which projectile the trap shoots.
+  "projectileConfig" - You can override any stats on the projectile you've set, including damage team, power, speed, etc.
+
+
+
+
+
+
+
+  DUNGEON WORLDS INFO
+   dungeonBaseHeight is the level in the world where the dungeon's primary anchor is placed
+- dungeonSurfaceHeight is the level in the world where the parallax surface is
+- surface level is where things are considered 'underground' (for gameplay not parallax)
+- space level is where the atmosphere fades out (for parallax)

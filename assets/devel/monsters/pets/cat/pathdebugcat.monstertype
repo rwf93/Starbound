@@ -1,0 +1,183 @@
+{
+  "type" : "pathdebugcat",
+
+  "categories" : [ "petcat" ],
+  "parts" : [ "body" ],
+
+  "animation" : "petcat.animation",
+
+  "dropPools" : [ "basicMonsterTreasure" ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/scripts/stateMachine.lua",
+      "/scripts/util.lua",
+      "/scripts/vec2.lua",
+
+      "/monsters/pets/groundPet.lua",
+      "/monsters/pets/cat/catBehavior.lua",
+      "/monsters/pathState.lua"
+    ],
+
+    "skills" : [],
+
+    "pathing": {
+      "desiredDistance": 2,
+      "run" : true
+    },
+
+    "behavior" : "catBehavior",
+    "behaviorParams" : {
+      "food" : {},
+      "monsters" : {
+      }
+    },
+
+    "petResources" : {
+      "sleepy" : 10,
+      "hunger" : 10,
+      "playful" : 60,
+      "curiosity" : 60
+    },
+    "petResourceDeltas" : {
+      "sleepy" : 0.5,
+      "hunger" : 0.5,
+      "playful" : 1,
+      "curiosity" : 1
+    },
+
+    "actionCooldowns" : {
+      "inspect" : 20,
+      "play" : 2,
+      "pounce" : 5,
+      "eat" : 5,
+      "beg" : 20,
+      "follow" : 0
+    },
+
+    "territoryDistance" : 40.0,
+    "territorialTargetRadius" : 20.0,
+    "minimalTargetRadius" : 6.0,
+    "targetSearchTime" : 0.5,
+    "targetHoldTime" : 5,
+
+    "metaBoundBox" : [-1.625, -2.375, 1.75, 2.0],
+    "scale" : 1.0,
+
+    "querySurroundingsCooldown" : 1,
+
+    "wander" : {
+      "wanderTime" : [5, 10],
+      "changeDirectionTime" : [5, 10],
+      "changeDirectionWait" : [1, 3]
+    },
+
+    "follow" : {
+      "startDistance" : 15,
+      "stopDistance" : 10,
+      "runDistance" : 20,
+      "targetMoveDistance" : 5
+    },
+
+    "pounce" : {
+      "maxRange" : 10,
+      "minRange" : 5
+    },
+
+    "idle" : {
+      "idleTime" : [2, 4]
+    },
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-0.75, -1], [0.75, -1], [0.75, 0.5], [-0.75, 0.5] ],
+
+      "mass" : 1.0,
+      "gravityMultiplier" : 1.5,
+      "walkSpeed" : 4,
+      "runSpeed" : 14,
+      "flySpeed" : 15,
+      "airForce" : 50.0
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutEffect" : "blink",
+    "deathParticles" : "deathPoof",
+
+    "touchDamage" : {
+      "poly" : [ [-1.625, -2.375], [1.75, -2.375], [1.75, 2.0], [-1.625, 2.0] ],
+      "damage" : 15,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "statusEffects" : [ ]
+    },
+
+    "dropPools" : [ "potreasure" ],
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 10
+        },
+        "maxHealth" : {
+          "baseValue" : 72
+        },
+        "protection" : {
+          "baseValue" : 1.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        },
+        "sleepy" : {
+          "maxValue" : 100,
+          "defaultPercentage" : 10
+        },
+        "hunger" : {
+          "maxValue" : 100,
+          "defaultPercentage" : 10
+        },
+        "playful" : {
+          "maxValue" : 100,
+          "defaultPercentage" : 10
+        },
+        "curiosity" : {
+          "maxValue" : 100,
+          "defaultPercentage" : 10
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8]
+  }
+}

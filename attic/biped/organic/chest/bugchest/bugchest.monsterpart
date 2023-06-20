@@ -1,0 +1,9 @@
+{
+  "name" : "organicbugchest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "bugchest.frames"
+  }
+}

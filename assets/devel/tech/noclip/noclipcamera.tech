@@ -1,0 +1,16 @@
+{
+  "name" : "noclipcamera",
+  "type" : "head",
+
+  "scripts" : [ "noclip.lua" ],
+  "animator" : "noclip.animation",
+
+  "description" : "There are no clips here.",
+  "shortDescription" : "Noclip (Camera Pan)",
+  "rarity" : "Legendary",
+  "icon" : "/tech/noclip.png",
+
+  "chipCost" : 100,
+
+  "flightSpeed" : 8
+}

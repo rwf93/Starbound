@@ -1,0 +1,9 @@
+{
+  "name" : "organicclamhead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "clamhead.frames"
+  }
+}

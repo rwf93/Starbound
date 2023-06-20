@@ -1,0 +1,32 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-race/human",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "//description" : "There was a label on here once, but it burnt off.'",
+      "//name" : "incinerator",
+      "//shortdescription" : "Incinerator",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "incinerator",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/incinerator.png"
+    }
+  },
+  "tilewidth" : 8
+}

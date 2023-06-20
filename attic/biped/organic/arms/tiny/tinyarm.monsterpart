@@ -1,0 +1,10 @@
+{
+  "name" : "organictinyarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "tinyfarm.frames",
+    "backArm" : "tinybarm.frames"
+  }
+}

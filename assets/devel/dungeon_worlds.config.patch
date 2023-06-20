@@ -1,0 +1,162 @@
+[
+  {
+    "op" : "add",
+    "path" : "/testmission",
+    "value" : {
+      "primaryDungeon" : "testmission",
+      "threatLevel" : 2,
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1000,
+      "ambientLightLevel" : [200, 200, 200],
+      "musicTrack" : "/music/ocean-battle1-loop.ogg",
+      "biome": "alien"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/pathtest",
+    "value": {
+      "primaryDungeon": "pathtest",
+      "threatLevel": 1,
+      "gravity": 80,
+      "worldSize": [2000, 2000],
+      "dungeonBaseHeight": 1000,
+      "ambientLightLevel": [200,200,200],
+      "musicTrack": "/music/casiopeia.ogg"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/humanprisontest",
+    "value": {
+      "primaryDungeon" : "humanprisontest",
+      "threatLevel" : 4,
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 1025,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "desert",
+      "musicTrack" : "/music/casiopeia.ogg"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/perftest",
+    "value": {
+      "primaryDungeon" : "perftest",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [1100, 600],
+      "dungeonBaseHeight" : 550,
+      "dungeonSurfaceHeight" : 200,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "garden",
+      "musicTrack" : "/music/casiopeia.ogg"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/emptyworld",
+    "value": {
+      "primaryDungeon" : "emptyworld",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [500, 500],
+      "dungeonBaseHeight" : 250,
+      "dungeonSurfaceHeight" : 250,
+      "ambientLightLevel" : [32, 32, 32]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/spacetest3",
+    "value": {
+      "primaryDungeon" : "spaceencounter",
+      "threatLevel" : 3,
+      "gravity" : 0,
+      "worldSize" : [1200, 200],
+      "dungeonBaseHeight" : 150,
+      "dungeonSurfaceHeight" : 150,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/lava-exploration1.ogg",
+      "environmentStatusEffects" : ["dontstarve"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/spacetest4",
+    "value": {
+      "primaryDungeon" : "spaceencounter",
+      "threatLevel" : 4,
+      "gravity" : 0,
+      "worldSize" : [1200, 200],
+      "dungeonBaseHeight" : 150,
+      "dungeonSurfaceHeight" : 150,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/lava-exploration1.ogg",
+      "environmentStatusEffects" : ["dontstarve"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/spacetest5",
+    "value": {
+      "primaryDungeon" : "spaceencounter",
+      "threatLevel" : 5,
+      "gravity" : 0,
+      "worldSize" : [1200, 200],
+      "dungeonBaseHeight" : 150,
+      "dungeonSurfaceHeight" : 150,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/lava-exploration1.ogg",
+      "environmentStatusEffects" : ["dontstarve"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/spacetest6",
+    "value": {
+      "primaryDungeon" : "spaceencounter",
+      "threatLevel" : 6,
+      "gravity" : 0,
+      "worldSize" : [1200, 200],
+      "dungeonBaseHeight" : 150,
+      "dungeonSurfaceHeight" : 150,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/lava-exploration1.ogg",
+      "environmentStatusEffects" : ["dontstarve"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+    }
+  },
+  {
+    "op": "add",
+    "path": "/playerstationtest",
+    "value": {
+      "primaryDungeon" : "playerstation",
+      "threatLevel" : 1,
+      "gravity" : 0,
+      "worldSize" : [1200, 200],
+      "dungeonBaseHeight" : 150,
+      "dungeonSurfaceHeight" : 150,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/lava-exploration1.ogg",
+      "environmentStatusEffects" : ["dontstarve"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+    }
+  }
+]

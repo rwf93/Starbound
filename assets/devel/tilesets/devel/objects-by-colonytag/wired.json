@@ -1,0 +1,88 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/wired",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 7,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A moving platform.",
+      "//name" : "tallverticalmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tallverticalmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "A moving platform.",
+      "//name" : "longhorizontalrightmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "longhorizontalrightmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//name" : "railswitch",
+      "invalid" : "true"
+    },
+    "3" : {
+      "//name" : "railsensor",
+      "invalid" : "true"
+    },
+    "4" : {
+      "//description" : "A moving platform.",
+      "//name" : "shorthorizontalrightmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "shorthorizontalrightmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "A moving platform.",
+      "//name" : "shortverticalmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shortverticalmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "Moves liquids from one side to the other.",
+      "//name" : "pump",
+      "//shortdescription" : "Pump",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "pump",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/objects/tallverticalmovingplatform.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/longhorizontalrightmovingplatform.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/devel/objects/shorthorizontalrightmovingplatform.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/devel/objects/shortverticalmovingplatform.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/devel/objects/pump.png"
+    }
+  },
+  "tilewidth" : 8
+}

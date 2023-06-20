@@ -1,0 +1,46 @@
+{
+  "projectileName" : "multisporecloud",
+  "image" : "multisporecloud.png",
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "timeToLive" : 0.01,
+  "speed" : 100,
+  "physics" : "laser",
+  "flippable" : true,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "sporecloud",
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 1
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloud",
+      "inheritSpeedFactor" : 0.08,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 1
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloud",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 30,
+      "angleAdjust" : 0,
+      "inheritDamageFactor" : 1
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/fire_out_louder.ogg" ]
+    }
+  ],
+  "damagePoly" : [ [-14, 0], [-10, -10], [0, -14], [10, -10], [14, 0], [10, 10], [0, 14], [-10, 10] ],
+  "damageKind" : "poison"
+}

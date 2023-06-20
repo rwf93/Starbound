@@ -1,0 +1,15 @@
+{
+  "itemName" : "ricevinegar",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "drink",
+  "inventoryIcon" : "ricevinegar.png",
+  "description" : "A traditional Hylotl drink with a very strong flavour.",
+  "shortdescription" : "Rice Vinegar",
+  "effects" : [ [
+    "wellfed"
+  ] ],
+  "emote" : "",
+  "emitters" : [ "drinking" ]
+}

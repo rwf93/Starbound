@@ -1,0 +1,61 @@
+{
+  "objectName" : "shortverticalmovingplatform",
+  "objectType" : "physics",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Rare",
+  "category" : "wire",
+  "price" : 100,
+
+  "description" : "A moving platform.",
+  "shortdescription" : "Moving Platform",
+  "race" : "generic",
+
+  "apexDescription" : "A moving platform.",
+  "avianDescription" : "A moving platform.",
+  "floranDescription" : "A moving platform.",
+  "glitchDescription" : "A moving platform.",
+  "humanDescription" : "A moving platform.",
+  "hylotlDescription" : "A moving platform.",
+
+  "inventoryIcon" : "platform.png",
+
+  "orientations" : [
+    {
+      "direction" : "right",
+      "image" : "shortverticalstand.png",
+      "imagePosition" : [-8, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "movingplatform.lua" ],
+  "scriptDelta" : 1,
+
+  "animation" : "verticalmovingplatform.animation",
+  "animationParts" : {
+    "base" : "shortverticalstand.png",
+    "platform" : "platform.png"
+  },
+
+  "inputNodes" : [[0, 0]],
+
+  "physicsCollisions" : {
+    "platform" : {
+      "collision" : [
+        [-2, -0.35],
+        [2, -0.35],
+        [2, 0.35],
+        [-2, 0.35]
+      ],
+      "collisionKind" : "platform",
+
+      "position" : [0, 1]
+    }
+  },
+
+  "platformStart" : [0, 0.5],
+  "platformEnd" : [0, 8],
+  "platformMoveTime" : 1
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "organicswiftchest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "swiftchest.frames"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "objectName" : "multichair",
+  "colonyTags" : ["odd"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A space saving chair for you and three friends",
+  "shortdescription" : "Multi-Chair",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 300,
+
+  "apexDescription" : "A ridiculous chair.",
+  "avianDescription" : "A ridiculous chair.",
+  "floranDescription" : "A ridiculous chair.",
+  "glitchDescription" : "A ridiculous chair.",
+  "humanDescription" : "A ridiculous chair.",
+  "hylotlDescription" : "A ridiculous chair.",
+  "novakidDescription" : "A ridiculous chair.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "multichair.png",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPositions" : [
+    [2, 25],
+    [2, 47],
+    [2, 69],
+    [2, 91]
+  ]
+}

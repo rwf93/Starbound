@@ -1,0 +1,31 @@
+{
+  "itemName" : "submarinecontrolleryellow",
+  "level" : 1,
+  "price" : 25000,
+  "rarity" : "rare",
+  "description" : "Create a yellow submarine from stored nanites.",
+  "shortdescription" : "Yellow Submarine Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+
+  "respawnTime" : 1.0,
+
+  //=============Item specifc bits.
+  "vehicleType" : "submarineyellow",
+  "vehicleBoundingBox" : [-8, -5, 8, 5],
+  "vehicleImage" : "/vehicles/submarine/submarinewarp.png:warp.4",
+
+  "animationParts" : {
+    "casing" : "submarinecontrolleryellow.png"
+  },
+
+  "inventoryIcon" : "submarinecontrolleryellow.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/submarinecontrolleryellow.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/submarinecontrolleryellow.png:full"
+}

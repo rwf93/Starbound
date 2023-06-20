@@ -1,0 +1,46 @@
+{
+  "npcId" : 14,
+  "npcName" : "smallpig",
+
+  "aiFunctions" : { "0" : "defaultWander" },
+  "aiStateFunc" : "passiveCritter",
+
+
+  "frames" : "body/1.frames",
+  "frameInfo" : { "walk" : [ "walk", 6, 1.0, 1, 0, 0],
+    "idle" : [ "idle", 3, 1.0, 0, 0, 0]
+  },
+
+  "visibleRect" : [-3.125, -3.125, 3.125, 3.125],
+
+  "defaultHitbox" : [ "Rect", [-8, 1, 7, -7] ],
+  "attackBox" : { },
+  "defenseBox" : { },
+  "immuneBox" : { },
+  "weakpointBox" : { },
+  "collisionBox" : {
+    "idle.0.0" : [ "Default" ],
+    "idle.0.1" : [ "Default" ],
+    "idle.0.2" : [ "Default" ],
+
+    "walk.0.0" : [ "Default" ],
+    "walk.0.1" : [ "Default" ],
+    "walk.0.2" : [ "Default" ],
+    "walk.0.3" : [ "Default" ],
+    "walk.0.4" : [ "Default" ],
+    "walk.0.5" : [ "Default" ]
+  },
+  "damageBox" : {
+    "idle.0.0" : [ "Default" ],
+    "idle.0.1" : [ "Default" ],
+    "idle.0.2" : [ "Default" ],
+
+    "walk.0.0" : [ "Default" ],
+    "walk.0.1" : [ "Default" ],
+    "walk.0.2" : [ "Default" ],
+    "walk.0.3" : [ "Default" ],
+    "walk.0.4" : [ "Default" ]
+  },
+  "animationOffset" : { },
+  "projectilePoint" : { }
+}

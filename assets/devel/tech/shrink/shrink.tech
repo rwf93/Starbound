@@ -1,0 +1,17 @@
+{
+  "name" : "shrink",
+  "type" : "head",
+
+  "scripts" : [ "shrink.lua" ],
+  "animator" : "shrink.animation",
+
+  "description" : "Drink Me",
+  "shortDescription" : "Shrink",
+  "rarity" : "Legendary",
+  "icon" : "/tech/shrink.png",
+
+  "chipCost" : 8,
+
+  "shrinkFactor" : 0.5,
+  "shrinkTime" : 0.5
+}

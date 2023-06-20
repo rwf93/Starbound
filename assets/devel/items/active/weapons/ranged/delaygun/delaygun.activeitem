@@ -1,0 +1,45 @@
+{
+  "itemName" : "delaygun",
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "Meh, I'll kill you later.",
+  "shortdescription" : "Test Delay Rifle",
+  "tooltipKind" : "gun",
+  "weaponType" : "Delay Rifle",
+  "twoHanded" : true,
+  "itemTags" : ["weapon"],
+
+  "inventoryIcon" : "delaygun.png",
+
+  "animation" : "delaygun.animation",
+  "animationParts" : {
+    "gun" : "delaygun.png",
+    "muzzleFlash" : "muzzleflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "gun" : { "properties" : {
+        "offset" : [0.75, 0.125]
+      }},
+      "muzzleFlash" : { "properties" : {
+        "offset" : [4.0, 0.375]
+      }}
+    }},
+    "sounds" : {
+      "fire" : [ "/sfx/gun/ar6.ogg" ]
+    }
+  },
+  "fireOffset" : [3.625, 0.375],
+  "aimOffset" : 0, // fireOffset[2] - gun offset - 0.25
+
+  "scripts" : ["delaygun.lua"],
+
+  "level" : 5,
+  "fireTime" : 0.3,
+  "inaccuracy" : 0.01,
+
+  "projectileType" : "delaybullet",
+  "projectileParameters" : {
+    "power" : 3
+  }
+}

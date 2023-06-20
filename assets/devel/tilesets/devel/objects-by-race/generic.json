@@ -1,0 +1,455 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-race/generic",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 47,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "invalid" : "true"
+    },
+    "10" : {
+      "//description" : "A steaming cup of Earl Grey.",
+      "//name" : "chattestbug",
+      "//shortdescription" : "Chat Test Bug",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "chattestbug",
+      "tilesetDirection" : "right"
+    },
+    "11" : {
+      "//description" : "A space saving chair for you and three friends",
+      "//name" : "multichair",
+      "//shortdescription" : "Multi-Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "multichair",
+      "tilesetDirection" : "right"
+    },
+    "12" : {
+      "//description" : "A cuddly penguin plushy. Awwwww.",
+      "//name" : "penguinplush",
+      "//shortdescription" : "Penguin Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "penguinplush",
+      "tilesetDirection" : "right"
+    },
+    "13" : {
+      "//description" : "Teleports to a variety of missions for easy testing.",
+      "//name" : "missionteleporter",
+      "//shortdescription" : "Mission Teleporter",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "missionteleporter"
+    },
+    "14" : {
+      "//description" : "A moving platform.",
+      "//name" : "shorthorizontalrightmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "shorthorizontalrightmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "15" : {
+      "//description" : "This machine runs a game called 'Lights Off!'.",
+      "//name" : "testconsole1",
+      "//shortdescription" : "Arcade Game",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "testconsole1",
+      "tilesetDirection" : "left"
+    },
+    "16" : {
+      "//description" : "A moving platform.",
+      "//name" : "longhorizontalrightmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-8",
+      "object" : "longhorizontalrightmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "17" : {
+      "//description" : "A moving platform.",
+      "//name" : "shortverticalmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "shortverticalmovingplatform",
+      "tilesetDirection" : "right"
+    },
+    "18" : {
+      "//name" : "geodecsharp",
+      "invalid" : "true"
+    },
+    "19" : {
+      "//name" : "geodea",
+      "invalid" : "true"
+    },
+    "2" : {
+      "invalid" : "true"
+    },
+    "20" : {
+      "//name" : "geodeb",
+      "invalid" : "true"
+    },
+    "21" : {
+      "//name" : "geoded",
+      "invalid" : "true"
+    },
+    "22" : {
+      "//name" : "geodegsharp",
+      "invalid" : "true"
+    },
+    "23" : {
+      "//name" : "geodeelow",
+      "invalid" : "true"
+    },
+    "24" : {
+      "//name" : "geodefsharp",
+      "invalid" : "true"
+    },
+    "25" : {
+      "//name" : "geodeehigh",
+      "invalid" : "true"
+    },
+    "26" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    },
+    "27" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap_orientation2",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    },
+    "28" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap_orientation3",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    },
+    "29" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap_orientation4",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "invalid" : "true"
+    },
+    "30" : {
+      "//description" : "Fires spinning blades that follow rails for absurdly dangerous situations!",
+      "//name" : "railbladetrap_orientation5",
+      "//shortdescription" : "Railblade Trap",
+      "imagePositionX" : "0",
+      "imagePositionY" : "-16",
+      "object" : "railbladetrap",
+      "tilesetDirection" : "right"
+    },
+    "31" : {
+      "//description" : "You are responsible for unleashing this horror.",
+      "//name" : "greycapsule",
+      "//shortdescription" : "Grey Capsule",
+      "imagePositionX" : "0",
+      "imagePositionY" : "0",
+      "object" : "greycapsule"
+    },
+    "32" : {
+      "//name" : "railstop",
+      "invalid" : "true"
+    },
+    "33" : {
+      "//name" : "railsensor",
+      "invalid" : "true"
+    },
+    "34" : {
+      "//name" : "railjunction",
+      "invalid" : "true"
+    },
+    "35" : {
+      "//name" : "railswitch",
+      "invalid" : "true"
+    },
+    "36" : {
+      "//description" : "Object for testing a scripted pane.",
+      "//name" : "scriptpaneconsole",
+      "//shortdescription" : "Script Pane Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "scriptpaneconsole",
+      "tilesetDirection" : "right"
+    },
+    "37" : {
+      "//name" : "railbumper",
+      "invalid" : "true"
+    },
+    "38" : {
+      "//description" : "This door includes rails to allow riders through when open.",
+      "//name" : "raildoor",
+      "//shortdescription" : "Rail Door",
+      "imagePositionX" : "-24",
+      "imagePositionY" : "0",
+      "object" : "raildoor",
+      "tilesetDirection" : "right"
+    },
+    "39" : {
+      "//description" : "Moves liquids from one side to the other.",
+      "//name" : "pump",
+      "//shortdescription" : "Pump",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "pump",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "invalid" : "true"
+    },
+    "40" : {
+      "//description" : "Upgrade your Matter Manipulator!",
+      "//name" : "mmupgradeconsole",
+      "//shortdescription" : "M.M. Upgrade Console",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "mmupgradeconsole",
+      "tilesetDirection" : "right"
+    },
+    "41" : {
+      "//description" : "Use this chest to test generation of treasure pools.",
+      "//name" : "treasuretestchest",
+      "//shortdescription" : "Treasure Test Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "treasuretestchest",
+      "tilesetDirection" : "right"
+    },
+    "42" : {
+      "//description" : "-todo-",
+      "//name" : "referencegenerator",
+      "//shortdescription" : "Reference Generator",
+      "imagePositionX" : "-80",
+      "imagePositionY" : "0",
+      "object" : "referencegenerator",
+      "tilesetDirection" : "right"
+    },
+    "43" : {
+      "//description" : "The ultimate in auto-stacking technology.",
+      "//name" : "stackercrate",
+      "//shortdescription" : "Stacker Crate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "stackercrate",
+      "tilesetDirection" : "right"
+    },
+    "44" : {
+      "//description" : "The patterns on this bioliumescent bug's back will continously change throughout its life.",
+      "//name" : "moondancer",
+      "//shortdescription" : "moondancer",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "moondancer"
+    },
+    "45" : {
+      "//description" : "Clobbers nearby collision spaces to get rid of junk collisions.",
+      "//name" : "collisionripper",
+      "//shortdescription" : "Collision Ripper",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "-8",
+      "object" : "collisionripper"
+    },
+    "46" : {
+      "//description" : "An arcade machine with an interactive narrative game.",
+      "//name" : "sbvntestconsole",
+      "//shortdescription" : "SBVN Test Console",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "sbvntestconsole",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "invalid" : "true"
+    },
+    "6" : {
+      "invalid" : "true"
+    },
+    "7" : {
+      "invalid" : "true"
+    },
+    "8" : {
+      "invalid" : "true"
+    },
+    "9" : {
+      "//description" : "A moving platform.",
+      "//name" : "tallverticalmovingplatform",
+      "//shortdescription" : "Moving Platform",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "tallverticalmovingplatform",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "10" : {
+      "image" : "../../../../../tiled/devel/objects/chattestbug.png"
+    },
+    "11" : {
+      "image" : "../../../../../tiled/devel/objects/multichair.png"
+    },
+    "12" : {
+      "image" : "../../../../../tiled/devel/objects/penguinplush.png"
+    },
+    "13" : {
+      "image" : "../../../../../tiled/devel/objects/missionteleporter.png"
+    },
+    "14" : {
+      "image" : "../../../../../tiled/devel/objects/shorthorizontalrightmovingplatform.png"
+    },
+    "15" : {
+      "image" : "../../../../../tiled/devel/objects/testconsole1.png"
+    },
+    "16" : {
+      "image" : "../../../../../tiled/devel/objects/longhorizontalrightmovingplatform.png"
+    },
+    "17" : {
+      "image" : "../../../../../tiled/devel/objects/shortverticalmovingplatform.png"
+    },
+    "18" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "19" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "20" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "21" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "22" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "23" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "24" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "25" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "26" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap.png"
+    },
+    "27" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap_orientation2.png"
+    },
+    "28" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap_orientation3.png"
+    },
+    "29" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap_orientation4.png"
+    },
+    "3" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "30" : {
+      "image" : "../../../../../tiled/devel/objects/railbladetrap_orientation5.png"
+    },
+    "31" : {
+      "image" : "../../../../../tiled/devel/objects/greycapsule.png"
+    },
+    "32" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "33" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "34" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "35" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "36" : {
+      "image" : "../../../../../tiled/devel/objects/scriptpaneconsole.png"
+    },
+    "37" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "38" : {
+      "image" : "../../../../../tiled/devel/objects/raildoor.png"
+    },
+    "39" : {
+      "image" : "../../../../../tiled/devel/objects/pump.png"
+    },
+    "4" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "40" : {
+      "image" : "../../../../../tiled/devel/objects/mmupgradeconsole.png"
+    },
+    "41" : {
+      "image" : "../../../../../tiled/devel/objects/treasuretestchest.png"
+    },
+    "42" : {
+      "image" : "../../../../../tiled/devel/objects/referencegenerator.png"
+    },
+    "43" : {
+      "image" : "../../../../../tiled/devel/objects/stackercrate.png"
+    },
+    "44" : {
+      "image" : "../../../../../tiled/devel/objects/moondancer.png"
+    },
+    "45" : {
+      "image" : "../../../../../tiled/devel/objects/collisionripper.png"
+    },
+    "46" : {
+      "image" : "../../../../../tiled/devel/objects/sbvntestconsole.png"
+    },
+    "5" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "6" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "7" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "8" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "9" : {
+      "image" : "../../../../../tiled/devel/objects/tallverticalmovingplatform.png"
+    }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,31 @@
+{
+  "projectileName" : "torpedo",
+  "image" : "torpedo.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 4,
+  "piercing" : true,
+  "flippable" : true,
+
+  "emitters" : [ "bubbletrail" ],
+
+  "physics" : "torpedo",
+
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+
+  "speed" : 100,
+  "acceleration" : 20,
+
+  "timeToLive" : 30,
+
+  "actionOnHit" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config"
+    }
+  ],
+
+
+  "persistentAudio" : "/sfx/tech/forcefield_loop.ogg"
+}

@@ -1,0 +1,173 @@
+{
+  "projectileName" : "multisporecloudX",
+  "image" : "multisporecloudX.png",
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "timeToLive" : 0.01,
+  "speed" : 100,
+  "physics" : "laser",
+  "flippable" : true,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.15,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.18,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.2,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.08,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 180,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 30,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "delaySteps" : 5
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "delaySteps" : 10
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 15
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "delaySteps" : 20
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "delaySteps" : 25
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "delaySteps" : 35
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "delaySteps" : 40
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "delaySteps" : 50
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "delaySteps" : 55
+    },
+    {
+      "action" : "projectile",
+      "type" : "sporecloudX",
+      "inheritSpeedFactor" : 0.1,
+      "firePosition" : [-10, 5],
+      "fuzzAngle" : 360,
+      "angleAdjust" : 0,
+      "delaySteps" : 60
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/fire_out_louder.ogg" ]
+    }
+  ],
+  "damagePoly" : [ [-14, 0], [-10, -10], [0, -14], [10, -10], [14, 0], [10, 10], [0, 14], [-10, 10] ],
+  "power" : 0.0,
+  "damageKind" : "poison"
+}

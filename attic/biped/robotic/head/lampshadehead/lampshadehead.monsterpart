@@ -1,0 +1,9 @@
+{
+  "name" : "roboticlampshadehead",
+  "category" : "biped_robotic",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "lampshadehead.frames"
+  }
+}

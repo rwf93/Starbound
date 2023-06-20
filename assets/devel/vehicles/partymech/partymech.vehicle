@@ -1,0 +1,61 @@
+{
+  "name" : "partymech",
+  "boundBox" : [-5, -5, 5, 5],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : false,
+
+  "script" : "/vehicles/partymech/partymech.lua",
+  "animation" : "/vehicles/partymech/partymech.animation",
+
+  "animationPartTags" : {
+    "backLeg" : {
+      "partImage" : "/vehicles/partymech/partymechbleg.png"
+    },
+    "backLeg2" : {
+      "partImage" : "/vehicles/partymech/partymechbleg.png"
+    },
+    "background" : {
+      "partImage" : "/vehicles/partymech/partymechbackground.png"
+    },
+    "body" : {
+      "partImage" : "/vehicles/partymech/partymechbody.png"
+    },
+    "frontLeg" : {
+      "partImage" : "/vehicles/partymech/partymechfleg.png"
+    },
+    "frontLeg2" : {
+      "partImage" : "/vehicles/partymech/partymechfleg.png"
+    }
+  },
+
+  "movementSettings" : {
+    "collisionPoly" : [ [-7.5, -2.0], [-6, -4.5], [6, -4.5], [7.5, -2.0], [7.5, 2], [6, 3], [-6, 3], [-7.5, 2] ],
+    "mass" : 5,
+    "airFriction" : 0.5,
+    "groundFriction" : 40.0,
+    "ignorePlatformCollision" : true
+  },
+
+  "loungePositions" : {
+    "seat" : {
+      "part" : "body",
+      "partAnchor" : "sitPosition",
+      "orientation" : "sit"
+    }
+  },
+
+  "physicsCollisions" : {
+    "platform" : {
+      "collision" : [ [-6, 2.0], [6, 2.0], [6, 2.5], [-6, 2.5] ],
+      "collisionKind" : "platform",
+      "attachToPart" : "body"
+    }
+  },
+
+  "mechHorizontalMovement" : 8,
+  "mechJumpVelocity" : [10, 30],
+  "offGroundFrames" : 8,
+
+  "mechLevel" : 6
+}

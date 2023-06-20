@@ -1,0 +1,97 @@
+{
+  "displayConfig" : {
+    "title" : "Test Adventure",
+    "subtitle" : "Find the girl(?) of your dreams",
+    "textColor" : "#605030",
+    "selFormat" : "^darkgreen;[%s]",
+    "unselFormat" : "^darkgray; %s ",
+    "textRate" : 50
+  },
+
+  "titleScene" : {
+    "background" : "bg_blossoms",
+    "foreground" : "title"
+  },
+
+  "entryScene" : "intro1",
+
+  "scenes" : {
+    "intro1" : {
+      "background" : "bg_school",
+      "text" : "It's the beginning of another boring school year...",
+      "continue" : "intro2"
+    },
+    "intro2" : {
+      "background" : "bg_school",
+      "text" : "Same old building, same old class, same old girls. Why couldn't my family have moved somewhere exciting?",
+      "continue" : "intro3"
+    },
+    "intro3" : {
+      "background" : "bg_school",
+      "text" : "Same old school, but one year closer to...",
+      "options" : [
+        ["Freedom!", "intro4optimist", null, ["optimism+1"]],
+        ["Exams", "intro4pessimist"]
+      ]
+    },
+    "intro4optimist" : {
+      "background" : "bg_school",
+      "text" : "Freedom! And who knows, maybe this year will surprise you! You look over the grounds with renewed optimism.",
+      "continue" : "intro5"
+    },
+    "intro4pessimist" : {
+      "background" : "bg_school",
+      "text" : "Exams. Job applications. Unpaid overtime. Late retirement and an early grave.",
+      "continue" : "intro5"
+    },
+    "intro5" : {
+      "background" : "bg_school",
+      "text" : "Wait... who's that girl??",
+      "foreground" : "char_duck",
+      "foregroundFrame" : "default",
+      "options" : [
+        ["A Great Duck", "intro6good", ["optimism>0"], ["optimism+2"]],
+        ["A Duck?", "intro6", ["optimism<1"]],
+        ["Heck Nope", "story", null, ["optimism-1"]]
+      ]
+    },
+    "intro6" : {
+      "background" : "bg_school",
+      "foreground" : "char_duck",
+      "foregroundFrame" : "default",
+      "text" : "I guess that must be a duck...",
+      "continue" : "story"
+    },
+    "intro6good" : {
+      "background" : "bg_school",
+      "foreground" : "char_duck",
+      "foregroundFrame" : "anime",
+      "text" : "That is, hands down, the most amazing duck you've ever seen.",
+      "continue" : "story"
+    },
+
+    "story" : {
+      "background" : "bg_school",
+      "foreground" : "char_duck",
+      "foregroundFrame" : "default",
+      "text" : "(and then a whole story happened)",
+      "continue" : [["optimism>1", "goodEnding"], ["optimism<0", "badEnding"], "neutralEnding"]
+    },
+
+    "goodEnding" : {
+      "background" : "bg_blossoms",
+      "text" : "I've found my forever duck.",
+      "foreground" : "gameover"
+    },
+    "neutralEnding" : {
+      "background" : "bg_blossoms",
+      "text" : "...and the rest of the school year was boring, as expected.",
+      "foreground" : "gameover"
+    },
+    "badEnding" : {
+      "background" : "bg_blossoms",
+      "text" : "Guess I'll never find love...",
+      "foreground" : "gameover"
+    }
+  }
+}

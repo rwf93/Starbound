@@ -1,0 +1,13 @@
+{
+  "itemName" : "corntent",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "corntent.png",
+  "description" : "A famous Glitch chef invented Corntent, and nobody is quite sure why.",
+  "shortdescription" : "Corntent",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

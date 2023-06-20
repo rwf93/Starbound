@@ -1,0 +1,9 @@
+{
+  "name" : "roboticbirdmaskhead",
+  "category" : "biped_robotic",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "birdmaskhead.frames"
+  }
+}

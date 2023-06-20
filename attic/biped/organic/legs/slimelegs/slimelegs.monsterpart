@@ -1,0 +1,9 @@
+{
+  "name" : "organicslimelegs",
+  "category" : "biped",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "slimelegs.frames"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "scissorarm",
+  "category" : "biped_robotic",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "scissorfarm.frames",
+    "backArm" : "scissorbarm.frames"
+  }
+}

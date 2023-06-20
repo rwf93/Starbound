@@ -1,0 +1,16 @@
+{
+  "name" : "noclip",
+  "type" : "head",
+
+  "scripts" : [ "noclip.lua" ],
+  "animator" : "noclip.animation",
+
+  "description" : "There are no clips here.",
+  "shortDescription" : "Noclip",
+  "rarity" : "Legendary",
+  "icon" : "/tech/noclip.png",
+
+  "chipCost" : 8,
+
+  "flightSpeed" : 50
+}

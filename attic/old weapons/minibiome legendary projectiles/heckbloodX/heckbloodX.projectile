@@ -1,0 +1,16 @@
+{
+  "projectileName" : "heckbloodX",
+  "image" : "heckbloodX.png",
+  "physics" : "grenadenobounce",
+  "animationCycle" : 0.3,
+  "animationLoops" : false,
+  "damageKindImage" : "icon.png",
+  "frameNumber" : 10,
+  "power" : 400,
+  "speed" : 75,
+  "timeToLive" : 0.4,
+  "bounces" : 0,
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "default"
+}

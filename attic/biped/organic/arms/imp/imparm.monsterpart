@@ -1,0 +1,10 @@
+{
+  "name" : "organicimparm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "impfarm.frames",
+    "backArm" : "impbarm.frames"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "metadata" : {
+    "name" : "humanbunkernew",
+    "species" : "human",
+    "rules" : [
+    ],
+    "anchor" : [ "entrance1right" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "entrance1left",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "entrance1left.json" ]
+    },
+    {
+      "name" : "entrance1right",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "entrance1right.json" ]
+    },
+    {
+      "name" : "chamber1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "chamber1.json" ]
+    },
+    {
+      "name" : "hallway1",
+      "rules" : [
+        [ "maxSpawnCount", [6] ]
+      ],
+      "def" : [ "tmx", "hallway1.json" ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "itemName" : "hamsandwich",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "hamsandwich.png",
+  "description" : "Whoever thought to stick ham between two slices of bread was a genius.",
+  "shortdescription" : "Ham Sandwich",
+  "handPosition" : [-2, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

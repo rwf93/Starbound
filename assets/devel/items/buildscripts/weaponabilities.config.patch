@@ -1,0 +1,32 @@
+[
+  {
+    "op" : "add",
+    "path" : "/dashAttack",
+    "value" : "/items/active/weapons/melee/abilities/broadsword/dashattack.weaponability"
+  },
+  {
+    "op" : "add",
+    "path" : "/leapAttack",
+    "value" : "/items/active/weapons/melee/abilities/broadsword/leapattack.weaponability"
+  },
+  {
+    "op" : "add",
+    "path" : "/vacuum",
+    "value" : "/items/active/weapons/ranged/abilities/vacuum/vacuum.weaponability"
+  },
+  {
+    "op" : "add",
+    "path" : "/vacuumsphere",
+    "value" : "/items/active/weapons/ranged/abilities/vacuumsphere/vacuumsphere.weaponability"
+  },
+  {
+    "op" : "add",
+    "path" : "/knockback",
+    "value" : "/items/active/weapons/ranged/abilities/knockbackshot/knockbackattack.weaponability"
+  },
+  {
+    "op" : "add",
+    "path" : "/bayonet",
+    "value" : "/items/active/weapons/ranged/abilities/generic/bayonet.weaponability"
+  }
+]

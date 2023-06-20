@@ -1,0 +1,15 @@
+{
+  "name" : "tinyaardvarkhead",
+  "category" : "smallquadruped",
+  "type" : "head",
+
+
+  "frames" : {
+    "head" : "tinyaardvarkhead.png"
+  },
+
+  "parameters" :
+  {
+    "projectileSourcePosition" : [1, -1.25]
+  }
+}

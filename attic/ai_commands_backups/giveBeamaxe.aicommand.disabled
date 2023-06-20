@@ -1,0 +1,201 @@
+{
+  "commandName" : "giveBeamaxe",
+  "onlyOnce" : true,
+  "icon" : "beamaxe.png",
+  "actions" : [
+     { 
+      "action" : "GivePlayerItems",
+      "items" : [ "beamaxe", 1],
+      "essentialItem" : "beamaxe"
+    },       
+    { 
+      "action" : "PlayCinematic",
+      "cinematicConfig" : {
+        "resource" : "/cinematics/beamaxe.cinematic"
+      }
+    },
+    { 
+      "action" : "DisableCommand",
+      "command" : "giveBeamaxe"
+    },
+    { 
+      "action" : "EnableCommand",
+      "command" : "enableTeleporter"
+    },
+    { 
+      "action" : "EnableCommand",
+      "command" : "upgradeBeamaxeSize1"
+    }
+  ],
+
+  "speciesText" : {
+    "apex" : {
+      "buttonText" : "Enable Matter Manipulator",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "The matter manipulator is a very powerful tool. Capable of manipulating any kind of matter at a distance.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "I have switched on your matter manipulator. The matter manipulator enables you to pick up, move and collect objects and materials.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "avian" : {
+      "buttonText" : "Enable Matter Manipulator",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "The matter manipulator channels the very essence of Kluex himself. It can manipulate matter of all kinds.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Your matter manipulator has been enabled. The matter manipulator enables you to pick up, move and collect objects and materials.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "floran" : {
+      "buttonText" : "Enable Matter Manipulator",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "The matter manipulator is very powerful!! Hehehe, it will let you dessstroy matter!!",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Yes!! The matter manipulator is working! The matter manipulator enables you to pick up, move and collect objects and materials.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "glitch" : {
+      "buttonText" : "Enable Matter Manipulator",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "To wield the matter manipulator is to wield magic itself.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Your matter manipulator is enabled your grace! The matter manipulator enables you to pick up, move and collect objects and materials.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "human" : {
+      "buttonText" : "Enable Matter Manipulator",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Your matter manipulator is an awesome way of interacting with the world! I can try to enable it for you!",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "It worked! The matter manipulator enables you to pick up, move and collect objects and materials.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "novakid" : {
+      "buttonText" : "Enable Matter Manipulator",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Your matter manipulator is an awesome way of interacting with the world! I can try to enable it for you!",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "It worked! The matter manipulator enables you to pick up, move and collect objects and materials.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure",
+          "speedModifier" : 1.0
+        }
+      ]
+    },
+    "hylotl" : {
+      "buttonText" : "Enable Matter Manipulator",
+      "selectSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Remember. He that would perfect his work must first sharpen his tools.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "successSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "It has been a success. The matter manipulator is ready. The matter manipulator enables you to pick up, move and collect objects and materials.",
+          "speedModifier" : 1.0
+        }
+      ],
+      "failSpeech" : [
+        {
+          "animation" : "talk",
+          "text" : "Failure",
+          "speedModifier" : 1.0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "robottail",
+  "category" : "robotboss_robotic",
+  "type" : "tail",
+
+  "frames" : {
+    "tail" : "robottail.png"
+  }
+}

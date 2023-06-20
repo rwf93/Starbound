@@ -1,0 +1,139 @@
+{
+  "type" : "friendlyminer",
+  "baseType" : "base",
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+    "behavior" : "villager",
+
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+    
+    "reactions" : {
+      "spontaneous" : [
+        [5.0, "sleep", { "timeRange" : [0.7, 0.9] }],
+        [1.0, "patrol"]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "arrivedHome" : {
+          "rent" : "/dialog/friendlyminer.config:rent"
+        }
+      },
+      "converse" : "/dialog/friendlyminer.config:converse"
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "humantier1head" } ],
+            "chest" : [ { "name" : "humantier1chest" } ],
+            "legs" : [ { "name" : "humantier1pants" } ],
+            "primary" : [ "pickaxe" ]
+          }
+        ] ]
+    ],
+    "human" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "devhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "mininghathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "humantier1chest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "humantier1pants", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "primary" : [ "pickaxe" ]
+          }
+        ] ]
+    ],
+    "apex" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "devhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "mininghathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "apextier1chest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "apextier1pants", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "primary" : [ "pickaxe" ]
+          }
+        ] ]
+    ],
+    "avian" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "devhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "mininghathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aviantier1chest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "aviantier1pants", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "primary" : [ "pickaxe" ]
+          }
+        ] ]
+    ],
+    "floran" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "devhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "mininghathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "florantier1chest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "florantier1pants", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "primary" : [ "pickaxe" ]
+          }
+        ] ]
+    ],
+    "hylotl" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "devhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "mininghathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "hylotltier1chest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "hylotltier1pants", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "primary" : [ "pickaxe" ]
+          }
+        ] ]
+    ],
+    "glitch" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "devhead", "parameters" : { "colorIndex" : 0 } }, { "name" : "mininghathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "glitchtier1chest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "glitchtier1pants", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "primary" : [ "pickaxe" ]
+          }
+        ] ]
+    ]
+  }
+}

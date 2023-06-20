@@ -1,0 +1,13 @@
+{
+  "name" : "skeyejellyhead",
+  "category" : "skeyejelly",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "skeyejellyhead.png"
+  },
+
+  "parameters" :
+  {
+  }
+}

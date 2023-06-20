@@ -1,0 +1,211 @@
+{
+  "projectileName" : "supergiant",
+  "physics" : "hover",
+  "bounces" : -1,
+  "speed" : 25,
+  "timeToLive" : 8,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [185, 255, 255],
+  "pointLight" : true,
+  "piercing" : true,
+  "image" : "supergiant.png",
+  "animationCycle" : 0.6,
+  "frameNumber" : 6,
+  "power" : 50,
+  "damagePoly" : [ [-15, 0], [-10, -10], [0, -15], [10, -10], [15, 0], [10, 10], [0, 15], [-10, 10] ],
+  "supportsProcessing" : true,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/firework_explode1.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 22
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 68
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 112
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 135
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 158
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 202
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 225
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 248
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 292
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 315
+    },
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue3",
+      "inheritDamageFactor" : 0.1,
+      "fuzzAngle" : 5,
+      "angle" : 338
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "supergiantember",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.25
+    }
+  ],
+  "damageKind" : "plasma",
+  "emitters" : [ "defaultblue" ]
+}

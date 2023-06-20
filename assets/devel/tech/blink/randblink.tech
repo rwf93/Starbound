@@ -1,0 +1,35 @@
+{
+  "name" : "randblink",
+  "type" : "head",
+
+  "scripts" : ["blink.lua"],
+  "animator" : "blink.animation",
+
+  "energyUsage" : 20,
+
+  "description" : "Press 'F' to teleport to random places with this Random Blink tech! Are you brave enough?",
+  "shortDescription" : "Random Blink",
+  "rarity" : "Legendary",
+  "icon" : "/tech/blink.png",
+
+  "chipCost" : 8,
+
+  "blinkCollisionCheckDiameter" : 4,
+  "blinkVerticalGroundCheck" : 10,
+
+  // Specific to humanoid
+  "blinkFootOffset" : -2.5,
+  "blinkHeadOffset" : 1,
+
+  "blinkOutTime" : 0.15,
+  "blinkInTime" : 0.15,
+
+  "blinkMode" : "random",
+
+  "randomBlinkTries" : 60,
+  "randomBlinkDiameter" : 40,
+
+  "randomBlinkAvoidCollision" : true,
+  "randomBlinkAvoidMidair" : true,
+  "randomBlinkAvoidLiquid" : true
+}

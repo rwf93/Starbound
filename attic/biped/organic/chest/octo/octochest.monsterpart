@@ -1,0 +1,9 @@
+{
+  "name" : "organicoctochest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "octochest.frames"
+  }
+}

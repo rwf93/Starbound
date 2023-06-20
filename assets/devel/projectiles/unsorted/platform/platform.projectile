@@ -1,0 +1,35 @@
+{
+  "projectileName" : "platform",
+  "image" : "platform.png",
+  "animationCycle" : 0.25,
+  "physics" : "illusion",
+  "frameNumber" : 2,
+  "pointLight" : false,
+  "speed" : 10,
+  "power" : 0.0,
+
+  "bounces" : -1,
+
+  "timeToLive" : 10,
+
+  "orientationLocked" : true,
+
+  "physicsCollisions" : {
+    "platform" : {
+      "collision" : [
+        [-2, -0.5],
+        [2, -0.5],
+        [2, 0.5],
+        [-2, 0.5]
+      ],
+      "collisionKind" : "platform"
+    }
+  },
+
+  "scripts" : [ "platform.lua" ],
+  "scriptDelta" : 0,
+
+  "damageTeam" : { "type" : "ghostly" },
+
+  "clientEntityMode" : "ClientSlaveOnly"
+}

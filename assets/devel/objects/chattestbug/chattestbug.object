@@ -1,0 +1,37 @@
+{
+  "objectName" : "chattestbug",
+  "category" : "other",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "price" : 50,
+  "printable" : false,
+  "description" : "A steaming cup of Earl Grey.",
+  "shortdescription" : "Chat Test Bug",
+  "race" : "generic",
+
+  "inventoryIcon" : "chattestbugicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "chattestbug.png:<color>.<frame>",
+      "imagePosition" : [-1, 0],
+      "frames" : 27,
+      "animationCycle" : 2.3,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/scripts/chattest.lua" ],
+  "scriptDelta" : 10,
+  "chatOptions" : [
+    "Short",
+    "This should be approximately one full line of chat",
+    "Yo dawg, I heard you liked long chat messages so I put 'this is a long chat message' in your long chat message so your chat messages can be long while you chat your long messages"
+  ],
+  "portraitChatOptions" : [
+    ["Hey, listen!", "/interface/chatbubbles/portraittest.png"],
+    ["Now this is a story all about how my life got flip turned upside down and I'd like to take a minute ^green;just sit right there^white; I'll tell you how I became the prince of a town called ^orange;Bel Aire^white;.", "/interface/chatbubbles/portraittest.png"]
+  ],
+  "mouthPosition" : [0, 0]
+}

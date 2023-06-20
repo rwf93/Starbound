@@ -1,0 +1,14 @@
+{
+  "itemName" : "chilistew",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "chilistew.png",
+  "description" : "A delicious beefy chilli. Spicy!",
+  "shortdescription" : "Chilli Stew",
+  "handPosition" : [0, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

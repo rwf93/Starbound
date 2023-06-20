@@ -1,0 +1,10 @@
+{
+  "name" : "organichydraarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "hydrafarm.frames",
+    "backArm" : "hydrabarm.frames"
+  }
+}

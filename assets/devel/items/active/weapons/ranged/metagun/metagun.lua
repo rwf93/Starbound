@@ -1,0 +1,95 @@
+require "/scripts/vec2.lua"
+
+function init()
+  -- sb.logInfo("Initializing metagun")
+
+  -- self.recoil = 0
+  -- self.recoilRate = 0
+
+  self.fireOffset = config.getParameter("fireOffset")
+  updateAim()
+
+  self.active = false
+  storage.fireTimer = storage.fireTimer or 0
+
+  animator.setPartTag("muzzleFlash", "variant", "1")
+end
+
+function uninit()
+  -- sb.logInfo("Uninitializing metagun")
+end
+
+function update(dt, fireMode, shiftHeld)
+  -- sb.logInfo("Updating metagun with fireMode %s and shiftHeld %s", fireMode, shiftHeld)
+
+  updateAim()
+
+  if fireMode == "none" then
+    stopFiring()
+  end
+
+  storage.fireTimer = math.max(storage.fireTimer - dt, 0)
+
+  -- if self.active then
+  --   self.recoilRate = 0
+  -- else
+  --   self.recoilRate = math.max(1, self.recoilRate + (10 * dt))
+  -- end
+  -- self.recoil = math.max(self.recoil - dt * self.recoilRate, 0)
+
+  if self.active and storage.fireTimer <= 0 then
+    if animator.animationState("firing") == "off" then
+      animator.setAnimationState("firing", "fire")
+    end
+    animator.setPartTag("muzzleFlash", "variant", math.random(1, 3))
+    storage.fireTimer = config.getParameter("fireTime", 1.0)
+
+    if not world.pointTileCollision(firePosition()) then
+      world.spawnProjectile(
+          config.getParameter("projectileType"),
+          firePosition(),
+          activeItem.ownerEntityId(),
+          aimVector(),
+          false,
+          config.getParameter("projectileParameters", {})
+        )
+      -- self.recoil = self.recoil + 0.5
+    else
+      animator.setAnimationState("firing", "off")
+    end
+  end
+end
+
+function activate(fireMode, shiftHeld)
+  -- sb.logInfo("Activating metagun with fireMode %s and shiftHeld %s", fireMode, shiftHeld)
+
+  if not self.active then
+    startFiring()
+  end
+end
+
+function startFiring()
+  self.active = true
+end
+
+function stopFiring()
+  self.active = false
+  animator.setAnimationState("firing", "off")
+end
+
+function updateAim()
+  self.aimAngle, self.aimDirection = activeItem.aimAngleAndDirection(self.fireOffset[2], activeItem.ownerAimPosition())
+  self.aimAngle = self.aimAngle -- + self.recoil * 0.3
+  activeItem.setArmAngle(self.aimAngle)
+  activeItem.setFacingDirection(self.aimDirection)
+end
+
+function firePosition()
+  return vec2.add(mcontroller.position(), activeItem.handPosition(self.fireOffset))
+end
+
+function aimVector()
+  local aimVector = vec2.rotate({1, 0}, self.aimAngle + sb.nrand(config.getParameter("inaccuracy", 0), 0))
+  aimVector[1] = aimVector[1] * self.aimDirection
+  return aimVector
+end

@@ -1,0 +1,13 @@
+{
+  "itemName" : "candiedpearlpeas",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "candiedpearlpeas.png",
+  "description" : "Pearlpeas are roasted in sugar and shoved on a stick.",
+  "shortdescription" : "Candied Pearlpeas",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

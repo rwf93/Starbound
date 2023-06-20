@@ -1,0 +1,9 @@
+{
+  "name" : "roboticjetlegs",
+  "category" : "biped_robotic",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "jetlegs.frames"
+  }
+}

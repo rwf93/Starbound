@@ -1,0 +1,14 @@
+{
+  "itemName" : "soup",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "soup.png",
+  "description" : "A steaming bowl of tomato soup.",
+  "shortdescription" : "Tomato Soup",
+  "handPosition" : [0, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

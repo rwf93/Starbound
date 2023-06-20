@@ -1,0 +1,9 @@
+{
+  "name" : "dragonbosshead",
+  "category" : "dragonboss",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "dragonbosshead.png"
+  }
+}

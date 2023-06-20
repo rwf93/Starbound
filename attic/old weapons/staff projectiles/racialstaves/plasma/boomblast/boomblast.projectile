@@ -1,0 +1,23 @@
+{
+  "projectileName" : "boomblast",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "boomblast.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 3.0,
+  "frameNumber" : 4,
+  "power" : 99,
+  "speed" : 100,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/lightblockexplosion/lightblockexplosion.config"
+    }
+  ],
+  "lightColor" : [255, 50, 150],
+  "damagePoly" : [ [-2, 5], [-2, -5], [10, -5], [10, 5] ],
+  "damageKind" : "plasma",
+  "emitters" : [ "defaultmagenta" ]
+}

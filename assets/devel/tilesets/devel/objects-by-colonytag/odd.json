@@ -1,0 +1,26 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/odd",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 1,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A space saving chair for you and three friends",
+      "//name" : "multichair",
+      "//shortdescription" : "Multi-Chair",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "multichair",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/objects/multichair.png"
+    }
+  },
+  "tilewidth" : 8
+}

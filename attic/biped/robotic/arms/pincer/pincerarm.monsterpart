@@ -1,0 +1,10 @@
+{
+  "name" : "roboticpincerarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "pincerfarm.frames",
+    "backArm" : "pincerbarm.frames"
+  }
+}

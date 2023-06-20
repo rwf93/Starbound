@@ -1,0 +1,75 @@
+{
+  "itemName" : "chainball",
+  "price" : 500,
+
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "Whomp.",
+  "shortdescription" : "Chain Ball",
+  "tooltipKind" : "base",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "chainballicon.png",
+  "animation" : "chainball.animation",
+  "animationParts" : {
+    "grapple" : "chainball.png"
+  },
+  "animationCustom" : { },
+  "animationScripts" : [
+    "/items/active/effects/renderrope.lua"
+  ],
+
+  "scripts" : ["chainball.lua"],
+
+  "ropeOffset" : [0.5, 0.375],
+  "ropeWidth" : 1,
+  "ropeColor" : [150, 150, 150, 255],
+  "ropeFullbright" : false,
+
+  "fireOffset" : [-0.5, 0],
+  "fireDirection" : [-0.5, 0.5],
+
+  "returnSpeed" : 20,
+  "returnDistance" : 3.0,
+
+  "projectileType" : "chainball",
+  "projectileParameters" : {
+    "speed" : 50,
+
+    "orbitParameters" : {
+      "gravityEnabled" : false,
+      "collisionEnabled" : true
+    },
+    "releaseParameters" : {
+      "gravityEnabled" : true,
+      "collisionEnabled" : true
+    }
+  },
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : 20,
+      "weaponRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "swingup" : {
+      "armRotation" : 50,
+      "weaponRotation" : -45,
+      "allowRotate" : false,
+      "allowFlip" : false
+    },
+    "release" : {
+      "armRotation" : 20,
+      "weaponRotation" : -45,
+      "allowRotate" : false,
+      "allowFlip" : false
+    },
+    "retrieve" : {
+      "armRotation" : 0,
+      "weaponRotation" : -45,
+      "allowRotate" : false,
+      "allowFlip" : false
+    }
+  }
+}

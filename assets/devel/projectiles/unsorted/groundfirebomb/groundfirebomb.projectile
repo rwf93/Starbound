@@ -1,0 +1,29 @@
+{
+  "projectileName" : "groundfirebomb",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 5,
+  "image" : "groundfirebomb.png",
+  "animationCycle" : 5,
+  "lightColor" : [105, 64, 0],
+  "frameNumber" : 7,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "groundfire",
+      "angle" : 0,
+      "inheritDamageFactor" : 0.5
+    },
+    {
+      "action" : "projectile",
+      "type" : "groundfire",
+      "angle" : 180,
+      "inheritDamageFactor" : 0.5
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "emitters" : [ "sparks" ]
+}

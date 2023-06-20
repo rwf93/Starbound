@@ -1,0 +1,27 @@
+{
+  "projectileName" : "supergiantember",
+  "image" : "supergiantember.png",
+  "animationCycle" : 0.25,
+  "physics" : "grenade",
+  "frameNumber" : 2,
+  "lightColor" : [0, 50, 100],
+  "animationLoops" : true,
+  "speed" : 20,
+  "timeToLive" : 2.5,
+  "power" : 1.0,
+  "damagePoly" : [ [-2, 2], [-2, -2], [2, -2], [2, 2] ],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "fireworkblue4",
+      "inheritDamageFactor" : 0.5,
+      "fuzzAngle" : 5,
+      "angle" : 0
+    }
+  ],
+  "damageKind" : "default",
+  "emitters" : [ "defaultblue" ],
+  "hydrophobic" : true
+}
+
+

@@ -1,0 +1,25 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/nature",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 1,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "The patterns on this bioliumescent bug's back will continously change throughout its life.",
+      "//name" : "moondancer",
+      "//shortdescription" : "moondancer",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "moondancer"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/objects/moondancer.png"
+    }
+  },
+  "tilewidth" : 8
+}

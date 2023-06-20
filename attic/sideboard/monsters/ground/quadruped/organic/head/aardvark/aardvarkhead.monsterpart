@@ -1,0 +1,15 @@
+{
+  "name" : "aardvarkhead",
+  "category" : "largequadruped",
+  "type" : "head",
+
+
+  "frames" : {
+    "head" : "aardvarkhead.png"
+  },
+
+  "parameters" :
+  {
+    "projectileSourcePosition" : [1, -0.5]
+  }
+}

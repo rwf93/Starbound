@@ -1,0 +1,14 @@
+{
+  "itemName" : "copperkeypie",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "copperkeypie.png",
+  "description" : "A kiwi pie with a bit of a coppery kick.",
+  "shortdescription" : "Copper Key Pie",
+  "handPosition" : [0, -2],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

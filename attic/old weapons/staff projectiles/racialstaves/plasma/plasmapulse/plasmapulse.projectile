@@ -1,0 +1,23 @@
+{
+  "projectileName" : "plasmapulse",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "plasmapulse.png",
+  "animationCycle" : 0.5,
+  "timeToLive" : 3.0,
+  "frameNumber" : 4,
+  "power" : 99,
+  "speed" : 35,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/globeexplosions/magentaglobeexplosion/magentaglobeexplosion.config"
+    }
+  ],
+  "lightColor" : [180, 50, 180],
+  "damagePoly" : [ [-2, 5], [-2, -5], [10, -5], [10, 5] ],
+  "damageKind" : "plasma",
+  "emitters" : [ "defaultmagenta" ]
+}

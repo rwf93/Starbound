@@ -1,0 +1,10 @@
+{
+  "name" : "skeyejellyarms",
+  "category" : "skeyejelly",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "skeyejellyfarm.png",
+    "backArm" : "skeyejellybarm.png"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "projectileName" : "leafcloudstarter",
+  "image" : "leafcloudstarter.png",
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "timeToLive" : 0.01,
+  "physics" : "laser",
+  "flippable" : true,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "leafcloud",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0,
+      "inheritSpeedFactor" : 0.1,
+      "config" : {
+        "timeToLive" : 2.5
+      }
+    },
+    {
+      "action" : "sound",
+      "delaySteps" : 15,
+      "options" : [ "/sfx/projectiles/gust1.ogg", "/sfx/projectiles/gust2.ogg", "/sfx/projectiles/gust3.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 15
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 20
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 25
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 35
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 40
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 50
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 55
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 65
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 70
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 75
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 80
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 85
+    },
+	{
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 95
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 350,
+      "delaySteps" : 100
+    }
+  ],
+  "damagePoly" : [ ],
+  "power" : 5,
+  "damageKind" : "default"
+}

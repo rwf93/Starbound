@@ -1,0 +1,13 @@
+{
+  "itemName" : "crowncake",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "crowncake.png",
+  "description" : "Upside crown cake! Haha! Get it? Sigh...",
+  "shortdescription" : "Pineapple Upside-Crown Cake",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

@@ -1,0 +1,43 @@
+{
+  "id" : "devquest",
+  "title" : "Dev Quest",
+  "text" : "Hacky thing using player lua bindings to cheat in a bunch of stuff.",
+  "completionText" : "Good job, cheater.",
+  "moneyRange" : [0, 0],
+  "canBeAbandoned" : false,
+
+  "showInLog" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/devquest.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "enableMissions" : [
+      "missionhuman1",
+      "missionfloran1",
+      "missionhylotl1"
+    ],
+    "essentialItems" : {
+      "beamaxe" : {
+        "name" : "beamaxe",
+        "count" : 1,
+        "parameters" : {
+          "blockRadius" : 5,
+          "minBeamWidth" : 8,
+          "maxBeamWidth" : 10,
+          "tileDamage" : 5,
+          "minBeamJitter" : 0.3,
+          "maxBeamJitter" : 0.4
+        }
+      },
+      "wiretool" : "wiretool",
+      "painttool" : "painttool",
+      "inspectiontool" : "scanmode"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "meatwich",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "meatwich.png",
+  "description" : "Chunks of meat sandwiched between more chunks of meat. Meaty!",
+  "shortdescription" : "Meatwich",
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

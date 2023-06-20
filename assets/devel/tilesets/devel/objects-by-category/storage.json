@@ -1,0 +1,38 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-category/storage",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 2,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "Use this chest to test generation of treasure pools.",
+      "//name" : "treasuretestchest",
+      "//shortdescription" : "Treasure Test Chest",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "treasuretestchest",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "The ultimate in auto-stacking technology.",
+      "//name" : "stackercrate",
+      "//shortdescription" : "Stacker Crate",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "stackercrate",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/objects/treasuretestchest.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/stackercrate.png"
+    }
+  },
+  "tilewidth" : 8
+}

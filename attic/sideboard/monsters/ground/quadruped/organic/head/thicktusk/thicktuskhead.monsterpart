@@ -1,0 +1,14 @@
+{
+  "name" : "thicktuskhead",
+  "category" : "largequadruped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "thicktuskhead.png"
+  },
+
+  "parameters" :
+  {
+    "projectileSourcePosition" : [1, -0.5]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "projectileName" : "deadboltteleportin",
+  "physics" : "hover",
+  "bounces" : -1,
+  "speed" : 0,
+  "timeToLive" : 0.5,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [150, 100, 15],
+  "piercing" : true,
+  "image" : "deadboltteleportin.png",
+  "animationCycle" : 0.5,
+  "animationLoops" : false,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "frameNumber" : 7,
+  "power" : 0,
+  "damagePoly" : [ [-3, 3], [-3, -3], [3, -3], [3, 3] ],
+  "supportsProcessing" : true,
+  "onlyHitTerrain" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "deadbolt",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.1,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/tech/mech_jump1.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 40
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 50
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 70
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 80
+    },
+    {
+      "action" : "projectile",
+      "type" : "rocket",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.2,
+      "inheritSpeedFactor" : 10000,
+      "delaySteps" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 100
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 110
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 130
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 140
+    },
+    {
+      "action" : "projectile",
+      "type" : "deadboltlaser",
+      "fuzzAngle" : 8,
+      "inheritDamageFactor" : 0.133,
+      "inheritSpeedFactor" : 9000,
+      "delaySteps" : 150
+    },
+    {
+      "action" : "projectile",
+      "type" : "rocket",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.2,
+      "inheritSpeedFactor" : 10000,
+      "delaySteps" : 160
+    }
+  ],
+  "damageKind" : "plasma"
+}

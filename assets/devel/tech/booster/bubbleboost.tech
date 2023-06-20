@@ -1,0 +1,18 @@
+{
+  "name" : "bubbleboost",
+  "type" : "legs",
+
+  "scripts" : ["booster.lua"],
+  "animator" : "bubbleboost.animation",
+
+  "description" : "Remind yourself of December 2013 with the Bubble Boost.",
+  "shortDescription" : "Bubble Boost",
+  "rarity" : "Legendary",
+  "icon" : "/tech/bubbleboost.png",
+
+  "chipCost" : 8,
+
+  "boostControlForce" : 750,
+  "boostSpeed" : 30,
+  "energyUsagePerSecond" : 0
+}

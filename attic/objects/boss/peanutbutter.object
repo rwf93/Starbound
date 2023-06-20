@@ -1,0 +1,43 @@
+{
+  "objectName" : "peanutbutter",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "description" : "This could attract anything... I should make sure I'm prepared before using it.",
+  "shortdescription" : "Peanut Butter Trap",
+  "race" : "generic",
+  "category" : "Tool",
+  "printable" : false,
+
+  "apexDescription" : "A peanut butter trap. I wonder what this could catch?",
+  "avianDescription" : "A trap with peanut butter. Tasty and deadly.",
+  "floranDescription" : "Floran use peanut sssquishy to catch thing!",
+  "glitchDescription" : "Sceptical. Surely only a tiny creature will be lured in by this.",
+  "humanDescription" : "If I'm not careful, I'll get caught in this trap myself.",
+  "hylotlDescription" : "A peanut butter trap. I bet this won't attract a thing.",
+  "novakidDescription" : "What creature would fall for a trap like this? Let's wait and find out I guess.",
+
+  "inventoryIcon" : "peanutbuttericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "peanutbutter.png",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "animation" : "/objects/boss/peanutbutter.animation",
+  "animationParts" : {
+    "beacon" : "peanutbutter.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "scripts" : [ "/objects/wired/ironbeacon/jellyboss.lua" ],
+  "scriptDelta" : 5
+
+}

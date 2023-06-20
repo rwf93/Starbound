@@ -1,0 +1,135 @@
+{
+  "name" : "submarineyellow",
+  "script" : "submarine.lua",
+  "boundBox" : [-8, -5, 8, 5],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+
+  "animation" : "submarine.animation",
+
+  "animationCustom" : {
+    "globalTagDefaults" : {
+        "colour" : "yellow"
+      },
+
+
+    "particleEmitters" : {
+      "damageShards" : {
+        "transformationGroups" : ["rotation"],
+        "emissionRate" : 0.0,
+        "burstCount"  : 8,
+        "offsetRegion" : [-4, -2, 4, 1],
+        "particles" : [{ "particle" : "hoverbikekhakishard"}]
+      }
+    }
+
+  },
+
+
+
+  "movementSettings" : {
+    "collisionPoly" : [[-2.5, -5], [-8.0, -3], [-8, 0], [0.0, 5.0], [8.0, 0], [8.0, -3], [2.5,-5]],
+    "mass" : 4,
+    "airFriction" : 0.5,
+    "groundFriction" : 1000,
+    "liquidBuoyancy" : 4,
+    "ignorePlatformCollision" : true
+  },
+
+
+
+  "loungePositions" : {
+    "drivingSeat" : {
+      "part" : "seat",
+      "partAnchor" : "drivingSeatPosition",
+      "emote" : "happy",
+      "statusEffects" : ["maxprotection","breathprotectionvehicle"],
+      "orientation" : "sit"
+    }
+  },
+
+  "minWaterFactorToFloat" : 0.1,
+
+  "targetMoveSpeed" : 30,
+
+  "moveControlForce" : 100,
+
+  "windLevelOffset" : [0, 4],
+  "rockingWindAngleMultiplier": 0.000,
+
+  "rockingInterval" : 3,
+  "maxRockingAngle": 0.02,
+
+  "speedRotationMultiplier": 0.001,
+
+  "angleApproachFactor" : 0.015,
+
+  "maxGroundSearchDistance" : 5,
+
+  //health and damage
+
+  "maxHealth" : 100,
+  "protection" : 50,
+  "materialKind" : "robotic",
+
+  "undamagedSettings" : {
+    "frictionEnabled" : true,
+    "liquidFriction" : 20,
+    "liquidBuoyancy" : 3
+  },
+  "slowSettings" : {
+    "frictionEnabled" : true,
+    "liquidFriction" : 30,
+    "liquidBuoyancy" : 2.5
+  },
+  "wreckedSettings" : {
+    "frictionEnabled" : true,
+    "liquidFriction" : 40,
+    "liquidBuoyancy" : 2
+  },
+
+  "sinkingBuoyancy" : 0.1,
+  "sinkingFriction" : 50,
+
+ //Damage visual effects
+  "bubbleParticleHealthThreshold" : 0.5,
+  "bubbleRateAtZeroHealth" : 5,
+
+  //controls for the depth controls responsiveness.
+  "depthControlSpeed" : 0.1,
+  "depthPfactor" : 0.5,
+  "depthIfactor" : 0.001,
+  "depthDfactor" : -0.001,
+
+
+  "damageStateNames" : ["undamaged","scratched","dented","wrecked"],
+  "damageMovementSettingNames" : ["undamagedSettings","undamagedSettings","slowSettings","wreckedSettings"],
+  "damageStateDriverEmotes" : ["happy","happy","sad","annoyed"],
+  "damageTakenEmote" : "oooh",
+  "damageEmoteTime" : 2.0,
+
+  //Platform to stand on
+
+  "physicsCollisions" : {
+    "deck" : {
+      "collision" : [ [-5, -0.5], [7, -0.5], [7, -1], [-5, -1] ],
+      "collisionKind" : "platform",
+      "attachToPart" : "seat"
+    }
+  },
+
+
+  // particle effects.
+  "bowWaveParticles" : ["bowWaveWater","bowWaveLava","splashPoison"],
+  "bowWaveMaxEmissionRate" : 200,
+  "splashParticles" : ["splashWater","splashLava","splashPoison"],
+  "splashEpsilon" : 0.025
+
+
+
+
+}
+
+
+

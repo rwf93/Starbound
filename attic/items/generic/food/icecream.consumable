@@ -1,0 +1,14 @@
+{
+  "itemName" : "icecream",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "icecream.png",
+  "description" : "I scream, you scream, we all scream for- oh...you get the point.",
+  "shortdescription" : "Vanilla Ice Cream",
+  "handPosition" : [2, 2],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

@@ -1,0 +1,55 @@
+{
+  "projectileName" : "splashspawner2",
+  "image" : "splashspawner1.png",
+  "physics" : "gas",
+  "animationCycle" : 0.1,
+  "frameNumber" : 8,
+  "speed" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "timeToLive" : 0.01,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/splashexplosion1/splashexplosion1.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "splashdrop2",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 2000
+    },
+    {
+      "action" : "projectile",
+      "type" : "splashdrop2",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 2000
+    },
+    {
+      "action" : "projectile",
+      "type" : "splashdrop2",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 2000
+    },
+    {
+      "action" : "projectile",
+      "type" : "splashdrop2",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 2000
+    },
+    {
+      "action" : "projectile",
+      "type" : "splashdrop2",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 2000
+    }
+  ],
+  "power" : 25,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,15 @@
+{
+  "itemName" : "cordialglass",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "drink",
+  "inventoryIcon" : "cordialglass.png",
+  "description" : "A glass of smooth avesmingo cordial.",
+  "shortdescription" : "Avesmingo Cordial",
+  "effects" : [ [
+    "wellfed"
+  ] ],
+  "emote" : "",
+  "emitters" : [ "drinking" ]
+}

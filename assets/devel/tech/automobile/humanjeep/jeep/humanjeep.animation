@@ -1,0 +1,128 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "movement" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : { },
+
+          "jump" : {
+            "frames" : 2,
+            "cycle" : 0.5,
+            "mode" : "end",
+            "properties" : {
+              "immediateSound" : "/sfx/tech/tech_doublejump.ogg"
+            }
+          },
+
+          "fall" : {
+            "frames" : 2,
+            "cycle" : 0.5,
+            "mode" : "end"
+          },
+
+          "driveForward" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          },
+
+          "driveReverse" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "humanjeepbackground.png:idle.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "humanjeepbackground.png:jump.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "humanjeepbackground.png:fall.<frame>"
+              }
+            },
+            "driveForward" : {
+              "properties" : {
+                "image" : "humanjeepbackground.png:move.<frame>"
+              }
+            },
+            "driveReverse" : {
+              "properties" : {
+                "image" : "humanjeepbackground.png:bmove.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "humanjeepforeground.png:idle.<frame>"
+              }
+            },
+            "jump" : {
+              "properties" : {
+                "image" : "humanjeepforeground.png:jump.<frame>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "humanjeepforeground.png:fall.<frame>"
+              }
+            },
+            "driveForward" : {
+              "properties" : {
+                "image" : "humanjeepforeground.png:move.<frame>"
+              }
+            },
+            "driveReverse" : {
+              "properties" : {
+                "image" : "humanjeepforeground.png:bmove.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "carHorn" : ["/sfx/tech/honk.ogg"]
+  },
+
+  "particleEmitters" : {
+    "carActivateParticles" : {
+      "particles" : [ ]
+    },
+    "carDeactivateParticles" : {
+      "particles" : [ ]
+    }
+  }
+}

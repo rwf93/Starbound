@@ -1,0 +1,40 @@
+{
+  "itemName" : "slimehandgrapple",
+  "price" : 1000,
+  "inventoryIcon" : "slimehandgrappleicon.png",
+  "rarity" : "Legendary",
+  "maxStack" : 1,
+  "description" : "Sticky, stretchy, undeniably handy!",
+  "shortdescription" : "Slime Hand Grapple",
+  "category" : "Tool",
+  "fireTime" : 0,
+  "twoHanded" : false,
+
+  "scripts" : ["/items/active/grapplinghooks/grapplinghook.lua"],
+  "animationScripts" : ["/items/active/effects/renderrope.lua"],
+
+  "animation" : "slimehandgrapple.animation",
+
+  "fireOffset" : [0, 0.3],
+  "ropeOffset" : [-0.5, 0.3],
+
+  "consumeOnUse" : false,
+
+  "projectileType" : "grapplehook",
+  "projectileParameters" : {
+    "speed" : 100,
+    "timeToLive" : 0.25
+  },
+
+  "ropeWidth" : 1.0,
+  "ropeColor" : [120, 80, 30, 255],
+
+  "reelInDistance" : 3.5,
+  "reelOutLength" : 50,
+  "breakLength" : 60,
+
+  "reelSpeed" : 15,
+  "controlForce" : 1000,
+
+  "groundLagTime" : 0.2
+}

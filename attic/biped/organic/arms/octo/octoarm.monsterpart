@@ -1,0 +1,10 @@
+{
+  "name" : "organicoctoarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "octofarm.frames",
+    "backArm" : "octobarm.frames"
+  }
+}

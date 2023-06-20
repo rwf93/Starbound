@@ -1,0 +1,62 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-race/tentacle",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 4,
+  "tileheight" : 8,
+  "tileproperties" : {
+      "0" : {
+          "//description" : "This torch flickers softly.-todo-",
+          "//name" : "organictorch",
+          "//shortdescription" : "Organic Torch",
+          "imagePositionX" : "0",
+          "imagePositionY" : "0",
+          "object" : "organictorch",
+          "tilesetDirection" : "right"
+      },
+      "1" : {
+          "//description" : "This torch flickers softly.-todo-",
+          "//name" : "organictorch_orientation1",
+          "//shortdescription" : "Organic Torch",
+          "imagePositionX" : "0",
+          "imagePositionY" : "0",
+          "object" : "organictorch",
+          "tilesetDirection" : "right"
+      },
+      "2" : {
+          "//description" : "This torch flickers softly.-todo-",
+          "//name" : "organictorch_orientation2",
+          "//shortdescription" : "Organic Torch",
+          "imagePositionX" : "0",
+          "imagePositionY" : "0",
+          "object" : "organictorch",
+          "tilesetDirection" : "right"
+      },
+      "3" : {
+          "//description" : "This torch flickers softly.-todo-",
+          "//name" : "organictorch_orientation3",
+          "//shortdescription" : "Organic Torch",
+          "imagePositionX" : "0",
+          "imagePositionY" : "0",
+          "object" : "organictorch",
+          "tilesetDirection" : "right"
+      }
+  },
+  "tiles" : {
+      "0" : {
+          "image" : "../../../../../tiled/devel/objects/organictorch.png"
+      },
+      "1" : {
+          "image" : "../../../../../tiled/devel/objects/organictorch_orientation1.png"
+      },
+      "2" : {
+          "image" : "../../../../../tiled/devel/objects/organictorch_orientation2.png"
+      },
+      "3" : {
+          "image" : "../../../../../tiled/devel/objects/organictorch_orientation3.png"
+      }
+  },
+  "tilewidth" : 8
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "organicbirdchest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "birdchest.frames"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "projectileName" : "redgiantspawner",
+  "image" : "redgiantspawner.png",
+  "physics" : "gas",
+  "animationCycle" : 0.1,
+  "frameNumber" : 8,
+  "speed" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "timeToLive" : 0.1,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "redgiant",
+      "inheritDamageFactor" : 0.5,
+      "inheritSpeedFactor" : 0,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/redgiant.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 120
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 150
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 210
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 240
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 300
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 330
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 360
+    },
+    {
+      "action" : "projectile",
+      "type" : "sunray",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 420
+    }
+  ],
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

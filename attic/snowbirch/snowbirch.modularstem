@@ -1,0 +1,157 @@
+{
+  "name" : "snowbirch",
+  "shape" : "snow",
+  "middleMinSize" : 3,
+  "middleMaxSize" : 9,
+  "dropConfig" : {
+    "drops" : [
+      [ { "item" : "fullwood1", "count" : 3 } ]
+    ],
+    "sounds" : {
+      "breakTree" : [
+        { "file" : "/sfx/environmental/tree_breaking.wav" },
+        { "file" : "/sfx/environmental/tree_breaking_alt.wav" }
+      ],
+      "hitGround" : [
+        { "file" : "/sfx/environmental/tree_hitground.wav" },
+        { "file" : "/sfx/environmental/tree_hitground2.wav" }
+      ]
+    },
+    "particles" : {
+      "breakTree" : {
+        "density" : 3,
+        "options" : [ {
+            "image" : "/particles/treestems/snowbirch.png",
+            "timeToLive" : 10
+          } ]
+      },
+      "hitGround" : {
+        "density" : 3,
+        "options" : [
+          {
+            "animation" : "/animations/dusttest/dusttest.animation",
+            "initial" : "drift",
+            "rotation" : 3.14,
+            "timeToLive" : 3
+          }
+        ]
+      }
+    }
+  },
+  "base" : {
+    "base1" : {
+      "image" : "base1.png",
+      "attachment" : {
+        "bx" : 0,
+        "by" : 0,
+        "x" : 5,
+        "y" : 15
+      }
+    },
+    "base2" : {
+      "image" : "base2.png",
+      "attachment" : {
+        "bx" : 0,
+        "by" : 0,
+        "x" : 5,
+        "y" : 15
+      }
+    },
+    "base3" : {
+      "image" : "base3.png",
+      "attachment" : {
+        "bx" : 0,
+        "by" : 0,
+        "x" : 5,
+        "y" : 15
+      }
+    }
+  },
+  "crown" : {
+    "crown1" : {
+      "image" : "crown1.png",
+      "attachment" : {
+        "bx" : -74,
+        "by" : -10
+      }
+    },
+    "crown2" : {
+      "image" : "crown2.png",
+      "attachment" : {
+        "bx" : -79,
+        "by" : -10
+      }
+    },
+    "crown3" : {
+      "image" : "crown3.png",
+      "attachment" : {
+        "bx" : -68,
+        "by" : -10
+      }
+    }
+  },
+  "middle" : {
+    "middle1" : {
+      "image" : "middle1.png",
+      "attachment" : {
+        "bx" : -4,
+        "by" : 0,
+        "x" : 5,
+        "y" : 20
+      }
+    },
+    "middle2" : {
+      "image" : "middle2.png",
+      "attachment" : {
+        "bx" : -4,
+        "by" : 0,
+        "x" : 5,
+        "y" : 20
+      }
+    },
+    "middle3" : {
+      "image" : "middle3.png",
+      "attachment" : {
+        "bx" : -5,
+        "by" : 0,
+        "x" : 5,
+        "y" : 18
+      }
+    },
+    "middle4" : {
+      "image" : "middle4.png",
+      "attachment" : {
+        "bx" : -6,
+        "by" : 0,
+        "x" : 5,
+        "y" : 20
+      }
+    }
+  },
+  "branch" : {
+    "branch1" : {
+      "image" : "branch1.png",
+      "attachment" : {
+        "bx" : -64,
+        "by" : 0,
+        "h" : 38
+      }
+    },
+    "branch2" : {
+      "image" : "branch2.png",
+      "attachment" : {
+        "bx" : -70,
+        "by" : 0,
+        "h" : 32
+      }
+    },
+    "branch3" : {
+      "image" : "branch3.png",
+      "attachment" : {
+        "bx" : -67,
+        "by" : 0,
+        "h" : 32
+      }
+    }
+  }
+}

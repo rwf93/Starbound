@@ -1,0 +1,14 @@
+{
+  "projectileName" : "vacuum",
+  "image" : "vacuum.png",
+  "physics" : "illusion",
+  "animationCycle" : 0.5,
+  "damageKindImage" : "icon.png",
+  "frameNumber" : 6,
+  "power" : 0,
+  "speed" : -30,
+  "timeToLive" : 0.5,
+  "bounces" : 0,
+  "piercing" : true,
+  "damageKind" : "slash"
+}

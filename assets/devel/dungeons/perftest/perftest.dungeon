@@ -1,0 +1,21 @@
+{
+  "metadata" : {
+    "name" : "perftest",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "perftest" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "perftest",
+      "rules" : [],
+      "def" : [ "tmx", "perftest.json" ],
+      "chance" : 1
+    }
+  ]
+}

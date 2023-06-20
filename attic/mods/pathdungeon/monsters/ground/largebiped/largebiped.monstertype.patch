@@ -1,0 +1,4 @@
+[
+  {"op":"replace","path":"/baseParameters/approachTime","value":120},
+  {"op":"replace","path":"/baseParameters/targetHoldTime","value":120}
+]

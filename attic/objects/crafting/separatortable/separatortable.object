@@ -1,0 +1,76 @@
+{
+  "objectName" : "separatortable",
+  "colonyTags" : ["crafting","electronic"],
+  "rarity" : "Legendary",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/crafting.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Separator's Table",
+        "subtitle" : " For when you need the best in close range combat gear",
+        "icon" : {
+          "file" : "/interface/crafting/separatortable.png"
+        }
+      }
+    },
+    "filter" : [ "separatortable" ]
+  },
+  "printable" : false,
+  "description" : "For crafting the best in close range combat gear!",
+  "shortdescription" : "^orange;Separator's Table^white;",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 600,
+  
+  "lightColor" : [155, 107, 179],
+
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0,
+  "flickerIntensityVariance" : 0.025,
+
+  "apexDescription" : "An ideal workstation for crafting weapons and armours that are supremely durable.",
+  "avianDescription" : "A separator's crafting table. Perfect for a close range combat specialist.",
+  "floranDescription" : "Thisss table make armour and blade worthy of strongessst Floran warriors.",
+  "glitchDescription" : "Observant. I could use this table to make armour capable of withstanding almost anything.",
+  "humanDescription" : "If I want to take my fights to close quarters, the equipment I can make here would be most ideal.",
+  "hylotlDescription" : "With this table I could craft the strongest of armours and the sharpest of blades.",
+  "novakidDescription" : "A separator's table. I'll be usin' this to craft some superior armour and weapons.",
+
+  "inventoryIcon" : "separatortableicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "separatortable.png:<color>.<frame>", "fullbright" : true }, { "image" : "separatortablelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "lightPosition" : [ -1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+      "imageLayers" : [ { "image" : "separatortable.png:<color>.<frame>", "fullbright" : true }, { "image" : "separatortablelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      
+      "direction" : "right",
+      
+      "lightPosition" : [ 0, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

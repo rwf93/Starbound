@@ -1,0 +1,16 @@
+{
+  "projectileName" : "sunray",
+  "physics" : "hover",
+  "bounces" : -1,
+  "speed" : 10,
+  "timeToLive" : 1.0,
+  "lightColor" : [165, 25, 0],
+  "damageKindImage" : "icon.png",
+  "piercing" : true,
+  "image" : "sunray.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 5,
+  "power" : 0,
+  "damagePoly" : [ [15, 5],  [60, 10], [60, -10], [15, -5] ],
+  "damageKind" : "plasma"
+}

@@ -1,0 +1,13 @@
+{
+  "image" : "1.png",
+  "frameGrid" : {
+    "size" : [50, 50],
+    "dimensions" : [6, 3],
+
+    "names" : [
+      [ null, "walk.0.0", "walk.0.1", "walk.0.2", "walk.0.3", "walk.0.4" ],
+      [ null, "idle.0.0", "idle.0.1", "idle.0.2", "idle.0.3", "idle.0.4" ],
+      [ null, "gibs.0", "gibs.1", "gibs.2", "gibs.3", "gibs.4" ]
+    ]
+  }
+}

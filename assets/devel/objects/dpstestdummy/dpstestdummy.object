@@ -1,0 +1,34 @@
+{
+  "objectName" : "dpstestdummy",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "description" : "This straw dummy is filled with advanced sensors to measure incoming damage.",
+  "shortdescription" : "DPS Test Dummy",
+  "race" : "glitch",
+  "category" : "decorative",
+  "price" : 70,
+
+  "inventoryIcon" : "dpstestdummyicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "dpstestdummy.png:<color>",
+
+      "imagePosition" : [-16, -0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "smashable" : true,
+  "smashDropOptions" : [[["dpstestdummy"]]],
+  "health" : 10000,
+  "damageTeam" : {
+    "type" : "indiscriminate"
+  },
+
+  "scripts" : ["recount.lua"],
+  "scriptDelta" : 1
+}

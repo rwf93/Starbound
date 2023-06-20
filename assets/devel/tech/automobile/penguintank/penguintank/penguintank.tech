@@ -1,0 +1,56 @@
+{
+  "name" : "penguintank",
+  "type" : "head",
+
+  "scripts" : [
+    "/scripts/vec2.lua",
+    "/tech/automobile/car.lua"
+  ],
+
+  "animator" : "penguintank.animation",
+
+  "description" : "Press F to use this. Traverses rough terrain quicker.",
+  "shortDescription" : "Penguin Tank",
+  "rarity" : "Legendary",
+  "icon" : "/tech/humanjeep.png",
+
+  "chipCost" : 8,
+
+  "carCustomMovementParameters" : {
+    "standingPoly" : [ [-2.5, -1.75], [2.5, -1.75], [1.5, 0.5], [-1.5, 0.5] ],
+    "crouchingPoly" : [ [-2.5, -1.75], [2.5, -1.75], [1.5, 0.5], [-1.5, 0.5] ],
+    "mass" : 5.0,
+
+    "normalGroundFriction" : 50.0,
+    "ambulatingGroundFriction" : 6.0,
+
+    "groundForce" : 160.0,
+    "airForce" : 50.0,
+    "liquidForce" : 70.0,
+
+    "walkSpeed" : 3.0,
+    "runSpeed" : 15.0,
+
+    "airJumpProfile" : {
+      "jumpSpeed" : 10.0,
+      "jumpControlForce" : 700.0,
+      "jumpInitialPercentage" : 0.75,
+      "jumpHoldTime" : 0.15
+    },
+
+    "liquidJumpProfile" : {
+      "jumpSpeed" : 5.0,
+      "jumpControlForce" : 400.0,
+      "jumpInitialPercentage" : 0.75,
+      "jumpHoldTime" : 0.1
+    }
+  },
+
+  "energyCostPerSecond" : 10,
+
+  "parentOffset" : [-0.7, 1.6],
+
+  "carCollisionTest" : [-3.5, -2.5, 3.5, 5],
+
+  "honkTime" : 1.0
+}

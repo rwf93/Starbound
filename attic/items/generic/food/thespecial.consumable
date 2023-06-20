@@ -1,0 +1,14 @@
+{
+  "itemName" : "thespecial",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "thespecial.png",
+  "description" : "You're better off not knowing what's in it.",
+  "shortdescription" : "The Special",
+  "handPosition" : [8, 0],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

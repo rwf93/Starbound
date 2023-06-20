@@ -1,0 +1,17 @@
+{
+  "particleEmitters" : {
+    "devparticles" : {
+      "enabled" : true,
+      "emissionRate" : 5.0,
+      "particles" : [
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [200, 200, 200]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "projectileName" : "quetzalcoatlsquartz",
+  "physics" : "hover",
+  "bounces" : -1,
+  "speed" : 25,
+  "timeToLive" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [160, 10, 55],
+  "pointLight" : true,
+  "piercing" : true,
+  "image" : "quetzalcoatlsquartz.png",
+  "animationCycle" : 0.6,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "frameNumber" : 12,
+  "power" : 50,
+  "damagePoly" : [ [-5, 5], [-5, -5], [5, -5], [5, 5] ],
+  "supportsProcessing" : true,
+  "onlyHitTerrain" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vlightblockexplosion/vlightblockexplosion.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzchunk",
+      "fuzzAngle" : 10,
+      "angleAdjust" : 45,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzchunk",
+      "fuzzAngle" : 10,
+      "angleAdjust" : 180,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzchunk",
+      "fuzzAngle" : 10,
+      "angleAdjust" : -45,
+      "inheritDamageFactor" : 0.25
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/melee/sword_parry.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    },
+    {
+      "action" : "projectile",
+      "type" : "quartzshard",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.025
+    }
+  ],
+  "damageKind" : "plasma"
+}

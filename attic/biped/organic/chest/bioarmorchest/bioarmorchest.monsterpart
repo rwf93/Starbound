@@ -1,0 +1,9 @@
+{
+  "name" : "organicbioarmorchest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "bioarmorchest.frames"
+  }
+}

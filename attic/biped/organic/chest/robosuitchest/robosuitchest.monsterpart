@@ -1,0 +1,9 @@
+{
+  "name" : "organicrobosuitchest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "robosuitchest.frames"
+  }
+}

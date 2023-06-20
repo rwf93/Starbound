@@ -1,0 +1,31 @@
+{
+  "name": "chefmerchantwithquadruped",
+  "priority": 2,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "apex": 6,
+    "cooking": 6    
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "apex",
+      "type": "chefmerchant"
+    },
+    {
+      "spawn": "monster",
+      "type": "smallquadruped",
+      "overrides": {
+        "aggressive": false
+      }
+    }
+  ],
+
+  "rent": {
+    "periodRange": [10.0, 10.0],
+    "pool": "huntingquadruped"
+  }
+}

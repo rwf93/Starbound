@@ -1,0 +1,18 @@
+{
+  "projectileName" : "petalcloud",
+  "image" : "petalcloud.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 4,
+  "power" : 50,
+  "physics" : "gas",
+  "piercing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/leafexplosion/leafexplosion.config"
+    }
+  ],
+
+  "lightColor" : [120, 55, 80],
+  "damageKind" : "electric"
+}

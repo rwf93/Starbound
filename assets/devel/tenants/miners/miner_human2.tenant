@@ -1,0 +1,26 @@
+{
+  "name": "miner_human2",
+  "priority": 3,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "mining": 10
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "human",
+      "type": "friendlyminer",
+      "overrides": {
+        "damageTeamType" : "friendly"
+       }
+     }
+   ],
+
+  "rent": {
+    "periodRange": [1200.0, 1800.0],
+    "pool": "minerGift"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "organicgirllegs",
+  "category" : "biped",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "girllegs.frames"
+  }
+}

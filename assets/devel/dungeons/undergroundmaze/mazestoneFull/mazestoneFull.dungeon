@@ -1,0 +1,1001 @@
+{
+  "metadata" : {
+    "name" : "mazestoneFull",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "entrytop", "entryleft", "entryright" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 15,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "entrytop",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "entrytop.json" ]
+    },
+    {
+      "name" : "entryleft",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "entryleft.json" ]
+    },
+    {
+      "name" : "entryright",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "entryright.json" ]
+    },
+    {
+      "name" : "corner1a",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner1a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner1b",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner1b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner1c",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner1c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner1d",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner1d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner1e",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner1e.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner2a",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner2a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner2b",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner2b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner2c",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner2c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner2d",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner2d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner2e",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner2e.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner2f",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+        [ "doNotConnectToPart", [ "longhall1f", "longhall2f" ] ]
+      ],
+      "def" : [ "tmx", "corner2f.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner3a",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner3a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner3b",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner3b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner3c",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner3c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner3d",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner3d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner3e",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner3e.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner4a",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner4a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner4b",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner4b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner4c",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner4c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner4d",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner4d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner4e",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+      ],
+      "def" : [ "tmx", "corner4e.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "corner4f",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ]
+        [ "doNotConnectToPart", [ "longhall1f", "longhall2f" ] ]
+      ],
+      "def" : [ "tmx", "corner4f.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "hall1a",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall1a.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall1b",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall1b.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall1c",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall1c.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall1d",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall1d.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall1e",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall1e.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall1f",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall1f.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall1g",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall1g.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall1h",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall1h.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall1i",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall1i.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall2a",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall2a.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall2b",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall2b.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall2c",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall2c.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall2d",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall2d.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall2e",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall2e.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall2f",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall2f.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall2g",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall2g.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall2h",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall2h.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "hall2i",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "hall2i.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "longhall1a",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall1a.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall1b",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall1b.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall1c",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall1c.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall1d",
+      "rules" : [
+        [ "doNotCombineWith", [ "longhall1d", "longhall2d" ] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall1d.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall1e",
+      "rules" : [
+        [ "doNotCombineWith", [ "longhall1e", "longhall2e" ] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall1e.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall1f",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "corner2f", "corner4f", "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall1f.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall1g",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall1g.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall2a",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall2a.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall2b",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall2b.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall2c",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall2c.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall2d",
+      "rules" : [
+        [ "doNotCombineWith", [ "longhall1d", "longhall2d" ] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall2d.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall2e",
+      "rules" : [
+        [ "doNotCombineWith", [ "longhall1e", "longhall2e" ] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall2e.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall2f",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "corner2f", "corner4f", "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall2f.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "longhall2g",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "hall1a", "hall1b", "hall1c", "hall1d", "hall1e", "hall1f", "hall1g", "hall1h", "hall1i", "hall2b", "hall2c", "hall2d", "hall2e", "hall2f", "hall2g", "hall2h", "hall2i", "longhall1a", "longhall1b", "longhall1c", "longhall1d", "longhall1e", "longhall1f", "longhall1g", "longhall2a", "longhall2b", "longhall2c", "longhall2d", "longhall2e", "longhall2f", "longhall2g" ] ]
+      ],
+      "def" : [ "tmx", "longhall2g.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "drop1a",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "drop1a", "drop1b", "drop1c", "drop1d", "junction1b", "junction1c", "junction2b", "junction2c" ] ]
+      ],
+      "def" : [ "tmx", "drop1a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "drop1b",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "drop1a", "drop1b", "drop1c", "drop1d" ] ]
+      ],
+      "def" : [ "tmx", "drop1b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "drop1c",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "drop1a", "drop1b", "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "drop1c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "drop1d",
+      "rules" : [
+        //[ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "drop1a", "drop1b", "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "drop1d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "chamberendtop",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [ "chamberendtop", "chamberendleft", "chamberendright" ] ]
+      ],
+      "def" : [ "tmx", "chamberendtop.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "chamberendleft",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [ "chamberendtop", "chamberendleft", "chamberendright" ] ]
+      ],
+      "def" : [ "tmx", "chamberendleft.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "chamberendright",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [ "chamberendtop", "chamberendleft", "chamberendright" ] ]
+      ],
+      "def" : [ "tmx", "chamberendright.json" ],
+      "chance" : 0
+    },
+    {
+      "name" : "endleft1a",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endleft1a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endleft1aChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endleft1aChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endleft1b",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "junction3b", "junction4b" ] ]
+      ],
+      "def" : [ "tmx", "endleft1b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endleft1bChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "junction3b", "junction4b" ] ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endleft1bChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endleft1c",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endleft1c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endleft1cChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endleft1cChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endleft1d",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endleft1d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endleft1dChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endleft1dChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endleft2a",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endleft2a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endleft2aChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endleft2aChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endleft2b",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endleft2b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endleft2c",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endleft2c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endleft2d",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endleft2d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endleft2e",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endleft2e.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright1a",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endright1a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright1aChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endright1aChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endright1b",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "junction3b", "junction4b" ] ]
+      
+      ],
+      "def" : [ "tmx", "endright1b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright1bChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "junction3b", "junction4b" ] ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endright1bChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endright1c",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endright1c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright1cChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endright1cChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endright1d",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endright1d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright1dChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endright1dChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endright2a",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endright2a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright2aChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endright2aChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endright2b",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endright2b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright2bChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endright2bChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endright2c",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endright2c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright2cChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endright2cChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endright2d",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endright2d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright2dChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endright2dChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "endright2e",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "endright2e.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "endright2eChest",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "endright2eChest.json" ],
+      "chance" : 0.25
+    },
+    {
+      "name" : "junction1a",
+      "rules" : [
+        [ "doNotConnectToPart", [ "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction1a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction1b",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1a", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction1b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction1c",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1a", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction1c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction1d",
+      "rules" : [
+        [ "doNotConnectToPart", [ "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction1d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction2a",
+      "rules" : [
+        [ "doNotConnectToPart", [ "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction2a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction2b",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1a", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction2b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction2c",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1a", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction2c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction2d",
+      "rules" : [
+        [ "doNotConnectToPart", [ "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction2d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction3a",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction3a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction3b",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "endleft1b", "endleft1bChest", "endright1b", "endright1bChest", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction3b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction3c",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction3c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction3d",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction3d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction3e",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction3e.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction3f",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "hall1d", "hall2d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction3f.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction4a",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction4a.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction4b",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "endleft1b", "endleft1bChest", "endright1b", "endright1bChest", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction4b.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction4c",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction4c.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction4d",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction4d.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction4e",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction4e.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "junction4f",
+      "rules" : [
+        [ "doNotConnectToPart", [ "drop1c", "drop1d", "hall1d", "hall2d", "junction1a", "junction1b", "junction1c", "junction1d", "junction2a", "junction2b", "junction2c", "junction2d", "junction3a", "junction3b", "junction3c", "junction3d", "junction3e", "junction3f", "junction4a", "junction4b", "junction4c", "junction4d", "junction4e", "junction4f" ] ]
+      ],
+      "def" : [ "tmx", "junction4f.json" ],
+      "chance" : 1
+    }
+  ]
+}

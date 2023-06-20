@@ -1,0 +1,15 @@
+{
+  "itemName" : "wartjuice",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "drink",
+  "inventoryIcon" : "wartjuice.png",
+  "description" : "Popular Avian punch of wartweed and fermented grapes.",
+  "shortdescription" : "Wartjuice",
+  "effects" : [ [
+    "wellfed"
+  ] ],
+  "emote" : "",
+  "emitters" : [ "drinking" ]
+}

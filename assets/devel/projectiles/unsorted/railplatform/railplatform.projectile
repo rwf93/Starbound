@@ -1,0 +1,42 @@
+{
+  "projectileName" : "railplatform",
+  "image" : "railplatform.png",
+  "animationCycle" : 0.25,
+  "physics" : "grenade",
+  "frameNumber" : 2,
+  "pointLight" : false,
+  "speed" : 20,
+  "power" : 0.0,
+
+  "bounces" : 0,
+
+  "timeToLive" : 10,
+
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smallregularexplosion/smallregularexplosion.config"
+    }
+  ],
+
+  "orientationLocked" : true,
+
+  "physicsCollisions" : {
+    "platform" : {
+      "collision" : [
+        [-2, -0.5],
+        [2, -0.5],
+        [2, 0.5],
+        [-2, 0.5]
+      ],
+      "collisionKind" : "platform"
+    }
+  },
+
+  "scripts" : [ "railplatform.lua" ],
+  "scriptDelta" : 2,
+
+  "damageTeam" : { "type" : "ghostly" },
+
+  "clientEntityMode" : "ClientSlaveOnly"
+}

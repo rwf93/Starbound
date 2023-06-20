@@ -1,0 +1,91 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "reload" : {
+        "default" : "ready",
+        "states" : {
+          "ready" : {},
+          "reload" : {
+            "frames" : 4,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "ready"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "testrocket.png",
+          "offset" : [-0.75, 0.75]
+        }
+      },
+      "reloadLights" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [-0.5, 0.875],
+          "zLevel" : 1,
+          "fullbright" : true
+        },
+
+        "partStates" : {
+          "reload" : {
+            "ready" : {
+              "properties" : {
+                "image" : "reloadlights.png:ready"
+              }
+            },
+            "reload" : {
+              "properties" : {
+                "image" : "reloadlights.png:reload.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "fireParticles" : {
+      "emissionRate" : 10.0,
+      "particles" : [
+        {
+          "particle" : "rocketbarrelpuff",
+          "offset" : [2, 0.75]
+        },
+        {
+          "particle" : "rocketbarrelpuff",
+          "offset" : [2, 0.75]
+        },
+        {
+          "particle" : "rocketbarrelpuff",
+          "offset" : [2, 0.75]
+        },
+        {
+          "particle" : "rocketbarrelpuff",
+          "offset" : [2, 0.75]
+        },
+        {
+          "particle" : "rocketbarrelpuff",
+          "offset" : [2, 0.75]
+        },
+        {
+          "particle" : "rocketbarrelpuff",
+          "offset" : [2, 0.75]
+        },
+        {
+          "particle" : "rocketbarrelpuff",
+          "offset" : [2, 0.75]
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ "/sfx/gun/rocket_shot.ogg" ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name" : "summonmech",
+  "type" : "head",
+
+  "scripts" : [ "summonmech.lua" ],
+
+  "description" : "Call your modular mech anywhere!",
+  "shortDescription" : "Summon Mech",
+  "rarity" : "Legendary",
+  "icon" : "/tech/mech.png",
+
+  "chipCost" : 0
+}

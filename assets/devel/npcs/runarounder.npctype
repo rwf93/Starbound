@@ -1,0 +1,19 @@
+{
+  "type" : "runarounder",
+  "baseType" : "base",
+
+  "scriptConfig" : {
+    "behavior" : "runarounder"
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "protection" : {
+        "baseValue" : 100.0
+      },
+      "grit" : {
+        "baseValue" : 1
+      }
+    }
+  }
+}

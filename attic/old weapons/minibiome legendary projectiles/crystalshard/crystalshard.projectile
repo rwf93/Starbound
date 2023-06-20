@@ -1,0 +1,14 @@
+{
+  "projectileName" : "crystalshard",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "timeToLive" : 0.5,
+  "lightColor" : [50, 0, 35],
+  "image" : "crystalshard.png",
+  "animationLoops" : false,
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "speed" : 20,
+  "power" : 76,
+  "damageKind" : "default"
+}

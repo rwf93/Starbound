@@ -1,0 +1,69 @@
+{
+  "itemName" : "metahead",
+  "price" : 0,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A well-worn gray cadet cap.",
+  "shortdescription" : "Metadept's Hat",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "pickupQuestTemplates" : ["devquest"],
+
+  "statusEffects" : [
+    {
+      "stat" : "maxHealth",
+      "amount" : 10000
+    },
+    {
+      "stat" : "healthRegen",
+      "amount" : 10000
+    },
+    {
+      "stat" : "maxEnergy",
+      "amount" : 10000
+    },
+    {
+      "stat" : "breathProtection",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomeradiationImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomecoldImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "biomeheatImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "poisonStatusImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "fireStatusImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "iceStatusImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "electricStatusImmunity",
+      "amount" : 1.0
+    },
+    {
+      "stat" : "lavaImmunity",
+      "amount" : 1.0
+    },
+
+    "devboost"
+  ]
+}

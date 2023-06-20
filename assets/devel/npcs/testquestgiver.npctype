@@ -1,0 +1,103 @@
+{
+  "type" : "testquestgiver",
+  "baseType" : "villager",
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "develQuests" : true,
+      "templates" : ["bugcollector.generated"],
+      "parameters" : [
+        {
+          "bug" : {
+            "type" : "item",
+            "item" : "ashsprite"
+          },
+          "indicatedMonster" : {
+            "type" : "monster",
+            "typeName" : "ashsprite",
+            "indicator" : "questrelevant"
+          }
+        },
+        {
+          "bug" : {
+            "type" : "item",
+            "item" : "aurorabee"
+          },
+          "indicatedMonster" : {
+            "type" : "monster",
+            "typeName" : "aurorabee",
+            "indicator" : "questrelevant"
+          }
+        },
+        {
+          "bug" : {
+            "type" : "item",
+            "item" : "blueback"
+          },
+          "indicatedMonster" : {
+            "type" : "monster",
+            "typeName" : "blueback",
+            "indicator" : "questrelevant"
+          }
+        },
+        {
+          "bug" : {
+            "type" : "item",
+            "item" : "brightstripe"
+          },
+          "indicatedMonster" : {
+            "type" : "monster",
+            "typeName" : "brightstripe",
+            "indicator" : "questrelevant"
+          }
+        },
+        {
+          "bug" : {
+            "type" : "item",
+            "item" : "butterbee"
+          },
+          "indicatedMonster" : {
+            "type" : "monster",
+            "typeName" : "butterbee",
+            "indicator" : "questrelevant"
+          }
+        },
+        {
+          "bug" : {
+            "type" : "item",
+            "item" : "cinderfly"
+          },
+          "indicatedMonster" : {
+            "type" : "monster",
+            "typeName" : "cinderfly",
+            "indicator" : "questrelevant"
+          }
+        },
+        {
+          "bug" : {
+            "type" : "item",
+            "item" : "dewhopper"
+          },
+          "indicatedMonster" : {
+            "type" : "monster",
+            "typeName" : "dewhopper",
+            "indicator" : "questrelevant"
+          }
+        },
+        {
+          "bug" : {
+            "type" : "item",
+            "item" : "driftbell"
+          },
+          "indicatedMonster" : {
+            "type" : "monster",
+            "typeName" : "driftbell",
+            "indicator" : "questrelevant"
+          }
+        }
+      ]
+    }
+  }
+}

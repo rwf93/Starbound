@@ -1,0 +1,11 @@
+{
+  "image" : "1.png",
+  "frameGrid" : {
+    "size" : [32, 34],
+    "dimensions" : [10, 1],
+
+    "names" : [
+      [ null, "fly.0.0", "fly.0.1", "fly.0.2", "fly.0.3", "fly.0.4", null, "gibs.0", "gibs.1", "gibs.2" ]
+    ]
+  }
+}

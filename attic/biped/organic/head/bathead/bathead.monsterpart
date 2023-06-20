@@ -1,0 +1,9 @@
+{
+  "name" : "organicbathead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "bathead.frames"
+  }
+}

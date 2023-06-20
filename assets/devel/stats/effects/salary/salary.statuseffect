@@ -1,0 +1,15 @@
+{
+  "name" : "salary",
+  "effectConfig" : {
+    "item" : {
+      "name" : "money",
+      "count" : 1
+    }
+  },
+  "defaultDuration" : 30,
+
+  "scripts" : [
+    "salary.lua"
+  ]
+
+}

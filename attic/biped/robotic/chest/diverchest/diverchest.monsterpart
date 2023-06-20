@@ -1,0 +1,9 @@
+{
+  "name" : "roboticdiverchest",
+  "category" : "biped_robotic",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "diverchest.frames"
+  }
+}

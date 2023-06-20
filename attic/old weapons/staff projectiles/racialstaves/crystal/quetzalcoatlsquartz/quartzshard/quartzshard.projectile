@@ -1,0 +1,15 @@
+{
+  "projectileName" : "quartzshard",
+  "physics" : "highgravgrenade",
+  "bounces" : 3,
+  "timeToLive" : 3.5,
+  "lightColor" : [50, 0, 35],
+  "image" : "quartzshard.png",
+  "animationLoops" : false,
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "speed" : 40,
+  "power" : 76,
+  "onlyHitTerrain" : true,
+  "damageKind" : "default"
+}

@@ -1,0 +1,24 @@
+{
+  "objectName" : "collisionripper",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "category" : "other",
+  "price" : 0,
+
+  "description" : "Clobbers nearby collision spaces to get rid of junk collisions.",
+  "shortdescription" : "Collision Ripper",
+  "race" : "generic",
+
+  "inventoryIcon" : "collisionrippericon.png",
+  "orientations" : [
+    {
+      "image" : "collisionripper.png",
+      "imagePosition" : [-8, -8],
+
+      "spaces" : [[0, 0]],
+      "anchors" : [ ]
+    }
+  ],
+
+  "scripts" : [ "collisionripper.lua" ]
+}

@@ -1,0 +1,14 @@
+{
+  "itemName" : "poachedavesmingo",
+  "price" : 0,
+
+  "rarity" : "Rare",
+  "category" : "preparedFood",
+  "inventoryIcon" : "poachedavesmingo.png",
+  "description" : "A sweet avesmingo poached in potent wartjuice. A pretty expensive dish.",
+  "shortdescription" : "Poached Avesmingo",
+  "handPosition" : [6, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

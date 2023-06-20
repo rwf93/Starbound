@@ -1,0 +1,15 @@
+{
+  "projectileName" : "sporecloud",
+  "image" : "sporecloud.png",
+  "physics" : "gas",
+  "animationCycle" : 1.05,
+  "speed" : 5,
+  "frameNumber" : 8,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "timeToLive" : 1,
+  "piercing" : true,
+  "damageKind" : "poison",
+  "emitters" : [ "defaultbrown" ],
+  "damagePoly" : [ [-14, 0], [-10, -10], [0, -14], [10, -10], [14, 0], [10, 10], [0, 14], [-10, 10] ]
+}

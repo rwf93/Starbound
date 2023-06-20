@@ -1,0 +1,9 @@
+{
+  "name" : "organicdummylegs",
+  "category" : "biped",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "dummylegs.frames"
+  }
+}

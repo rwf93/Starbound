@@ -1,0 +1,9 @@
+{
+  "name" : "organicsackhead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "sackhead.frames"
+  }
+}

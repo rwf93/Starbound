@@ -1,0 +1,16 @@
+{
+  "image" : "1.png",
+  "frameGrid" : {
+    "size" : [75, 75],
+    "dimensions" : [9, 6],
+
+    "names" : [
+      [ null, "idle.0.0", "idle.0.1", "idle.0.2", "idle.0.3", "idle.0.4", "idle.0.5", "idle.0.6", "idle.0.7" ],
+      [ null, "walk.0.0", "walk.0.1", "walk.0.2", "walk.0.3", "walk.0.4", "walk.0.5", "walk.0.6", "walk.0.7" ],
+      [ null, "run.0.0", "run.0.1", "run.0.2", "run.0.3", "run.0.4", "run.0.5", "run.0.6", "run.0.7" ],
+      [ null, "attack.0.0", "attack.0.1", "attack.0.2", "attack.0.3", "attack.0.4", "attack.0.5", "attack.0.6", "attack.0.7" ],
+      [ null, "attack.1.0", "attack.1.1", "attack.1.2", "attack.1.3", "attack.1.4", "attack.1.5", "attack.1.6", "attack.1.7" ],
+      [ null, "gibs.0", "gibs.1", "gibs.2", "gibs.3", "gibs.4", "gibs.5", null, null ]
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "projectileName" : "railblade",
+  "image" : "railblade.png",
+  "physics" : "grenade",
+  "animationCycle" : 0.2,
+  "frameNumber" : 3,
+  "pointLight" : false,
+  "speed" : 30,
+  "power" : 10.0,
+  "damagePoly" : [[-8, 4], [-4, 8], [4, 8], [8, 4], [8, -4], [4, -8], [-4, -8], [-8, -4]],
+
+  "bounces" : 0,
+  "piercing" : true,
+
+  "timeToLive" : 10,
+
+  "orientationLocked" : true,
+
+  "scripts" : [ "railblade.lua" ],
+  "scriptDelta" : 2,
+
+  "clientEntityMode" : "ClientSlaveOnly"
+}

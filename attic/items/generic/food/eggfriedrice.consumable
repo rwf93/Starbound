@@ -1,0 +1,14 @@
+{
+  "itemName" : "eggfriedrice",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "preparedFood",
+  "inventoryIcon" : "eggfriedrice.png",
+  "description" : "Fried rice, a Hylotl staple.",
+  "shortdescription" : "Eggshoot Fried Rice",
+  "handPosition" : [0, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ]
+}

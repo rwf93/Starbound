@@ -1,0 +1,20 @@
+{
+  "metadata" : {
+    "name" : "emptyworld",
+    "species" : "generic",
+    "rules" : [],
+    "anchor" : [ "emptyworld" ],
+    "maxRadius" : 1000,
+    "maxParts" : 1,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "emptyworld",
+      "rules" : [],
+      "def" : [ "tmx", "emptyworld.json" ],
+      "chance" : 1
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "organicwormspikehead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "wormspikehead.frames"
+  }
+}

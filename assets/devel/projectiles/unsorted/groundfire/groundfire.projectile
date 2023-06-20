@@ -1,0 +1,26 @@
+{
+  "projectileName" : "groundfire",
+  "image" : "invisibleprojectile.png",
+  "physics" : "groundspread",
+  "onlyHitTerrain" : true,
+  "hydrophobic" : true,
+  "frameNumber" : 1,
+  "flippable" : true,
+  "speed" : 10,
+  "timeToLive" : 0.8,
+  "bounces" : -1,
+  "periodicActions" : [
+    {
+      "time" : 0.1,
+      "repeat" : true,
+      "action" : "projectile",
+      "type" : "groundfireburst",
+      "angle" : 0,
+      "inheritDamageFactor" : 1.0
+    }
+  ],
+
+  // "lightColor" : [255, 180, 0],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

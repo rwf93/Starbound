@@ -1,0 +1,26 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-colonytag/pretty",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 1,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "A cuddly penguin plushy. Awwwww.",
+      "//name" : "penguinplush",
+      "//shortdescription" : "Penguin Plushie",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "penguinplush",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/objects/penguinplush.png"
+    }
+  },
+  "tilewidth" : 8
+}

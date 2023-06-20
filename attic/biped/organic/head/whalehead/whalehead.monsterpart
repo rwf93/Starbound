@@ -1,0 +1,9 @@
+{
+  "name" : "organicwhalehead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "whalehead.frames"
+  }
+}

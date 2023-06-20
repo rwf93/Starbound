@@ -1,0 +1,10 @@
+{
+  "name" : "roboticfloatingarm",
+  "category" : "biped_robotic",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "floatingfarm.frames",
+    "backArm" : "floatingbarm.frames"
+  }
+}

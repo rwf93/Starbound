@@ -1,0 +1,21 @@
+{
+  "projectileName" : "chainball",
+  "image" : "chainball.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "flippable" : false,
+  "actionOnReap" : [ ],
+  "statusEffects" : [ ],
+  "power" : 0.0,
+  "speed" : 30,
+  "damageKind" : "default",
+  "physics" : "chainball",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 0.5,
+
+  "onlyHitTerrain" : true,
+
+  "scripts" : [ "chainball.lua" ]
+}

@@ -1,0 +1,67 @@
+{
+  "metadata" : {
+    "name" : "testcase",
+    "species" : "novakid",
+    "rules" : [
+    ],
+    "anchor" : [ "anchor" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 20,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+
+    // SALOON LAYOUTS
+    {
+      "name" : "anchor",
+      "rules" : [
+        [ "doNotConnectToPart", [ "anchor", "piece" ] ],
+        [ "doNotCombineWith", [ "anchor" ] ]
+      ],
+      "def" : [ "tmx", "anchor.json" ],
+      "chance" : 1
+    },
+
+    {
+      "name" : "piece",
+      "rules" : [
+        [ "doNotConnectToPart", [ "anchor", "piece" ] ]
+      ],
+      "def" : [ "tmx", "piece.json" ],
+      "chance" : 1
+    },
+
+    {
+      "name" : "connector1",
+      "rules" : [
+        // [ "doNotConnectToPart", [ "anchor" ] ]
+        [ "doNotConnectToPart", [ "connector1", "connector2", "connector3" ] ]
+      ],
+      "def" : [ "tmx", "connector1.json" ],
+      "chance" : 1
+    },
+
+    {
+      "name" : "connector2",
+      "rules" : [
+        // [ "doNotConnectToPart", [ "anchor" ] ]
+        [ "doNotConnectToPart", [ "connector1", "connector2", "connector3" ] ]
+      ],
+      "def" : [ "tmx", "connector2.json" ],
+      "chance" : 1
+    },
+
+    {
+      "name" : "connector3",
+      "rules" : [
+        // [ "doNotConnectToPart", [ "anchor" ] ]
+        [ "doNotConnectToPart", [ "connector1", "connector2", "connector3" ] ]
+      ],
+      "def" : [ "tmx", "connector3.json" ],
+      "chance" : 1
+    }
+  ]
+}

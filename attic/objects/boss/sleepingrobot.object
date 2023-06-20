@@ -1,0 +1,41 @@
+{
+  "objectName" : "robot",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "description" : "An inactive robot! I wonder what happens if it's switched on.",
+  "shortdescription" : "Inactive Robot",
+  "race" : "generic",
+  "category" : "Tool",
+  "printable" : false,
+  "apexDescription" : "An inactive robot. It looks pretty friendly!",
+  "avianDescription" : "Perhaps I can activate this robot and be met with gratitude.",
+  "floranDescription" : "Floran want wake metalman!",
+  "glitchDescription" : "Alarm. I detect a hostile logarhythm in this robot's programming.",
+  "humanDescription" : "All the other robots I've met have been mostly friendly, I bet this is too!",
+  "hylotlDescription" : "Even if this robot is hostile, I can no doubt use diplomacy to reason with it.",
+
+  "inventoryIcon" : "robothead.png",
+  "orientations" : [
+    {
+      "dualImage" : "sleepingrobot.png:<color>.<frame>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "animation" : "/objects/boss/sleepingrobot.animation",
+  "animationParts" : {
+    "beacon" : "sleepingrobot.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "scripts" : [ "/objects/wired/ironbeacon/robot.lua" ],
+  "scriptDelta" : 5
+
+}

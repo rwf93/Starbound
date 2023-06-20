@@ -1,0 +1,9 @@
+{
+  "name" : "organicflexchest",
+  "category" : "biped",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "flexchest.frames"
+  }
+}

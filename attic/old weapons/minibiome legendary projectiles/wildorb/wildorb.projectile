@@ -1,0 +1,63 @@
+{
+  "projectileName" : "wildorb",
+  "image" : "wildorb.png",
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "timeToLive" : 0.01,
+  "physics" : "laser",
+  "flippable" : true,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "leaforb",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0,
+      "inheritSpeedFactor" : 0.1,
+      "delaySteps" : 0,
+      "config" : {
+        "timeToLive" : 0.6
+      }
+    },
+    {
+      "action" : "sound",
+      "delaySteps" : 15,
+      "options" : [ "/sfx/blocks/sand_fall1.ogg", "/sfx/blocks/sand_fall2.ogg", "/sfx/blocks/sand_fall3.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 15,
+      "inheritSpeedFactor" : 1,
+      "delaySteps" : 15
+    },
+    {
+      "action" : "sound",
+      "delaySteps" : 20,
+      "options" : [ "/sfx/blocks/sand_fall4.ogg", "/sfx/blocks/sand_fall5.ogg", "/sfx/blocks/sand_fall6.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 15,
+      "inheritSpeedFactor" : 1,
+      "delaySteps" : 20
+    },
+    {
+      "action" : "sound",
+      "delaySteps" : 25,
+      "options" : [ "/sfx/blocks/sand_fall7.ogg", "/sfx/blocks/sand_fall8.ogg", "/sfx/blocks/sand_fall9.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "cutterleaf",
+      "fuzzAngle" : 15,
+      "inheritSpeedFactor" : 1,
+      "delaySteps" : 25
+    }
+  ],
+  "damagePoly" : [ ],
+  "power" : 0.0,
+  "damageKind" : "default"
+}

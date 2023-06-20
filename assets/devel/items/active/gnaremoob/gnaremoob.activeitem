@@ -1,0 +1,24 @@
+{
+  "itemName" : "gnaremoob",
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A ridiculous take on a classic.",
+  "shortdescription" : "Gnaremoob",
+  "tooltipKind" : "sword",
+  "weaponType" : "Boomerang",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "gnaremoob.png",
+  "animation" : "gnaremoob.animation",
+  "scripts" : ["gnaremoob.lua"],
+
+  "windupTime" : 0.3,
+  "minFlyTime" : 0.3,
+  "flySpeed" : 80,
+  "controlForce" : 35,
+  "spinRate" : 15.0,
+  "snapDistance" : 1.5,
+
+  "flyCollisionPoly" : [ [-0.75, -1.0], [-0.35, -1.5], [0.35, -1.5], [0.75, -1.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ]
+}

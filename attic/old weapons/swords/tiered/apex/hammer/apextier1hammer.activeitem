@@ -1,0 +1,102 @@
+{
+  "itemName" : "apextier1hammer",
+  "price" : 170,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A basic warhammer.",
+  "shortdescription" : "Thunderpunch",
+  "tooltipKind" : "sword",
+  "weaponType" : "Hammer",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","hammer"],
+
+  "inventoryIcon" : "apextier1hammer.png",
+
+  "animation" : "/items/active/weapons/tiered/hammer/tieredhammer.animation",
+  "animationParts" : {
+    "blade" : "/items/active/weapons/tiered/hammer/apex/apextier1hammer.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_hammer.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/hammer/hammer.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : [],
+    "class" : "HammerSmash",
+
+    "fireTime" : 1.3,
+    "baseDps" : 11.5,
+    "damageConfig" : {
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "knockback" : 45
+    },
+    "smashMomentum" : [0, -45],
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [-0.125, 0.5],
+  
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.8,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 1.75],
+  
+        "allowRotate" : false,
+        "allowFlip" : true,
+  
+        // Windup animation
+        "idleHammerAngle" : -20,
+        "windupHammerAngle" : 0,
+        "dropHammerAngle" : 60,
+        "bounceHammerAngle" : 55,
+  
+        "minWindup" : 0.7,
+        "windupBaseAngle" : -90,
+        "windupAngleRange" : 140
+      },
+      "preslash" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.0],
+  
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -35,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+        "smashTimer" : 1.5,
+        "weaponOffset" : [0, 2.0],
+  
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "baseWeaponRotation" : 10,
+  "palette" : "/items/active/weapons/colors/tier1melee.weaponcolors",
+
+  "altAbilitySource" : "/items/active/weapons/melee/altabilities/hammer/shockwave/physicalshockwave.altability",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

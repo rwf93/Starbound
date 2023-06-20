@@ -1,0 +1,9 @@
+{
+  "name" : "roboticgearhead",
+  "category" : "biped_robotic",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "gearhead.frames"
+  }
+}

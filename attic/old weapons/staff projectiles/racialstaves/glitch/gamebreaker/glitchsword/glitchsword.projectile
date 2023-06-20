@@ -1,0 +1,25 @@
+{
+  "projectileName" : "glitchsword",
+  "physics" : "stickybomb",
+  "image" : "glitchsword.png",
+  "animationCycle" : 0.2,
+  "bounces" : -1,
+  "timeToLive" : 2.5,
+  "frameNumber" : 6,
+  "speed" : 70,
+  "damagePoly" : [ [-20, 5.5], [14, 5.5], [14, -5.5], [-20, -5.5] ],
+  "animationLoops" : true,
+  "piercing" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/melee/tesla_shock_kill.ogg" ]
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/glitchexplosion/glitchexplosion.config"
+    }
+  ],
+  "damageKind" : "retro"
+}

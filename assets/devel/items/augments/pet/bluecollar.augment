@@ -1,0 +1,19 @@
+{
+  "itemName" : "bluecollar",
+  "price" : 5000,
+  "rarity" : "Uncommon",
+  "inventoryIcon" : "bluecollar.png",
+  "description" : "A collar that makes your pet blue.",
+  "shortdescription" : "Blue Collar",
+
+  "collar" : {
+    "name" : "blue",
+    "displayName" : "Blue",
+    "displayIcon" : "/items/augments/pet/bluecollar.png",
+    "effects" : [ "colorblue" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupcollar" ],
+
+  "scripts" : [ "/scripts/augments/collar.lua" ]
+}

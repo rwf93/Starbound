@@ -1,0 +1,10 @@
+{
+  "name" : "organictendrilsarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "tendrilsfarm.frames",
+    "backArm" : "tendrilsbarm.frames"
+  }
+}

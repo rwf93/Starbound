@@ -1,0 +1,21 @@
+{
+  "itemName" : "groundfirebomb",
+  "rarity" : "Common",
+  "inventoryIcon" : "groundfirebombicon.png",
+  "image" : "groundfirebombicon.png",
+  "shortdescription" : "Ground Spreading Bomb",
+  "description" : "A real earth scorcher!",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "groundfirebomb",
+  "projectileConfig" : {
+    "speed" : 25,
+    "power" : 100
+  }
+}
+

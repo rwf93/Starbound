@@ -1,0 +1,35 @@
+{
+  "projectileName" : "glitchscratch",
+  "physics" : "hover",
+  "bounces" : -1,
+  "speed" : 0,
+  "timeToLive" : 0.2,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [45, 70, 110],
+  "piercing" : true,
+  "image" : "glitchscratch.png",
+  "animationCycle" : 0.2,
+  "animationLoops" : false,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "frameNumber" : 8,
+  "power" : 50,
+  "damagePoly" : [ [-12, 12], [12, -12] ],
+  "onlyHitTerrain" : true,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "glitchtear",
+      "inheritDamageFactor" : 0.5,
+      "inheritSpeedFactor" : 0.1,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/glitchtear.ogg" ]
+    }
+  ],
+
+  "damageKind" : "plasma"
+}

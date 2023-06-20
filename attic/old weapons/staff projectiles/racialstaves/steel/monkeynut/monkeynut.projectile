@@ -1,0 +1,33 @@
+{
+  "projectileName" : "monkeynut",
+  "physics" : "hover",
+  "bounces" : -1,
+  "speed" : 25,
+  "timeToLive" : 3.5,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [150, 35, 15],
+  "piercing" : true,
+  "image" : "monkeynut.png",
+  "animationCycle" : 0.5,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "frameNumber" : 4,
+  "power" : 0,
+  "damagePoly" : [ [-3, 3], [-3, -3], [3, -3], [3, 3] ],
+  "supportsProcessing" : true,
+  "onlyHitTerrain" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "monkeynutteleportout",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 1.0,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/tech/mech_powerdown2.ogg" ]
+    }
+  ],
+  "damageKind" : "plasma"
+}

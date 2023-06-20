@@ -1,0 +1,83 @@
+{
+  "type" : "testquestgiver2",
+  "baseType" : "testquestgiver",
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "develQuests" : true,
+      "templates" : ["bugcollectormulti.generated"],
+      "parameters" : [
+        {
+          "bugs" : {
+            "type" : "itemList",
+            "items" : [
+              ["ashsprite", 1],
+              ["aurorabee", 1],
+              ["blueback", 1],
+              ["brightstripe", 1]
+            ]
+          },
+          "indicatedMonster1" : {
+            "type" : "monster",
+            "typeName" : "ashsprite"
+          },
+          "indicatedMonster2" : {
+            "type" : "monster",
+            "typeName" : "aurorabee"
+          },
+          "indicatedMonster3" : {
+            "type" : "monster",
+            "typeName" : "blueback"
+          },
+          "indicatedMonster4" : {
+            "type" : "monster",
+            "typeName" : "brightstripe"
+          },
+          "reward1" : {
+            "type" : "item",
+            "item" : "woodendoor"
+          },
+          "reward2" : {
+            "type" : "itemList",
+            "items" : [["dirtmaterial", 100], ["darkwoodmaterial", 50]]
+          }
+        },
+        {
+          "bugs" : {
+            "type" : "itemList",
+            "items" : [
+              ["butterbee", 1],
+              ["cinderfly", 1],
+              ["dewhopper", 1],
+              ["driftbell", 1]
+            ]
+          },
+          "indicatedMonster1" : {
+            "type" : "monster",
+            "typeName" : "butterbee"
+          },
+          "indicatedMonster2" : {
+            "type" : "monster",
+            "typeName" : "cinderfly"
+          },
+          "indicatedMonster3" : {
+            "type" : "monster",
+            "typeName" : "dewhopper"
+          },
+          "indicatedMonster4" : {
+            "type" : "monster",
+            "typeName" : "driftbell"
+          },
+          "reward1" : {
+            "type" : "item",
+            "item" : "capturepod"
+          },
+          "reward2" : {
+            "type" : "itemList",
+            "items" : [["woodtable", 2]]
+          }
+        }
+      ]
+    }
+  }
+}

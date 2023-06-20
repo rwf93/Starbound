@@ -1,0 +1,71 @@
+{
+  "npcId" : 1,
+  "npcName" : "boar",
+
+  "aiFunctions" : { "0" : "defaultWander", "1" : "defaultFollow", "8" : "defaultJump", "9" : "defaultJump", "10" : "defaultJump" },
+  "aiStateFunc" : "passiveCritter",
+
+  "hVelocity" : { "0" : 4.0, "1" : 7.0 },
+
+  "trackDist" : 10.0,
+  "aggroDist" : 2.0,
+
+  "frames" : "body/1.frames",
+  "frameInfo" : { "walk" : [ "walk", 6, 1.0, 1, 0, 0],
+    "idle" : [ "idle", 1, 1.0, 0, 0, 0]
+  },
+
+  "jumpStrength" : 0.25,
+
+  "attentionSpan" : 8,
+  "soundSensitivity" : 2,
+
+  "defaultHitbox" : [ "Rect", [-13, 11, 9, -19] ],
+
+  "attackBox" : {
+    "attack.0.4" : [ "Default" ],
+    "attack.0.5" : [ "Default" ]
+  },
+  "defenseBox" : {
+
+  },
+  "immuneBox" : {
+
+  },
+  "weakpointBox" : {
+
+  },
+  "collisionBox" : {
+    "idle.0.0" : [ "Default" ],
+
+    "walk.0.0" : [ "Default" ],
+    "walk.0.1" : [ "Default" ],
+    "walk.0.2" : [ "Default" ],
+    "walk.0.3" : [ "Default" ],
+    "walk.0.4" : [ "Default" ],
+    "walk.0.5" : [ "Default" ],
+
+    "jump.0.0" : [ "Default" ],
+    "jump.0.1" : [ "Default" ],
+    "jump.0.2" : [ "Default" ],
+    "jump.0.3" : [ "Default" ],
+    "jump.0.4" : [ "Default" ],
+    "jump.0.5" : [ "Default" ],
+
+    "attack.0.0" : [ "Default" ],
+    "attack.0.1" : [ "Default" ],
+    "attack.0.2" : [ "Default" ],
+    "attack.0.3" : [ "Default" ],
+    "attack.0.4" : [ "Default" ],
+    "attack.0.5" : [ "Default" ]
+  },
+  "damageBox" : {
+
+  },
+  "animationOffset" : {
+
+  },
+  "projectilePoint" : {
+
+  }
+}

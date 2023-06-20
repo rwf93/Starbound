@@ -1,0 +1,9 @@
+{
+  "name" : "roboticroundspikechest",
+  "category" : "biped_robotic",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "roundspikechest.frames"
+  }
+}

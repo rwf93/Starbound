@@ -1,0 +1,44 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-race/glitch",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 3,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "invalid" : "true"
+    },
+    "1" : {
+      "//description" : "This book is full of quests...",
+      "//name" : "questgentest",
+      "//shortdescription" : "Quest Book",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "questgentest",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "This straw dummy is filled with advanced sensors to measure incoming damage.",
+      "//name" : "dpstestdummy",
+      "//shortdescription" : "DPS Test Dummy",
+      "imagePositionX" : "-16",
+      "imagePositionY" : "0",
+      "object" : "dpstestdummy",
+      "tilesetDirection" : "right"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../../../tiled/devel/../packed/invalid.png"
+    },
+    "1" : {
+      "image" : "../../../../../tiled/devel/objects/questgentest.png"
+    },
+    "2" : {
+      "image" : "../../../../../tiled/devel/objects/dpstestdummy.png"
+    }
+  },
+  "tilewidth" : 8
+}

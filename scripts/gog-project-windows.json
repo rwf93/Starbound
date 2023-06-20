@@ -1,0 +1,87 @@
+{
+    "project": {
+        "baseProductId": "1452598881",
+        "clientId": "49298129999913969",
+        "clientSecret": "725f21f087731acf1671a2e2cb4191a23894031e66a47c73583fedf3c326939f",
+        "version": "1.4.2",
+        "installDirectory": "Starbound",
+        "name": "Starbound",
+        "platform": "windows",
+        "tags": [],
+        "languageMode": "together",
+        "products": [
+            {
+                "name": "Starbound",
+                "productId": "1452598881",
+                "depots": [
+                    {
+                        "name": "data",
+                        "folder": "C:/Users/william/Documents/starbound-dispatch/data",
+                        "languages": [
+                            "en-US"
+                        ],
+                        "osBitness": [
+                            "32",
+                            "64"
+                        ]
+                    },
+                    {
+                        "name": "win32",
+                        "folder": "C:/Users/william/Documents/starbound-dispatch/win32",
+                        "languages": [
+                            "en-US"
+                        ],
+                        "osBitness": [
+                            "32",
+                            "64"
+                        ]
+                    },
+                    {
+                        "name": "win64",
+                        "folder": "C:/Users/william/Documents/starbound-dispatch/win64",
+                        "languages": [
+                            "en-US"
+                        ],
+                        "osBitness": [
+                            "64"
+                        ]
+                    }
+                ],
+                "tasks": [
+                    {
+                        "type": "FileTask",
+                        "name": "Starbound",
+                        "languages": [
+                            "en-US"
+                        ],
+                        "category": "game",
+                        "path": "win64/starbound.exe",
+                        "isPrimary": true,
+                        "osBitness": [
+                            "64"
+                        ]
+                    },
+                    {
+                        "type": "FileTask",
+                        "name": "Starbound",
+                        "languages": [
+                            "en-US"
+                        ],
+                        "category": "game",
+                        "path": "win32/starbound.exe",
+                        "isPrimary": true,
+                        "osBitness": [
+                            "32"
+                        ]
+                    }
+                ],
+                "supportDepots": []
+            }
+        ],
+        "dependencies": [
+            "MSVC2015_x64",
+            "MSVC2015"
+        ],
+        "scriptInterpreter": true
+    }
+}

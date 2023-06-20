@@ -1,0 +1,27 @@
+{
+  "name": "miner_avian",
+  "priority": 4,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "avian": 8,
+    "mining": 12
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "avian",
+      "type": "friendlyminer",
+      "overrides": {
+        "damageTeamType" : "friendly"
+       }
+     }
+   ],
+
+  "rent": {
+    "periodRange": [600.0, 1800.0],
+    "pool": "minerGift"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "organicdiverarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "diverfarm.frames",
+    "backArm" : "diverbarm.frames"
+  }
+}

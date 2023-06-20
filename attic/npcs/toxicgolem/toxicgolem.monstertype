@@ -1,0 +1,121 @@
+{
+  "type" : "toxicgolem",
+
+  "categories" : [ "toxicgolem" ],
+  "parts" : [ "body" ],
+
+  "animation" : "toxicgolem.animation",
+  "reversed" : true,
+
+  "dropPools" : [ "noMeatMonsterTreasure" ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/dungeon/toxicgolem/behavior.lua",
+      "/scripts/sensors.lua",
+      "/scripts/stateMachine.lua",
+      "/scripts/util.lua",
+      "/scripts/vec2.lua"
+    ],
+
+    "metaBoundBox" : [-1.625, -2.375, 1.75, 2.0],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [-1.625, -2.375], [1.75, -2.375], [1.75, 2.0], [-1.625, 2.0] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 3,
+      "runSpeed" : 6,
+      "flySpeed" : 15,
+      
+      "airJumpProfile" : {
+        "jumpSpeed" : 20.0          
+      }
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.1,
+    "knockoutEffect" : "blink",
+    "deathParticles" : "deathPoof",
+
+    "touchDamage" : {
+      "poly" : [ [-1.625, -2.375], [1.75, -2.375], [1.75, 2.0], [-1.625, 2.0] ],
+      "damage" : 15,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "statusEffects" : [ ]
+    },
+
+    "dropPools" : [ "potreasure" ],
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 10
+        },
+        "maxHealth" : {
+          "baseValue" : 72
+        },
+        "protection" : {
+          "baseValue" : 1.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "poisonImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+
+    "blockedSensors" : [ [3, -2], [3, -1], [3, 0], [3, 1], [3, 1.5] ],
+
+    "moveTimeRange" : [2.5, 5.0],
+    "moveCooldown" : 2.0,
+
+    "targetNoticeRadius" : 30,
+
+    "throwMaxDistance" : 15,
+    "throwMaxMinions" : 5,
+    "throwStartTime" : 0.5,
+    "throwEndTime" : 0.5,
+    "throwSpawnOffset" : [1.875, 1],
+    "throwCooldown" : 5,
+
+    "shoutMaxDistance" : 10,
+    "shoutProjectileOffset" : [0.875, 0.75]
+  }
+}

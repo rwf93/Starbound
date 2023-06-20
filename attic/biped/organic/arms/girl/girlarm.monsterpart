@@ -1,0 +1,10 @@
+{
+  "name" : "organicgirlarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "girlfarm.frames",
+    "backArm" : "girlbarm.frames"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "projectileName" : "xtermite",
+  "image" : "xtermite.png",
+  "physics" : "slider",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "orientationLocked" : true,
+  "flippable" : true,
+  "power" : 1500,
+  "damageKindImage" : "icon.png",
+  "speed" : 16,
+  "timeToLive" : 4,
+  "bounces" : -1,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vsmallregularexplosion/vsmallregularexplosionknockback.config"
+    }
+  ],
+
+  "lightColor" : [120, 0, 130],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

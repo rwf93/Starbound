@@ -1,0 +1,13 @@
+{
+  "frameGrid" : {
+    "size" : [350, 300],
+    "dimensions" : [5, 4],
+
+    "names" : [
+      [ null, "idle", null, "idle_blink" ],
+      [ null, "flying.1", "flying.2", "flying.3", "flying.4" ],
+      [ null, "idle_attack.1", "idle_attack.2", "idle_attack.3", "idle_attack.4" ],
+      [ null, "flying_attack.1", "flying_attack.2", "flying_attack.3", "flying_attack.4" ]
+    ]
+  }
+}

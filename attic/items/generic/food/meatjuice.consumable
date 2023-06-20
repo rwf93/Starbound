@@ -1,0 +1,16 @@
+{
+  "itemName" : "meatjuice",
+  "price" : 0,
+
+  "rarity" : "Common",
+  "category" : "drink",
+  "inventoryIcon" : "meatjuice.png",
+  "description" : "A drink made of fermented grapes and meat juices. Popular among Florans.",
+  "shortdescription" : "Meatjuice",
+  "handPosition" : [0, 4],
+  "effects" : [ [
+    "wellfed"
+  ] ],
+  "emote" : "",
+  "emitters" : [ "drinking" ]
+}

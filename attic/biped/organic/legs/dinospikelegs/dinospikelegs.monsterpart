@@ -1,0 +1,9 @@
+{
+  "name" : "organicdinospikelegs",
+  "category" : "biped",
+  "type" : "legs",
+
+  "frames" : {
+    "legs" : "dinospikelegs.frames"
+  }
+}

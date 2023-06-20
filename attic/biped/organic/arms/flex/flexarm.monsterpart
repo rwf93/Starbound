@@ -1,0 +1,10 @@
+{
+  "name" : "organicflexarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "flexfarm.frames",
+    "backArm" : "flexbarm.frames"
+  }
+}

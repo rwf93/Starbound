@@ -1,0 +1,22 @@
+{
+  "itemName" : "metagun",
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "It might be a little too meta.",
+  "shortdescription" : "Meta Gun",
+  "tooltipKind" : "gun",
+  "weaponType" : "Gun",
+  "twoHanded" : true,
+  "itemTags" : ["weapon"],
+
+  "inventoryIcon" : "metagunicon.png",
+  "animation" : "metagun.animation",
+  "animationCustom" : {},
+  "scripts" : ["metagun.lua"],
+
+  "fireTime" : 0.2,
+  "fireOffset" : [4.5, 0.5],
+  "projectileType" : "delayedplasmaball",
+  "projectileParameters" : {}
+}

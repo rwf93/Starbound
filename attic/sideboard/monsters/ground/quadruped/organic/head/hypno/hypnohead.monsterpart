@@ -1,0 +1,14 @@
+{
+  "name" : "hypnohead",
+  "category" : "largequadruped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "hypnohead.png"
+  },
+
+  "parameters" :
+  {
+    "projectileSourcePosition" : [1, -0.65]
+  }
+}

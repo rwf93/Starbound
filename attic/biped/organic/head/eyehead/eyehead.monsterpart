@@ -1,0 +1,9 @@
+{
+  "name" : "organiceyehead",
+  "category" : "biped",
+  "type" : "head",
+
+  "frames" : {
+    "head" : "eyehead.frames"
+  }
+}

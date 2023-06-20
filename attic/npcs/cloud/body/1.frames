@@ -1,0 +1,18 @@
+{
+  "image" : "1.png",
+  "frameGrid" : {
+    "size" : [100, 100],
+    "dimensions" : [12, 8],
+
+    "names" : [
+      [ null, "idle.0.0", "idle.0.1", "idle.0.2", "idle.0.3", "idle.0.4", "idle.0.5", "idle.0.6", "idle.0.7", "idle.0.8", "idle.0.9", null ],
+      [ "walk.0.0", "walk.0.1", "walk.0.2", "walk.0.3", "walk.0.4", "walk.0.5", "walk.0.6", "walk.0.7", "walk.0.8", "walk.0.9", "walk.0.10", "walk.0.11" ],
+      [ "walk.0.12", "walk.0.13", "walk.0.14", "walk.0.15", "walk.0.16", "walk.0.17", "walk.0.18", "walk.0.19", null, "attack.0.0", "attack.0.1", "attack.0.2" ],
+      [ "attack.0.3", "attack.0.4", "attack.0.5", "attack.0.6", "attack.0.7", "attack.0.8", "attack.0.9", null, "spinup.0.0", "spinup.0.1", "spinup.0.2", null ],
+      [ "fly.0.0", "fly.0.1", "fly.0.2", "fly.0.3", "fly.0.4", "fly.0.5", "fly.0.6", "fly.0.7", "fly.0.8", "fly.0.9", null, "flyattack.0.0" ],
+      [ "flyattack.0.1", "flyattack.0.2", "flyattack.0.3", "flyattack.0.4", "flyattack.0.5", "flyattack.0.6", "flyattack.0.7", "flyattack.0.8", "flyattack.0.9", null, "spindown.0.0", "spindown.0.1" ],
+      [ "spindown.0.2", null, "dead.0.0", "dead.0.1", "dead.0.2", "dead.0.3", "dead.0.4", "dead.0.5", "dead.0.6", "dead.0.7", "dead.0.8", "dead.0.9" ],
+      [ null, "flydead.0.0", "flydead.0.1", "flydead.0.2", "flydead.0.3", "flydead.0.4", "flydead.0.5", "flydead.0.6", "flydead.0.7", "flydead.0.8", "flydead.0.9", null ]
+    ]
+  }
+}

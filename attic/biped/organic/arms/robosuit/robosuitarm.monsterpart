@@ -1,0 +1,10 @@
+{
+  "name" : "organicrobosuitarm",
+  "category" : "biped",
+  "type" : "arms",
+
+  "frames" : {
+    "frontArm" : "robosuitfarm.frames",
+    "backArm" : "robosuitbarm.frames"
+  }
+}

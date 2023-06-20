@@ -1,0 +1,9 @@
+{
+  "name" : "roboticwhalechest",
+  "category" : "biped_robotic",
+  "type" : "chest",
+
+  "frames" : {
+    "chest" : "whalechest.frames"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "projectileName" : "fleshseed1",
+  "physics" : "grenade",
+  "bounces" : -1,
+  "timeToLive" : 1.5,
+  "image" : "fleshseed1.png",
+  "damageKindImage" : "icon.png",
+  "onlyHitTerrain" : false,
+  "actionOnReap" : [
+    {
+      "action" : "option",
+      "options" : [
+        {
+          "action" : "projectile",
+          "type" : "fleshsplosion",
+          "fuzzAngle" : 0,
+          "inheritDamageFactor" : 2,
+          "inheritSpeedFactor" : 0
+        }
+      ]
+    }
+  ],
+  "damagePoly" : [ [-6, 3], [-3, 6], [3, 6], [6, 3], [6, -3], [3, -6], [-3, -6], [-6, -3] ],
+  "animationCycle" : 0.3,
+  "frameNumber" : 4,
+  "speed" : 19,
+  "power" : 0,
+  "damageKind" : "default",
+  "emitters" : [ "defaultorange" ]
+}

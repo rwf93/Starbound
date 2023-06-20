@@ -19,9 +19,11 @@ SET (star_client_SOURCES
     )
 
 IF (STAR_SYSTEM_WINDOWS)
-  SET (star_client_RESOURCES
-      starbound.rc
-    )
+  IF (CMAKE_GENERATOR MATCHES "Visual Studio") # Ninja and possibly some others have problems building resources.
+    SET (star_client_RESOURCES
+        starbound.rc
+      )
+  ENDIF ()
 ENDIF ()
 
 ADD_EXECUTABLE (starbound WIN32

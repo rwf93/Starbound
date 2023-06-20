@@ -21,7 +21,7 @@ if exist %QT_PREFIX_PATH% (
 
 %CMAKE_EXE_PATH%\cmake.exe ^
   ..\source ^
-  -G "Visual Studio 17 2022" ^
+  -G "Ninja" ^
   -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ^
   -DSTAR_USE_JEMALLOC=ON ^
   -DCMAKE_PREFIX_PATH=%QT_PREFIX_PATH% ^
@@ -32,12 +32,11 @@ if exist %QT_PREFIX_PATH% (
 
 %CMAKE_EXE_PATH%\cmake.exe ^
   ..\source ^
-  -G "Visual Studio 17 2022" ^
+  -G "Ninja" ^
   -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ^
   -DSTAR_USE_JEMALLOC=ON ^
   -DCMAKE_INCLUDE_PATH="..\lib\windows64\include" ^
   -DCMAKE_LIBRARY_PATH="..\lib\windows64"
-  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 )
 
 pause

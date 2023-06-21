@@ -80,146 +80,81 @@ EnumMap<PacketType> const PacketTypeNames{
 Packet::~Packet() {}
 
 PacketPtr createPacket(PacketType type) {
-  if (type == PacketType::ProtocolRequest)
-    return make_shared<ProtocolRequestPacket>();
-  else if (type == PacketType::ProtocolResponse)
-    return make_shared<ProtocolResponsePacket>();
-  else if (type == PacketType::ServerDisconnect)
-    return make_shared<ServerDisconnectPacket>();
-  else if (type == PacketType::ConnectSuccess)
-    return make_shared<ConnectSuccessPacket>();
-  else if (type == PacketType::ConnectFailure)
-    return make_shared<ConnectFailurePacket>();
-  else if (type == PacketType::HandshakeChallenge)
-    return make_shared<HandshakeChallengePacket>();
-  else if (type == PacketType::ChatReceive)
-    return make_shared<ChatReceivePacket>();
-  else if (type == PacketType::UniverseTimeUpdate)
-    return make_shared<UniverseTimeUpdatePacket>();
-  else if (type == PacketType::CelestialResponse)
-    return make_shared<CelestialResponsePacket>();
-  else if (type == PacketType::PlayerWarpResult)
-    return make_shared<PlayerWarpResultPacket>();
-  else if (type == PacketType::PlanetTypeUpdate)
-    return make_shared<PlanetTypeUpdatePacket>();
-  else if (type == PacketType::Pause)
-    return make_shared<PausePacket>();
-  else if (type == PacketType::ServerInfo)
-    return make_shared<ServerInfoPacket>();
-  else if (type == PacketType::ClientConnect)
-    return make_shared<ClientConnectPacket>();
-  else if (type == PacketType::ClientDisconnectRequest)
-    return make_shared<ClientDisconnectRequestPacket>();
-  else if (type == PacketType::HandshakeResponse)
-    return make_shared<HandshakeResponsePacket>();
-  else if (type == PacketType::PlayerWarp)
-    return make_shared<PlayerWarpPacket>();
-  else if (type == PacketType::FlyShip)
-    return make_shared<FlyShipPacket>();
-  else if (type == PacketType::ChatSend)
-    return make_shared<ChatSendPacket>();
-  else if (type == PacketType::CelestialRequest)
-    return make_shared<CelestialRequestPacket>();
-  else if (type == PacketType::ClientContextUpdate)
-    return make_shared<ClientContextUpdatePacket>();
-  else if (type == PacketType::WorldStart)
-    return make_shared<WorldStartPacket>();
-  else if (type == PacketType::WorldStop)
-    return make_shared<WorldStopPacket>();
-  else if (type == PacketType::WorldLayoutUpdate)
-    return make_shared<WorldLayoutUpdatePacket>();
-  else if (type == PacketType::WorldParametersUpdate)
-    return make_shared<WorldParametersUpdatePacket>();
-  else if (type == PacketType::CentralStructureUpdate)
-    return make_shared<CentralStructureUpdatePacket>();
-  else if (type == PacketType::TileArrayUpdate)
-    return make_shared<TileArrayUpdatePacket>();
-  else if (type == PacketType::TileUpdate)
-    return make_shared<TileUpdatePacket>();
-  else if (type == PacketType::TileLiquidUpdate)
-    return make_shared<TileLiquidUpdatePacket>();
-  else if (type == PacketType::TileDamageUpdate)
-    return make_shared<TileDamageUpdatePacket>();
-  else if (type == PacketType::TileModificationFailure)
-    return make_shared<TileModificationFailurePacket>();
-  else if (type == PacketType::GiveItem)
-    return make_shared<GiveItemPacket>();
-  else if (type == PacketType::EnvironmentUpdate)
-    return make_shared<EnvironmentUpdatePacket>();
-  else if (type == PacketType::ModifyTileList)
-    return make_shared<ModifyTileListPacket>();
-  else if (type == PacketType::DamageTileGroup)
-    return make_shared<DamageTileGroupPacket>();
-  else if (type == PacketType::CollectLiquid)
-    return make_shared<CollectLiquidPacket>();
-  else if (type == PacketType::RequestDrop)
-    return make_shared<RequestDropPacket>();
-  else if (type == PacketType::SpawnEntity)
-    return make_shared<SpawnEntityPacket>();
-  else if (type == PacketType::EntityInteract)
-    return make_shared<EntityInteractPacket>();
-  else if (type == PacketType::EntityInteractResult)
-    return make_shared<EntityInteractResultPacket>();
-  else if (type == PacketType::UpdateTileProtection)
-    return make_shared<UpdateTileProtectionPacket>();
-  else if (type == PacketType::SetDungeonGravity)
-    return make_shared<SetDungeonGravityPacket>();
-  else if (type == PacketType::SetDungeonBreathable)
-    return make_shared<SetDungeonBreathablePacket>();
-  else if (type == PacketType::SetPlayerStart)
-    return make_shared<SetPlayerStartPacket>();
-  else if (type == PacketType::FindUniqueEntityResponse)
-    return make_shared<FindUniqueEntityResponsePacket>();
-  else if (type == PacketType::Pong)
-    return make_shared<PongPacket>();
-  else if (type == PacketType::ConnectWire)
-    return make_shared<ConnectWirePacket>();
-  else if (type == PacketType::DisconnectAllWires)
-    return make_shared<DisconnectAllWiresPacket>();
-  else if (type == PacketType::WorldClientStateUpdate)
-    return make_shared<WorldClientStateUpdatePacket>();
-  else if (type == PacketType::FindUniqueEntity)
-    return make_shared<FindUniqueEntityPacket>();
-  else if (type == PacketType::WorldStartAcknowledge)
-    return make_shared<WorldStartAcknowledgePacket>();
-  else if (type == PacketType::Ping)
-    return make_shared<PingPacket>();
-  else if (type == PacketType::EntityCreate)
-    return make_shared<EntityCreatePacket>();
-  else if (type == PacketType::EntityUpdateSet)
-    return make_shared<EntityUpdateSetPacket>();
-  else if (type == PacketType::EntityDestroy)
-    return make_shared<EntityDestroyPacket>();
-  else if (type == PacketType::HitRequest)
-    return make_shared<HitRequestPacket>();
-  else if (type == PacketType::DamageRequest)
-    return make_shared<DamageRequestPacket>();
-  else if (type == PacketType::DamageNotification)
-    return make_shared<DamageNotificationPacket>();
-  else if (type == PacketType::EntityMessage)
-    return make_shared<EntityMessagePacket>();
-  else if (type == PacketType::EntityMessageResponse)
-    return make_shared<EntityMessageResponsePacket>();
-  else if (type == PacketType::UpdateWorldProperties)
-    return make_shared<UpdateWorldPropertiesPacket>();
-  else if (type == PacketType::StepUpdate)
-    return make_shared<StepUpdatePacket>();
-  else if (type == PacketType::SystemWorldStart)
-    return make_shared<SystemWorldStartPacket>();
-  else if (type == PacketType::SystemWorldUpdate)
-    return make_shared<SystemWorldUpdatePacket>();
-  else if (type == PacketType::SystemObjectCreate)
-    return make_shared<SystemObjectCreatePacket>();
-  else if (type == PacketType::SystemObjectDestroy)
-    return make_shared<SystemObjectDestroyPacket>();
-  else if (type == PacketType::SystemShipCreate)
-    return make_shared<SystemShipCreatePacket>();
-  else if (type == PacketType::SystemShipDestroy)
-    return make_shared<SystemShipDestroyPacket>();
-  else if (type == PacketType::SystemObjectSpawn)
-    return make_shared<SystemObjectSpawnPacket>();
-  else
-    throw StarPacketException(strf("Unrecognized packet type %s", (unsigned)type));
+  // not as good really any better, but at least it's somewhat easier to expand.
+  switch(type) {
+  case PacketType::ProtocolRequest:             return make_shared<ProtocolRequestPacket>();
+  case PacketType::ProtocolResponse:            return make_shared<ProtocolResponsePacket>();
+  case PacketType::ServerDisconnect:            return make_shared<ServerDisconnectPacket>();
+  case PacketType::ConnectSuccess:              return make_shared<ConnectSuccessPacket>();
+  case PacketType::ConnectFailure:              return make_shared<ConnectFailurePacket>();
+  case PacketType::HandshakeChallenge:          return make_shared<HandshakeChallengePacket>();
+  case PacketType::ChatReceive:                 return make_shared<ChatReceivePacket>();
+  case PacketType::UniverseTimeUpdate:          return make_shared<UniverseTimeUpdatePacket>();
+  case PacketType::CelestialResponse:           return make_shared<CelestialResponsePacket>();
+  case PacketType::PlayerWarpResult:            return make_shared<PlayerWarpResultPacket>();
+  case PacketType::PlanetTypeUpdate:            return make_shared<PlanetTypeUpdatePacket>();
+  case PacketType::Pause:                       return make_shared<PausePacket>();
+  case PacketType::ServerInfo:                  return make_shared<ServerInfoPacket>();
+  case PacketType::ClientConnect:               return make_shared<ClientConnectPacket>();
+  case PacketType::ClientDisconnectRequest:     return make_shared<ClientDisconnectRequestPacket>();
+  case PacketType::HandshakeResponse:           return make_shared<HandshakeResponsePacket>();
+  case PacketType::PlayerWarp:                  return make_shared<PlayerWarpPacket>();
+  case PacketType::FlyShip:                     return make_shared<FlyShipPacket>();
+  case PacketType::ChatSend:                    return make_shared<ChatSendPacket>();
+  case PacketType::CelestialRequest:            return make_shared<CelestialRequestPacket>();
+  case PacketType::ClientContextUpdate:         return make_shared<ClientContextUpdatePacket>();
+  case PacketType::WorldStart:                  return make_shared<WorldStartPacket>();
+  case PacketType::WorldStop:                   return make_shared<WorldStopPacket>();
+  case PacketType::WorldLayoutUpdate:           return make_shared<WorldLayoutUpdatePacket>();
+  case PacketType::WorldParametersUpdate:       return make_shared<WorldParametersUpdatePacket>();
+  case PacketType::CentralStructureUpdate:      return make_shared<CentralStructureUpdatePacket>();
+  case PacketType::TileArrayUpdate:             return make_shared<TileArrayUpdatePacket>();
+  case PacketType::TileUpdate:                  return make_shared<TileUpdatePacket>();
+  case PacketType::TileLiquidUpdate:            return make_shared<TileLiquidUpdatePacket>();
+  case PacketType::TileDamageUpdate:            return make_shared<TileDamageUpdatePacket>();
+  case PacketType::TileModificationFailure:     return make_shared<TileModificationFailurePacket>();
+  case PacketType::GiveItem:                    return make_shared<GiveItemPacket>();
+  case PacketType::EnvironmentUpdate:           return make_shared<EnvironmentUpdatePacket>();
+  case PacketType::ModifyTileList:              return make_shared<ModifyTileListPacket>();
+  case PacketType::DamageTileGroup:             return make_shared<DamageTileGroupPacket>();
+  case PacketType::CollectLiquid:               return make_shared<CollectLiquidPacket>();
+  case PacketType::RequestDrop:                 return make_shared<RequestDropPacket>();
+  case PacketType::SpawnEntity:                 return make_shared<SpawnEntityPacket>();
+  case PacketType::EntityInteract:              return make_shared<EntityInteractPacket>();
+  case PacketType::EntityInteractResult:        return make_shared<EntityInteractResultPacket>();
+  case PacketType::UpdateTileProtection:        return make_shared<UpdateTileProtectionPacket>();
+  case PacketType::SetDungeonGravity:           return make_shared<SetDungeonGravityPacket>();
+  case PacketType::SetDungeonBreathable:        return make_shared<SetDungeonBreathablePacket>();
+  case PacketType::SetPlayerStart:              return make_shared<SetPlayerStartPacket>();
+  case PacketType::FindUniqueEntityResponse:    return make_shared<FindUniqueEntityResponsePacket>();
+  case PacketType::Pong:                        return make_shared<PongPacket>();
+  case PacketType::ConnectWire:                 return make_shared<ConnectWirePacket>();
+  case PacketType::DisconnectAllWires:          return make_shared<DisconnectAllWiresPacket>();
+  case PacketType::WorldClientStateUpdate:      return make_shared<WorldClientStateUpdatePacket>();
+  case PacketType::FindUniqueEntity:            return make_shared<FindUniqueEntityPacket>();
+  case PacketType::WorldStartAcknowledge:       return make_shared<WorldStartAcknowledgePacket>();
+  case PacketType::Ping:                        return make_shared<PingPacket>();
+  case PacketType::EntityCreate:                return make_shared<EntityCreatePacket>();
+  case PacketType::EntityUpdateSet:             return make_shared<EntityUpdateSetPacket>();
+  case PacketType::EntityDestroy:               return make_shared<EntityDestroyPacket>();
+  case PacketType::HitRequest:                  return make_shared<HitRequestPacket>();
+  case PacketType::DamageRequest:               return make_shared<DamageRequestPacket>();
+  case PacketType::DamageNotification:          return make_shared<DamageNotificationPacket>();
+  case PacketType::EntityMessage:               return make_shared<EntityMessagePacket>();
+  case PacketType::EntityMessageResponse:       return make_shared<EntityMessageResponsePacket>();
+  case PacketType::UpdateWorldProperties:       return make_shared<UpdateWorldPropertiesPacket>();
+  case PacketType::StepUpdate:                  return make_shared<StepUpdatePacket>();
+  case PacketType::SystemWorldStart:            return make_shared<SystemWorldStartPacket>();
+  case PacketType::SystemWorldUpdate:           return make_shared<SystemWorldUpdatePacket>();
+  case PacketType::SystemObjectCreate:          return make_shared<SystemObjectCreatePacket>();
+  case PacketType::SystemObjectDestroy:         return make_shared<SystemObjectDestroyPacket>();
+  case PacketType::SystemShipCreate:            return make_shared<SystemShipCreatePacket>();
+  case PacketType::SystemShipDestroy:           return make_shared<SystemShipDestroyPacket>();
+  case PacketType::SystemObjectSpawn:           return make_shared<SystemObjectSpawnPacket>();
+  default:                                      throw StarPacketException(strf("Unrecognized packet type %s", (unsigned)type));
+  }
+
+  return nullptr;
 }
 
 ProtocolRequestPacket::ProtocolRequestPacket()

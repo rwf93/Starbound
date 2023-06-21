@@ -867,123 +867,56 @@ Maybe<ConnectionId> CommandProcessor::playerCidFromCommand(String const& player,
 }
 
 String CommandProcessor::handleCommand(ConnectionId connectionId, String const& command, String const& argumentString) {
-  if (command == "admin") {
-    return admin(connectionId, argumentString);
+  std::map<String, std::pair<bool, commandFunctionPointer>> functionMap = {
+	  {"admin",               {true, &CommandProcessor::admin}},
+	  {"timewarp",            {true, &CommandProcessor::timewarp}},
+	  {"settileprotection",   {true, &CommandProcessor::setTileProtection}},
+	  {"setdungeonid",        {true, &CommandProcessor::setDungeonId}},
+	  {"setspawnpoint",       {true, &CommandProcessor::setPlayerStart}},
+	  {"spawnitem",           {true, &CommandProcessor::spawnItem}},
+	  {"spawntreasure",       {true, &CommandProcessor::spawnTreasure}},
+	  {"spawnmonster",        {true, &CommandProcessor::spawnMonster}},
+	  {"spawnnpc",            {true, &CommandProcessor::spawnNpc}},
+	  {"spawnstagehand",      {true, &CommandProcessor::spawnStagehand}},
+	  {"clearstagehand",      {true, &CommandProcessor::clearStagehand}},
+	  {"spawnvehicle",        {true, &CommandProcessor::spawnVehicle}},
+	  {"spawnliquid",         {true, &CommandProcessor::spawnLiquid}},
+	  {"pvp",                 {true, &CommandProcessor::pvp}},
+	  {"serverwhoami",        {true, &CommandProcessor::whoami}},
+	  {"kick",                {true, &CommandProcessor::kick}},
+	  {"ban",                 {true, &CommandProcessor::ban}},
+	  {"unbanip",             {true, &CommandProcessor::unbanIp}},
+	  {"unbanuuid",           {true, &CommandProcessor::unbanUuid}},
+	  {"list",                {true, &CommandProcessor::list}},
+	  {"help",                {true, &CommandProcessor::help}},
+	  {"warp",                {true, &CommandProcessor::warp}},
+	  {"warprandom",          {true, &CommandProcessor::warpRandom}},
+	  {"whereami",            {true, &CommandProcessor::clientCoordinate}},
+	  {"whereis",             {true, &CommandProcessor::clientCoordinate}},
+	  {"serverreload",        {true, &CommandProcessor::serverReload}},
+	  {"eval",                {true, &CommandProcessor::eval}},
+	  {"entityeval",          {true, &CommandProcessor::entityEval}},
+	  {"enablespawning",      {true, &CommandProcessor::enableSpawning}},
+	  {"disablespawning",     {true, &CommandProcessor::disableSpawning}},
+	  {"placedungeon",        {true, &CommandProcessor::placeDungeon}},
+	  {"setuniverseflag",     {true, &CommandProcessor::setUniverseFlag}},
+	  {"resetuniverseflags",  {true, &CommandProcessor::resetUniverseFlags}},
+	  {"addbiomeregion",      {true, &CommandProcessor::addBiomeRegion}},
+	  {"expandbiomeregion",   {true, &CommandProcessor::expandBiomeRegion}},
+	  {"updateplanettype",    {true, &CommandProcessor::updatePlanetType}},
+	  {"setenvironmentbiome", {true, &CommandProcessor::setEnvironmentBiome}}
+  };
 
-  } else if (command == "timewarp") {
-    return timewarp(connectionId, argumentString);
-
-  } else if (command == "settileprotection") {
-    return setTileProtection(connectionId, argumentString);
-
-  } else if (command == "setdungeonid") {
-    return setDungeonId(connectionId, argumentString);
-
-  } else if (command == "setspawnpoint") {
-    return setPlayerStart(connectionId, argumentString);
-
-  } else if (command == "spawnitem") {
-    return spawnItem(connectionId, argumentString);
-
-  } else if (command == "spawntreasure") {
-    return spawnTreasure(connectionId, argumentString);
-
-  } else if (command == "spawnmonster") {
-    return spawnMonster(connectionId, argumentString);
-
-  } else if (command == "spawnnpc") {
-    return spawnNpc(connectionId, argumentString);
-
-  } else if (command == "spawnstagehand") {
-    return spawnStagehand(connectionId, argumentString);
-
-  } else if (command == "clearstagehand") {
-    return clearStagehand(connectionId, argumentString);
-
-  } else if (command == "spawnvehicle") {
-    return spawnVehicle(connectionId, argumentString);
-
-  } else if (command == "spawnliquid") {
-    return spawnLiquid(connectionId, argumentString);
-
-  } else if (command == "pvp") {
-    return pvp(connectionId, argumentString);
-
-  } else if (command == "serverwhoami") {
-    return whoami(connectionId, argumentString);
-
-  } else if (command == "kick") {
-    return kick(connectionId, argumentString);
-
-  } else if (command == "ban") {
-    return ban(connectionId, argumentString);
-
-  } else if (command == "unbanip") {
-    return unbanIp(connectionId, argumentString);
-
-  } else if (command == "unbanuuid") {
-    return unbanUuid(connectionId, argumentString);
-
-  } else if (command == "list") {
-    return list(connectionId, argumentString);
-
-  } else if (command == "help") {
-    return help(connectionId, argumentString);
-
-  } else if (command == "warp") {
-    return warp(connectionId, argumentString);
-
-  } else if (command == "warprandom") {
-    return warpRandom(connectionId, argumentString);
-
-  } else if (command == "whereami") {
-    return clientCoordinate(connectionId, argumentString);
-
-  } else if (command == "whereis") {
-    return clientCoordinate(connectionId, argumentString);
-
-  } else if (command == "serverreload") {
-    return serverReload(connectionId, argumentString);
-
-  } else if (command == "eval") {
-    return eval(connectionId, argumentString);
-
-  } else if (command == "entityeval") {
-    return entityEval(connectionId, argumentString);
-
-  } else if (command == "enablespawning") {
-    return enableSpawning(connectionId, argumentString);
-
-  } else if (command == "disablespawning") {
-    return disableSpawning(connectionId, argumentString);
-
-  } else if (command == "placedungeon") {
-    return placeDungeon(connectionId, argumentString);
-
-  } else if (command == "setuniverseflag") {
-    return setUniverseFlag(connectionId, argumentString);
-
-  } else if (command == "resetuniverseflags") {
-    return resetUniverseFlags(connectionId, argumentString);
-
-  } else if (command == "addbiomeregion") {
-    return addBiomeRegion(connectionId, argumentString);
-
-  } else if (command == "expandbiomeregion") {
-    return expandBiomeRegion(connectionId, argumentString);
-
-  } else if (command == "updateplanettype") {
-    return updatePlanetType(connectionId, argumentString);
-
-  } else if (command == "setenvironmentbiome") {
-    return setEnvironmentBiome(connectionId, argumentString);
-
-  } else if (auto res = m_scriptComponent.invoke("command", command, connectionId, jsonFromStringList(m_parser.tokenizeToStringList(argumentString)))) {
-    return toString(*res);
-
-  } else {
-    return strf("No such command %s", command);
+  // yucky little function pointer hack
+  if(functionMap[command].first) {
+    	return (this->*functionMap[command].second)(connectionId, argumentString);
   }
+
+  if(auto res = m_scriptComponent.invoke("command", command, connectionId, jsonFromStringList(m_parser.tokenizeToStringList(argumentString)))) {
+    return toString(*res);
+  }
+
+  return strf("No such command %s", command);
 }
 
 Maybe<String> CommandProcessor::adminCheck(ConnectionId connectionId, String const& commandDescription) const {

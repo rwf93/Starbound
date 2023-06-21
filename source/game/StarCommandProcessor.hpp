@@ -19,6 +19,8 @@ public:
   String userCommand(ConnectionId clientId, String const& command, String const& argumentString);
 
 private:
+  typedef String(CommandProcessor::*commandFunctionPointer)(ConnectionId connectionId, String const&);
+
   static Maybe<ConnectionId> playerCidFromCommand(String const& player, UniverseServer* universe);
 
   String help(ConnectionId connectionId, String const& argumentString);

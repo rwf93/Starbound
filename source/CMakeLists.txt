@@ -1,6 +1,7 @@
+cmake_minimum_required(VERSION 3.25.1)
+
 project(starbound)
 
-cmake_minimum_required(VERSION 3.25.1)
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/../cmake)
 
 set(CMAKE_CONFIGURATION_TYPES Debug RelWithAsserts RelWithDebInfo Release)

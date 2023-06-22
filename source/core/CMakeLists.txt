@@ -1,9 +1,9 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     ${STAR_CORE_INCLUDES}
   )
 
-SET (star_core_HEADERS
+set(star_core_HEADERS
     StarAStar.hpp
     StarAlgorithm.hpp
     StarArray.hpp
@@ -119,7 +119,7 @@ SET (star_core_HEADERS
     StarXXHash.hpp
   )
 
-SET (star_core_SOURCES
+set(star_core_SOURCES
     StarAudio.cpp
     StarBTreeDatabase.cpp
     StarBuffer.cpp
@@ -168,8 +168,8 @@ SET (star_core_SOURCES
     StarWorkerPool.cpp
   )
 
-IF (STAR_SYSTEM_FAMILY_UNIX)
-  SET (star_core_SOURCES ${star_core_SOURCES}
+if(STAR_SYSTEM_FAMILY_UNIX)
+  set(star_core_SOURCES ${star_core_SOURCES}
       StarDynamicLib_unix.cpp
       StarException_unix.cpp
       StarFile_unix.cpp
@@ -179,12 +179,12 @@ IF (STAR_SYSTEM_FAMILY_UNIX)
       StarThread_unix.cpp
       StarTime_unix.cpp
     )
-ELSEIF (STAR_SYSTEM_FAMILY_WINDOWS)
-  SET (star_core_HEADERS ${star_core_HEADERS}
+elseif(STAR_SYSTEM_FAMILY_WINDOWS)
+  set(star_core_HEADERS ${star_core_HEADERS}
       StarString_windows.hpp
     )
 
-  SET (star_core_SOURCES ${star_core_SOURCES}
+  set(star_core_SOURCES ${star_core_SOURCES}
       StarDynamicLib_windows.cpp
       StarFile_windows.cpp
       StarLockFile_windows.cpp
@@ -196,6 +196,6 @@ ELSEIF (STAR_SYSTEM_FAMILY_WINDOWS)
       StarSecureRandom_windows.cpp
     )
 
-ENDIF ()
+endif()
 
-ADD_LIBRARY (star_core OBJECT ${star_core_SOURCES} ${star_core_HEADERS})
+add_library(star_core OBJECT ${star_core_SOURCES} ${star_core_HEADERS})

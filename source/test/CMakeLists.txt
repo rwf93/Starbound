@@ -1,4 +1,4 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     ${STAR_CORE_INCLUDES}
     ${STAR_BASE_INCLUDES}
@@ -7,9 +7,9 @@ INCLUDE_DIRECTORIES (
   )
 
 # Add top-level test directory so  gtest-all.cc can find its own include file
-INCLUDE_DIRECTORIES (.)
+include_directories(.)
 
-SET (star_core_tests_SOURCES
+set(star_core_tests_SOURCES
       gtest/gtest-all.cc
 
       core_tests_main.cpp
@@ -55,13 +55,13 @@ SET (star_core_tests_SOURCES
       variant_test.cpp
       vlq_test.cpp
     )
-ADD_EXECUTABLE (core_tests
+add_executable(core_tests
   $<TARGET_OBJECTS:star_extern> $<TARGET_OBJECTS:star_core>
   ${star_core_tests_SOURCES})
-TARGET_LINK_LIBRARIES (core_tests ${STAR_EXT_LIBS})
-ADD_TEST (NAME core_tests WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} COMMAND ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/core_tests)
+target_link_libraries(core_tests ${STAR_EXT_LIBS})
+add_test(NAME core_tests WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} COMMAND ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/core_tests)
 
-SET (star_game_tests_SOURCES
+set(star_game_tests_SOURCES
       gtest/gtest-all.cc
 
       game_tests_main.cpp
@@ -78,8 +78,8 @@ SET (star_game_tests_SOURCES
       world_geometry_test.cpp
       universe_connection_test.cpp
     )
-ADD_EXECUTABLE (game_tests
+add_executable(game_tests
   $<TARGET_OBJECTS:star_extern> $<TARGET_OBJECTS:star_core> $<TARGET_OBJECTS:star_base> $<TARGET_OBJECTS:star_game>
   ${star_game_tests_SOURCES})
-TARGET_LINK_LIBRARIES (game_tests ${STAR_EXT_LIBS})
-ADD_TEST (NAME game_tests WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} COMMAND ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/game_tests)
+target_link_libraries(game_tests ${STAR_EXT_LIBS})
+add_test(NAME game_tests WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} COMMAND ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/game_tests)

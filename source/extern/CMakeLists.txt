@@ -1,9 +1,9 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     lua
   )
 
-SET (star_extern_HEADERS
+set(star_extern_HEADERS
     lauxlib.h
     lua.h
     lua.hpp
@@ -13,7 +13,7 @@ SET (star_extern_HEADERS
     xxhash.h
   )
 
-SET (star_extern_SOURCES
+set(star_extern_SOURCES
     xxhash.c
     lua/lapi.c
     lua/lauxlib.c
@@ -50,4 +50,4 @@ SET (star_extern_SOURCES
     lua/lzio.c
   )
 
-ADD_LIBRARY (star_extern OBJECT ${star_extern_SOURCES} ${star_extern_HEADERS})
+add_library(star_extern OBJECT ${star_extern_SOURCES} ${star_extern_HEADERS})

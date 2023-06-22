@@ -1,4 +1,4 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     ${STAR_CORE_INCLUDES}
     ${STAR_BASE_INCLUDES}
@@ -10,7 +10,7 @@ INCLUDE_DIRECTORIES (
     ${STAR_FRONTEND_INCLUDES}
   )
 
-SET (star_frontend_HEADERS
+set(star_frontend_HEADERS
     StarActionBar.hpp
     StarAiInterface.hpp
     StarBookmarkInterface.hpp
@@ -56,7 +56,7 @@ SET (star_frontend_HEADERS
     StarWireInterface.hpp
   )
 
-SET (star_frontend_SOURCES
+set(star_frontend_SOURCES
     StarActionBar.cpp
     StarAiInterface.cpp
     StarBookmarkInterface.cpp
@@ -102,4 +102,4 @@ SET (star_frontend_SOURCES
     StarWireInterface.cpp
   )
 
-ADD_LIBRARY (star_frontend OBJECT ${star_frontend_SOURCES} ${star_frontend_HEADERS})
+add_library(star_frontend OBJECT ${star_frontend_SOURCES} ${star_frontend_HEADERS})

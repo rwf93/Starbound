@@ -1,15 +1,15 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_CORE_INCLUDES}
     ${STAR_STEAM_INCLUDES}
   )
 
-SET (steam_HEADERS
+set(steam_HEADERS
         StarSteamCheck.hpp
     )
 
-SET (steam_SOURCES
+set(steam_SOURCES
         StarSteamCheck.cpp
     )
 
-ADD_LIBRARY (star_steam ${steam_SOURCES} ${steam_HEADERS})
-TARGET_LINK_LIBRARIES (star_steam star)
+add_library(star_steam ${steam_SOURCES} ${steam_HEADERS})
+target_link_libraries(star_steam star)

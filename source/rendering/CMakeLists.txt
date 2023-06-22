@@ -1,4 +1,4 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     ${STAR_CORE_INCLUDES}
     ${STAR_BASE_INCLUDES}
@@ -8,7 +8,7 @@ INCLUDE_DIRECTORIES (
     ${STAR_RENDERING_INCLUDES}
   )
 
-SET (star_rendering_HEADERS
+set(star_rendering_HEADERS
       StarAnchorTypes.hpp
       StarAssetTextureGroup.hpp
       StarDrawablePainter.hpp
@@ -20,7 +20,7 @@ SET (star_rendering_HEADERS
       StarWorldPainter.hpp
     )
 
-SET (star_rendering_SOURCES
+set(star_rendering_SOURCES
       StarAnchorTypes.cpp
       StarAssetTextureGroup.cpp
       StarDrawablePainter.cpp
@@ -32,4 +32,4 @@ SET (star_rendering_SOURCES
       StarWorldPainter.cpp
     )
 
-ADD_LIBRARY (star_rendering OBJECT ${star_rendering_SOURCES} ${star_rendering_HEADERS})
+add_library(star_rendering OBJECT ${star_rendering_SOURCES} ${star_rendering_HEADERS})

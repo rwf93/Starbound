@@ -1,4 +1,4 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     ${STAR_CORE_INCLUDES}
     ${STAR_BASE_INCLUDES}
@@ -10,24 +10,24 @@ INCLUDE_DIRECTORIES (
     ${STAR_FRONTEND_INCLUDES}
   )
 
-SET (star_client_HEADERS
+set(star_client_HEADERS
       StarClientApplication.hpp
     )
 
-SET (star_client_SOURCES
+set(star_client_SOURCES
       StarClientApplication.cpp
     )
 
-IF (STAR_SYSTEM_WINDOWS)
-  IF (CMAKE_GENERATOR MATCHES "Visual Studio") # Ninja and possibly some others have problems building resources.
-    SET (star_client_RESOURCES
+if(STAR_SYSTEM_WINDOWS)
+  if(CMAKE_GENERATOR MATCHES "Visual Studio") # Ninja and possibly some others have problems building resources.
+    set(star_client_RESOURCES
         starbound.rc
       )
-  ENDIF ()
-ENDIF ()
+  endif()
+endif()
 
-ADD_EXECUTABLE (starbound WIN32
+add_executable(starbound WIN32
   $<TARGET_OBJECTS:star_extern> $<TARGET_OBJECTS:star_core> $<TARGET_OBJECTS:star_base> $<TARGET_OBJECTS:star_game>
   $<TARGET_OBJECTS:star_application> $<TARGET_OBJECTS:star_rendering> $<TARGET_OBJECTS:star_windowing> $<TARGET_OBJECTS:star_frontend>
   ${star_client_HEADERS} ${star_client_SOURCES} ${star_client_RESOURCES})
-TARGET_LINK_LIBRARIES (starbound ${STAR_EXT_LIBS} ${STAR_EXT_GUI_LIBS})
+target_link_libraries(starbound ${STAR_EXT_LIBS} ${STAR_EXT_GUI_LIBS})

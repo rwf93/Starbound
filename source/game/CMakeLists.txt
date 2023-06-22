@@ -1,4 +1,4 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     ${STAR_CORE_INCLUDES}
     ${STAR_BASE_INCLUDES}
@@ -6,7 +6,7 @@ INCLUDE_DIRECTORIES (
     ${STAR_GAME_INCLUDES}
   )
 
-SET (star_game_HEADERS
+set(star_game_HEADERS
     StarActorMovementController.hpp
     StarAiDatabase.hpp
     StarAiTypes.hpp
@@ -264,7 +264,7 @@ SET (star_game_HEADERS
     terrain/StarWormCave.hpp
   )
 
-SET (star_game_SOURCES
+set(star_game_SOURCES
     StarActorMovementController.cpp
     StarAiDatabase.cpp
     StarAiTypes.cpp
@@ -499,4 +499,4 @@ SET (star_game_SOURCES
     terrain/StarWormCave.cpp
   )
 
-ADD_LIBRARY (star_game OBJECT ${star_game_SOURCES} ${star_game_HEADERS})
+add_library(star_game OBJECT ${star_game_SOURCES} ${star_game_HEADERS})

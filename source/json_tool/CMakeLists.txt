@@ -1,19 +1,19 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     ${STAR_CORE_INCLUDES}
   )
 
-FIND_PACKAGE (Qt5Core)
-FIND_PACKAGE (Qt5Widgets)
+find_package(Qt5Core)
+find_package(Qt5Widgets)
 
-SET (CMAKE_INCLUDE_CURRENT_DIR ON)
-SET (CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOMOC ON)
 
-ADD_EXECUTABLE (json_tool WIN32
+add_executable(json_tool WIN32
   $<TARGET_OBJECTS:star_extern> $<TARGET_OBJECTS:star_core>
   json_tool.cpp editor_gui.cpp)
-QT5_USE_MODULES (json_tool Widgets Gui Core)
-TARGET_LINK_LIBRARIES (json_tool ${STAR_EXT_LIBS})
+qt5_use_modules(json_tool Widgets Gui Core)
+target_link_libraries(json_tool ${STAR_EXT_LIBS})
 
-SET (CMAKE_AUTOMOC OFF)
-SET (CMAKE_INCLUDE_CURRENT_DIR OFF)
+set(CMAKE_AUTOMOC OFF)
+set(CMAKE_INCLUDE_CURRENT_DIR OFF)

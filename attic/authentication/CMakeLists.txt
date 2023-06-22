@@ -1,9 +1,9 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_CORE_INCLUDES}
     ${STAR_AUTHENTICATION_INCLUDES}
   )
 
-SET (authentication_HEADERS
+set(authentication_HEADERS
       StarAuthenticationDatabaseFacade.hpp
       StarAuthenticationKey.hpp
       StarAuthenticationService.hpp
@@ -12,7 +12,7 @@ SET (authentication_HEADERS
       StarServerAuthentication.hpp
     )
 
-SET (authentication_SOURCES
+set(authentication_SOURCES
       StarAuthenticationKey.cpp
       StarAuthenticationService.cpp
       StarAuthenticationConnection.cpp
@@ -20,5 +20,5 @@ SET (authentication_SOURCES
       StarServerAuthentication.cpp
     )
 
-ADD_LIBRARY (star_authentication ${authentication_SOURCES} ${authentication_HEADERS})
-TARGET_LINK_LIBRARIES (star_authentication star)
+add_library(star_authentication ${authentication_SOURCES} ${authentication_HEADERS})
+target_link_libraries(star_authentication star)

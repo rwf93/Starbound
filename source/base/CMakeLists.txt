@@ -1,10 +1,10 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     ${STAR_CORE_INCLUDES}
     ${STAR_BASE_INCLUDES}
   )
 
-SET (star_base_HEADERS
+set(star_base_HEADERS
     StarAnimatedPartSet.hpp
     StarAssets.hpp
     StarAssetSource.hpp
@@ -21,7 +21,7 @@ SET (star_base_HEADERS
     StarWorldGeometry.hpp
   )
 
-SET (star_base_SOURCES
+set(star_base_SOURCES
     StarAnimatedPartSet.cpp
     StarAssets.cpp
     StarCellularLighting.cpp
@@ -33,5 +33,5 @@ SET (star_base_SOURCES
     StarWorldGeometry.cpp
   )
 
-CONFIGURE_FILE (StarVersion.cpp.in ${CMAKE_CURRENT_BINARY_DIR}/StarVersion.cpp)
-ADD_LIBRARY (star_base OBJECT ${star_base_SOURCES} ${star_base_HEADERS} ${CMAKE_CURRENT_BINARY_DIR}/StarVersion.cpp)
+configure_file(StarVersion.cpp.in ${CMAKE_CURRENT_BINARY_DIR}/StarVersion.cpp)
+add_library(star_base OBJECT ${star_base_SOURCES} ${star_base_HEADERS} ${CMAKE_CURRENT_BINARY_DIR}/StarVersion.cpp)

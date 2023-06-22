@@ -1,4 +1,4 @@
-INCLUDE_DIRECTORIES (
+include_directories(
     ${STAR_EXTERN_INCLUDES}
     ${STAR_CORE_INCLUDES}
     ${STAR_BASE_INCLUDES}
@@ -9,7 +9,7 @@ INCLUDE_DIRECTORIES (
     ${STAR_WINDOWING_INCLUDES}
   )
 
-SET (star_windowing_HEADERS
+set(star_windowing_HEADERS
         StarButtonGroup.hpp
         StarButtonWidget.hpp
         StarCanvasWidget.hpp
@@ -41,7 +41,7 @@ SET (star_windowing_HEADERS
         StarWidgetParsing.hpp
     )
 
-SET (star_windowing_SOURCES
+set(star_windowing_SOURCES
         StarButtonGroup.cpp
         StarButtonWidget.cpp
         StarCanvasWidget.cpp
@@ -73,4 +73,4 @@ SET (star_windowing_SOURCES
         StarWidgetParsing.cpp
     )
 
-ADD_LIBRARY (star_windowing OBJECT ${star_windowing_SOURCES} ${star_windowing_HEADERS})
+add_library(star_windowing OBJECT ${star_windowing_SOURCES} ${star_windowing_HEADERS})

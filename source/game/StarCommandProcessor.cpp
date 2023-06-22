@@ -867,50 +867,50 @@ Maybe<ConnectionId> CommandProcessor::playerCidFromCommand(String const& player,
 }
 
 String CommandProcessor::handleCommand(ConnectionId connectionId, String const& command, String const& argumentString) {
-  std::map<String, std::pair<bool, commandFunctionPointer>> functionMap = {
-	  {"admin",               {true, &CommandProcessor::admin}},
-	  {"timewarp",            {true, &CommandProcessor::timewarp}},
-	  {"settileprotection",   {true, &CommandProcessor::setTileProtection}},
-	  {"setdungeonid",        {true, &CommandProcessor::setDungeonId}},
-	  {"setspawnpoint",       {true, &CommandProcessor::setPlayerStart}},
-	  {"spawnitem",           {true, &CommandProcessor::spawnItem}},
-	  {"spawntreasure",       {true, &CommandProcessor::spawnTreasure}},
-	  {"spawnmonster",        {true, &CommandProcessor::spawnMonster}},
-	  {"spawnnpc",            {true, &CommandProcessor::spawnNpc}},
-	  {"spawnstagehand",      {true, &CommandProcessor::spawnStagehand}},
-	  {"clearstagehand",      {true, &CommandProcessor::clearStagehand}},
-	  {"spawnvehicle",        {true, &CommandProcessor::spawnVehicle}},
-	  {"spawnliquid",         {true, &CommandProcessor::spawnLiquid}},
-	  {"pvp",                 {true, &CommandProcessor::pvp}},
-	  {"serverwhoami",        {true, &CommandProcessor::whoami}},
-	  {"kick",                {true, &CommandProcessor::kick}},
-	  {"ban",                 {true, &CommandProcessor::ban}},
-	  {"unbanip",             {true, &CommandProcessor::unbanIp}},
-	  {"unbanuuid",           {true, &CommandProcessor::unbanUuid}},
-	  {"list",                {true, &CommandProcessor::list}},
-	  {"help",                {true, &CommandProcessor::help}},
-	  {"warp",                {true, &CommandProcessor::warp}},
-	  {"warprandom",          {true, &CommandProcessor::warpRandom}},
-	  {"whereami",            {true, &CommandProcessor::clientCoordinate}},
-	  {"whereis",             {true, &CommandProcessor::clientCoordinate}},
-	  {"serverreload",        {true, &CommandProcessor::serverReload}},
-	  {"eval",                {true, &CommandProcessor::eval}},
-	  {"entityeval",          {true, &CommandProcessor::entityEval}},
-	  {"enablespawning",      {true, &CommandProcessor::enableSpawning}},
-	  {"disablespawning",     {true, &CommandProcessor::disableSpawning}},
-	  {"placedungeon",        {true, &CommandProcessor::placeDungeon}},
-	  {"setuniverseflag",     {true, &CommandProcessor::setUniverseFlag}},
-	  {"resetuniverseflags",  {true, &CommandProcessor::resetUniverseFlags}},
-	  {"addbiomeregion",      {true, &CommandProcessor::addBiomeRegion}},
-	  {"expandbiomeregion",   {true, &CommandProcessor::expandBiomeRegion}},
-	  {"updateplanettype",    {true, &CommandProcessor::updatePlanetType}},
-	  {"setenvironmentbiome", {true, &CommandProcessor::setEnvironmentBiome}}
+  static std::map<String, commandFunctionPointer> functionMap = {
+	  {"admin",               &CommandProcessor::admin},
+	  {"timewarp",            &CommandProcessor::timewarp},
+	  {"settileprotection",   &CommandProcessor::setTileProtection},
+	  {"setdungeonid",        &CommandProcessor::setDungeonId},
+	  {"setspawnpoint",       &CommandProcessor::setPlayerStart},
+	  {"spawnitem",           &CommandProcessor::spawnItem},
+	  {"spawntreasure",       &CommandProcessor::spawnTreasure},
+	  {"spawnmonster",        &CommandProcessor::spawnMonster},
+	  {"spawnnpc",            &CommandProcessor::spawnNpc},
+	  {"spawnstagehand",      &CommandProcessor::spawnStagehand},
+	  {"clearstagehand",      &CommandProcessor::clearStagehand},
+	  {"spawnvehicle",        &CommandProcessor::spawnVehicle},
+	  {"spawnliquid",         &CommandProcessor::spawnLiquid},
+	  {"pvp",                 &CommandProcessor::pvp},
+	  {"serverwhoami",        &CommandProcessor::whoami},
+	  {"kick",                &CommandProcessor::kick},
+	  {"ban",                 &CommandProcessor::ban},
+	  {"unbanip",             &CommandProcessor::unbanIp},
+	  {"unbanuuid",           &CommandProcessor::unbanUuid},
+	  {"list",                &CommandProcessor::list},
+	  {"help",                &CommandProcessor::help},
+	  {"warp",                &CommandProcessor::warp},
+	  {"warprandom",          &CommandProcessor::warpRandom},
+	  {"whereami",            &CommandProcessor::clientCoordinate},
+	  {"whereis",             &CommandProcessor::clientCoordinate},
+	  {"serverreload",        &CommandProcessor::serverReload},
+	  {"eval",                &CommandProcessor::eval},
+	  {"entityeval",          &CommandProcessor::entityEval},
+	  {"enablespawning",      &CommandProcessor::enableSpawning},
+	  {"disablespawning",     &CommandProcessor::disableSpawning},
+	  {"placedungeon",        &CommandProcessor::placeDungeon},
+	  {"setuniverseflag",     &CommandProcessor::setUniverseFlag},
+	  {"resetuniverseflags",  &CommandProcessor::resetUniverseFlags},
+	  {"addbiomeregion",      &CommandProcessor::addBiomeRegion},
+	  {"expandbiomeregion",   &CommandProcessor::expandBiomeRegion},
+	  {"updateplanettype",    &CommandProcessor::updatePlanetType},
+	  {"setenvironmentbiome", &CommandProcessor::setEnvironmentBiome}
   };
 
   // yucky little function pointer hack
-  if(functionMap[command].first) {
-    	return (this->*functionMap[command].second)(connectionId, argumentString);
-  }
+    if(functionMap.count(command) != 0) {
+      return (this->*functionMap[command])(connectionId, argumentString);
+    }
 
   if(auto res = m_scriptComponent.invoke("command", command, connectionId, jsonFromStringList(m_parser.tokenizeToStringList(argumentString)))) {
     return toString(*res);

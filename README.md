@@ -22,4 +22,4 @@ Open a vcvars64 window (x64 Native Tools Command Prompt for VS 2022)
 Run ``scripts\windows\setup64-ninja.bat``  
 
 A ninja project should be generated in the ``build`` folder  
-Simply run ``ninja``
+Simply run ``cmake --build .``

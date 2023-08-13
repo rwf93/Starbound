@@ -21,7 +21,7 @@ if exist %QT_PREFIX_PATH% (
 
 %CMAKE_EXE_PATH%\cmake.exe ^
   ..\source ^
-  -G "Ninja" ^
+  -G "Ninja Multi-Config" ^
   -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ^
   -DSTAR_USE_JEMALLOC=ON ^
   -DCMAKE_PREFIX_PATH=%QT_PREFIX_PATH% ^
@@ -32,7 +32,7 @@ if exist %QT_PREFIX_PATH% (
 
 %CMAKE_EXE_PATH%\cmake.exe ^
   ..\source ^
-  -G "Ninja" ^
+  -G "Ninja Multi-Config" ^
   -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ^
   -DSTAR_USE_JEMALLOC=ON ^
   -DCMAKE_INCLUDE_PATH="..\lib\windows64\include" ^

@@ -5,24 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Starbound Win64",
+            "name": "Current Target (Win64)",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/dist/starbound.exe",
+            "program": "${command:cmake.launchTargetPath}",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "console": "externalTerminal"
-        },
-        {
-            "name": "Starbound Server Win64",
-            "type": "cppvsdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/dist/starbound.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "${command:cmake.launchTargetDirectory}",
             "environment": [],
             "console": "externalTerminal"
         }

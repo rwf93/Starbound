@@ -36,7 +36,7 @@ if exist %QT_PREFIX_PATH% (
   -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ^
   -DSTAR_USE_JEMALLOC=ON ^
   -DCMAKE_INCLUDE_PATH="..\lib\windows64\include" ^
-  -DCMAKE_LIBRARY_PATH="..\lib\windows64" ^
+  -DCMAKE_LIBRARY_PATH="..\lib\windows64"
 )
 
 pause

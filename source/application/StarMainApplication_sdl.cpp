@@ -277,21 +277,25 @@ public:
     };
 
     SDL_AudioSpec obtained = {};
-    if (SDL_OpenAudio(&desired, &obtained) < 0) {
+    m_audioDeviceID = SDL_OpenAudioDevice(NULL, 0, &desired, &obtained, 0);
+    if (m_audioDeviceID == 0) {
       Logger::error("Application: Could not open audio device, no sound available!");
-    } else if (obtained.freq != desired.freq || obtained.channels != desired.channels || obtained.format != desired.format) {
-      SDL_CloseAudio();
+      Logger::error("SDL_AudioDeviceID m_audioDeviceID: %u", m_audioDeviceID);
+    } else if (obtained.freq != desired.freq || obtained.channels != desired.channels || obtained.format != desired.format) { 
+      SDL_CloseAudioDevice(m_audioDeviceID);
       Logger::error("Application: Could not open 44.1khz / 16 bit stereo audio device, no sound available!");
+      Logger::error("SDL_AudioDeviceID m_audioDeviceID: %u", m_audioDeviceID);
     } else {
       Logger::info("Application: Opened default audio device with 44.1khz / 16 bit stereo audio, %s sample size buffer", obtained.samples);
+      Logger::info("SDL_AudioDeviceID m_audioDeviceID: %u", m_audioDeviceID);
     }
 
     m_renderer = make_shared<OpenGl20Renderer>();
     m_renderer->setScreenSize(m_windowSize);
   }
 
-  ~SdlPlatform() {
-    SDL_CloseAudio();
+  ~SdlPlatform() {    
+    SDL_CloseAudioDevice(m_audioDeviceID);
 
     m_renderer.reset();
 
@@ -370,7 +374,7 @@ public:
       Logger::error("Application: threw exception during shutdown: %s", outputException(e, true));
     }
 
-    SDL_CloseAudio();
+    SDL_CloseAudioDevice(m_audioDeviceID);
     m_application.reset();
   }
 
@@ -506,13 +510,13 @@ private:
 
     AudioFormat enableAudio() override {
       parent->m_audioEnabled = true;
-      SDL_PauseAudio(false);
+      SDL_PauseAudioDevice(parent->m_audioDeviceID, false);
       return AudioFormat{44100, 2};
     }
 
     void disableAudio() override {
       parent->m_audioEnabled = false;
-      SDL_PauseAudio(true);
+      SDL_PauseAudioDevice(parent->m_audioDeviceID, true);
     }
 
     float updateRate() const override {
@@ -667,6 +671,8 @@ private:
   bool m_acceptingTextInput = false;
   bool m_audioEnabled = false;
   bool m_quitRequested = false;
+
+  SDL_AudioDeviceID m_audioDeviceID = 0;
 
   OpenGl20RendererPtr m_renderer;
   ApplicationUPtr m_application;

@@ -1097,7 +1097,7 @@ void ActorMovementController::doSetAnchorState(Maybe<EntityAnchorState> anchorSt
   }
 
   m_anchorState.set(anchorState);
-  m_entityAnchor = move(entityAnchor);
+  m_entityAnchor = std::move(entityAnchor);
 
   if (m_entityAnchor)
     setPosition(m_entityAnchor->position);
@@ -1207,11 +1207,11 @@ Maybe<bool> PathController::findPath(ActorMovementController& movementController
           if (!merged) {
             // try to splice the new path onto the current path
             auto& newPathStart = path.at(0);
-            for (size_t i = m_edgeIndex; i < m_path->size(); ++i) {
-              auto& edge = m_path->at(i);
+            for (size_t j = m_edgeIndex; j < m_path->size(); ++j) {
+              auto& edge = m_path->at(j);
               if (edge.target.position == newPathStart.source.position) {
                 // splice the new path onto our current path up to this index
-                auto newPath = m_path->slice(0, i + 1);
+                auto newPath = m_path->slice(0, j + 1);
                 newPath.appendAll(path);
                 path = newPath;
                 

@@ -3,8 +3,8 @@
 namespace Star {
 
 DrawablePainter::DrawablePainter(RendererPtr renderer, AssetTextureGroupPtr textureGroup) {
-  m_renderer = move(renderer);
-  m_textureGroup = move(textureGroup);
+  m_renderer = std::move(renderer);
+  m_textureGroup = std::move(textureGroup);
 }
 
 void DrawablePainter::drawDrawable(Drawable const& drawable) {
@@ -41,7 +41,7 @@ void DrawablePainter::drawDrawable(Drawable const& drawable) {
     Vec2F upperRight = transformation.transformVec2(Vec2F(imageRect.xMax(), imageRect.yMax()));
     Vec2F upperLeft = transformation.transformVec2(Vec2F(imageRect.xMin(), imageRect.yMax()));
 
-    m_renderer->render(RenderQuad{move(texture),
+    m_renderer->render(RenderQuad{std::move(texture),
         {lowerLeft, {0, 0}, color, drawable.fullbright ? 0.0f : 1.0f},
         {lowerRight, {textureSize[0], 0}, color, drawable.fullbright ? 0.0f : 1.0f},
         {upperRight, {textureSize[0], textureSize[1]}, color, drawable.fullbright ? 0.0f : 1.0f},

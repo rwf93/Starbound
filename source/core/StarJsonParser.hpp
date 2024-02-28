@@ -461,7 +461,7 @@ private:
   }
 
   void error(std::string msg) {
-    m_error = move(msg);
+    m_error = std::move(msg);
     throw ParsingException();
   }
 

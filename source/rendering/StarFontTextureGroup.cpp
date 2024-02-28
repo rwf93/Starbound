@@ -5,7 +5,7 @@
 namespace Star {
 
 FontTextureGroup::FontTextureGroup(FontPtr font, TextureGroupPtr textureGroup)
-  : m_font(move(font)), m_textureGroup(move(textureGroup)) {}
+  : m_font(std::move(font)), m_textureGroup(std::move(textureGroup)) {}
 
 void FontTextureGroup::cleanup(int64_t timeout) {
   int64_t currentTime = Time::monotonicMilliseconds();

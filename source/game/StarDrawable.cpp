@@ -44,7 +44,7 @@ void Drawable::ImagePart::removeDirectives(bool keepImageCenterPosition) {
 
 Drawable Drawable::makeLine(Line2F const& line, float lineWidth, Color const& color, Vec2F const& position) {
   Drawable drawable;
-  drawable.part = LinePart{move(line), lineWidth};
+  drawable.part = LinePart{std::move(line), lineWidth};
   drawable.color = color;
   drawable.position = position;
 
@@ -53,7 +53,7 @@ Drawable Drawable::makeLine(Line2F const& line, float lineWidth, Color const& co
 
 Drawable Drawable::makePoly(PolyF poly, Color const& color, Vec2F const& position) {
   Drawable drawable;
-  drawable.part = PolyPart{move(poly)};
+  drawable.part = PolyPart{std::move(poly)};
   drawable.color = color;
   drawable.position = position;
 
@@ -71,7 +71,7 @@ Drawable Drawable::makeImage(String image, float pixelSize, bool centered, Vec2F
 
   transformation.scale(pixelSize);
 
-  drawable.part = ImagePart{move(image), move(transformation)};
+  drawable.part = ImagePart{std::move(image), std::move(transformation)};
   drawable.position = position;
   drawable.color = color;
 
@@ -105,7 +105,7 @@ Drawable::Drawable(Json const& json) {
         transformation.scale(*scale);
     }
 
-    part = ImagePart{move(imageString), move(transformation)};
+    part = ImagePart{std::move(imageString), std::move(transformation)};
   }
   position = json.opt("position").apply(jsonToVec2F).value();
   color = json.opt("color").apply(jsonToColor).value(Color::White);
@@ -128,7 +128,7 @@ Json Drawable::toJson() const {
   json.set("color", jsonFromColor(color));
   json.set("fullbright", fullbright);
 
-  return move(json);
+  return std::move(json);
 }
 
 void Drawable::translate(Vec2F const& translation) {

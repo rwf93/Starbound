@@ -118,7 +118,7 @@ File::File()
 }
 
 File::File(String filename)
-  : IODevice(IOMode::Closed), m_filename(move(filename)), m_file(0) {}
+  : IODevice(IOMode::Closed), m_filename(std::move(filename)), m_file(0) {}
 
 File::~File() {
   close();
@@ -184,7 +184,7 @@ String File::fileName() const {
 void File::setFilename(String filename) {
   if (isOpen())
     throw IOException("Cannot call setFilename while File is open");
-  m_filename = move(filename);
+  m_filename = std::move(filename);
 }
 
 void File::remove() {

@@ -182,7 +182,7 @@ Maybe<Ret> LuaBaseComponent::invoke(String const& name, V&&... args) {
     auto method = m_context->getPath(name);
     if (method == LuaNil)
       return {};
-    return m_context->luaTo<LuaFunction>(move(method)).invoke<Ret>(forward<V>(args)...);
+    return m_context->luaTo<LuaFunction>(std::move(method)).invoke<Ret>(std::forward<V>(args)...);
   } catch (LuaException const& e) {
     Logger::error("Exception while invoking lua function '%s'. %s", name, outputException(e, true));
     setError(printException(e, false));
@@ -214,15 +214,15 @@ JsonObject LuaStorableComponent<Base>::getScriptStorage() const {
 template <typename Base>
 void LuaStorableComponent<Base>::setScriptStorage(JsonObject storage) {
   if (Base::initialized())
-    Base::context()->setPath("storage", move(storage));
+    Base::context()->setPath("storage", std::move(storage));
   else
-    m_storage = move(storage);
+    m_storage = std::move(storage);
 }
 
 template <typename Base>
 void LuaStorableComponent<Base>::contextSetup() {
   Base::contextSetup();
-  Base::context()->setPath("storage", move(m_storage));
+  Base::context()->setPath("storage", std::move(m_storage));
 }
 
 template <typename Base>
@@ -243,7 +243,7 @@ LuaUpdatableComponent<Base>::LuaUpdatableComponent() {
       setUpdateDelta(d);
     });
 
-  Base::addCallbacks("script", move(scriptCallbacks));
+  Base::addCallbacks("script", std::move(scriptCallbacks));
 }
 
 template <typename Base>
@@ -272,7 +272,7 @@ Maybe<Ret> LuaUpdatableComponent<Base>::update(V&&... args) {
   if (!m_updatePeriodic.tick())
     return {};
 
-  return Base::template invoke<Ret>("update", forward<V>(args)...);
+  return Base::template invoke<Ret>("update", std::forward<V>(args)...);
 }
 
 template <typename Base>
@@ -297,12 +297,12 @@ LuaMessageHandlingComponent<Base>::LuaMessageHandlingComponent() {
   scriptCallbacks.registerCallback("setHandler",
       [this](String message, Maybe<LuaFunction> handler) {
         if (handler)
-          m_messageHandlers.set(move(message), handler.take());
+          m_messageHandlers.set(std::move(message), handler.take());
         else
           m_messageHandlers.remove(message);
       });
 
-  Base::addCallbacks("message", move(scriptCallbacks));
+  Base::addCallbacks("message", std::move(scriptCallbacks));
 }
 
 template <typename Base>

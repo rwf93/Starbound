@@ -204,7 +204,7 @@ ItemPtr PlayerInventory::addItems(ItemPtr items) {
     m_equipment[EquipmentSlot::Back] = items->take(1);
 
   // Then, finally the bags
-  return addToBags(move(items));
+  return addToBags(std::move(items));
 }
 
 ItemPtr PlayerInventory::addToBags(ItemPtr items) {
@@ -815,7 +815,7 @@ Json PlayerInventory::store() const {
     {"trashSlot", itemDatabase->diskStore(m_trashSlot)},
     {"currencies", jsonFromMap(m_currencies)},
     {"customBarGroup", m_customBarGroup},
-    {"customBar", move(customBar)},
+    {"customBar", std::move(customBar)},
     {"selectedActionBar", jsonFromSelectedActionBarLocation(m_selectedActionBar)},
     {"beamAxe", itemDatabase->diskStore(m_essential.value(EssentialItem::BeamAxe))},
     {"wireTool", itemDatabase->diskStore(m_essential.value(EssentialItem::WireTool))},
@@ -825,7 +825,7 @@ Json PlayerInventory::store() const {
 }
 
 void PlayerInventory::forEveryItem(function<void(InventorySlot const&, ItemPtr&)> function) {
-  auto checkedFunction = [function = move(function)](InventorySlot const& slot, ItemPtr& item) {
+  auto checkedFunction = [function = std::move(function)](InventorySlot const& slot, ItemPtr& item) {
     if (item)
       function(slot, item);
   };
@@ -841,7 +841,7 @@ void PlayerInventory::forEveryItem(function<void(InventorySlot const&, ItemPtr&)
 }
 
 void PlayerInventory::forEveryItem(function<void(InventorySlot const&, ItemPtr const&)> function) const {
-  return const_cast<PlayerInventory*>(this)->forEveryItem([function = move(function)](InventorySlot const& slot, ItemPtr& item) {
+  return const_cast<PlayerInventory*>(this)->forEveryItem([function = std::move(function)](InventorySlot const& slot, ItemPtr& item) {
       function(slot, item);
     });
 }

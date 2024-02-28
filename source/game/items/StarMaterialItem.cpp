@@ -20,7 +20,7 @@ MaterialItem::MaterialItem(Json const& config, String const& directory, Json con
       if (d.isImage())
         d.imagePart().addDirectives(strf("?hueshift=%s", materialHueToDegrees(m_materialHueShift)), false);
     }
-    setIconDrawables(move(drawables));
+    setIconDrawables(std::move(drawables));
   }
 
   setTwoHanded(config.getBool("twoHanded", true));

@@ -142,7 +142,7 @@ pair<ByteArray, uint64_t> Projectile::writeNetState(uint64_t fromVersion) {
 }
 
 void Projectile::readNetState(ByteArray data, float interpolationTime) {
-  m_netGroup.readNetState(move(data), interpolationTime);
+  m_netGroup.readNetState(std::move(data), interpolationTime);
 }
 
 void Projectile::enableInterpolation(float extrapolationHint) {
@@ -366,7 +366,7 @@ void Projectile::render(RenderCallback* renderCallback) {
   }
   drawable.fullbright = m_config->fullbright;
   drawable.translate(position());
-  renderCallback->addDrawable(move(drawable), m_config->renderLayer);
+  renderCallback->addDrawable(std::move(drawable), m_config->renderLayer);
 
   renderCallback->addLightSource({position(), m_config->lightColor, m_config->pointLight, 0.0f, 0.0f, 0.0f});
 }
@@ -457,7 +457,7 @@ List<PhysicsForceRegion> Projectile::forceRegions() const {
     if (p.second.enabled.get()) {
       PhysicsForceRegion forceRegion = p.second.forceRegion;
       forceRegion.call([pos = position()](auto& fr) { fr.translate(pos); });
-      forces.append(move(forceRegion));
+      forces.append(std::move(forceRegion));
     }
   }
   return forces;
@@ -501,7 +501,7 @@ List<Particle> Projectile::sparkBlock(World* world, Vec2I const& position, Vec2F
       particle.finalVelocity = 0.5f * (particle.finalVelocity + Vec2F(Random::randf() - 0.5f, -20.0f + Random::randf()));
       particle.trail = true;
 
-      result.append(move(particle));
+      result.append(std::move(particle));
     }
   }
   return result;
@@ -721,7 +721,7 @@ void Projectile::processAction(Json const& action) {
       particle.finalVelocity = 0.5f * (particle.finalVelocity + Vec2F(Random::randf() - 0.5f, -20.0f + Random::randf()));
       particle.trail = true;
 
-      m_pendingRenderables.append(move(particle));
+      m_pendingRenderables.append(std::move(particle));
     }
 
   } else if (command == "particle") {
@@ -736,7 +736,7 @@ void Projectile::processAction(Json const& action) {
     }
     particle.translate(position());
     particle.velocity += m_referenceVelocity.value();
-    m_pendingRenderables.append(move(particle));
+    m_pendingRenderables.append(std::move(particle));
 
   } else if (command == "explosion") {
     if (isSlave())
@@ -784,7 +784,7 @@ void Projectile::processAction(Json const& action) {
       Particle particle(parameters.getObject("particle"));
       particle.translate(position());
       particle.velocity += m_referenceVelocity.value();
-      m_pendingRenderables.append(move(particle));
+      m_pendingRenderables.append(std::move(particle));
     }
 
   } else if (command == "item") {
@@ -804,7 +804,7 @@ void Projectile::processAction(Json const& action) {
 
     AudioInstancePtr sound = make_shared<AudioInstance>(*Root::singleton().assets()->audio(Random::randValueFrom(parameters.getArray("options")).toString()));
     sound->setPosition(position());
-    m_pendingRenderables.append(move(sound));
+    m_pendingRenderables.append(std::move(sound));
 
   } else if (command == "light") {
     if (!world()->isClient())

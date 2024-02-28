@@ -93,7 +93,7 @@ void LocalPacketSocket::sendPackets(List<PacketPtr> packets) {
     }
 #endif
 
-    outgoingPipe->queue.appendAll(move(packets));
+    outgoingPipe->queue.appendAll(std::move(packets));
   }
 }
 
@@ -117,12 +117,12 @@ bool LocalPacketSocket::readData() {
 }
 
 LocalPacketSocket::LocalPacketSocket(shared_ptr<Pipe> incomingPipe, weak_ptr<Pipe> outgoingPipe)
-  : m_incomingPipe(move(incomingPipe)), m_outgoingPipe(move(outgoingPipe)) {}
+  : m_incomingPipe(std::move(incomingPipe)), m_outgoingPipe(std::move(outgoingPipe)) {}
 
 TcpPacketSocketUPtr TcpPacketSocket::open(TcpSocketPtr socket) {
   socket->setNoDelay(true);
   socket->setNonBlocking(true);
-  return TcpPacketSocketUPtr(new TcpPacketSocket(move(socket)));
+  return TcpPacketSocketUPtr(new TcpPacketSocket(std::move(socket)));
 }
 
 bool TcpPacketSocket::isOpen() const {
@@ -205,11 +205,11 @@ List<PacketPtr> TcpPacketSocket::receivePackets() {
 
       m_incomingStats.mix(packetType, packetSize);
 
-      DataStreamBuffer packetStream(move(packetBytes));
+      DataStreamBuffer packetStream(std::move(packetBytes));
       do {
         PacketPtr packet = createPacket(packetType);
         packet->read(packetStream);
-        packets.append(move(packet));
+        packets.append(std::move(packet));
       } while (!packetStream.atEnd());
 
       m_inputBuffer = ds.readBytes(ds.size() - ds.pos());
@@ -280,10 +280,10 @@ Maybe<PacketStats> TcpPacketSocket::outgoingStats() const {
 }
 
 TcpPacketSocket::TcpPacketSocket(TcpSocketPtr socket)
-  : m_socket(move(socket)) {}
+  : m_socket(std::move(socket)) {}
 
 P2PPacketSocketUPtr P2PPacketSocket::open(P2PSocketUPtr socket) {
-  return P2PPacketSocketUPtr(new P2PPacketSocket(move(socket)));
+  return P2PPacketSocketUPtr(new P2PPacketSocket(std::move(socket)));
 }
 
 bool P2PPacketSocket::isOpen() const {
@@ -332,7 +332,7 @@ List<PacketPtr> P2PPacketSocket::receivePackets() {
   List<PacketPtr> packets;
   try {
     for (auto& inputMessage : take(m_inputMessages)) {
-      DataStreamBuffer ds(move(inputMessage));
+      DataStreamBuffer ds(std::move(inputMessage));
 
       PacketType packetType = ds.read<PacketType>();
       bool packetCompressed = ds.read<bool>();
@@ -344,11 +344,11 @@ List<PacketPtr> P2PPacketSocket::receivePackets() {
 
       m_incomingStats.mix(packetType, packetSize);
 
-      DataStreamBuffer packetStream(move(packetBytes));
+      DataStreamBuffer packetStream(std::move(packetBytes));
       do {
         PacketPtr packet = createPacket(packetType);
         packet->read(packetStream);
-        packets.append(move(packet));
+        packets.append(std::move(packet));
       } while (!packetStream.atEnd());
     }
   } catch (IOException const& e) {
@@ -401,6 +401,6 @@ Maybe<PacketStats> P2PPacketSocket::outgoingStats() const {
 }
 
 P2PPacketSocket::P2PPacketSocket(P2PSocketPtr socket)
-  : m_socket(move(socket)) {}
+  : m_socket(std::move(socket)) {}
 
 }

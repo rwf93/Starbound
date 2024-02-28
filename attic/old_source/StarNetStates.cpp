@@ -11,7 +11,7 @@ bool NetStatesField::connected() const {
 }
 
 NetStatesField::NetStatesField(NetStatesDetail::TypeInfo typeInfo, NetStatesDetail::Value value)
-  : m_field(make_shared<NetStatesDetail::Field>(move(typeInfo), move(value))) {}
+  : m_field(make_shared<NetStatesDetail::Field>(std::move(typeInfo), std::move(value))) {}
 
 NetStatesInt NetStatesInt::makeInt8(int64_t initialValue) {
   return NetStatesInt(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Int8, {}, {}, {}}, initialValue);
@@ -26,7 +26,7 @@ NetStatesInt NetStatesInt::makeVarInt(int64_t initialValue) {
 }
 
 NetStatesInt::NetStatesInt(NetStatesDetail::TypeInfo typeInfo, NetStatesDetail::Value value)
-  : NetStatesField(move(typeInfo), move(value)) {}
+  : NetStatesField(std::move(typeInfo), std::move(value)) {}
 
 int64_t NetStatesInt::get() const {
   return m_field->getInt();
@@ -49,7 +49,7 @@ NetStatesUInt NetStatesUInt::makeVarUInt(uint64_t initialValue) {
 }
 
 NetStatesUInt::NetStatesUInt(NetStatesDetail::TypeInfo typeInfo, NetStatesDetail::Value value)
-  : NetStatesField(move(typeInfo), move(value)) {}
+  : NetStatesField(std::move(typeInfo), std::move(value)) {}
 
 uint64_t NetStatesUInt::get() const {
   return m_field->getUInt();
@@ -71,31 +71,31 @@ void NetStatesSize::set(size_t value) {
 }
 
 NetStatesFloat NetStatesFloat::makeFloat(double initialValue, NetStatesInterpolator interpolator) {
-  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Float, {}, {}, move(interpolator)}, initialValue);
+  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Float, {}, {}, std::move(interpolator)}, initialValue);
 }
 
 NetStatesFloat NetStatesFloat::makeDouble(double initialValue, NetStatesInterpolator interpolator) {
-  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Double, {}, {}, move(interpolator)}, initialValue);
+  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Double, {}, {}, std::move(interpolator)}, initialValue);
 }
 
 NetStatesFloat NetStatesFloat::makeNormalizedFloat8(double initialValue, NetStatesInterpolator interpolator) {
-  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::NFloat8, {}, {}, move(interpolator)}, initialValue);
+  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::NFloat8, {}, {}, std::move(interpolator)}, initialValue);
 }
 
 NetStatesFloat NetStatesFloat::makeNormalizedFloat16(double initialValue, NetStatesInterpolator interpolator) {
-  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::NFloat16, {}, {}, move(interpolator)}, initialValue);
+  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::NFloat16, {}, {}, std::move(interpolator)}, initialValue);
 }
 
 NetStatesFloat NetStatesFloat::makeFixedPoint8(double base, double initialValue, NetStatesInterpolator interpolator) {
-  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Fixed8, base, {}, move(interpolator)}, initialValue);
+  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Fixed8, base, {}, std::move(interpolator)}, initialValue);
 }
 
 NetStatesFloat NetStatesFloat::makeFixedPoint16(double base, double initialValue, NetStatesInterpolator interpolator) {
-  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Fixed16, base, {}, move(interpolator)}, initialValue);
+  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Fixed16, base, {}, std::move(interpolator)}, initialValue);
 }
 
 NetStatesFloat NetStatesFloat::makeFixedPoint(double base, double initialValue, NetStatesInterpolator interpolator) {
-  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::VarFixed, base, {}, move(interpolator)}, initialValue);
+  return NetStatesFloat(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::VarFixed, base, {}, std::move(interpolator)}, initialValue);
 }
 
 double NetStatesFloat::get() const {
@@ -107,11 +107,11 @@ void NetStatesFloat::set(double value) {
 }
 
 void NetStatesFloat::setInterpolator(NetStatesInterpolator interpolator) {
-  m_field->setFloatInterpolator(move(interpolator));
+  m_field->setFloatInterpolator(std::move(interpolator));
 }
 
 NetStatesFloat::NetStatesFloat(NetStatesDetail::TypeInfo typeInfo, NetStatesDetail::Value value)
-  : NetStatesField(move(typeInfo), move(value)) {}
+  : NetStatesField(std::move(typeInfo), std::move(value)) {}
 
 NetStatesBool::NetStatesBool(bool initialValue)
   : NetStatesField(NetStatesDetail::TypeInfo{NetStatesDetail::TransmissionType::Bool, {}, {}, {}}, initialValue) {}
@@ -290,7 +290,7 @@ ByteArray NetStepStates::writeDeltaPacket(uint64_t fromStep) const {
 }
 
 bool NetStepStates::readDeltaPacket(ByteArray packet, double predictedDeltaStep) {
-  DataStreamBuffer ds(move(packet));
+  DataStreamBuffer ds(std::move(packet));
 
   bool updated = false;
   while (!ds.atEnd()) {
@@ -309,7 +309,7 @@ ByteArray NetStepStates::writeFullPacket() const {
 }
 
 void NetStepStates::readFullPacket(ByteArray packet, double predictedDeltaStep) {
-  DataStreamBuffer ds(move(packet));
+  DataStreamBuffer ds(std::move(packet));
   readFull(ds, predictedDeltaStep);
 }
 
@@ -344,7 +344,7 @@ ByteArray NetSyncStates::writeDeltaPacket() {
 
 bool NetSyncStates::readDeltaPacket(ByteArray packet) {
   updateStep(currentStep() + 1);
-  return NetStepStates::readDeltaPacket(move(packet), currentStep());
+  return NetStepStates::readDeltaPacket(std::move(packet), currentStep());
 }
 
 void NetSyncStates::reset() {
@@ -434,7 +434,7 @@ NetStatesDetail::TransmissionValue NetStatesDetail::TypeInfo::transmissionFromVa
 }
 
 NetStatesDetail::Field::Field(TypeInfo typeInfo, Value value)
-  : m_typeInfo(move(typeInfo)), m_currentStep(0), m_value(move(value)),
+  : m_typeInfo(std::move(typeInfo)), m_currentStep(0), m_value(std::move(value)),
     m_unpulledUpdate(true), m_pulledOccurrences(0), m_transmissionDirty(true),
     m_latestTransmissionStep(0) {
   freshenTransmission();
@@ -506,7 +506,7 @@ void NetStatesDetail::Field::setFloat(double value) {
 }
 
 void NetStatesDetail::Field::setFloatInterpolator(NetStatesInterpolator interpolator) {
-  m_typeInfo.interpolator = move(interpolator);
+  m_typeInfo.interpolator = std::move(interpolator);
 }
 
 bool NetStatesDetail::Field::getBool() const {
@@ -673,7 +673,7 @@ bool NetStatesDetail::Field::updateValueFromTransmission() {
   }
 
   if (m_value != newValue) {
-    m_value = move(newValue);
+    m_value = std::move(newValue);
     m_unpulledUpdate = true;
     return true;
   } else {
@@ -691,7 +691,7 @@ void NetStatesDetail::Field::freshenTransmission() {
     auto newTransmission = m_typeInfo.transmissionFromValue(m_value);
     if (newTransmission.is<shared_ptr<void>>() || newTransmission != m_latestTransmission) {
       m_latestTransmissionStep = m_currentStep;
-      m_latestTransmission = move(newTransmission);
+      m_latestTransmission = std::move(newTransmission);
     }
 
     if (m_interpolatedTransmissions) {

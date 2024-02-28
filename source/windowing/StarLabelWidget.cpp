@@ -13,11 +13,11 @@ LabelWidget::LabelWidget(String text,
   : m_color(color),
     m_hAnchor(hAnchor),
     m_vAnchor(vAnchor),
-    m_wrapWidth(move(wrapWidth)),
-    m_lineSpacing(move(lineSpacing)) {
+    m_wrapWidth(std::move(wrapWidth)),
+    m_lineSpacing(std::move(lineSpacing)) {
   auto assets = Root::singleton().assets();
   m_fontSize = assets->json("/interface.config:font").getInt("baseSize");
-  setText(move(text));
+  setText(std::move(text));
 }
 
 String const& LabelWidget::text() const {
@@ -29,7 +29,7 @@ Maybe<unsigned> LabelWidget::getTextCharLimit() const {
 }
 
 void LabelWidget::setText(String newText) {
-  m_text = move(newText);
+  m_text = std::move(newText);
   updateTextRegion();
 }
 
@@ -39,7 +39,7 @@ void LabelWidget::setFontSize(int fontSize) {
 }
 
 void LabelWidget::setColor(Color newColor) {
-  m_color = move(newColor);
+  m_color = std::move(newColor);
 }
 
 void LabelWidget::setAnchor(HorizontalAnchor hAnchor, VerticalAnchor vAnchor) {
@@ -49,12 +49,12 @@ void LabelWidget::setAnchor(HorizontalAnchor hAnchor, VerticalAnchor vAnchor) {
 }
 
 void LabelWidget::setWrapWidth(Maybe<unsigned> wrapWidth) {
-  m_wrapWidth = move(wrapWidth);
+  m_wrapWidth = std::move(wrapWidth);
   updateTextRegion();
 }
 
 void LabelWidget::setLineSpacing(Maybe<float> lineSpacing) {
-  m_lineSpacing = move(lineSpacing);
+  m_lineSpacing = std::move(lineSpacing);
   updateTextRegion();
 }
 

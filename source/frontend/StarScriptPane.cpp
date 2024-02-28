@@ -24,7 +24,7 @@ ScriptPane::ScriptPane(UniverseClientPtr client, Json config, EntityId sourceEnt
   auto& root = Root::singleton();
   auto assets = root.assets();
 
-  m_client = move(client);
+  m_client = std::move(client);
 
   if (config.type() == Json::Type::Object && config.contains("baseConfig")) {
     auto baseConfig = assets->fetchJson(config.getString("baseConfig"));
@@ -156,7 +156,7 @@ LuaCallbacks ScriptPane::makePaneCallbacks() {
       audioInstance->setLoops(loops.value(0));
       auto& guiContext = GuiContext::singleton();
       guiContext.playAudio(audioInstance);
-      m_playingSounds.append({audio, move(audioInstance)});
+      m_playingSounds.append({audio, std::move(audioInstance)});
     });
 
   callbacks.registerCallback("stopAllSounds", [this](String const& audio) {

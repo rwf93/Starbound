@@ -24,7 +24,7 @@ float const EnvironmentPainter::RayMinUnscaledAlpha = 1;
 Vec3B const EnvironmentPainter::RayColor = Vec3B(255, 255, 200);
 
 EnvironmentPainter::EnvironmentPainter(RendererPtr renderer) {
-  m_renderer = move(renderer);
+  m_renderer = std::move(renderer);
   m_textureGroup = make_shared<AssetTextureGroup>(m_renderer->createTextureGroup(TextureGroupSize::Large));
   m_timer = 0;
   m_lastTime = 0;
@@ -182,13 +182,13 @@ void EnvironmentPainter::renderPlanetHorizon(float pixelRatio, Vec2F const& scre
     PolyF rightImage = PolyF(rightRect);
     rightImage.rotate(planetHorizon.rotation, center);
 
-    m_renderer->render(RenderQuad{move(leftTexture),
+    m_renderer->render(RenderQuad{std::move(leftTexture),
         {leftImage[0], Vec2F(0, 0), {255, 255, 255, 255}, 0.0f},
         {leftImage[1], Vec2F(leftTextureSize[0], 0), {255, 255, 255, 255}, 0.0f},
         {leftImage[2], Vec2F(leftTextureSize[0], leftTextureSize[1]), {255, 255, 255, 255}, 0.0f},
         {leftImage[3], Vec2F(0, leftTextureSize[1]), {255, 255, 255, 255}, 0.0f}});
 
-    m_renderer->render(RenderQuad{move(rightTexture),
+    m_renderer->render(RenderQuad{std::move(rightTexture),
         {rightImage[0], Vec2F(0, 0), {255, 255, 255, 255}, 0.0f},
         {rightImage[1], Vec2F(rightTextureSize[0], 0), {255, 255, 255, 255}, 0.0f},
         {rightImage[2], Vec2F(rightTextureSize[0], rightTextureSize[1]), {255, 255, 255, 255}, 0.0f},
@@ -303,7 +303,7 @@ void EnvironmentPainter::renderParallaxLayers(
         for (String const& textureImage : layer.textures) {
           if (auto texture = m_textureGroup->tryTexture(String::joinWith("?", textureImage, layer.directives))) {
             RectF drawRect = RectF::withSize(anchorPoint, subImage.size() * camera.pixelRatio());
-            m_renderer->render(RenderQuad{move(texture),
+            m_renderer->render(RenderQuad{std::move(texture),
                 {{drawRect.xMin(), drawRect.yMin()}, {subImage.xMin(), subImage.yMin()}, drawColor, lightMapMultiplier},
                 {{drawRect.xMax(), drawRect.yMin()}, {subImage.xMax(), subImage.yMin()}, drawColor, lightMapMultiplier},
                 {{drawRect.xMax(), drawRect.yMax()}, {subImage.xMax(), subImage.yMax()}, drawColor, lightMapMultiplier},
@@ -394,7 +394,7 @@ void EnvironmentPainter::drawOrbiter(float pixelRatio, Vec2F const& screenSize, 
   RectF renderRect = RectF::withCenter(position, texSize * orbiter.scale * pixelRatio);
   Vec4B renderColor = Vec4B(255, 255, 255, 255 * alpha);
 
-  m_renderer->render(RenderQuad{move(texture),
+  m_renderer->render(RenderQuad{std::move(texture),
       {renderMatrix.transformVec2(renderRect.min()), Vec2F(0, 0), renderColor, 0.0f},
       {renderMatrix.transformVec2(Vec2F{renderRect.xMax(), renderRect.yMin()}), Vec2F(texSize[0], 0), renderColor, 0.0f},
       {renderMatrix.transformVec2(renderRect.max()), Vec2F(texSize[0], texSize[1]), renderColor, 0.0f},

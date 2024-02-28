@@ -73,7 +73,7 @@ WorldServer::~WorldServer() {
 }
 
 void WorldServer::setUniverseSettings(UniverseSettingsPtr universeSettings) {
-  m_universeSettings = move(universeSettings);
+  m_universeSettings = std::move(universeSettings);
 }
 
 UniverseSettingsPtr WorldServer::universeSettings() const {
@@ -88,7 +88,7 @@ void WorldServer::setReferenceClock(ClockPtr clock) {
 WorldStructure WorldServer::setCentralStructure(WorldStructure centralStructure) {
   removeCentralStructure();
 
-  m_centralStructure = move(centralStructure);
+  m_centralStructure = std::move(centralStructure);
   m_centralStructure.setAnchorPosition(Vec2I(m_geometry.size()) / 2);
 
   m_playerStart = Vec2F(m_centralStructure.flaggedBlocks("playerSpawn").first()) + Vec2F(0, 1);
@@ -257,7 +257,7 @@ List<PacketPtr> WorldServer::removeClient(ConnectionId clientId) {
     }
   }
 
-  auto packets = move(info->outgoingPackets);
+  auto packets = std::move(info->outgoingPackets);
   m_clientInfo.remove(clientId);
 
   packets.append(make_shared<WorldStopPacket>("Removed"));
@@ -338,9 +338,9 @@ void WorldServer::handleIncomingPackets(ConnectionId clientId, List<PacketPtr> c
         clientInfo->outgoingPackets.append(make_shared<GiveItemPacket>(item));
 
     } else if (auto sepacket = as<SpawnEntityPacket>(packet)) {
-      auto entity = entityFactory->netLoadEntity(sepacket->entityType, move(sepacket->storeData));
-      entity->readNetState(move(sepacket->firstNetState));
-      addEntity(move(entity));
+      auto entity = entityFactory->netLoadEntity(sepacket->entityType, std::move(sepacket->storeData));
+      entity->readNetState(std::move(sepacket->firstNetState));
+      addEntity(std::move(entity));
 
     } else if (auto rdpacket = as<RequestDropPacket>(packet)) {
       auto drop = m_entityMap->get<ItemDrop>(rdpacket->dropEntityId);
@@ -460,7 +460,7 @@ void WorldServer::handleIncomingPackets(ConnectionId clientId, List<PacketPtr> c
         } else if (auto const& clientInfo = m_clientInfo.value(connectionForEntity(entity->entityId()))) {
           m_entityMessageResponses[entityMessagePacket->uuid] = {clientInfo->clientId, clientId};
           entityMessagePacket->fromConnection = clientId;
-          clientInfo->outgoingPackets.append(move(entityMessagePacket));
+          clientInfo->outgoingPackets.append(std::move(entityMessagePacket));
         }
       }
 
@@ -471,7 +471,7 @@ void WorldServer::handleIncomingPackets(ConnectionId clientId, List<PacketPtr> c
       auto response = m_entityMessageResponses.take(entityMessageResponsePacket->uuid).second;
       if (response.is<ConnectionId>()) {
         if (auto clientInfo = m_clientInfo.value(response.get<ConnectionId>()))
-          clientInfo->outgoingPackets.append(move(entityMessageResponsePacket));
+          clientInfo->outgoingPackets.append(std::move(entityMessageResponsePacket));
       } else {
         if (entityMessageResponsePacket->response.isRight())
           response.get<RpcPromiseKeeper<Json>>().fulfill(entityMessageResponsePacket->response.right());
@@ -494,7 +494,7 @@ void WorldServer::handleIncomingPackets(ConnectionId clientId, List<PacketPtr> c
 
 List<PacketPtr> WorldServer::getOutgoingPackets(ConnectionId clientId) {
   auto const& clientInfo = m_clientInfo.get(clientId);
-  return move(clientInfo->outgoingPackets);
+  return std::move(clientInfo->outgoingPackets);
 }
 
 WorldServerFidelity WorldServer::fidelity() const {
@@ -564,7 +564,7 @@ void WorldServer::update() {
   m_weather.setClientVisibleRegions(clientWindows);
   m_weather.update();
   for (auto projectile : m_weather.pullNewProjectiles())
-    addEntity(move(projectile));
+    addEntity(std::move(projectile));
 
   if (shouldRunThisStep("liquidUpdate")) {
     m_liquidEngine->setProcessingLimit(m_fidelityConfig.optUInt("liquidEngineBackgroundProcessingLimit"));
@@ -1466,14 +1466,14 @@ void WorldServer::updateTileEntityTiles(TileEntityPtr const& entity, bool removi
         queueTileUpdates(pos);
       }
     }
-    spaces.materials = move(newMaterialSpaces);
+    spaces.materials = std::move(newMaterialSpaces);
 
     // add new roots and update known roots entry
     for (auto const& rootPos : newRoots) {
       if (auto tile = m_tileArray->modifyTile(rootPos + entity->tilePosition()))
         tile->rootSource = entity->tilePosition();
     }
-    spaces.roots = move(newRoots);
+    spaces.roots = std::move(newRoots);
   }
 
   // check whether we've broken any other nearby entities
@@ -1518,7 +1518,7 @@ bool WorldServer::regionActive(RectI const& region) {
 }
 
 RpcPromise<Vec2I> WorldServer::enqueuePlacement(List<BiomeItemDistribution> distributions, Maybe<DungeonId> id) {
-  return m_worldStorage->enqueuePlacement(move(distributions), id);
+  return m_worldStorage->enqueuePlacement(std::move(distributions), id);
 }
 
 ServerTile const& WorldServer::getServerTile(Vec2I const& position, bool withSignal) {
@@ -1670,7 +1670,7 @@ void WorldServer::queueUpdatePackets(ConnectionId clientId) {
     tie(weatherDelta, clientInfo->weatherNetVersion) = m_weather.writeUpdate(clientInfo->weatherNetVersion);
 
     if (!skyDelta.empty() || !weatherDelta.empty())
-      clientInfo->outgoingPackets.append(make_shared<EnvironmentUpdatePacket>(move(skyDelta), move(weatherDelta)));
+      clientInfo->outgoingPackets.append(make_shared<EnvironmentUpdatePacket>(std::move(skyDelta), std::move(weatherDelta)));
   }
 
   for (auto sector : clientInfo->pendingSectors.values()) {
@@ -1745,7 +1745,7 @@ void WorldServer::queueUpdatePackets(ConnectionId clientId) {
         if (auto updateSetPacket = updateSetPackets.value(connectionId)) {
           auto updateAndVersion = monitoredEntity->writeNetState(*version);
           if (!updateAndVersion.first.empty())
-            updateSetPacket->deltas[entityId] = move(updateAndVersion.first);
+            updateSetPacket->deltas[entityId] = std::move(updateAndVersion.first);
           *version = updateAndVersion.second;
         }
       } else if (!monitoredEntity->masterOnly()) {
@@ -1753,13 +1753,13 @@ void WorldServer::queueUpdatePackets(ConnectionId clientId) {
         auto firstUpdate = monitoredEntity->writeNetState();
         clientInfo->clientSlavesNetVersion.add(entityId, firstUpdate.second);
         clientInfo->outgoingPackets.append(make_shared<EntityCreatePacket>(monitoredEntity->entityType(),
-              entityFactory->netStoreEntity(monitoredEntity), move(firstUpdate.first), entityId));
+              entityFactory->netStoreEntity(monitoredEntity), std::move(firstUpdate.first), entityId));
       }
     }
   }
 
   for (auto& p : updateSetPackets)
-    clientInfo->outgoingPackets.append(move(p.second));
+    clientInfo->outgoingPackets.append(std::move(p.second));
 }
 
 void WorldServer::updateDamage() {
@@ -1927,7 +1927,7 @@ void WorldServer::freshenCollision(RectI const& region) {
 
     for (auto collisionBlock : m_collisionGenerator.getBlocks(freshenRegion)) {
       if (auto tile = m_tileArray->modifyTile(collisionBlock.space))
-        tile->collisionCache.append(move(collisionBlock));
+        tile->collisionCache.append(std::move(collisionBlock));
     }
   }
 }
@@ -1947,7 +1947,7 @@ void WorldServer::removeEntity(EntityId entityId, bool andDie) {
     auto& clientInfo = pair.second;
     if (auto version = clientInfo->clientSlavesNetVersion.maybeTake(entity->entityId())) {
       ByteArray finalDelta = entity->writeNetState(*version).first;
-      clientInfo->outgoingPackets.append(make_shared<EntityDestroyPacket>(entity->entityId(), move(finalDelta), andDie));
+      clientInfo->outgoingPackets.append(make_shared<EntityDestroyPacket>(entity->entityId(), std::move(finalDelta), andDie));
     }
   }
 

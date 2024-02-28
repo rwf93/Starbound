@@ -67,7 +67,7 @@ ItemDropPtr ItemDrop::throwDrop(ItemDescriptor const& itemDescriptor, Vec2F cons
 
 ItemDrop::ItemDrop(ItemPtr item)
   : ItemDrop() {
-  m_item = move(item);
+  m_item = std::move(item);
 
   updateCollisionPoly();
 
@@ -92,7 +92,7 @@ ItemDrop::ItemDrop(Json const& diskStore)
 
 ItemDrop::ItemDrop(ByteArray store)
   : ItemDrop() {
-  DataStreamBuffer ds(move(store));
+  DataStreamBuffer ds(std::move(store));
 
   Root::singleton().itemDatabase()->loadItem(ds.read<ItemDescriptor>(), m_item);
   ds.read(m_eternal);
@@ -149,7 +149,7 @@ pair<ByteArray, uint64_t> ItemDrop::writeNetState(uint64_t fromVersion) {
 }
 
 void ItemDrop::readNetState(ByteArray data, float interpolationTime) {
-  m_netGroup.readNetState(move(data), interpolationTime);
+  m_netGroup.readNetState(std::move(data), interpolationTime);
 }
 
 void ItemDrop::enableInterpolation(float extrapolationHint) {
@@ -263,7 +263,7 @@ bool ItemDrop::shouldDestroy() const {
 void ItemDrop::render(RenderCallback* renderCallback) {
   for (auto& drawable : m_item->dropDrawables()) {
     drawable.translate(position());
-    renderCallback->addDrawable(move(drawable), RenderLayerItemDrop);
+    renderCallback->addDrawable(std::move(drawable), RenderLayerItemDrop);
   }
 }
 

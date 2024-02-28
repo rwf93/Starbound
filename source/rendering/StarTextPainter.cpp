@@ -85,7 +85,7 @@ TextPositioning TextPositioning::translated(Vec2F translation) const {
 
 TextPainter::TextPainter(FontPtr font, RendererPtr renderer, TextureGroupPtr textureGroup)
   : m_renderer(renderer),
-    m_fontTextureGroup(move(font), textureGroup),
+    m_fontTextureGroup(std::move(font), textureGroup),
     m_fontSize(8),
     m_lineSpacing(1.30f),
     m_renderSettings({FontMode::Normal, Vec4B::filled(255)}),
@@ -252,11 +252,11 @@ void TextPainter::setSplitIgnore(String const& splitIgnore) {
 }
 
 void TextPainter::setFontColor(Vec4B color) {
-  m_renderSettings.color = move(color);
+  m_renderSettings.color = std::move(color);
 }
 
 void TextPainter::setProcessingDirectives(String directives) {
-  m_processingDirectives = move(directives);
+  m_processingDirectives = std::move(directives);
 }
 
 void TextPainter::cleanup(int64_t timeout) {
@@ -396,7 +396,7 @@ void TextPainter::renderGlyph(String::Char c, Vec2F const& screenPos, unsigned f
     return;
 
   auto texture = m_fontTextureGroup.glyphTexture(c, fontSize, processingDirectives);
-  m_renderer->render(renderTexturedRect(move(texture), Vec2F(screenPos), scale, color, 0.0f));
+  m_renderer->render(renderTexturedRect(std::move(texture), Vec2F(screenPos), scale, color, 0.0f));
 }
 
 }

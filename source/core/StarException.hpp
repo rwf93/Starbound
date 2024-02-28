@@ -76,14 +76,14 @@ void fatalException(std::exception const& e, bool showStackTrace);
       return ClassName(strf(fmt, args...));                                                                     \
     }                                                                                                           \
     ClassName() : BaseName(#ClassName, std::string()) {}                                                        \
-    explicit ClassName(std::string message) : BaseName(#ClassName, move(message)) {}                            \
+    explicit ClassName(std::string message) : BaseName(#ClassName, std::move(message)) {}                            \
     explicit ClassName(std::exception const& cause) : BaseName(#ClassName, std::string(), cause) {}             \
-    ClassName(std::string message, std::exception const& cause) : BaseName(#ClassName, move(message), cause) {} \
+    ClassName(std::string message, std::exception const& cause) : BaseName(#ClassName, std::move(message), cause) {} \
                                                                                                                 \
   protected:                                                                                                    \
-    ClassName(char const* type, std::string message) : BaseName(type, move(message)) {}                         \
+    ClassName(char const* type, std::string message) : BaseName(type, std::move(message)) {}                         \
     ClassName(char const* type, std::string message, std::exception const& cause)                               \
-      : BaseName(type, move(message), cause) {}                                                                 \
+      : BaseName(type, std::move(message), cause) {}                                                                 \
   }
 
 STAR_EXCEPTION(OutOfRangeException, StarException);

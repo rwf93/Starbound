@@ -316,21 +316,21 @@ StringList& StringList::insertAll(size_t pos, Container const& l) {
 }
 
 inline StringRef::StringRef(StringRef&& sr) {
-  operator=(move(sr));
+  operator=(std::move(sr));
 }
 
 inline StringRef::StringRef(String const& s)
   : m_ptr(s.utf8Ptr()) {}
 
 inline StringRef::StringRef(String&& s) {
-  set(move(s));
+  set(std::move(s));
 }
 
 inline StringRef::StringRef(std::string const& s)
   : m_ptr(s.c_str()) {}
 
 inline StringRef::StringRef(std::string&& s) {
-  set(move(s));
+  set(std::move(s));
 }
 
 inline StringRef::StringRef(char const* p)
@@ -368,7 +368,7 @@ inline bool StringRef::operator==(StringRef const& ref) const {
 }
 
 inline void StringRef::set(String s) {
-  m_held = move(s);
+  m_held = std::move(s);
   m_ptr = m_held->utf8Ptr();
 }
 
@@ -398,7 +398,7 @@ StringMap<MappedT, HashT, ComparatorT>::iterator::iterator() {}
 
 template<typename MappedT, typename HashT, typename ComparatorT>
 StringMap<MappedT, HashT, ComparatorT>::iterator::iterator(IteratorBase i)
-  : IteratorBase(move(i)) {}
+  : IteratorBase(std::move(i)) {}
 
 template<typename MappedT, typename HashT, typename ComparatorT>
 auto StringMap<MappedT, HashT, ComparatorT>::iterator::base() const -> IteratorBase const& {
@@ -420,7 +420,7 @@ StringMap<MappedT, HashT, ComparatorT>::const_iterator::const_iterator() {}
 
 template<typename MappedT, typename HashT, typename ComparatorT>
 StringMap<MappedT, HashT, ComparatorT>::const_iterator::const_iterator(ConstIteratorBase i)
-  : ConstIteratorBase(move(i)) {}
+  : ConstIteratorBase(std::move(i)) {}
 
 template<typename MappedT, typename HashT, typename ComparatorT>
 auto StringMap<MappedT, HashT, ComparatorT>::const_iterator::base() const -> ConstIteratorBase const& {
@@ -448,7 +448,7 @@ StringMap<MappedT, HashT, ComparatorT>::StringMap(StringMap const& map) {
 
 template<typename MappedT, typename HashT, typename ComparatorT>
 StringMap<MappedT, HashT, ComparatorT>::StringMap(StringMap&& map) {
-  m_map = move(map.m_map);
+  m_map = std::move(map.m_map);
 }
 
 template<typename MappedT, typename HashT, typename ComparatorT>
@@ -511,7 +511,7 @@ template<typename MappedT, typename HashT, typename ComparatorT>
 auto StringMap<MappedT, HashT, ComparatorT>::value(StringRef const& k, mapped_type d) const -> mapped_type {
   auto i = m_map.find(k);
   if (i == m_map.end())
-    return move(d);
+    return std::move(d);
   else
     return i->second;
 }
@@ -539,7 +539,7 @@ auto StringMap<MappedT, HashT, ComparatorT>::operator[](StringRef k) -> mapped_t
   auto i = m_map.find(k);
   if (i == m_map.end()) {
     k.hold();
-    i = m_map.insert(pair<StringRef, mapped_type>(move(k), mapped_type())).first;
+    i = m_map.insert(pair<StringRef, mapped_type>(std::move(k), mapped_type())).first;
   }
 
   return i->second;
@@ -556,24 +556,24 @@ StringMap<MappedT, HashT, ComparatorT>& StringMap<MappedT, HashT, ComparatorT>::
 
 template<typename MappedT, typename HashT, typename ComparatorT>
 StringMap<MappedT, HashT, ComparatorT>& StringMap<MappedT, HashT, ComparatorT>::operator=(StringMap&& map) {
-  m_map = move(map.m_map);
+  m_map = std::move(map.m_map);
   return *this;
 }
 
 template<typename MappedT, typename HashT, typename ComparatorT>
 auto StringMap<MappedT, HashT, ComparatorT>::insert(value_type v) -> std::pair<iterator, bool> {
-  return m_map.insert(pair<StringRef, mapped_type>(move(v.first), move(v.second)));
+  return m_map.insert(pair<StringRef, mapped_type>(std::move(v.first), std::move(v.second)));
 }
 
 template<typename MappedT, typename HashT, typename ComparatorT>
 bool StringMap<MappedT, HashT, ComparatorT>::insert(StringRef k, mapped_type v) {
   k.hold();
-  return m_map.insert(pair<StringRef, mapped_type>(move(k), move(v))).second;
+  return m_map.insert(pair<StringRef, mapped_type>(std::move(k), std::move(v))).second;
 }
 
 template<typename MappedT, typename HashT, typename ComparatorT>
 auto StringMap<MappedT, HashT, ComparatorT>::insert(iterator pos, value_type v) -> iterator {
-  return m_map.insert(pos, pair<StringRef, mapped_type>(move(v.first), move(v.second)));
+  return m_map.insert(pos, pair<StringRef, mapped_type>(std::move(v.first), std::move(v.second)));
 }
 
 template<typename MappedT, typename HashT, typename ComparatorT>
@@ -675,7 +675,7 @@ bool StringMap<MappedT, HashT, ComparatorT>::merge(MapType const& m, bool overwr
 template<typename MappedT, typename HashT, typename ComparatorT>
 auto StringMap<MappedT, HashT, ComparatorT>::add(StringRef k, mapped_type v) -> mapped_type& {
   k.hold();
-  auto p = m_map.insert(pair<StringRef, mapped_type>(move(k), move(v)));
+  auto p = m_map.insert(pair<StringRef, mapped_type>(std::move(k), std::move(v)));
   if (!p.second)
     throw MapException(strf("Entry with key '%s' already present.", outputAny(k)));
   else

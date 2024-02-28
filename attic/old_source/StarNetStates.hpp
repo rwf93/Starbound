@@ -492,14 +492,14 @@ NetStatesData<T>::NetStatesData(T initialValue)
     },
     [](DataStream& ds, T const& t) {
       ds << t;
-    }, move(initialValue)) {}
+    }, std::move(initialValue)) {}
 
 template<typename T>
 NetStatesData<T>::NetStatesData(function<void(DataStream&, T&)> reader, function<void(DataStream&, T const&)> writer, T initialValue)
   : NetStatesField(NetStatesDetail::TypeInfo{
         NetStatesDetail::TransmissionType::Generic, {},
-        make_shared<SerializerImpl>(move(reader), move(writer)), {}
-      }, shared_ptr<void>(make_shared<T>(move(initialValue)))) {}
+        make_shared<SerializerImpl>(std::move(reader), std::move(writer)), {}
+      }, shared_ptr<void>(make_shared<T>(std::move(initialValue)))) {}
 
 template<typename T>
 T const& NetStatesData<T>::get() const {
@@ -513,18 +513,18 @@ void NetStatesData<T>::set(T const& value) {
 
 template<typename T>
 void NetStatesData<T>::push(T value) {
-  m_field->template pushGeneric<T>(move(value));
+  m_field->template pushGeneric<T>(std::move(value));
 }
 
 template<typename T>
 template<typename Mutator>
 void NetStatesData<T>::update(Mutator&& mutator) {
-  m_field->template updateGeneric<T>(forward<Mutator>(mutator));
+  m_field->template updateGeneric<T>(std::forward<Mutator>(mutator));
 }
 
 template<typename T>
 NetStatesData<T>::SerializerImpl::SerializerImpl(function<void(DataStream&, T&)> reader, function<void(DataStream&, T const&)> writer)
-  : reader(move(reader)), writer(move(writer)) {}
+  : reader(std::move(reader)), writer(std::move(writer)) {}
 
 template<typename T>
 shared_ptr<void> NetStatesData<T>::SerializerImpl::read(DataStream& ds) const {
@@ -592,9 +592,9 @@ template<typename T>
 void NetStatesDetail::Field::pushGeneric(T data) {
   if (m_value) {
     auto& p = m_value.get<shared_ptr<void>>();
-    *(T*)p.get() = move(data);
+    *(T*)p.get() = std::move(data);
   } else {
-    m_value = shared_ptr<void>(make_shared<T>(move(data)));
+    m_value = shared_ptr<void>(make_shared<T>(std::move(data)));
   }
   markValueUpdated();
 }

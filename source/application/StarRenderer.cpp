@@ -18,7 +18,7 @@ RenderQuad renderTexturedRect(TexturePtr texture, Vec2F minPosition, float textu
 
   auto textureSize = Vec2F(texture->size());
   return {
-    move(texture),
+    std::move(texture),
     RenderVertex{minPosition, Vec2F(0, 0), color, param1},
     RenderVertex{minPosition + Vec2F(textureSize[0], 0) * textureScale, Vec2F(textureSize[0], 0), color, param1},
     RenderVertex{minPosition + Vec2F(textureSize[0], textureSize[1]) * textureScale, Vec2F(textureSize[0], textureSize[1]), color, param1},
@@ -32,7 +32,7 @@ RenderQuad renderTexturedRect(TexturePtr texture, RectF const& screenCoords, Vec
 
   auto textureSize = Vec2F(texture->size());
   return {
-    move(texture),
+    std::move(texture),
     RenderVertex{{screenCoords.xMin(), screenCoords.yMin()}, Vec2F(0, 0), color, param1},
     RenderVertex{{screenCoords.xMax(), screenCoords.yMin()}, Vec2F(textureSize[0], 0), color, param1},
     RenderVertex{{screenCoords.xMax(), screenCoords.yMax()}, Vec2F(textureSize[0], textureSize[1]), color, param1},

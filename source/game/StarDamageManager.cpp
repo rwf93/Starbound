@@ -116,7 +116,7 @@ void DamageManager::update() {
           addHitRequest({causingEntity->entityId(), targetEntity->entityId(), damageRequest});
 
           if (damageSource.damageType != NoDamage)
-            addDamageRequest({causingEntity->entityId(), targetEntity->entityId(), move(damageRequest)});
+            addDamageRequest({causingEntity->entityId(), targetEntity->entityId(), std::move(damageRequest)});
         }
       }
     }
@@ -143,7 +143,7 @@ void DamageManager::pushRemoteDamageRequest(RemoteDamageRequest const& remoteDam
   if (auto targetEntity = m_world->entity(remoteDamageRequest.targetEntityId)) {
     starAssert(targetEntity->isMaster());
     for (auto& damageNotification : targetEntity->applyDamage(remoteDamageRequest.damageRequest))
-      addDamageNotification({remoteDamageRequest.damageRequest.sourceEntityId, move(damageNotification)});
+      addDamageNotification({remoteDamageRequest.damageRequest.sourceEntityId, std::move(damageNotification)});
   }
 }
 
@@ -154,7 +154,7 @@ void DamageManager::pushRemoteDamageNotification(RemoteDamageNotification remote
       sourceEntity->damagedOther(remoteDamageNotification.damageNotification);
   }
 
-  m_pendingNotifications.append(move(remoteDamageNotification.damageNotification));
+  m_pendingNotifications.append(std::move(remoteDamageNotification.damageNotification));
 }
 
 List<RemoteHitRequest> DamageManager::pullRemoteHitRequests() {
@@ -250,14 +250,14 @@ void DamageManager::addHitRequest(RemoteHitRequest const& remoteHitRequest) {
 
 void DamageManager::addDamageRequest(RemoteDamageRequest remoteDamageRequest) {
   if (remoteDamageRequest.destinationConnection() == m_connectionId)
-    pushRemoteDamageRequest(move(remoteDamageRequest));
+    pushRemoteDamageRequest(std::move(remoteDamageRequest));
   else
-    m_pendingRemoteDamageRequests.append(move(remoteDamageRequest));
+    m_pendingRemoteDamageRequests.append(std::move(remoteDamageRequest));
 }
 
 void DamageManager::addDamageNotification(RemoteDamageNotification remoteDamageNotification) {
   pushRemoteDamageNotification(remoteDamageNotification);
-  m_pendingRemoteNotifications.append(move(remoteDamageNotification));
+  m_pendingRemoteNotifications.append(std::move(remoteDamageNotification));
 }
 
 }

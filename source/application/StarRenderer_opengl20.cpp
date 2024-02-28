@@ -371,7 +371,7 @@ RenderBufferPtr OpenGl20Renderer::createRenderBuffer() {
 }
 
 void OpenGl20Renderer::render(RenderPrimitive primitive) {
-  m_immediatePrimitives.append(move(primitive));
+  m_immediatePrimitives.append(std::move(primitive));
 }
 
 void OpenGl20Renderer::renderBuffer(RenderBufferPtr const& renderBuffer, Mat3F const& transformation) {
@@ -636,7 +636,7 @@ void OpenGl20Renderer::GlRenderBuffer::set(List<RenderPrimitive> primitives) {
 
     if (auto gt = as<GlGroupedTexture>(texture.get()))
       gt->incrementBufferUseCount();
-    usedTextures.add(move(texture));
+    usedTextures.add(std::move(texture));
 
     return {float(textureIndex), Vec2F(glTexture->glTextureCoordinateOffset())};
   };
@@ -657,14 +657,14 @@ void OpenGl20Renderer::GlRenderBuffer::set(List<RenderPrimitive> primitives) {
     float textureIndex;
     Vec2F textureOffset;
     if (auto tri = primitive.ptr<RenderTriangle>()) {
-      tie(textureIndex, textureOffset) = addCurrentTexture(move(tri->texture));
+      tie(textureIndex, textureOffset) = addCurrentTexture(std::move(tri->texture));
 
       appendBufferVertex(tri->a, textureIndex, textureOffset);
       appendBufferVertex(tri->b, textureIndex, textureOffset);
       appendBufferVertex(tri->c, textureIndex, textureOffset);
 
     } else if (auto quad = primitive.ptr<RenderQuad>()) {
-      tie(textureIndex, textureOffset) = addCurrentTexture(move(quad->texture));
+      tie(textureIndex, textureOffset) = addCurrentTexture(std::move(quad->texture));
 
       appendBufferVertex(quad->a, textureIndex, textureOffset);
       appendBufferVertex(quad->b, textureIndex, textureOffset);
@@ -676,7 +676,7 @@ void OpenGl20Renderer::GlRenderBuffer::set(List<RenderPrimitive> primitives) {
 
     } else if (auto poly = primitive.ptr<RenderPoly>()) {
       if (poly->vertexes.size() > 2) {
-        tie(textureIndex, textureOffset) = addCurrentTexture(move(poly->texture));
+        tie(textureIndex, textureOffset) = addCurrentTexture(std::move(poly->texture));
         for (size_t i = 1; i < poly->vertexes.size() - 1; ++i) {
           appendBufferVertex(poly->vertexes[0], textureIndex, textureOffset);
           appendBufferVertex(poly->vertexes[i], textureIndex, textureOffset);
@@ -698,7 +698,7 @@ void OpenGl20Renderer::logGlErrorSummary(String prefix) {
     errors.append(error);
 
   if (!errors.empty()) {
-    String errorMessage = move(prefix);
+    String errorMessage = std::move(prefix);
     errorMessage.append(": ");
     for (auto const& error : errors) {
       if (error == GL_INVALID_ENUM) {

@@ -14,7 +14,7 @@ MainMixer::MainMixer(unsigned sampleRate, unsigned channels) {
 }
 
 void MainMixer::setUniverseClient(UniverseClientPtr universeClient) {
-  m_universeClient = move(universeClient);
+  m_universeClient = std::move(universeClient);
 }
 
 void MainMixer::update(bool muteSfx, bool muteMusic) {

@@ -250,7 +250,7 @@ pair<ByteArray, uint64_t> Npc::writeNetState(uint64_t fromVersion) {
 }
 
 void Npc::readNetState(ByteArray data, float interpolationTime) {
-  m_netGroup.readNetState(move(data), interpolationTime);
+  m_netGroup.readNetState(std::move(data), interpolationTime);
 }
 
 String Npc::description() const {
@@ -455,7 +455,7 @@ void Npc::render(RenderCallback* renderCallback) {
     drawable.translate(position());
     if (drawable.isImage())
       drawable.imagePart().addDirectives(m_statusController->parentDirectives(), true);
-    renderCallback->addDrawable(move(drawable), renderLayer);
+    renderCallback->addDrawable(std::move(drawable), renderLayer);
   }
 
   renderCallback->addDrawables(m_statusController->drawables(), renderLayer);

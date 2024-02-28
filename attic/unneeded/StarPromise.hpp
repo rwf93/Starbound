@@ -45,12 +45,12 @@ Promise<Result>::Promise() {}
 
 template<typename Result>
 Promise<Result>::Promise(ThreadInvoker<Result> invoker) {
-  m_data = make_shared<Data>(Data{{}, move(invoker), {}});
+  m_data = make_shared<Data>(Data{{}, std::move(invoker), {}});
 }
 
 template<typename Result>
 Promise<Result>::Promise(Result result) {
-  m_data = make_shared<Data>(Data{{}, {}, move(result)});
+  m_data = make_shared<Data>(Data{{}, {}, std::move(result)});
 }
 
 template<typename Result>

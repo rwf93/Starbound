@@ -192,7 +192,7 @@ MouseButton mouseButtonFromSdlMouseButton(uint8_t button) {
 class SdlPlatform {
 public:
   SdlPlatform(ApplicationUPtr application, StringList cmdLineArgs) {
-    m_application = move(application);
+    m_application = std::move(application);
 
     // extract application path from command line args
     String applicationPath = cmdLineArgs.first();
@@ -201,7 +201,7 @@ public:
     StringList platformArguments;
     eraseWhere(cmdLineArgs, [&platformArguments](String& argument) {
         if (argument.beginsWith("+platform")) {
-          platformArguments.append(move(argument));
+          platformArguments.append(std::move(argument));
           return true;
         }
         return false;
@@ -402,7 +402,7 @@ private:
     }
 
     void setApplicationTitle(String title) override {
-      parent->m_windowTitle = move(title);
+      parent->m_windowTitle = std::move(title);
       if (parent->m_sdlWindow)
         SDL_SetWindowTitle(parent->m_sdlWindow, parent->m_windowTitle.utf8Ptr());
     }
@@ -682,7 +682,7 @@ private:
 int runMainApplication(ApplicationUPtr application, StringList cmdLineArgs) {
   try {
     {
-      SdlPlatform platform(move(application), move(cmdLineArgs));
+      SdlPlatform platform(std::move(application), std::move(cmdLineArgs));
       platform.run();
     }
     Logger::info("Application: stopped gracefully");

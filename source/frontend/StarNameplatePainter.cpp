@@ -38,7 +38,7 @@ void NameplatePainter::update(WorldClientPtr const& world, WorldCamera const& ca
     if (!m_entitiesWithNametags.contains(entity->entityId())) {
       Nametag nametag = {entity->name(), entity->statusText(), entity->nametagColor(), 1.0f, entity->entityId()};
       RectF boundBox = determineBoundBox(Vec2F(), nametag);
-      m_nametags.addBubble(Vec2F(), boundBox, move(nametag));
+      m_nametags.addBubble(Vec2F(), boundBox, std::move(nametag));
     }
   }
 

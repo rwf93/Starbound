@@ -19,11 +19,20 @@ else
   BUILD_QT_TOOLS=OFF
 fi
 
-CC=clang CXX=clang++ cmake \
+arch=$(uname -m)
+if [[ "$arch" == "arm64" ]]; then
+  LIB_PATH_ARCH=../lib/osx/arm64
+else
+  LIB_PATH_ARCH=../lib/osx
+fi
+
+CC=gcc CXX=g++ cmake \
   -DCMAKE_EXPORT_COMPILE_COMMANDS=true \
   -DCMAKE_BUILD_TYPE=RelWithAsserts \
   -DSTAR_BUILD_QT_TOOLS=$BUILD_QT_TOOLS \
   -DSTAR_USE_JEMALLOC=ON \
-  -DCMAKE_INCLUDE_PATH=../lib/osx/include \
-  -DCMAKE_LIBRARY_PATH=../lib/osx/ \
+  -DSTAR_ENABLE_STEAM_INTEGRATION=OFF \
+  -DSTAR_ENABLE_DISCORD_INTEGRATION=OFF \
+  -DCMAKE_INCLUDE_PATH=$LIB_PATH_ARCH/include \
+  -DCMAKE_LIBRARY_PATH=$LIB_PATH_ARCH \
   ../source

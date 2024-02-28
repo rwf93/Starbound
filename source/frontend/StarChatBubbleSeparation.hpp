@@ -103,7 +103,7 @@ void BubbleSeparator<T>::addBubble(Vec2F position, RectF boundBox, T contents, u
   RectF separated = separateBubble(m_sortedLeftEdges, m_sortedRightEdges, boundBox);
   Vec2F separatedPosition = position + separated.min() - boundBox.min();
   Bubble bubble = Bubble{contents, position, position, boundBox, separatedPosition, separated, separatedPosition};
-  m_bubbles.insertSorted(move(bubble), &BubbleSeparator<T>::compareBubbleY);
+  m_bubbles.insertSorted(std::move(bubble), &BubbleSeparator<T>::compareBubbleY);
 }
 
 template <typename T>

@@ -6,7 +6,7 @@
 namespace Star {
 
 struct FormatException : public std::exception {
-  FormatException(std::string what) : whatmsg(move(what)) {}
+  FormatException(std::string what) : whatmsg(std::move(what)) {}
 
   char const* what() const noexcept override {
     return whatmsg.c_str();
@@ -85,7 +85,7 @@ struct OutputProxy {
   typedef function<void(std::ostream&)> PrintFunction;
 
   OutputProxy(PrintFunction p)
-    : print(move(p)) {}
+    : print(std::move(p)) {}
 
   PrintFunction print;
 };

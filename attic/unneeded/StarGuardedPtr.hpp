@@ -148,7 +148,7 @@ GuardedPtr<T>::GuardedPtr()
 
 template<typename T>
 GuardedPtr<T>::GuardedPtr(PtrType ptr, shared_ptr<atomic<bool>> sharedValid)
-  : m_ptr(move(ptr)), m_sharedValid(move(sharedValid)) {}
+  : m_ptr(std::move(ptr)), m_sharedValid(std::move(sharedValid)) {}
 
 template<typename T>
 template<typename Other>
@@ -161,7 +161,7 @@ template<typename T>
 template<typename Other>
 GuardedPtr<T>::GuardedPtr(GuardedPtr<Other>&& other) {
   m_ptr = other.m_ptr;
-  m_sharedValid = move(other.m_sharedValid);
+  m_sharedValid = std::move(other.m_sharedValid);
 }
 
 template<typename T>
@@ -176,7 +176,7 @@ template<typename T>
 template<typename Other>
 GuardedPtr<T>& GuardedPtr<T>::operator=(GuardedPtr<Other>&& other) {
   m_ptr = other.m_ptr;
-  m_sharedValid = move(other.m_sharedValid);
+  m_sharedValid = std::move(other.m_sharedValid);
   return *this;
 }
 
@@ -269,15 +269,15 @@ GuardedHolder<T>::~GuardedHolder() {
 
 template<typename T>
 GuardedHolder<T>::GuardedHolder(GuardedHolder&& guardedHolder) {
-  operator=(move(guardedHolder));
+  operator=(std::move(guardedHolder));
 }
 
 template<typename T>
 GuardedHolder<T>& GuardedHolder<T>::operator=(GuardedHolder&& guardedHolder) {
   clear();
-  m_autoDelete = move(guardedHolder.m_autoDelete);
-  m_ptr = move(guardedHolder.m_ptr);
-  m_sharedValid = move(guardedHolder.m_sharedValid);
+  m_autoDelete = std::move(guardedHolder.m_autoDelete);
+  m_ptr = std::move(guardedHolder.m_ptr);
+  m_sharedValid = std::move(guardedHolder.m_sharedValid);
   return *this;
 }
 

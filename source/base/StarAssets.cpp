@@ -127,7 +127,7 @@ AssetPath AssetPath::split(String const& path) {
       ++i;
     }
     if (!directive.empty())
-      components.directives.append(move(directive));
+      components.directives.append(std::move(directive));
   }
 
   starAssert(i == end);
@@ -233,9 +233,9 @@ Maybe<RectU> FramesSpecification::getRect(String const& frame) const {
 Assets::Assets(Settings settings, StringList assetSources) {
   const char* const AssetsPatchSuffix = ".patch";
 
-  m_settings = move(settings);
+  m_settings = std::move(settings);
   m_stopThreads = false;
-  m_assetSources = move(assetSources);
+  m_assetSources = std::move(assetSources);
 
   for (auto& sourcePath : m_assetSources) {
     Logger::info("Loading assets from: '%s'", sourcePath);
@@ -377,7 +377,7 @@ Json Assets::json(String const& path) const {
   auto components = AssetPath::split(path);
   validatePath(components, true, false);
 
-  return as<JsonData>(getAsset(AssetId{AssetType::Json, move(components)}))->json;
+  return as<JsonData>(getAsset(AssetId{AssetType::Json, std::move(components)}))->json;
 }
 
 Json Assets::fetchJson(Json const& v, String const& dir) const {
@@ -400,7 +400,7 @@ ImageConstPtr Assets::image(String const& path) const {
   auto components = AssetPath::split(path);
   validatePath(components, true, true);
 
-  return as<ImageData>(getAsset(AssetId{AssetType::Image, move(components)}))->image;
+  return as<ImageData>(getAsset(AssetId{AssetType::Image, std::move(components)}))->image;
 }
 
 void Assets::queueImages(StringList const& paths) const {
@@ -408,7 +408,7 @@ void Assets::queueImages(StringList const& paths) const {
     auto components = AssetPath::split(path);
     validatePath(components, true, true);
 
-    return AssetId{AssetType::Image, move(components)};
+    return AssetId{AssetType::Image, std::move(components)};
   }));
 }
 
@@ -416,7 +416,7 @@ ImageConstPtr Assets::tryImage(String const& path) const {
   auto components = AssetPath::split(path);
   validatePath(components, true, true);
 
-  if (auto imageData = as<ImageData>(tryAsset(AssetId{AssetType::Image, move(components)})))
+  if (auto imageData = as<ImageData>(tryAsset(AssetId{AssetType::Image, std::move(components)})))
     return imageData->image;
   else
     return {};
@@ -434,7 +434,7 @@ AudioConstPtr Assets::audio(String const& path) const {
   auto components = AssetPath::split(path);
   validatePath(components, false, false);
 
-  return as<AudioData>(getAsset(AssetId{AssetType::Audio, move(components)}))->audio;
+  return as<AudioData>(getAsset(AssetId{AssetType::Audio, std::move(components)}))->audio;
 }
 
 void Assets::queueAudios(StringList const& paths) const {
@@ -442,7 +442,7 @@ void Assets::queueAudios(StringList const& paths) const {
     auto components = AssetPath::split(path);
     validatePath(components, false, false);
 
-    return AssetId{AssetType::Audio, move(components)};
+    return AssetId{AssetType::Audio, std::move(components)};
   }));
 }
 
@@ -450,7 +450,7 @@ AudioConstPtr Assets::tryAudio(String const& path) const {
   auto components = AssetPath::split(path);
   validatePath(components, false, false);
 
-  if (auto audioData = as<AudioData>(tryAsset(AssetId{AssetType::Audio, move(components)})))
+  if (auto audioData = as<AudioData>(tryAsset(AssetId{AssetType::Audio, std::move(components)})))
     return audioData->audio;
   else
     return {};
@@ -460,14 +460,14 @@ FontConstPtr Assets::font(String const& path) const {
   auto components = AssetPath::split(path);
   validatePath(components, false, false);
 
-  return as<FontData>(getAsset(AssetId{AssetType::Font, move(components)}))->font;
+  return as<FontData>(getAsset(AssetId{AssetType::Font, std::move(components)}))->font;
 }
 
 ByteArrayConstPtr Assets::bytes(String const& path) const {
   auto components = AssetPath::split(path);
   validatePath(components, false, false);
 
-  return as<BytesData>(getAsset(AssetId{AssetType::Bytes, move(components)}))->bytes;
+  return as<BytesData>(getAsset(AssetId{AssetType::Bytes, std::move(components)}))->bytes;
 }
 
 IODevicePtr Assets::openFile(String const& path) const {
@@ -540,7 +540,7 @@ bool Assets::BytesData::shouldPersist() const {
 FramesSpecification Assets::parseFramesSpecification(Json const& frameConfig, String path) {
   FramesSpecification framesSpecification;
 
-  framesSpecification.framesFile = move(path);
+  framesSpecification.framesFile = std::move(path);
 
   if (frameConfig.contains("frameList")) {
     for (auto const& pair : frameConfig.get("frameList").toObject()) {
@@ -623,7 +623,7 @@ FramesSpecification Assets::parseFramesSpecification(Json const& frameConfig, St
 
       if (!framesSpecification.frames.contains(value))
         throw AssetException(strf("No such frame '%s' found for alias '%s'", value, key));
-      framesSpecification.aliases[key] = move(value);
+      framesSpecification.aliases[key] = std::move(value);
     }
   }
 
@@ -1004,7 +1004,7 @@ shared_ptr<Assets::AssetData> Assets::loadImage(AssetPath const& path) const {
     for (auto const& ref : imageOperationReferences(operations)) {
       auto components = AssetPath::split(ref);
       validatePath(components, true, false);
-      auto refImage = as<ImageData>(loadAsset(AssetId{AssetType::Image, move(components)}));
+      auto refImage = as<ImageData>(loadAsset(AssetId{AssetType::Image, std::move(components)}));
       if (!refImage)
         return {};
       references[ref] = refImage->image;

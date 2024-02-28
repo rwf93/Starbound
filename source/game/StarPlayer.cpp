@@ -259,7 +259,7 @@ ClientContextPtr Player::clientContext() const {
 }
 
 void Player::setClientContext(ClientContextPtr clientContext) {
-  m_clientContext = move(clientContext);
+  m_clientContext = std::move(clientContext);
   if (m_clientContext)
     m_universeMap->setServerUuid(m_clientContext->serverUuid());
 }
@@ -361,7 +361,7 @@ List<Drawable> Player::drawables() const {
               drawable.imagePart().addDirectives(*directives, true);
           }
         }
-        drawables.append(move(drawable));
+        drawables.append(std::move(drawable));
       }
     }
     drawables.appendAll(m_techController->frontDrawables());
@@ -1034,7 +1034,7 @@ void Player::render(RenderCallback* renderCallback) {
       auto landingNoise = make_shared<AudioInstance>(*footstepAudio);
       landingNoise->setPosition(position() + feetOffset());
       landingNoise->setVolume(m_landingVolume);
-      renderCallback->addAudio(move(landingNoise));
+      renderCallback->addAudio(std::move(landingNoise));
     }
 
     if (m_state == State::Walk || m_state == State::Run) {
@@ -1043,7 +1043,7 @@ void Player::render(RenderCallback* renderCallback) {
         auto stepNoise = make_shared<AudioInstance>(*footstepAudio);
         stepNoise->setPosition(position() + feetOffset());
         stepNoise->setVolume(1 - Random::randf(0, m_footstepVolumeVariance));
-        renderCallback->addAudio(move(stepNoise));
+        renderCallback->addAudio(std::move(stepNoise));
         m_footstepTimer = 0.0;
       }
     }
@@ -1062,7 +1062,7 @@ void Player::render(RenderCallback* renderCallback) {
     auto audio = make_shared<AudioInstance>(*Root::singleton().assets()->audio(p.first));
     audio->setVolume(p.second);
     audio->setPosition(position());
-    renderCallback->addAudio(move(audio));
+    renderCallback->addAudio(std::move(audio));
   }
 
   auto loungeAnchor = as<LoungeAnchor>(m_movementController->entityAnchor());
@@ -1518,7 +1518,7 @@ pair<ByteArray, uint64_t> Player::writeNetState(uint64_t fromVersion) {
 }
 
 void Player::readNetState(ByteArray data, float interpolationTime) {
-  m_netGroup.readNetState(move(data), interpolationTime);
+  m_netGroup.readNetState(std::move(data), interpolationTime);
 }
 
 void Player::enableInterpolation(float) {
@@ -1905,7 +1905,7 @@ ShipUpgrades Player::shipUpgrades() {
 }
 
 void Player::setShipUpgrades(ShipUpgrades shipUpgrades) {
-  m_shipUpgrades = move(shipUpgrades);
+  m_shipUpgrades = std::move(shipUpgrades);
 }
 
 String Player::name() const {

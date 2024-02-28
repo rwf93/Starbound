@@ -66,7 +66,7 @@ inline unsigned WorldCamera::pixelRatio() const {
 }
 
 inline void WorldCamera::setWorldGeometry(WorldGeometry geometry) {
-  m_worldGeometry = move(geometry);
+  m_worldGeometry = std::move(geometry);
 }
 
 inline WorldGeometry WorldCamera::worldGeometry() const {

@@ -47,7 +47,7 @@ void EntityMap::addEntity(EntityPtr entity) {
   if (uniqueId && m_uniqueMap.hasLeftValue(*uniqueId))
     throw EntityMapException::format("Duplicate entity unique id (%s) on entity id (%s) in EntityMap::addEntity", *uniqueId, entityId);
 
-  m_spatialMap.set(entityId, m_geometry.splitRect(boundBox, position), move(entity));
+  m_spatialMap.set(entityId, m_geometry.splitRect(boundBox, position), std::move(entity));
   if (uniqueId)
     m_uniqueMap.add(*uniqueId, entityId);
 }

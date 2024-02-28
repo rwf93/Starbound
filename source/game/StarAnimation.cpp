@@ -44,7 +44,7 @@ void Animation::setAngle(float angle) {
 }
 
 void Animation::setProcessing(String processing) {
-  m_processing = move(processing);
+  m_processing = std::move(processing);
 }
 
 void Animation::addProcessing(String const& processing) {
@@ -56,7 +56,7 @@ void Animation::setColor(Color color) {
 }
 
 void Animation::setTag(String tagName, String tagValue) {
-  m_tagValues[move(tagName)] = move(tagValue);
+  m_tagValues[std::move(tagName)] = std::move(tagValue);
 }
 
 void Animation::clearTags() {
@@ -75,7 +75,7 @@ Drawable Animation::drawable(float pixelSize) const {
 
   baseFrame = String::joinWith("?", baseFrame, m_processing);
 
-  Drawable drawable = Drawable::makeImage(move(baseFrame), pixelSize, m_centered, m_offset);
+  Drawable drawable = Drawable::makeImage(std::move(baseFrame), pixelSize, m_centered, m_offset);
   drawable.rotate(m_angle);
   drawable.color = m_color;
   return drawable;

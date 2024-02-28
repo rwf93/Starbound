@@ -10,7 +10,7 @@
 namespace Star {
 
 TilePainter::TilePainter(RendererPtr renderer) {
-  m_renderer = move(renderer);
+  m_renderer = std::move(renderer);
   m_textureGroup = m_renderer->createTextureGroup(TextureGroupSize::Large);
 
   auto& root = Root::singleton();
@@ -227,8 +227,8 @@ shared_ptr<TilePainter::TerrainChunk const> TilePainter::getTerrainChunk(WorldRe
       for (auto& layerPair : terrainPrimitives) {
         for (auto& zLevelPair : layerPair.second) {
           auto rb = m_renderer->createRenderBuffer();
-          rb->set(move(zLevelPair.second));
-          (*chunk)[layerPair.first][zLevelPair.first] = move(rb);
+          rb->set(std::move(zLevelPair.second));
+          (*chunk)[layerPair.first][zLevelPair.first] = std::move(rb);
         }
       }
 
@@ -251,8 +251,8 @@ shared_ptr<TilePainter::LiquidChunk const> TilePainter::getLiquidChunk(WorldRend
 
       for (auto& p : liquidPrimitives) {
         auto rb = m_renderer->createRenderBuffer();
-        rb->set(move(p.second));
-        chunk->set(p.first, move(rb));
+        rb->set(std::move(p.second));
+        chunk->set(p.first, std::move(rb));
       }
 
       return chunk;
@@ -333,7 +333,7 @@ bool TilePainter::produceTerrainPrimitives(HashMap<QuadZLevel, List<RenderPrimit
       RectF textureCoords = piecePair.first->variants.get(materialColorVariant).wrap(variance);
       RectF worldCoords = RectF::withSize(piecePair.second / TilePixels + Vec2F(pos), textureCoords.size() / TilePixels);
       quadList.append(RenderQuad{
-          move(texture),
+          std::move(texture),
           RenderVertex{Vec2F(worldCoords.xMin(), worldCoords.yMin()), Vec2F(textureCoords.xMin(), textureCoords.yMin()), color, 1.0f},
           RenderVertex{Vec2F(worldCoords.xMax(), worldCoords.yMin()), Vec2F(textureCoords.xMax(), textureCoords.yMin()), color, 1.0f},
           RenderVertex{Vec2F(worldCoords.xMax(), worldCoords.yMax()), Vec2F(textureCoords.xMax(), textureCoords.yMax()), color, 1.0f},
@@ -355,7 +355,7 @@ bool TilePainter::produceTerrainPrimitives(HashMap<QuadZLevel, List<RenderPrimit
       auto textureCoords = piecePair.first->variants.get(modColorVariant).wrap(variance);
       RectF worldCoords = RectF::withSize(piecePair.second / TilePixels + Vec2F(pos), textureCoords.size() / TilePixels);
       quadList.append(RenderQuad{
-          move(texture),
+          std::move(texture),
           RenderVertex{Vec2F(worldCoords.xMin(), worldCoords.yMin()), Vec2F(textureCoords.xMin(), textureCoords.yMin()), color, 1.0f},
           RenderVertex{Vec2F(worldCoords.xMax(), worldCoords.yMin()), Vec2F(textureCoords.xMax(), textureCoords.yMin()), color, 1.0f},
           RenderVertex{Vec2F(worldCoords.xMax(), worldCoords.yMax()), Vec2F(textureCoords.xMax(), textureCoords.yMax()), color, 1.0f},
@@ -376,7 +376,7 @@ bool TilePainter::produceTerrainPrimitives(HashMap<QuadZLevel, List<RenderPrimit
     RectF worldCoords = RectF::withSize(crackingImage.second / TilePixels + Vec2F(pos), textureCoords.size() / TilePixels);
 
     quadList.append(RenderQuad{
-        move(texture),
+        std::move(texture),
         RenderVertex{Vec2F(worldCoords.xMin(), worldCoords.yMin()), Vec2F(textureCoords.xMin(), textureCoords.yMin()), color, 1.0f},
         RenderVertex{Vec2F(worldCoords.xMax(), worldCoords.yMin()), Vec2F(textureCoords.xMax(), textureCoords.yMin()), color, 1.0f},
         RenderVertex{Vec2F(worldCoords.xMax(), worldCoords.yMax()), Vec2F(textureCoords.xMax(), textureCoords.yMax()), color, 1.0f},

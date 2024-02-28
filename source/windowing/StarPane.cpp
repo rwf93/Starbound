@@ -164,7 +164,7 @@ void Pane::setFocus(Widget const* focus) {
   if (m_focusWidget)
     m_focusWidget->blur();
   if (auto c = childPtr(focus))
-    m_focusWidget = move(c);
+    m_focusWidget = std::move(c);
   else
     throw GuiException("Cannot set focus on a widget which is not a child of this pane");
 }

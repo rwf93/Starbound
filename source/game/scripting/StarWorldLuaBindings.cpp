@@ -1199,7 +1199,7 @@ namespace LuaBindings {
         engine,
         pos1,
         pos2,
-        move(options),
+        std::move(options),
         [&objectName](shared_ptr<Object> const& entity) -> bool {
           return objectName.empty() || entity->name() == objectName;
         });

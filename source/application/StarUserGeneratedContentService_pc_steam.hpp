@@ -10,6 +10,7 @@ STAR_CLASS(SteamUserGeneratedContentService);
 class SteamUserGeneratedContentService : public UserGeneratedContentService {
 public:
   SteamUserGeneratedContentService(PcPlatformServicesStatePtr state);
+  virtual ~SteamUserGeneratedContentService() = default;
 
   StringList subscribedContentIds() const override;
   Maybe<String> contentDownloadDirectory(String const& contentId) const override;

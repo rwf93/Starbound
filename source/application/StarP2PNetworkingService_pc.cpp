@@ -197,7 +197,7 @@ void Star::PcP2PNetworkingService::update() {
         });
     }
   }
-  m_pendingDiscordJoinRequests = m_pendingDiscordJoinRequests.filtered([this](pair<discord::UserId, RpcPromise<P2PJoinRequestReply>>& p) {
+  m_pendingDiscordJoinRequests = m_pendingDiscordJoinRequests.filtered([&](pair<discord::UserId, RpcPromise<P2PJoinRequestReply>>& p) {
       return !p.second.finished();
     });
 #endif

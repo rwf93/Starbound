@@ -268,11 +268,6 @@ void stableSortByComputedValue(Container& container, Getter&& valueGetter) {
 }
 
 template <typename Container>
-void shuffle(Container& c) {
-  std::random_shuffle(c.begin(), c.end());
-}
-
-template <typename Container>
 void reverse(Container& c) {
   std::reverse(c.begin(), c.end());
 }

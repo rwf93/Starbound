@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
   cout << endl;
 
   for (size_t repeat = 0; repeat < TestRepeatCount; ++repeat) {
-    std::random_shuffle(usedBlocks.begin(), usedBlocks.end());
+    Random::shuffle(usedBlocks);
     getc(stdin);
 
     List<BlockStorage::BlockIndex> blocksToFree = usedBlocks.slice(0, FreeCount);

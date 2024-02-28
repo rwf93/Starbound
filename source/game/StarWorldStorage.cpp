@@ -256,7 +256,7 @@ void WorldStorage::generateQueue(Maybe<size_t> sectorGenerationLevelLimit, funct
         });
     }
 
-    unsigned total = 0;
+    unsigned __attribute__((unused))total = 0;
     while (!m_generationQueue.empty()) {
       if (sectorGenerationLevelLimit && *sectorGenerationLevelLimit == 0)
         break;

@@ -702,7 +702,7 @@ bool WorldGenerator::entityPersistent(WorldStorage*, EntityPtr const& entity) co
 RpcPromise<Vec2I> WorldGenerator::enqueuePlacement(List<BiomeItemDistribution> distributions, Maybe<DungeonId> id) {
   auto promise = RpcPromise<Vec2I>::createPair();
   m_queuedPlacements.append(QueuedPlacement {
-    move(distributions),
+    std::move(distributions),
     id,
     promise.second,
     false,

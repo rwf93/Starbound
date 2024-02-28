@@ -43,7 +43,7 @@ TEST(IntrusivePtr, All) {
     RefPtr<Base> p3 = p1;
     RefPtr<Base> p4 = p2;
 
-    p3 = p3;
+    //p3 = p3;
     swap(p3, p4);
 
     EXPECT_TRUE(is<Test1>(p4));

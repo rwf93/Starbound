@@ -33,6 +33,8 @@ public:
 
   TextureAtlasSet(unsigned cellSize, unsigned atlasNumCells);
 
+  virtual ~TextureAtlasSet() = default;
+
   // The constant square size of all atlas textures
   Vec2U atlasTextureSize() const;
 
@@ -88,6 +90,7 @@ private:
   };
 
   struct TextureEntry : Texture {
+    virtual ~TextureEntry() = default;
     Vec2U imageSize() const override;
 
     AtlasTextureHandle const& atlasTexture() const override;

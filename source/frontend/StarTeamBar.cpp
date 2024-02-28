@@ -147,7 +147,7 @@ void TeamBar::buildTeamBar() {
 
   Vec2I offset;
   size_t controlIndex = 0;
-  size_t memberIndex = 0;
+  size_t __attribute__((unused))memberIndex = 0;
 
   float portraitScale = assets->json("/interface/windowconfig/teambar.config:memberPortraitScale").toFloat();
   int memberSize = assets->json("/interface/windowconfig/teambar.config:memberSize").toInt();

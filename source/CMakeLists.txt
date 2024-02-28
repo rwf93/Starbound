@@ -391,6 +391,11 @@ elseif(STAR_SYSTEM_FREEBSD)
   set(CMAKE_C_STANDARD_LIBRARIES "${CMAKE_C_STANDARD_LIBRARIES} -lpthread -lrt")
   set(CMAKE_CXX_STANDARD_LIBRARIES "${CMAKE_CXX_STANDARD_LIBRARIES} -lpthread -lrt")
 
+# Fix for macos warning: no platform load command found in (assuming : macos) when compiling on arm64 for x86_64
+elseif(STAR_SYSTEM_MACOS)
+  set(CMAKE_C_STANDARD_LIBRARIES "${CMAKE_C_STANDARD_LIBRARIES} -lpthread -ldl -ld_classic")
+  set(CMAKE_CXX_STANDARD_LIBRARIES "${CMAKE_CXX_STANDARD_LIBRARIES} -lpthread -ldl -ld_classic")
+
 endif()
 
 # Find all required external libraries, based on build settings...

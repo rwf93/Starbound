@@ -25,7 +25,7 @@ TEST(VariantTest, All) {
   a = VariantTester{intptr};
   b = VariantTester{intptr};
   a = b;
-  a = a;
+  //a = a;
   b = std::move(a);
   a = std::move(b);
   EXPECT_EQ(intptr.use_count(), 2);
@@ -58,7 +58,7 @@ TEST(MaybeTest, All) {
   b = MaybeTester{intptr};
   EXPECT_TRUE(a.isValid());
   a = b;
-  a = a;
+  //a = a;
   b = std::move(a);
   a = std::move(b);
   EXPECT_EQ(intptr.use_count(), 2);

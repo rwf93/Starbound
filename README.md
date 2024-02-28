@@ -23,3 +23,7 @@ Run ``scripts\windows\setup64-ninja.bat``
 
 A ninja project should be generated in the ``build`` folder  
 Simply run ``cmake --build .``
+
+### MACOS x86_64 (Intel/Universel) / MACOS arm64 (SILICON M1/M2/M3)
+Simply run ``./scripts/osx/setup.sh``
+Then run ``./dist/starbound``

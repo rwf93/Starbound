@@ -2,17 +2,57 @@
 
 cd "`dirname \"$0\"`/../.."
 
-if [[ -d build ]]; then
-  echo "-- Detected previous build --"
-  echo "-- Cleaning build directory --"
-  rm -rf build
-fi
-
 mkdir -p dist
 cp scripts/osx/sbinit.config dist/
 
 mkdir -p build
 cd build
+
+if [ -d build ]; then
+  echo "-- Cleaning up previous build --"
+  rm -rf build
+fi
+
+echo "-- Checking if brew is installed --"
+if ! command -v brew &> /dev/null; then
+  echo "-- Brew is not installed --"
+  echo "-- Installing brew --"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+echo "-- Updating brew --"
+brew update
+
+echo "-- Checking if dependencies are installed --"
+if ! brew list cmake &> /dev/null; then
+  echo "-- Installing cmake --"
+  brew install cmake
+elif ! brew list ninja &> /dev/null; then
+  echo "-- Installing ninja --"
+  brew install ninja
+elif ! brew list jemalloc &> /dev/null; then
+  echo "-- Installing jemalloc --"
+  brew install jemalloc
+elif ! brew list sdl2 &> /dev/null; then
+  echo "-- Installing sdl2 --"
+  brew install sdl2
+elif ! brew list glew &> /dev/null; then
+  echo "-- Installing glew --"
+  brew install glew
+elif ! brew list libvorbis &> /dev/null; then
+  echo "-- Installing libvorbis --"
+  brew install libvorbis
+elif ! brew list lzlib &> /dev/null; then
+  echo "-- Installing lzlib --"
+  brew install lzlib
+elif ! brew list libpng &> /dev/null; then
+  echo "-- Installing libpng --"
+  brew install libpng
+elif ! brew list freetype &> /dev/null; then
+  echo "-- Installing freetype --"
+  brew install freetype
+fi
+echo "-- Checking dependencies done --"
 
 QT5_INSTALL_PATH=/usr/local/opt/qt5
 if [ -d $QT5_INSTALL_PATH ]; then
@@ -44,7 +84,7 @@ case $choice in
     echo "-- Invalid choice --"
     exit 1
     ;;
-esac
+esac  
 
 echo "-- Building Starbound --"
 

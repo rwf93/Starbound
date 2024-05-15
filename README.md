@@ -1,6 +1,8 @@
 
 <h1><img src=https://images.weserv.nl/?url=https://github.com/rwf93/starbound/blob/master/logo.png?raw=true?v=4&h=24&w=24&fit=cover&mask=circle&maxage=7d>Starbound</h1>
 
+I am archiving this repository as I am unable/unwilling to work on Starbound. I recommend checking out [OpenStarbound](https://github.com/OpenStarbound/OpenStarbound).
+
 A somewhat comprehensive guide on how to build the game from source.  
 This might contain modifications to the source code that make it not interoperable with the base game.
 
